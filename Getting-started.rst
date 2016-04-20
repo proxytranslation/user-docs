@@ -1,23 +1,22 @@
--  [[Workflow overview\|Getting-started#getting-started]]
--  [[Creating a project\|Getting-started#creating-a-project]]
+-  `Workflow overview <Getting-started#getting-started>`__
+-  `Creating a project <Getting-started#creating-a-project>`__
 
--  [[Discovering the site\|Getting-started#discovery]]
+-  `Discovering the site <Getting-started#discovery>`__
 
--  [[Extracting content for translation\|Getting-started#scanning]]
+-  `Extracting content for translation <Getting-started#scanning>`__
 
--  [[Translation\|Getting-started#translation]]
+-  `Translation <Getting-started#translation>`__
 
--  [[Maintenance\|Getting-started#maintenance]]
+-  `Maintenance <Getting-started#maintenance>`__
 
--  [[Sales tool for LSPs and
-   freelancers\|Getting-started#sales-tool-for-lsps-and-freelancers]]
+-  `Sales tool for LSPs and freelancers <Getting-started#sales-tool-for-lsps-and-freelancers>`__
 
--  [[Basic concepts\|Getting-started#basic-concepts]]
+-  `Basic concepts <Getting-started#basic-concepts>`__
 
 +--------------------------------------------------------------+
 | Workflow overview                                            |
 +==============================================================+
-| [[https://github.com/easyling/public/wiki/img/workflow.jpg   |
+| .. image:: _/img/workflow.jpg                                |
 +--------------------------------------------------------------+
 
 Getting started
