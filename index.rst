@@ -18,7 +18,7 @@ Easyling 3-phase workflow
       -  `Exclusion and inclusion rules <quoting#exclusion-and-inclusions-rules-on-project-creation>`__
       -  `Custom SRX file <quoting#provide-custom-srx-file>`__
 
--  `Discovery <quoting>`__
+-  `Discovery <quoting.rst>`__
 
    *  `Statistics <quoting>`__
    *  `Unlimited discovery <quoting>`__
