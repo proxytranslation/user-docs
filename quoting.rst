@@ -1,4 +1,4 @@
-.. contents:: Chapter contents
+.. contents::
     :depth: 4
 
 Project creation:
@@ -20,7 +20,7 @@ language; this sets the source language of the translation project.
 +--------------------------------------------------------------------+
 | Add project dialog                                                 |
 +====================================================================+
-| .. image:: /img/add\_discovery.png                                 |
+| .. image:: /img/add-discovery.png                                 |
 +--------------------------------------------------------------------+
 
 The **Start discovering automatically** option is selected by default.
@@ -116,7 +116,12 @@ Discovery:
 You can run Discovery of the site automatically when you create the
 project, or at any later time manually from the Dashboard.
 
-.. image:: /img/discovery.png
++--------------------------------------------------------------------+
+|Discovery                                                |
++====================================================================+
+|.. image:: /img/discovery.png                                       |
++--------------------------------------------------------------------+
+
 
 During the first discovery you can specify a discovery page limit, but
 you can also run unlimited discovery. By default this limit is set to
@@ -125,14 +130,14 @@ a comfortable protection should anything go wrong with the website.
 Unlimited discovery is not recommended, unless you have a very thorough
 information on the site.
 
-.. image:: /img/discovery\_limit.png
+.. image:: /img/discovery.limit.png
 
 Once the discivery is ready, you receive an e-mail notification, and the
 statistics will show up on the Discovery page. Based on this you can
 give a rough estimation for the website translation cost - both in time
 and money.
 
-.. image:: /img/discovery\_statistics.png
+.. image:: /img/discovery-statistics.png
 
 Statistics, fuzzy matches:
 --------------------------
