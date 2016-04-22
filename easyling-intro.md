@@ -31,7 +31,7 @@ Data can be extracted with a couple of clicks - and the publication of the trans
 
 - https://www.youtube.com/watch?v=S47kArNiJ1o
 - https://www.youtube.com/watch?v=8VsBy2bGo64
-- https://gitlab.com/easyling/public/wikis/home
+- https://gitlab.com/easyling/wiki s/home
 - https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA
 
 - http://lesson101.tutorial.easyling.com/
