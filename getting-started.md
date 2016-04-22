@@ -17,7 +17,7 @@
   
 | Workflow overview |
 |-------------|
-|[[https://github.com/easyling/wiki /img/workflow.jpg|alt=Workflow overview|thumb]]|  
+|[[https://github.com/easyling/wiki /img/workflow.png |alt=Workflow overview|thumb]]|  
 
 ##Getting started##
 To use easyling, first you need to register and set up an account for the service: [https://app.easyling.com](https://app.easyling.com). You can register with your e-mail address or with an external account (XTM, Google or Yahoo), free of charge. A free one-month trial is also available, with access to all features, and a budget of 10 EUR.  
@@ -26,7 +26,7 @@ Right after registration you can start using the service. When you log in for th
  
 | Add project |
 |-------------|
-|[[https://github.com/easyling/wiki /img/create.jpg|alt=Create|thumb]]|  
+|[[https://github.com/easyling/wiki /img/create.png |alt=Create|thumb]]|  
  
 ###Creating a project###
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
@@ -34,7 +34,7 @@ This opens the **Add project** dialog box, where you can enter the URL of the we
    
 | Add project dialog |
 |-------------|
-|[[https://github.com/easyling/wiki /img/add.jpg|alt=Add project]]|  
+|[[https://github.com/easyling/wiki /img/add.png |alt=Add project]]|  
   
 The **Start discovering automatically** option is selected by default. ***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
 You can also select **Process pages in source language only** to restrict translatable pages; this feature is particularly useful for websites where content in different languages is mixed, without clear language distinction in the URL. Before using this option for the first time, you have to set up the Google Translate API by clicking on the link there. Please note that Google Translate API is available only as a paid service, and you need your own account.  
@@ -47,14 +47,14 @@ You can also use **Advanced options** to refine discovery. These include:
   
 | Advanced options |
 |-------------|
-|[[https://github.com/easyling/wiki /img/add_advanced.jpg|alt=Advanced options]]|  
+|[[https://github.com/easyling/wiki /img/add_advanced.png |alt=Advanced options]]|  
   
 ###Discovery###
 You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard. 
 
 | Run discovery |
 |-------------|
-|[[https://github.com/easyling/wiki /img/discovery.jpg|alt=Run discovery]]|  
+|[[https://github.com/easyling/wiki /img/discovery.png |alt=Run discovery]]|  
   
 The process maps the structure of the site by scanning each page for link elements and trying to follow these links. The content of the website is not stored, only the URL address of the visited pages, together with their status info. Any page that is verified to exist is marked as **Discovered**, and the ones that returned an error message (most commonly *redirection* (HTTP301-302) and *page not found* (HTTP404)) are marked **Unvisited** in the list. For more information on HTTP status codes, see [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes "HTTP Status Codes on Wikipedia").  
 Although this process doesn't extract content, it provides a preliminary wordcount and a repetition rate as well. It has a cost of 1EUR per thousand pages.  
@@ -71,7 +71,7 @@ Scanning is practically extracting content from the website for translation. You
 
 | Scanning |
 |-------------|
-|[[https://github.com/easyling/wiki /img/scan.jpg|alt=Scanning]]|  
+|[[https://github.com/easyling/wiki /img/scan.png |alt=Scanning]]|  
  
   
 ###Translation###
@@ -79,14 +79,14 @@ Once content is extracted, you can start translating the website to the chosen l
   
 | Adding a target language|
 |-------------|
-|[[https://github.com/easyling/wiki /img/add_target_language.jpg|alt=Add target language]]|  
+|[[https://github.com/easyling/wiki /img/add_target_language.png |alt=Add target language]]|  
   
 You can use the online editor interface right from the dashboard, or you can also choose to export the bilingual file for translation in a CAT (Computer Aided Translation) tool. Easyling supports the standard XLIFF format, and also offers some pre-configured export options for the most commonly used CAT-tools.  
   
   
 | XLIFF export|
 |-------------|
-|[[https://github.com/easyling/wiki /img/export_bilingual.jpg|alt=XLIFF export]]|  
+|[[https://github.com/easyling/wiki /img/export_bilingual.png |alt=XLIFF export]]|  
 
 Once translation is ready, you can import the translated XLIFF back to review and check the layout on the online editor interface in Highlight View, and make all the necessary correction. Your translated website is ready for publishing.  
   
@@ -96,7 +96,7 @@ As content is regularly added to websites, website translation is a never-ending
   
 | Scheduled scan|
 |-------------|
-|[[https://github.com/easyling/wiki /img/scheduledScan.jpg|alt=Scheduled scan]]|
+|[[https://github.com/easyling/wiki /img/scheduledScan.png |alt=Scheduled scan]]|
 
 Additionally, if a new page, or page with new content is visited through the proxy, either on the live serving domain or in Preview, that content is automatically extracted, and an email notification is sent to the project owner.     
     

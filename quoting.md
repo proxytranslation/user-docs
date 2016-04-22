@@ -6,14 +6,14 @@ You can create a new project with the Add Project dialog, using the dropdown men
 
 | Add project |
 |-------------|
-|[[https://github.com/easyling/wiki/img/create.jpg|alt=Create|thumb]]|  
+|[[https://github.com/easyling/wiki/img/create.png |alt=Create|thumb]]|  
 
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
 
 
 | Add project dialog |
 |-------------|
-|[[https://github.com/easyling/wiki /img/add_discovery.jpg|alt=Add project]]|  
+|[[https://github.com/easyling/wiki /img/add_discovery.png |alt=Add project]]|  
 
 The **Start discovering automatically** option is selected by default. ***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
 You can also select **Process pages in source language only** to restrict translatable pages; this feature is particularly useful for websites where content in different languages is mixed, without clear language distinction in the URL. Before using this option for the first time, you have to set up the Google Translate API by clicking on the link there. Please note that Google Translate API is available only as a paid service, and you need your own account.  
@@ -46,15 +46,15 @@ Screenshot of the dialog:
 
 You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard.
 
-[[https://github.com/easyling/wiki /img/discovery.jpg|alt=Run discovery]]  
+[[https://github.com/easyling/wiki /img/discovery.png |alt=Run discovery]]  
 
 During the first discovery you can specify a discovery page limit, but you can also run unlimited discovery. By default this limit is set to 100, because it would give you a good overview of the website, and also a comfortable protection should anything go wrong with the website. Unlimited discovery is not recommended, unless you have a very thorough information on the site.
 
-[[https://github.com/easyling/wiki /img/discovery_limit.jpg|alt=Discovery limit]]  
+[[https://github.com/easyling/wiki /img/discovery_limit.png |alt=Discovery limit]]  
 
 Once the discivery is ready, you receive an e-mail notification, and the statistics will show up on the Discovery page. Based on this you can give a rough estimation for the website translation cost - both in time and money.  
 
-[[https://github.com/easyling/wiki /img/discovery_statistics.jpg|alt=Discovery statistics]]  
+[[https://github.com/easyling/wiki /img/discovery_statistics.png |alt=Discovery statistics]]  
 
 #### Statistics, fuzzy matches:
 
