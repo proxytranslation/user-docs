@@ -13,7 +13,7 @@ This opens the **Add project** dialog box, where you can enter the URL of the we
 
 | Add project dialog |
 |-------------|
-|![Add project](/img/add-discovery.png)|  
+![Add project](/img/add-discovery.png)  
 
 The **Start discovering automatically** option is selected by default. ***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
 You can also select **Process pages in source language only** to restrict translatable pages; this feature is particularly useful for websites where content in different languages is mixed, without clear language distinction in the URL. Before using this option for the first time, you have to set up the Google Translate API by clicking on the link there. Please note that Google Translate API is available only as a paid service, and you need your own account.  
