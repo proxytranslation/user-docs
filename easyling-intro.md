@@ -1,6 +1,6 @@
-# What is easyling?
+# What is Easyling?
 
-Easyling is fundamentally a cloud-based translation proxy solution designed to make websites available in several languages. Easily. 
+Easyling is fundamentally a cloud-based translation proxy solution designed to make websites available in several languages. Easily.
 
 **What does it mean?**  
 If you are a **business owner**, it can help you reach a wider customer-base through providing information to your potential customers in their native language. What's more, you can do more than just translating the text on your website, you can ***localize*** it: you can also adapt your message, the images displayed, or even your product range offered to the targeted culture. And all this without the need of heavy upfront investment in IT infrastructure and personnel, and the hassle with regular maintenance and upgrade. Easyling takes care of the IT part, so that you could concentrate on the content - and growing your business.  
@@ -25,7 +25,7 @@ Data can be extracted with a couple of clicks - and the publication of the trans
 - Always check all the forms for error messages, congratulation messages, etc.
 - Check all the images; some website like to bake the text into the image. Those will require your attention.
 - Pay attention to forms etc included from domains outside of Easyling. Typical examples: Marketo, optimizely.com, etc. You'll have to create new Easyling project for them, then linking together the projects.
-- Never underestimate the power of injecting CSS and/or JS into the translated pages 
+- Never underestimate the power of injecting CSS and/or JS into the translated pages
 - Regular expression is a great way to reduce the amount of content to be translated
 - Do read through and watch all the available documentation:
 
