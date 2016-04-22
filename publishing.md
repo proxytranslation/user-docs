@@ -1,3 +1,5 @@
+# Publishing
+
 + [[Publishing, domain names (CNAME)|Publishing#publishing-domain-names-cname]]
   * [[Serving domain name|Publishing#serving-domain-mode]]
   * [[Subdirectory publishing mode|Publishing#subdirectory-publishing-mode]]
@@ -47,8 +49,8 @@ Aside from displaying the status of the caches and which cache is being served a
 Checking the cache status for individual pages from the Pages List:  
 
 [[https://github.com/easyling/public/wiki/img/dashboard-cache-status.png|alt=Cache Status]]
-  
+
 ### Easyling for Wordpress  
-  
+
 If the content owner uses WordPress, Easyling provides an option to install the Translation Proxy directly to the CMS. In this case no Translation Proxy fee will be charged by Easyling, but the foreign traffic shall be handled by the content owner’s infrastructure.    
 For more information see our [blog](https://www.easyling.com/blog/easyling-for-wordpress/) or the [WordPress.org](https://wordpress.org/plugins/easyling-for-wp/screenshots/).

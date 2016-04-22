@@ -1,3 +1,5 @@
+# Ingesting Content
+
 + [[Scan vs Discovery vs. Preview|ingesting#scan-vs-discovery-vs-preview-real-time-ingestion]]
 + [[Cache (Source, Binary, Keep)|ingesting#cache-source-binary-keep]]
 + [[Entry level exclusion|ingesting#entry-level-exclusion]]
@@ -21,7 +23,7 @@ Pages with new content downloaded through the proxy will be ingested automatical
 
 ### Cache (Source, Target, Keep)
 
-After running a Scan and making sure everything is in order, it's the perfect time to build source cache to avoid future bleed through. 
+After running a Scan and making sure everything is in order, it's the perfect time to build source cache to avoid future bleed through.
 Source cache will take a snapshot of the site, and use that to serve any further requests.
 Source cache stores CSS and HTML. Easyling does not store images, form data, etc.
 When a website owner removes images from a banner slideshow for example, even if a Source cache is live and serving, the images are removed and they will show up as missing.
@@ -33,8 +35,8 @@ Keep cache's primary goal is to prevent premature translations from appearing on
 ### Entry level exclusion
 
 There are three translation states that segments can be set to.
-Approved, excluded and pending. 
-The customer role under Dashboard / Sharing Settings is used to give the client access to approve segments. The customer role is a read-only role. 
+Approved, excluded and pending.
+The customer role under Dashboard / Sharing Settings is used to give the client access to approve segments. The customer role is a read-only role.
 
 Clicking the Manage Segments link will show Externalized entries only. The client can choose to approve them for translation, or leave them out of the process.
 This feature is useful, when the client requests to control what goes into the translation process.
@@ -50,8 +52,8 @@ See this tutorial for more information on freezes: http://lesson102.tutorial.eas
 
 Work package generation is the recommended method of dealing with exports.
 
-Once you create a work package, after naming it Easyling creates an internal package in our database which then may be be filtered further. 
-Once a Work package is generated it becomes accessible in other parts of Easyling. Just to name one, you can filter for Work packages in the Workbench, making it easier to edit only select content. 
+Once you create a work package, after naming it Easyling creates an internal package in our database which then may be be filtered further.
+Once a Work package is generated it becomes accessible in other parts of Easyling. Just to name one, you can filter for Work packages in the Workbench, making it easier to edit only select content.
 Work packages can be exported as XLIFF. Exports can be done automatically on creation, or manually via the work packages menu.
 
 When creating a work package you can filter for several aspects. You can create work packages from select pages or folder just to name a few.
@@ -65,7 +67,7 @@ Every time an import is done an email is sent out containing an import log.
 Usually the import log only consists of two lines: import started and import finished.
 However the log can be of great use should anything go wrong during an import.
 
-Using the log, you can search for a problematic segment in the XLIFF imported by searching for it's unique ID, the TM key. 
+Using the log, you can search for a problematic segment in the XLIFF imported by searching for it's unique ID, the TM key.
 
 Here's an example log containing an error:
 
@@ -74,13 +76,13 @@ info Processing www.somedomain.com_en-US_projectcode_1432654611173.xlf
 error The XML structure has been changed so much that it is now unmappable from the source (projectcode_tm:m+vULvNWZF5teJg4zV8q5RV4frz0HYjyBOWeeQEkBdc=mJAJOo+O1NoLJDdf+n1AI5eE3u9lBEqLcLyqDjhi/s4=)
 ````
 
-The XML structure has been changed so much that it is now unmappable from the source usually means that the tag placement is does not match the source. 
+The XML structure has been changed so much that it is now unmappable from the source usually means that the tag placement is does not match the source.
 Searching for the TM key in the XLIFF in question will help you identify the problematic segment, and hopefully fix it. Comparing the source and the target against each other usually reveals the problem.
 
-The TM key is the string which comes after the 'projectcode_tm:', in this case: 
+The TM key is the string which comes after the 'projectcode_tm:', in this case:
 `m+vULvNWZF5teJg4zV8q5RV4frz0HYjyBOWeeQEkBdc=mJAJOo+O1NoLJDdf+n1AI5eE3u9lBEqLcLyqDjhi/s4=`
 
-A good online tool for comparing texts: 
+A good online tool for comparing texts:
 * http://text-compare.com
 
 ### Translation Workflow integration (client approval, proofreading)
@@ -139,7 +141,7 @@ During pre-translation, confidence level thresholds can be set for using the mem
 
 ### Layout issues (text expansion, RTL)
 
-Easyling can inject custom CSS and JS to the proxied sites. 
+Easyling can inject custom CSS and JS to the proxied sites.
 The injection applies to every single page served by Easyling.
 
 CSS Editor: Easyling can be used to insert locale-specific CSS rules into the site being served. The most common use of this feature is to alter the writing direction for non-Latin scripts, such as Arabic.
