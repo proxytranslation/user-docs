@@ -1,25 +1,11 @@
 # Getting Started With Easyling
 
-+ [[Workflow overview|Getting-started#getting-started]]  
-   - [[Creating a project|Getting-started#creating-a-project]]  
-
-   - [[Discovering the site|Getting-started#discovery]]  
-
-   - [[Extracting content for translation|Getting-started#scanning]]  
-
-   - [[Translation|Getting-started#translation]]  
-
-   - [[Maintenance|Getting-started#maintenance]]
-
-+ [[Sales tool for LSPs and freelancers|Getting-started#sales-tool-for-lsps-and-freelancers]]
-
-+ [[Basic concepts|Getting-started#basic-concepts]]
-
 | Workflow overview |
 |-------------|
 ![Workflow overview](/img/workflow.png)  
 
-##Getting started##
+## Getting started
+
 To use easyling, first you need to register and set up an account for the service: [https://app.easyling.com](https://app.easyling.com). You can register with your e-mail address or with an external account (XTM, Google or Yahoo), free of charge. A free one-month trial is also available, with access to all features, and a budget of 10 EUR.  
 
 Right after registration you can start using the service. When you log in for the first time, you can select if you are a Website owner, a Freelance translator or a Language Service Provider. This is for statistical purposes only, it has no influence at all on the User Experience later on. The actual work starts with creating your first project. To do this, please click on **Create new project** and choose **Add project** from the drop-down menu.
@@ -28,7 +14,8 @@ Right after registration you can start using the service. When you log in for th
 |-------------|
 ![Create|thumb](/img/create.png)  
 
-###Creating a project###
+### Creating a project
+
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
 
 
@@ -49,7 +36,8 @@ You can also use **Advanced options** to refine discovery. These include:
 |-------------|
 ![Advanced options](/img/add_advanced.png)  
 
-###Discovery###
+### Discovery
+
 You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard.
 
 | Run discovery |
@@ -66,7 +54,8 @@ Please note that the translation/localisation of these resources is not done by 
 
 You can then remove or add pages to be translated, and run another discovery of the site with the new restricted or broadened options, or you can proceed to the next step, to extract content for translation.
 
-###Scanning###
+### Scanning
+
 Scanning is practically extracting content from the website for translation. You can initiate it under Content. The process is similar to Discovery, but this time content is stored, and this process costs 2EUR per thousand *source* words. Once again, you will receive an e-mail notification once content extraction is ready. You will again receive a list of URL addresses, and the status of the pages will change to **NEW** after extraction.
 
 | Scanning |
@@ -74,7 +63,8 @@ Scanning is practically extracting content from the website for translation. You
 ![Scanning](/img/scan.png)  
 
 
-###Translation###
+### Translation
+
 Once content is extracted, you can start translating the website to the chosen language(s). You can add target languages to your project on the Dashboard, under Languages.  
 
 | Adding a target language|
@@ -90,7 +80,8 @@ You can use the online editor interface right from the dashboard, or you can als
 
 Once translation is ready, you can import the translated XLIFF back to review and check the layout on the online editor interface in Highlight View, and make all the necessary correction. Your translated website is ready for publishing.  
 
-###Maintenance  
+### Maintenance
+
 As content is regularly added to websites, website translation is a never-ending task. Maintenance is checking for new content on the website, extracting it for translation, and uploading the translated content. It is also possible to automate checks and content extractions: you can specify the frequency of the checks (daily, weekly, monthly), and if new content is added, easyling automatically extracts it and sends you an e-mail notification. Please note that this automation is not possible behind secure login.
 
 
@@ -101,13 +92,13 @@ As content is regularly added to websites, website translation is a never-ending
 Additionally, if a new page, or page with new content is visited through the proxy, either on the live serving domain or in Preview, that content is automatically extracted, and an email notification is sent to the project owner.     
 
 
-###Sales tool for LSPs and freelancers###
+### Sales tool for LSPs and freelancers
 
 Easyling also offers a Sales Tool to help LSPs and freelancers in growing their business.   
 If you have a well-defined group of potential customers you'd like to offer your translation services to, like hotels or restaurants with only monolingual websites in your area, easyling makes it easy for you to impress the business owners. Just collect the URL addresses, add them to the Sales Tool, and easyling will automatically create a project for all webpages according to the settings you specify. Once the translation and post-editing of the translated main pages are ready, you can send a link to the business owners. If your potential clients are impressed with the translated page and the fact that no IT involvement is required on their end, you have a better chance to win the deal.
 For more information see our [blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/) or this short [video] (https://www.easyling.com/features/mass-sales-tool/)  
 
-###Basic concepts###
+### Basic concepts
 
 Scan
 :    Extracting content from the website for translation
@@ -115,7 +106,14 @@ Scan
 Discovery
 :    Checking the website for translatable content
 
-| Resource | Binary content found on the website (images, PDFs, CSS and JS files, etc.) |  
-| Workbench | The online editing view of easyling |  
-| List view | The main view of the Workbench; a simple editor for online translation|  
-| Highlight view | The secondary view mode of workbench, allowing for in-context editing |
+Resource
+:    Binary content found on the website (images, PDFs, CSS and JS files, etc.)
+
+Workbench
+:    The online editing view of Easyling
+
+List view
+:    The main view of the Workbench; a simple editor for online translation
+
+Highlight view
+:    The secondary view mode of workbench, allowing for in-context editing
