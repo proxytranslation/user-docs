@@ -34,7 +34,7 @@ You can also use **Advanced options** to refine discovery. These include:
 
 | Advanced options |
 |-------------|
-![Advanced options](/img/add_advanced.png)  
+![Advanced options](/img/add-advanced.png)  
 
 ### Discovery
 
@@ -69,14 +69,14 @@ Once content is extracted, you can start translating the website to the chosen l
 
 | Adding a target language|
 |-------------|
-![Add target language](/img/add_target_language.png)  
+![Add target language](/img/add-target-language.png)  
 
 You can use the online editor interface right from the dashboard, or you can also choose to export the bilingual file for translation in a CAT (Computer Aided Translation) tool. Easyling supports the standard XLIFF format, and also offers some pre-configured export options for the most commonly used CAT-tools.  
 
 
 | XLIFF export|
 |-------------|
-![XLIFF export](/img/export_bilingual.png)  
+![XLIFF export](/img/export-bilingual.png)  
 
 Once translation is ready, you can import the translated XLIFF back to review and check the layout on the online editor interface in Highlight View, and make all the necessary correction. Your translated website is ready for publishing.  
 
