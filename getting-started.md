@@ -100,8 +100,10 @@ For more information see our [blog](https://www.easyling.com/blog/try-sales-tool
 
 ### Basic concepts
 
-Scan
-:    Extracting content from the website for translation
+<dl>
+<dt>Scan></dt>
+<dd>Extracting content from the website for translation</dd>
+</dl>
 
 Discovery
 :    Checking the website for translatable content
