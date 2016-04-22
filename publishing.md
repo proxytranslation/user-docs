@@ -41,7 +41,7 @@ Aside from displaying the status of the caches and which cache is being served a
 
 Checking the cache status for individual pages from the Pages List:  
 
-[[https://github.com/easyling/wiki/img/dashboard-cache-status.png|alt=Cache Status]]
+![Cache Status](/img/dashboard-cache-status.png)
 
 ## Easyling for Wordpress  
 

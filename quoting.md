@@ -50,11 +50,11 @@ You can run Discovery of the site automatically when you create the project, or 
 
 During the first discovery you can specify a discovery page limit, but you can also run unlimited discovery. By default this limit is set to 100, because it would give you a good overview of the website, and also a comfortable protection should anything go wrong with the website. Unlimited discovery is not recommended, unless you have a very thorough information on the site.
 
-![Discovery limit](/img/discovery_limit.png)  
+![Discovery limit](/img/discovery-limit.png)  
 
 Once the discivery is ready, you receive an e-mail notification, and the statistics will show up on the Discovery page. Based on this you can give a rough estimation for the website translation cost - both in time and money.  
 
-![Discovery statistics](/img/discovery_statistics.png)  
+![Discovery statistics](/img/discovery-statistics.png)  
 
 #### Statistics, fuzzy matches:
 
@@ -72,7 +72,7 @@ It is only advised to start an unlimited Discovery when you have thorough inform
 Starting a discovery with a page limit of a 1000 will give you security while still providing a good picture of the site's layout. In case something goes wrong, you'll still have a very good idea about what's going on and with that information, you can re-configure the project accordingly.
 
 Screenshot of the Discovery panel set to a page limit of 100:
-[[https://github.com/easyling/wiki/img/dashboard-discovery-limit.png|alt=Discovery panel limit]]
+![Discovery panel limit](/img/dashboard-discovery-limit.png)
 
 
 #### Using a sitemap for Discovery:
@@ -105,7 +105,7 @@ Read more about Basic Authentication:
 
 An example Basic Authentication dialog:
 
-[[https://github.com/easyling/wiki/img/basic-authentication.png|alt=Basic Authentication example]]
+![Basic Authentication example](/img/basic-authentication.png)
 
 
 ##### Cookie extraction
@@ -269,7 +269,7 @@ If identified and deemed translation invariant, you can use ignore classes to ig
 
 Screenshot:
 
-[[https://github.com/easyling/wiki/img/dashboard-ignore-classes.png|alt=Ignore classes in Advanced Settings]]
+![Ignore classes in Advanced Settings](/img/dashboard-ignore-classes.png)
 
 
 #### Dynamic content (forms), Marketo/Hubstpot (linked projects)
