@@ -13,11 +13,11 @@
 
 -  `Basic concepts <Getting-started#basic-concepts>`__
 
-+--------------------------------------------------------------+
-| Workflow overview                                            |
-+==============================================================+
-| .. image:: _/img/workflow.jpg                                |
-+--------------------------------------------------------------+
+
+.. figure:: _img/workflow.jpg
+   :alt:  Workflow overview<80>
+   :scale:  
+
 
 Getting started
 ===============
