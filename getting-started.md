@@ -109,10 +109,10 @@ For more information see our [blog](https://www.easyling.com/blog/try-sales-tool
 
 ###Basic concepts###
 
-| Term | Definition|  
-|:-----|--------|  
-| Scan | Extracting content from the website for translation |  
-| Discovery|Checking the website for translatable content|  
+Scan
+: Extracting content from the website for translation |  
+Discovery
+: Checking the website for translatable content|  
 | Resource | Binary content found on the website (images, PDFs, CSS and JS files, etc.) |  
 | Workbench | The online editing view of easyling |  
 | List view | The main view of the Workbench; a simple editor for online translation|  
