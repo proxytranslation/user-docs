@@ -1,52 +1,5 @@
--  [[Project creation\|quoting#project-creation]]
--  [[Advanced
-   options\|quoting#advanced-options-in-the-add-project-dialog]]
-
-   -  [[Exclusion and inclusion
-      rules\|quoting#exclusion-and-inclusions-rules-on-project-creation]]
-   -  [[Custom SRX file\|quoting#provide-custom-srx-file]]
-
--  [[Discovery\|quoting#discovery]]
--  [[Statistics\|quoting#statistics-fuzzy-matches]]
--  [[Unlimited discovery\|quoting#unlimited-discovery]]
--  [[Using sitemap for
-   Discovery\|quoting#using-a-sitemap-for-discovery]]
--  [[Using URL list when running
-   Discovery\|quoting#using-a-url-list-when-running-discovery]]
--  [[Password/login\|quoting#passwordlogin-basic-auth-curlcookies]]
-
-   -  [[Basic Authintetication\|quoting#basic-authentication]]
-   -  [[Cookie extraction\|quoting#cookie-extraction]]
-
--  [[e-commerce websites and regular
-   expressions\|quoting#e-commerce-websites-and-regular-expressions]]
-
-   -  [[Group pages, ignore query
-      parameters\|quoting#group-pages-ignore-query-parameters]]
-   -  [[payment gateways\|quoting#payment-gateways]]
-
--  [[Proxy modes\|quoting#proxy-modes---x-p-live]]
-
-   -  [[X-proxy\|quoting#x-proxy-testing-js-bugs-js-fix-domains--cors]]
-   -  [[Preview-proxy\|quoting#preview-proxy-p]]
-   -  [[CORS\|quoting#cors]]
-
--  [[JSON path / XPath
-   translation\|quoting#json-path--xpath-translation]]
-
-   -  [[XPath translation\|quoting#xpath-translation]]
-   -  [[JSON Path translation\|quoting#json-path-translation]]
-
--  [[Exclusions\|quoting#exclusions-path-page-class-id-translateno]]
-
-   -  [[HTML 5 translate="no"\|quoting#html-5-translateno-attribute]]
-   -  [[Path Exclusions\|quoting#path-exclusions]]
-   -  [[Ignore classes\|quoting#ignore-classes]]
-
--  [[Dynamic
-   content\|quoting#dynamic-content-forms-marketohubstpot-linked-projects]]
--  [[Forums,
-   e-commerce\|quoting#forums-e-commerce-importance-based-translation]]
+.. contents:: Chapter contents
+    :depth: 4
 
 Project creation:
 =================
@@ -57,7 +10,7 @@ dropdown menu on the Dashboard's top toolbar.
 +------------------------------------------------------------+
 | Add project                                                |
 +============================================================+
-| [[https://github.com/easyling/public/wiki/img/create.jpg   |
+|.. image:: /img/create.png                                  |
 +------------------------------------------------------------+
 
 This opens the **Add project** dialog box, where you can enter the URL
@@ -67,44 +20,47 @@ language; this sets the source language of the translation project.
 +--------------------------------------------------------------------+
 | Add project dialog                                                 |
 +====================================================================+
-| [[https://github.com/easyling/public/wiki/img/add\_discovery.jpg   |
+| .. image:: /img/add\_discovery.png                                 |
 +--------------------------------------------------------------------+
 
-| The **Start discovering automatically** option is selected by default.
-  ***Discovery*** is the preliminary assessment of the website, without
-  storing the website content. This process starts from the URL you
-  specified, scans all the pages, follows all links, and returns the URL
-  list of the visited pages, together with the wordcount and repetition
-  rates. As Discovery costs 1EUR per thousand pages, you may want to
-  disable automatic discovery. You can run discovery manually at any
-  later time. You can disable automatic discovery by removing the check
-  mark.
-| You can also select **Process pages in source language only** to
-  restrict translatable pages; this feature is particularly useful for
-  websites where content in different languages is mixed, without clear
-  language distinction in the URL. Before using this option for the
-  first time, you have to set up the Google Translate API by clicking on
-  the link there. Please note that Google Translate API is available
-  only as a paid service, and you need your own account.
+The **Start discovering automatically** option is selected by default.
 
-| You can also use **Advanced options** to refine discovery. These
-  include:
-| - **Check if the domain redirects to another domain** - when creating
+**Discovery** is the preliminary assessment of the website, without
+storing the website content. This process starts from the URL you
+specified, scans all the pages, follows all links, and returns the URL
+list of the visited pages, together with the wordcount and repetition
+rates. As Discovery costs 1EUR per thousand pages, you may want to
+disable automatic discovery. You can run discovery manually at any
+later time. You can disable automatic discovery by removing the check
+mark.
+
+You can also select **Process pages in source language only** to
+restrict translatable pages; this feature is particularly useful for
+websites where content in different languages is mixed, without clear
+language distinction in the URL. Before using this option for the
+first time, you have to set up the Google Translate API by clicking on
+the link there. Please note that Google Translate API is available
+only as a paid service, and you need your own account.
+
+You can also use **Advanced options** to refine discovery. These
+include:
+
+- **Check if the domain redirects to another domain** - when creating
   the project, Easyling will first check for redirections. By disabling
   this option, you can force the creation of the project tot he domain
   you specify, regardless of its existence or redirection settings.
   However, the root page (``/``) will not be added by default!
-| - **Include pages only starting with** - here you can limit discovery
+- **Include pages only starting with** - here you can limit discovery
   to a specific set of pages, like company or contact information,
   services, products, etc. You can remove or add pages at any later
   stage, and you can remove this restriction as well.
-| - **Ignore these paths** - here you can exclude pages that you don't
+- **Ignore these paths** - here you can exclude pages that you don't
   want to be assessed, like blog, forum and news entries. These are
   typical examples of pages where an enormous amount of irrelevant or
   outdated information can accumulate as years pass. Any page excluded
   here, upon project creation, can later be included in the project, if
   needed.
-| - **Provide custom SRX file** - easyling uses its own
+- **Provide custom SRX file** - easyling uses its own
   language-specific segmentation rules, but you also have the option to
   use your preferred rules, by uploading your own `.SRX
   file <https://en.wikipedia.org/wiki/Segmentation_Rules_eXchange>`__.
@@ -152,8 +108,7 @@ Provide custom SRX file:
 
 Screenshot of the dialog:
 
-[[https://github.com/easyling/public/wiki/img/add-project.png\|alt=Add
-Project dialog]]
+.. image:: /img/add-project.png 
 
 Discovery:
 ==========
@@ -161,8 +116,7 @@ Discovery:
 You can run Discovery of the site automatically when you create the
 project, or at any later time manually from the Dashboard.
 
-[[https://github.com/easyling/public/wiki/img/discovery.jpg\|alt=Run
-discovery]]
+.. image:: /img/discovery.png
 
 During the first discovery you can specify a discovery page limit, but
 you can also run unlimited discovery. By default this limit is set to
@@ -171,16 +125,14 @@ a comfortable protection should anything go wrong with the website.
 Unlimited discovery is not recommended, unless you have a very thorough
 information on the site.
 
-[[https://github.com/easyling/public/wiki/img/discovery\_limit.jpg\|alt=Discovery
-limit]]
+.. image:: /img/discovery\_limit.png
 
 Once the discivery is ready, you receive an e-mail notification, and the
 statistics will show up on the Discovery page. Based on this you can
 give a rough estimation for the website translation cost - both in time
 and money.
 
-[[https://github.com/easyling/public/wiki/img/discovery\_statistics.jpg\|alt=Discovery
-statistics]]
+.. image:: /img/discovery\_statistics.png
 
 Statistics, fuzzy matches:
 --------------------------
@@ -212,8 +164,6 @@ what's going on and with that information, you can re-configure the
 project accordingly.
 
 Screenshot of the Discovery panel set to a page limit of 100:
-[[https://github.com/easyling/public/wiki/img/dashboard-discovery-limit.png\|alt=Discovery
-panel limit]]
 
 .. image:: /img/dashboard-discovery-limit.png
 
@@ -265,8 +215,7 @@ https://en.wikipedia.org/wiki/Basic\_access\_authentication
 
 An example Basic Authentication dialog:
 
-[[https://github.com/easyling/public/wiki/img/basic-authentication.png\|alt=Basic
-Authentication example]]
+.. image:: /img/basic-authentication.png 
 
 Cookie extraction
 ~~~~~~~~~~~~~~~~~
@@ -542,8 +491,7 @@ Easyling cannot deal with content put there by javascript.
 
 Screenshot:
 
-[[https://github.com/easyling/public/wiki/img/dashboard-ignore-classes.png\|alt=Ignore
-classes in Advanced Settings]]
+.. image:: /img/dashboard-ignore-classes.png 
 
 Dynamic content (forms), Marketo/Hubstpot (linked projects)
 -----------------------------------------------------------
