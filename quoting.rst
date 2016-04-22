@@ -215,6 +215,8 @@ Screenshot of the Discovery panel set to a page limit of 100:
 [[https://github.com/easyling/public/wiki/img/dashboard-discovery-limit.png\|alt=Discovery
 panel limit]]
 
+.. image:: /img/dashboard-discovery-limit.png
+
 Using a sitemap for Discovery:
 ------------------------------
 
