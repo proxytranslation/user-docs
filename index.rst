@@ -1,10 +1,7 @@
-`Easyling in a nutshell <easyling-intro>`__
-
-| `Getting Started With Easyling <Getting-started>`__
-| + `Workflow overview <Getting-started>`__
-| + `Sales tool for LSPs and freelancers <Getting-started>`__
-| + `Basic concepts <Getting-started>`__
-
+.. toctree::
+   getting-started
+   easyling-intro
+   
 Easyling 3-phase workflow
 =========================
 

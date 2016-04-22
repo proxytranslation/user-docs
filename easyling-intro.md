@@ -1,4 +1,4 @@
-##What is easyling?##
+# What is easyling?
 
 Easyling is fundamentally a cloud-based translation proxy solution designed to make websites available in several languages. Easily. 
 
