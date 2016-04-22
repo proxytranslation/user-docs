@@ -1,3 +1,5 @@
+# The Multi-Cache
+
 On December 22, the public beta of the multicache feature has drawn to a close, and the final user interface was rolled out, giving users the power to add, rename, and assign separate caches to various proxy modes.
 
 # Recap

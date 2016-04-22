@@ -1,3 +1,5 @@
+# Branding Easyling (The Whitelabel Offer)
+
 Easyling offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell Easyling as your own product. In order to create the branded version, six criteria must be met.
 
 1. A €200 EUR topup / month (recurring): Easyling under your own brand name is special service, offered to customers who cater not only to one or two clients, but put their weight behind the punch and open up whole new markets with our proxy solution. 

@@ -1,3 +1,5 @@
+# Contacting Support
+
 Website translation can be a complex task, even with the help of a piece of software like Easyling. Finding the root of the problem can be equally complex for us on support duty. Therefore, we would like to give you a few pointers on what the supply when you're contacting us.
 
 This first thing we need is the project code. This is an eight-character unique string that uniquely identifies the project in our system. Following the screenshot below, you can find the project code in the address bar of your browser - you can copy the entire URL for us, but only the code will suffice as well.

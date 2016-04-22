@@ -1,4 +1,4 @@
-[RTL ](rtl)
+# Left-Right conversion
 
 It depends on the site...
 
