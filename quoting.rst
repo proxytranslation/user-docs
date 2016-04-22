@@ -20,7 +20,7 @@ language; this sets the source language of the translation project.
 +--------------------------------------------------------------------+
 | Add project dialog                                                 |
 +====================================================================+
-| .. image:: /img/add-discovery.png                                 |
+| .. image:: /img/add-discovery.png                                  |
 +--------------------------------------------------------------------+
 
 The **Start discovering automatically** option is selected by default.
@@ -117,7 +117,7 @@ You can run Discovery of the site automatically when you create the
 project, or at any later time manually from the Dashboard.
 
 +--------------------------------------------------------------------+
-|Discovery                                                |
+|Discovery                                                           |
 +====================================================================+
 |.. image:: /img/discovery.png                                       |
 +--------------------------------------------------------------------+
@@ -130,7 +130,7 @@ a comfortable protection should anything go wrong with the website.
 Unlimited discovery is not recommended, unless you have a very thorough
 information on the site.
 
-.. image:: /img/discovery.limit.png
+.. image:: /img/discovery-limit.png
 
 Once the discivery is ready, you receive an e-mail notification, and the
 statistics will show up on the Discovery page. Based on this you can
