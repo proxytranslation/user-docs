@@ -6,7 +6,7 @@ You can create a new project with the Add Project dialog, using the dropdown men
 
 | Add project |
 |-------------|
-|[[https://raw.githubusercontent.com/easyling/wiki/markdown/img/create.png |alt=Create|thumb]]|  
+![Create Project](img/create.png)  
 
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
 
