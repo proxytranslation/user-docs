@@ -1,11 +1,11 @@
 `Easyling in a nutshell <easyling-intro.rst>`__
 ----------------------------------------------
 
-`Getting Started With Easyling <Getting-started>`__
+`Getting Started With Easyling <Getting-started.rst>`__
 
--  `Workflow overview <Getting-started>`__
--  `Sales tool for LSPs and freelancers <Getting-started>`__
--  `Basic concepts <Getting-started>`__
+-  `Workflow overview <Getting-started.rst>`__
+-  `Sales tool for LSPs and freelancers <Getting-started.rst>`__
+-  `Basic concepts <Getting-started.rst>`__
 
 Easyling 3-phase workflow
 =========================
