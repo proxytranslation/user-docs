@@ -15,7 +15,7 @@ The first two activities can be set to be carried out automatically at daily, we
 
 You can enable this option in **Content > Settings > Look for changes**. (Of course, you can set it to **Only manually**, if the site does not update frequently.)  
 
-[[https://github.com/easyling/wiki /img/scheduledScan.png |alt=Scheduled Scan]]  
+[[https://github.com/easyling/wiki/img/scheduledScan.png |alt=Scheduled Scan]]  
 
 The process can automatically extract new content, apply the associated translation memories and machine translation services, prepare a work package and the XLIFF export. This is particularly useful for fast-moving sites where content arrives quickly and time spent untranslated needs to be minimized (possibly at the expense of real-time human oversight).  
 
