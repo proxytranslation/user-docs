@@ -1,36 +1,5 @@
 # Giving a Quote
 
-- [[Project creation|quoting#project-creation]]
-  + [[Advanced options|quoting#advanced-options-in-the-add-project-dialog]]  
-      * [[Exclusion and inclusion rules|quoting#exclusion-and-inclusions-rules-on-project-creation]]  
-      * [[Custom SRX file|quoting#provide-custom-srx-file]]  
-
-
-- [[Discovery|quoting#discovery]]
-  + [[Statistics|quoting#statistics-fuzzy-matches]]  
-  + [[Unlimited discovery|quoting#unlimited-discovery]]
-  + [[Using sitemap for Discovery|quoting#using-a-sitemap-for-discovery]]
-  + [[Using URL list when running Discovery|quoting#using-a-url-list-when-running-discovery]]
-  + [[Password/login|quoting#passwordlogin-basic-auth-curlcookies]]
-     * [[Basic Authintetication|quoting#basic-authentication]]
-     * [[Cookie extraction|quoting#cookie-extraction]]
-  + [[e-commerce websites and regular expressions|quoting#e-commerce-websites-and-regular-expressions]]
-     * [[Group pages, ignore query parameters|quoting#group-pages-ignore-query-parameters]]
-     * [[payment gateways|quoting#payment-gateways]]
-  + [[Proxy modes|quoting#proxy-modes---x-p-live]]
-     * [[X-proxy|quoting#x-proxy-testing-js-bugs-js-fix-domains--cors]]
-     * [[Preview-proxy|quoting#preview-proxy-p]]
-     * [[CORS|quoting#cors]]
-  + [[JSON path / XPath translation|quoting#json-path--xpath-translation]]
-     * [[XPath translation|quoting#xpath-translation]]
-     * [[JSON Path translation|quoting#json-path-translation]]
-  + [[Exclusions|quoting#exclusions-path-page-class-id-translateno]]
-     * [[HTML 5 translate="no"|quoting#html-5-translateno-attribute]]
-     * [[Path Exclusions|quoting#path-exclusions]]
-     * [[Ignore classes|quoting#ignore-classes]]
-  + [[Dynamic content|quoting#dynamic-content-forms-marketohubstpot-linked-projects]]
-  + [[Forums, e-commerce|quoting#forums-e-commerce-importance-based-translation]]  
-
 ## Project creation:
 
 You can create a new project with the Add Project dialog, using the dropdown menu on the Dashboard's top toolbar.  

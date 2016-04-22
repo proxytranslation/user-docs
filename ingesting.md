@@ -1,19 +1,6 @@
 # Ingesting Content
 
-+ [[Scan vs Discovery vs. Preview|ingesting#scan-vs-discovery-vs-preview-real-time-ingestion]]
-+ [[Cache (Source, Binary, Keep)|ingesting#cache-source-binary-keep]]
-+ [[Entry level exclusion|ingesting#entry-level-exclusion]]
-+ [[Page freeze and Dictionary Freeze|ingesting#page-freeze-and-dictionary-freeze]]
-+ [[XLIFF export + work packages|ingesting#xliff-export--work-packages]]
-+ [[XLIFF import + log|ingesting#xliff-import--log]]
-+ [[Translation workflow integration|ingesting#translation-workflow-integration-client-approval-proofreading]]
-   * [[Roles|ingesting#roles]]
-   * [[Client approval|ingesting#client-approval]]
-+ [[Translation memory|ingesting#translation-memory-populate-and-confirm]]
-+ [[Pre-translation|ingesting#pre-translation-with-a-tm]]
-+ [[Layout issues|ingesting#layout-issues-text-expansion-rtl]]
-
-### Scan vs Discovery vs Preview (real-time ingestion)
+## Scan vs Discovery vs Preview (real-time ingestion)
 
 Discovery does not extract or store content. It is used for merely statistical purposes - such as providing a word count, or mapping a site's URL structure.
 A Scan writes into the database. It extracts and stores the source content.
@@ -21,7 +8,7 @@ A Scan writes into the database. It extracts and stores the source content.
 When you visit a page with the preview proxy, real-time ingestion occurs.
 Pages with new content downloaded through the proxy will be ingested automatically. When Easyling encounters content without matching source entries, it will create a new entry - new content will show up. Read below for ways to circumvent bleed through in these cases.
 
-### Cache (Source, Target, Keep)
+## Cache (Source, Target, Keep)
 
 After running a Scan and making sure everything is in order, it's the perfect time to build source cache to avoid future bleed through.
 Source cache will take a snapshot of the site, and use that to serve any further requests.
@@ -32,7 +19,7 @@ Target and Keep cache:
 If you think of Source cache as input, then Binary cache is the output - it's the traslated page at the end of the translation process. The Target cache's primary goal is to speed up the site.
 Keep cache's primary goal is to prevent premature translations from appearing on the site in question - even if the source site changes unexpectedly, Easyling will keep serving the Target cache's contents, until the cache is cleared, maintaining the illusion of a fully translated site.
 
-### Entry level exclusion
+## Entry level exclusion
 
 There are three translation states that segments can be set to.
 Approved, excluded and pending.
@@ -41,14 +28,14 @@ The customer role under Dashboard / Sharing Settings is used to give the client 
 Clicking the Manage Segments link will show Externalized entries only. The client can choose to approve them for translation, or leave them out of the process.
 This feature is useful, when the client requests to control what goes into the translation process.
 
-### Page Freeze and Dictionary Freeze
+## Page Freeze and Dictionary Freeze
 
 These two functions go hand-in-hand. Page freeze prevents picking up pages and adding them to the pages list.
 TM freeze prevents addition of new content, when it's turned on no new content makes it to the dictionary.
 
 See this tutorial for more information on freezes: http://lesson102.tutorial.easyling.com/
 
-### XLIFF export + work packages
+# XLIFF export + work packages
 
 Work package generation is the recommended method of dealing with exports.
 
@@ -61,7 +48,7 @@ When creating a work package you can filter for several aspects. You can create 
 A timeline can also be set. This can range from project creation to the latest action taken on the project.
 This lets you filter for content picked up in a desired time-frame.
 
-### XLIFF import + log
+## XLIFF import + log
 
 Every time an import is done an email is sent out containing an import log.
 Usually the import log only consists of two lines: import started and import finished.
@@ -85,9 +72,9 @@ The TM key is the string which comes after the 'projectcode_tm:', in this case:
 A good online tool for comparing texts:
 * http://text-compare.com
 
-### Translation Workflow integration (client approval, proofreading)
+## Translation Workflow integration (client approval, proofreading)
 
-#### Roles
+### Roles
 
 The translation workflow in Easyling is split into a maximum of four steps: Translation (marked by a T and the color yellow), two steps of Proofreading (first and second marked by a P and Q, and the colors cyan and violet, respectively), and Client approval (marked by the letter C and the color aqua). Any user may be assigned any combination of these steps, useful for restricting access to entries in the List View.
 
@@ -99,7 +86,7 @@ The translation workflow in Easyling is split into a maximum of four steps: Tran
 * Advanced Project Managers are designated by the eponymous feature. They are given the power to edit languages, as well as any entry in the project, and editing most setting, up to, and including, the URL inclusion-exclusion rules. However, they cannot change segmentation settings, publishing settings, and certain advanced settings.
 * Admins are designated by their Backup Owner role. Their powers equal that of project owners, being able to change any setting and entry, adding or removing users, and modifying the language settings.
 
-#### Client approval
+### Client approval
 
 Sometimes there is need for the client to view and check new segments before they enter the translation workflow.
 
@@ -113,7 +100,7 @@ In the Sharing Settings menu, the customer role can be assigned for this purpose
 Important: The client role is read-only. Anyone assigned this role won't be able to edit content, but approve them for translation. If you are unable to edit segments on the Workbench, please check Sharing Settings first.
 
 
-### Translation Memory (populate and confirm)
+## Translation Memory (populate and confirm)
 
 You can create your own TMs in Easyling. It is useful for example when transferring from a staging site's project to a live site's project.
 
@@ -131,7 +118,7 @@ Concordance search:
 
 You can input a search string in the "Search for suggestions" text area, under the Translation Memory menu. Suggestions also come up in the Workbench.
 
-### Pre-translation (with a TM)
+## Pre-translation (with a TM)
 
 Easyling can use translation memories to aid in the pre-translation of the site. Memories can be imported from standards-compliant TMX files, or can be populated from the project itself. Once a memory has been created, it will remain accessible to the user across projects, to be used for pre-translation. Memories can also be exported in the same TMX format they are imported in.
 
@@ -139,7 +126,7 @@ During pre-translation, confidence level thresholds can be set for using the mem
 
 
 
-### Layout issues (text expansion, RTL)
+## Layout issues (text expansion, RTL)
 
 Easyling can inject custom CSS and JS to the proxied sites.
 The injection applies to every single page served by Easyling.
