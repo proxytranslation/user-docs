@@ -1,3 +1,5 @@
+# Branding Easyling (The Whitelabel Offer)
+
 Easyling offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell Easyling as your own product. In order to create the branded version, seven criteria must be met.
 
 >Note: This article will use variable values, that will change for everyone. These variables are written here
