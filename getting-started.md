@@ -74,7 +74,7 @@ Adding a target language
 You can use the online editor interface right from the dashboard, or you can also choose to export the bilingual file for translation in a CAT (Computer Aided Translation) tool. Easyling supports the standard XLIFF format, and also offers some pre-configured export options for the most commonly used CAT-tools.  
 
 
-| XLIFF export|
+XLIFF export
 
 ![XLIFF export](/img/export-bilingual.png)  
 
@@ -85,7 +85,7 @@ Once translation is ready, you can import the translated XLIFF back to review an
 As content is regularly added to websites, website translation is a never-ending task. Maintenance is checking for new content on the website, extracting it for translation, and uploading the translated content. It is also possible to automate checks and content extractions: you can specify the frequency of the checks (daily, weekly, monthly), and if new content is added, easyling automatically extracts it and sends you an e-mail notification. Please note that this automation is not possible behind secure login.
 
 
-| Scheduled scan|
+Scheduled scan
 
 ![Scheduled scan](/img/scheduledScan.png)  
 
