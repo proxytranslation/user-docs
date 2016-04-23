@@ -1,4 +1,4 @@
-##XLIFF import errors##
+# XLIFF import errors
   
 When you import your translated XLIFF file back to easyling, you will receive an e-mail notification when the process is ready. This mail contains the URL of the import log, and an overview of the log entries:  
 - Error:  
@@ -24,11 +24,11 @@ You might also need to disable segment info storage in Studio (***Options -> Fil
 1) Open both the **XLIFF file** and the **error log** in a text editor  
 2) Select & copy the ***TM-key*** of the faulty entry, the part after ‘(trans-unit id="xxxxx)_tm:’ in parenthesis right after the error message  
 
-[[https://github.com/easyling/public/wiki/img/select_ID.jpg|alt=Select TM-key]]   
+![Select TM-key](/img/select-ID.png)   
 
 3) Search for this key in the **XLIFF file** by pasting it into the ‘Find’ field. Only 1 translation unit will match.  
   
-[[https://github.com/easyling/public/wiki/img/find_ID.jpg|alt=Find TM-key]]   
+![Find TM-key](/img/find-ID.png)   
 
 4) Compare the tags in the source and target languages, and fix the mismatch by editing the **target text**.  
 (You can also use an online text comparison tool for this task: copy-paste `<source>  …  </source> `in one pane and `<target> … </target>` in the other one.)  
@@ -51,11 +51,11 @@ Practically this means that there is an extra space before the starting `<target
 1) Open both the **XLIFF file** and the **error log** in a text editor  
 2) Select & copy the ***TM-key*** of the faulty entry, the part after ‘(trans-unit id="xxxxx)_tm:’ in parenthesis right after the error message  
 
-[[https://github.com/easyling/public/wiki/img/select_ID.jpg|alt=Select TM-key]]   
+![Select TM-key](/img/select-ID.png)   
 
 3) Search for this key in the **XLIFF file** by pasting it into the ‘Find’ field. Only 1 translation unit will match.  
   
-[[https://github.com/easyling/public/wiki/img/find_ID.jpg|alt=Find TM-key]]  
+![Find TM-key](/img/find-ID.png)  
 
 4) Delete the extra space around the tags  
 5) Save the corrected XLIFF file and upload again. It should give no error message now.  
@@ -82,11 +82,11 @@ The reason for this error is usually a coding mismatch: all our XLIFF files are 
 1) Open both the **XLIFF file** and the **error log** in a text editor  
 2) Select & copy the ***TM-key*** of the faulty entry, the part after ‘(trans-unit id="xxxxx)_tm:’ in parenthesis right after the error message  
 
-[[https://github.com/easyling/public/wiki/img/select_ID.jpg|alt=Select TM-key]]   
+![Select TM-key](/img/select-ID.png)   
 
 3) Search for this key in the **XLIFF file** by pasting it into the ‘Find’ field. Only 1 translation unit will match.  
   
-[[https://github.com/easyling/public/wiki/img/find_ID.jpg|alt=Find TM-key]]  
+![Find TM-key](/img/find-ID.png)  
 
 4) Check if you see any strange characters, like squares or other meaningless characters.  
   

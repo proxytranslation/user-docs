@@ -1,4 +1,4 @@
-[RTL ](rtl)
+# Left-Right conversion
 
 It depends on the site...
 
@@ -28,7 +28,7 @@ If it looks mostly OK, then all is left just some minor CSS fixes:
 3. If this is not case, each and every element must be positioned individually
 
 
-# Mixed content within text
+## Mixed content within text
 - When it comes to actually render the text (numbers), the direction is determined by a couple of rules. Please read [this](http://dotancohen.com/howto/rtl_right_to_left.html) for the details.
 - ***As a rule of thumb: during the translation (from LTR language to RTL), don't change the order of the numbers and text where the translation is with latin characters, in the CAT tool. Phone numbers like 1-800-123-1234 should be left in this order.***
 - To make sure numbers are rendered properly at the end, a Left-to-Right (LRM) must be inserted before every number. The dash between numbers split them, so LRM must be inserted after them again. [Click to read more on how to insert these LRM characters](http://dotancohen.com/howto/rtl_right_to_left.html#InsertingNonprintingCharactersIntoText).
