@@ -4,15 +4,15 @@
 
 You can create a new project with the Add Project dialog, using the dropdown menu on the Dashboard's top toolbar.  
 
-| Add project |
-|-------------|
+Add project
+
 ![Create Project](img/create.png)  
 
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
 
 
-| Add project dialog |
-|-------------|
+Add project dialog
+
 ![Add project](/img/add-discovery.png)  
 
 The **Start discovering automatically** option is selected by default. ***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
