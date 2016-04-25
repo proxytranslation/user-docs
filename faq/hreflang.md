@@ -34,4 +34,4 @@ This snippet will provide proper SEO, since it satisfies both criteria: the refe
 
 For more information on this topic, see this article from Google:
 
-(https://support.google.com/webmasters/answer/189077?hl=en)
+<https://support.google.com/webmasters/answer/189077?hl=en>
