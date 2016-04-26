@@ -2,20 +2,18 @@
 
 ## Project creation:
 
-You can create a new project with the Add Project dialog, using the dropdown menu on the Dashboard's top toolbar.  
-
-Add project
+You can create a new project with the **Add Project** dialog, using the dropdown menu on the Dashboard's top toolbar.  
 
 ![Create Project](img/create.png)  
 
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
 
 
-Add project dialog
+**Add project dialog:**
 
 ![Add project](/img/add-discovery.png)  
 
-The **Start discovering automatically** option is selected by default. ***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
+The **Start discovering automatically** option is selected by default.<br>***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
 You can also select **Process pages in source language only** to restrict translatable pages; this feature is particularly useful for websites where content in different languages is mixed, without clear language distinction in the URL. Before using this option for the first time, you have to set up the Google Translate API by clicking on the link there. Please note that Google Translate API is available only as a paid service, and you need your own account.  
 
 You can also use **Advanced options** to refine discovery. These include:  
@@ -38,7 +36,7 @@ Some clients might require the use of custom segmentation rules to optimize webs
 It is not uncommon either that clients switch from one platform or service provider to another, and wish to migrate all their existing data - including their website content. This, again, might require the use of custom segmentation rules, so that existing resources could be re-used.  
 As segmentation rules can't be modified once the project is created, please make sure to check if your client has any special segmentation requirements.
 
-Screenshot of the dialog:
+**Screenshot of the dialog:**
 
 ![Add Project dialog](/img/add-project.png)
 
@@ -59,7 +57,7 @@ Once the discivery is ready, you receive an e-mail notification, and the statist
 #### Statistics, fuzzy matches:
 
 For the time being, a thorough explanation of Easyling's statistics can be found here:
-* http://lesson101.tutorial.easyling.com/
+* [http://lesson101.tutorial.easyling.com/](http://lesson101.tutorial.easyling.com/)
 
 #### 102% matches:
 
@@ -71,7 +69,7 @@ There's a reason to this - auto-propagation. With auto-propagation, Easyling is 
 It is only advised to start an unlimited Discovery when you have thorough information on the structure of the site. Examination of the site in question before running a Discovery or a Scan is considered best practice.
 Starting a discovery with a page limit of a 1000 will give you security while still providing a good picture of the site's layout. In case something goes wrong, you'll still have a very good idea about what's going on and with that information, you can re-configure the project accordingly.
 
-Screenshot of the Discovery panel set to a page limit of 100:
+**Screenshot of the Discovery panel set to a page limit of 100:**
 ![Discovery panel limit](/img/dashboard-discovery-limit.png)
 
 
@@ -83,7 +81,7 @@ This can be beneficial as search engines also use the sitemap (when available), 
 We've seen examples when pages behind a login were only hidden with the use of CSS, so the crawler easily discovered content that was out of the desired scope. Using a sitemap.xml is a good way to go in such situations.
 
 Learn more about sitemaps on the standard's website:
-* http://www.sitemaps.org/
+* [http://www.sitemaps.org/](http://www.sitemaps.org/)
 
 #### Using a URL list when running Discovery:
 
@@ -101,9 +99,9 @@ The first solution deals with Basic Authentication:
 If the website in question has basic authentication implemented, you can input the credentials on the Discovery page, and carry on with the process. It should work out of the box.
 
 Read more about Basic Authentication:
-* https://en.wikipedia.org/wiki/Basic_access_authentication
+* [https://en.wikipedia.org/wiki/Basic_access_authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
 
-An example Basic Authentication dialog:
+**An example Basic Authentication dialog:**
 
 ![Basic Authentication example](/img/basic-authentication.png)
 
@@ -116,7 +114,7 @@ The preview proxy is accessible from the Pages list, by clicking the button on t
 
 We cannot guarantee that the cookie extraction method works with all proprietary logins, as there are several solutions which can use additional security measures such as IP checking, or checking the User-Agent header. As all the requests from the proxy and the crawler come from the Google Cloud, it is necessary for the target site to not block them.
 
-* Google Chrome DevTools guide: https://developer.chrome.com/devtools
+* Google Chrome DevTools guide: [https://developer.chrome.com/devtools](https://developer.chrome.com/devtools)
 
 #### E-commerce websites and regular expressions:
 
@@ -125,10 +123,10 @@ On e-commerce websites, it is explicitly not advised to start an unlimited Disco
 E-commerce websites can give you an extremely high word count, due to the vast amount of pages. These pages usually have a lot of repetitions. You can use regular expressions to achieve even more 102% matches in segments containing denominations, units, etc.
 
 See our tutorial on pattern matching:
-* http://lesson103.tutorial.easyling.com/
+* [http://lesson103.tutorial.easyling.com/](http://lesson103.tutorial.easyling.com/)
 
 A crash course in regular expressions on Learn Regex The Hard Way:
-* http://regex.learncodethehardway.org/book/
+* [http://regex.learncodethehardway.org/book/](http://regex.learncodethehardway.org/book/)
 
 ##### Group pages, ignore query parameters:
 
@@ -167,13 +165,13 @@ Query string: `?fruit=1`
 Name of query string: `fruit`
 
 Read more about URLs and their structure here:
-* https://en.wikipedia.org/wiki/Uniform_resource_locator
+* [https://en.wikipedia.org/wiki/Uniform_resource_locator](https://en.wikipedia.org/wiki/Uniform_resource_locator)
 
 Read more about query parameters (query strings) here:
-* https://en.wikipedia.org/wiki/Query_string
+* [https://en.wikipedia.org/wiki/Query_string](https://en.wikipedia.org/wiki/Query_string)
 
 Read more in our tutorial from ignores to page freezes:
-* http://lesson102.tutorial.easyling.com/
+* [http://lesson102.tutorial.easyling.com/](http://lesson102.tutorial.easyling.com/)
 
 ##### Payment gateways
 
@@ -216,7 +214,7 @@ Cross-origin resource sharing will likely take place if the site draws content (
 
 Read more about CORS:
 
-* https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+* [https://en.wikipedia.org/wiki/Cross-origin_resource_sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 
 #### JSON path / XPath translation
 ##### JSON Path translation:
@@ -227,14 +225,14 @@ After entering the capture parameters and re-crawling the site, Easyling will di
 Our JSON path tester tool can help you locate and validate the paths in question.
 
 More about JSONpath:
-* http://goessner.net/articles/JsonPath/
+* [http://goessner.net/articles/JsonPath/](http://goessner.net/articles/JsonPath/)
 
 ##### XPath translation:
 
 Easyling is able to translate XML (eXtensible Markup Language) files sent by the remote server, according to the XPath standard of specifying elements of the XML structure. Similar to JavaScript translation, entering the “` html`” switch will result in the HTML parser being applied, while no switch will parse the match as plaintext.
 
 More about XPath:
-* https://en.wikipedia.org/wiki/XPath/
+* [https://en.wikipedia.org/wiki/XPath/](https://en.wikipedia.org/wiki/XPath/)
 
 #### Exclusions: path, page, class, ID, translate="no"
 ##### HTML 5 translate="no" attribute
@@ -242,8 +240,8 @@ More about XPath:
 To exclude content from translation, you can use the HTML 5 standard translate="no" attribute. This attribute explicitly tells translation tools to ignore the elements
 Easyling will ignore these.
 
-Definition and Usage: http://www.w3schools.com/tags/att_global_translate.asp
-A blog post which explains why it's needed: http://rishida.net/blog/?p=831
+Definition and Usage:  [http://www.w3schools.com/tags/att_global_translate.asp](http://www.w3schools.com/tags/att_global_translate.asp)<br>
+A blog post which explains why it's needed:  [http://rishida.net/blog/?p=831](http://rishida.net/blog/?p=831)
 
 #### Path Exclusions
 
@@ -267,14 +265,14 @@ The same dialog can be used to crawl only the publicly accessible parts of the s
 
 If identified and deemed translation invariant, you can use ignore classes to ignore content with classes. Please be advised, that this only works for content that is available in the page's source code - Easyling cannot deal with content put there by javascript.
 
-Screenshot:
+**Screenshot:**
 
 ![Ignore classes in Advanced Settings](/img/dashboard-ignore-classes.png)
 
 
 #### Dynamic content (forms), Marketo/Hubstpot (linked projects)
 
-Please see this step-by-step tutorial on setting up sites with external forms: http://lesson105.tutorial.easyling.com/
+Please see this step-by-step tutorial on setting up sites with external forms: [http://lesson105.tutorial.easyling.com/](http://lesson105.tutorial.easyling.com/)
 
 #### Forums, e-commerce (importance-based translation)
 
@@ -287,5 +285,5 @@ On-site search function:
 
 1. The search function usually won't work out of the box, as the original search engine does not have any information about the translations.
 2. The easy solution is to machine translate the search query, and use that for search.
-3. Another possible solution, and a better one is to integrate the custom search engine feature by Google. It will crawl the translated content. Pricing and more information is available on Google's site: https://developers.google.com/custom-search/
+3. Another possible solution, and a better one is to integrate the custom search engine feature by Google. It will crawl the translated content. Pricing and more information is available on Google's site: [https://developers.google.com/custom-search/](https://developers.google.com/custom-search/)
 4. Google site search can also be used. It gives the standard Google search engine results and it's free but ad supported.
