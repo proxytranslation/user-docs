@@ -1,6 +1,6 @@
 # Getting Started With Easyling
 
-Workflow overview
+**Workflow overview**
 
 ![Workflow overview](/img/workflow.png)  
 
@@ -10,7 +10,7 @@ To use easyling, first you need to register and set up an account for the servic
 
 Right after registration you can start using the service. When you log in for the first time, you can select if you are a Website owner, a Freelance translator or a Language Service Provider. This is for statistical purposes only, it has no influence at all on the User Experience later on. The actual work starts with creating your first project. To do this, please click on **Create new project** and choose **Add project** from the drop-down menu.
 
-Add project
+**Add project**
 
 ![Create|thumb](/img/create.png)  
 
@@ -19,11 +19,11 @@ Add project
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
 
 
-Add project dialog
+**Add project dialog**
 
 ![Add project](/img/add.png)  
 
-The **Start discovering automatically** option is selected by default. ***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
+The **Start discovering automatically** option is selected by default.<br>***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
 You can also select **Process pages in source language only** to restrict translatable pages; this feature is particularly useful for websites where content in different languages is mixed, without clear language distinction in the URL. Before using this option for the first time, you have to set up the Google Translate API by clicking on the link there. Please note that Google Translate API is available only as a paid service, and you need your own account.  
 
 You can also use **Advanced options** to refine discovery. These include:  
@@ -32,7 +32,7 @@ You can also use **Advanced options** to refine discovery. These include:
 - **Ignore these paths** - here you can exclude pages that you don't want to be assessed, like blog, forum and news entries. These are typical examples of pages where an enormous amount of irrelevant or outdated information can accumulate as years pass. Any page excluded here, upon project creation, can later be included in the project, if needed.   
 - **Provide custom SRX file** - easyling uses its own language-specific segmentation rules, but you also have the option to use your preferred rules, by uploading your own [.SRX file](https://en.wikipedia.org/wiki/Segmentation_Rules_eXchange). Please note that segmentation rules can't be modified once the project is created.  
 
-Advanced options
+**Advanced options**
 
 ![Advanced options](/img/add-advanced.png)  
 
@@ -40,7 +40,7 @@ Advanced options
 
 You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard.
 
-Run discovery
+**Run discovery**
 
 ![Run discovery](/img/discovery.png)  
 
@@ -58,7 +58,7 @@ You can then remove or add pages to be translated, and run another discovery of 
 
 Scanning is practically extracting content from the website for translation. You can initiate it under Content. The process is similar to Discovery, but this time content is stored, and this process costs 2EUR per thousand *source* words. Once again, you will receive an e-mail notification once content extraction is ready. You will again receive a list of URL addresses, and the status of the pages will change to **NEW** after extraction.
 
-Scanning
+**Scanning**
 
 ![Scanning](/img/scan.png)  
 
@@ -67,14 +67,14 @@ Scanning
 
 Once content is extracted, you can start translating the website to the chosen language(s). You can add target languages to your project on the Dashboard, under Languages.  
 
-Adding a target language
+**Adding a target language**
 
 ![Add target language](/img/add-target-language.png)  
 
 You can use the online editor interface right from the dashboard, or you can also choose to export the bilingual file for translation in a CAT (Computer Aided Translation) tool. Easyling supports the standard XLIFF format, and also offers some pre-configured export options for the most commonly used CAT-tools.  
 
 
-XLIFF export
+**XLIFF export**
 
 ![XLIFF export](/img/export-bilingual.png)  
 
@@ -85,7 +85,7 @@ Once translation is ready, you can import the translated XLIFF back to review an
 As content is regularly added to websites, website translation is a never-ending task. Maintenance is checking for new content on the website, extracting it for translation, and uploading the translated content. It is also possible to automate checks and content extractions: you can specify the frequency of the checks (daily, weekly, monthly), and if new content is added, easyling automatically extracts it and sends you an e-mail notification. Please note that this automation is not possible behind secure login.
 
 
-Scheduled scan
+**Scheduled scan**
 
 ![Scheduled scan](/img/scheduledScan.png)  
 
