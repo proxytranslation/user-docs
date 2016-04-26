@@ -32,5 +32,5 @@ and its translated counterpart at `http://jp.example.com`:
 
 This snippet will provide proper SEO, since it satisfies both criteria: the references the English and the Japanese site are reciprocal (one refers to the other and vice versa) and the references are also circular (both languages also refer to themselves as well as their counterparts). This provides all the information GoogleBot needs to index each site in its rightful place and apply SEO scores across both domains.
 
-For more information on this topic, see this article from Google:  
+For more information on this topic, see this article from Google:<br>
 <https://support.google.com/webmasters/answer/189077?hl=en>
