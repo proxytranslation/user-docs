@@ -58,4 +58,4 @@ If it looks mostly OK, then all is left just some minor CSS fixes:
 - To edit the XML (XLIFF) directly, use [Sublime](http://www.sublimetext.com/), available on Windows, OS X and Linux as well. It works very well with Regular Expressions. It's a robust way to insert these marks using their unicode symbol, such as `&#x200E;`
 
 Further readings: 
-- http://dotancohen.com/howto/rtl_right_to_left.html
+- [http://dotancohen.com/howto/rtl_right_to_left.html](http://dotancohen.com/howto/rtl_right_to_left.html)
