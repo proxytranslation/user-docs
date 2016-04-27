@@ -1,0 +1,3 @@
+[submodule "tech-manual"]
+	path = tech-manual
+	url = git@github.com:easyling/tech-manual.git
