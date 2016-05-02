@@ -32,8 +32,7 @@ Tech
 =====
 
 .. toctree::
-  :glob:
-  :maxdepth:3
-
+   :maxdepth:3
+   
    tech-manual/index.html
    tech-manual/*
