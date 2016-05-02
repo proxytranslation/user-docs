@@ -10,29 +10,21 @@ To scan content behind secure login, please follow this procedure:
 3.b1) Go to the **Preview** of the front page (the "/", the first one on the Pages list). It will give you the front page through the proxy.  
 3.b2) Go to the address bar and type in the URL of the login-protected page.  
   
-| Login page through the proxy |
-|-------------|
-|[[https://github.com/easyling/public/wiki/img/preview_login.jpg|alt=login through proxy]]|  
+![Login page through the proxy](../img/preview_login.jpg)  
 
 4) Enter your login details.  
 5) Open your browser's DevTools from the Menu (F12 on Windows).  
 6) Go to Network and reload the page.  
   
-| Getting the cookie |
-|-------------|
-|[[https://github.com/easyling/public/wiki/img/network_dev.jpg|alt=get cookie]]|   
+![Getting the cookie](../img/network_dev.jpg)   
   
 7) Scroll up to the first item and click on it.  
 8) Under headers scroll to the cookie header (among request headers), and copy the entire header.  
   
-| Cookie header |
-|-------------|
-|[[https://github.com/easyling/public/wiki/img/cookie_header.jpg|alt=cookie header]]|   
+![Cookie header](../img/cookie_header.jpg)   
   
 9) Pass it to the Proxy: go back to your project and click on Content. Paste the entire content in the Scanning cookies field.  
 
-| Passing the cookie to the proxy |
-|-------------|
-|[[https://github.com/easyling/public/wiki/img/pass_cookie.jpg|alt=pass cookie]]|  
+![Passing the cookie to the proxy](/img/pass_cookie.jpg)
   
 10) Click on Scan manually and specify the required scanning settings. You will receive an e-mail notification once scanning is ready and new content is available for translation.
