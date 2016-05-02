@@ -34,4 +34,5 @@ Tech
 .. toctree::
   :glob:
 
+   tech-manual/architecture.html
    tech-manual/*
