@@ -13,6 +13,7 @@ By enabling the users to create multiple caches both for source and target, it b
 The old Page Cache dialog has been scrapped in the last update, and replaced by a completely different interface, expanded to fit the requirements of the enhanced page caching feature. Similarly, the Scan limit dialog has been given a dropdown so that you can select which cache the data written into.
 
 ![All caches off](../img/multicache/caches-off.jpg )    
+
 By default, all caches will be off, with only the defaults existing.
 
 In order to take advantage of the Translation Proxy caches, you'll need to activate at least one of the options.    
@@ -45,6 +46,7 @@ In this example, the client has declined to use a staging server, as well as dec
 In this case, the solution is to enable the Source cache, and populate it with a Scan before the first round of translation commences. This creates what is effectively a static snapshot of the site, which remains the same regardless of the updates the client makes in the meantime, providing a stable environment for the translation and review processes.
 
 ![Sample cache configuration](../img/multicache/update-1.jpg )
+
 By using a Source cache to serve the translated sites, they are decoupled from the original, and content updates there will not be reflected in the translations.
 
 However, source content will accumulate in the meantime, and once the cache is purged, bleedthrough will occur! To counter this, the second scenario can be enacted.
@@ -56,6 +58,7 @@ Alternatively, coupling into the previous scenario, the initial translations are
 Once the initial translations are completed, the caches are set up according to the image below:
 
 ![Sample cache configuration](../img/multicache/update-2.jpg )
+
 By driving the published site from a separate cache entity, you gain the ability to decouple the content ingestion cycle from the translation and update cycles.
 
 From this point on, the published site will not reflect any updates until the assigned entity is refreshed. By specifying the update cache in the Scan Limit dialog, you write the server responses into the newly created cache, which will drive the Preview and Highlight modes, allowing you to conduct the translations and ICR using the new content. Once the client signs off on the translations, you simply switch the Source cache entities being used (and purge the Target cache, if in use).
