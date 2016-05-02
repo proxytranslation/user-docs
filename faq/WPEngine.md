@@ -1,6 +1,6 @@
 # WPEngine issues
 
-Due to WPEngine's *caching system* and *Redirect bots* settings you might experience any of the following issues on your **WPEngine hosted sites**:<br><br>
+Due to WPEngine's *caching system* and *Redirect bots* settings you might experience any of the following issues on your **WPEngine hosted sites**:<br>
 1) Scan extracts outdated content from WPEngine cache<br>
 2) Scan returns **301: Moved permanently** error message for existing pages<br>
 3) Translated page is redirected from HTTPS to HTTP - which results in an error due to mixed content
