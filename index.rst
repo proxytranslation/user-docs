@@ -27,3 +27,11 @@ FAQ
    :glob:
 
    faq/*
+
+Tech
+=====
+
+.. toctree::
+  :glob:
+
+   tech-manual/*
