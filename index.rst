@@ -33,4 +33,4 @@ Tech
 
 .. toctree::
 
-   tech-manual*
+   tech-manual/index.rst
