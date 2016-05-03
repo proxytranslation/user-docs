@@ -4,7 +4,7 @@
 Easyling has the ability to proxy HTTPS pages, but to do so, it must be provided a certificate and private key matching the URL. Otherwise, the proxy will be unable to identify itself as a valid server, and the browser will abort the connection for security reasons.  
 Easyling support can assist in deploying an HTTPS site by providing a CSR (Certificate Signing Request) to generate the appropriate certificate if the required information is provided, or the client can prepare the certificate themselves.
 
-Additionally, a certificate is required to provide a branded Easyling instance. For more information, you can check the [Whitelabel](/faq/whitelabel.md) article of the FAQ.
+Additionally, a certificate is required to provide a branded Easyling instance. For more information, you can check the [Whitelabel](/faq/whitelabel.html) article of the FAQ.
 
 ## The protocol
 HTTPS (also called HTTP over TLS, HTTP over SSL, and HTTP Secure) is a protocol for secure communication over a computer network which is widely used on the Internet. HTTPS consists of communication over Hypertext Transfer Protocol (HTTP) within a connection encrypted by Transport Layer Security or its predecessor, Secure Sockets Layer. The main motivation for HTTPS is authentication of the visited website and protection of the privacy and integrity of the exchanged data.
