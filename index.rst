@@ -32,7 +32,5 @@ Tech
 =====
 
 .. toctree::
-   :maxdepth:3
-   
-   tech-manual/index.html
-   tech-manual/*
+
+   tech-manual*
