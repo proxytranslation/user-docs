@@ -36,7 +36,7 @@ You can also use **Advanced options** to refine discovery. These include:
 
 ![Advanced options](/img/add-advanced.png)  
 
-### Discovery
+### Word count for a proposal
 
 You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard.
 
@@ -54,7 +54,7 @@ Please note that the translation/localisation of these resources is not done by 
 
 You can then remove or add pages to be translated, and run another discovery of the site with the new restricted or broadened options, or you can proceed to the next step, to extract content for translation.
 
-### Scanning
+### Source content extraction
 
 Scanning is practically extracting content from the website for translation. You can initiate it under Content. The process is similar to Discovery, but this time content is stored, and this process costs 2EUR per thousand *source* words. Once again, you will receive an e-mail notification once content extraction is ready. You will again receive a list of URL addresses, and the status of the pages will change to **NEW** after extraction.
 
@@ -63,7 +63,7 @@ Scanning is practically extracting content from the website for translation. You
 ![Scanning](/img/scan.png)  
 
 
-### Translation
+### In-context review ad fine-tuning
 
 Once content is extracted, you can start translating the website to the chosen language(s). You can add target languages to your project on the Dashboard, under Languages.  
 
@@ -92,13 +92,13 @@ As content is regularly added to websites, website translation is a never-ending
 Additionally, if a new page, or page with new content is visited through the proxy, either on the live serving domain or in Preview, that content is automatically extracted, and an email notification is sent to the project owner.     
 
 
-### Sales tool for LSPs and freelancers
+### Sales tool for mass production
 
 Easyling also offers a Sales Tool to help LSPs and freelancers in growing their business.   
 If you have a well-defined group of potential customers you'd like to offer your translation services to, like hotels or restaurants with only monolingual websites in your area, easyling makes it easy for you to impress the business owners. Just collect the URL addresses, add them to the Sales Tool, and easyling will automatically create a project for all webpages according to the settings you specify. Once the translation and post-editing of the translated main pages are ready, you can send a link to the business owners. If your potential clients are impressed with the translated page and the fact that no IT involvement is required on their end, you have a better chance to win the deal.
 For more information see our [blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/) or this short [video] (https://www.easyling.com/features/mass-sales-tool/)  
 
-### Basic concepts
+### Terminology
 
 <dl>
 <dt>Scan</dt><dd>Extracting content from the website for translation</dd>
