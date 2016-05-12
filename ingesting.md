@@ -17,7 +17,7 @@ When a website owner removes images from a banner slideshow for example, even if
 
 *Target and Keep cache:*<br>
 If you think of Source cache as input, then target (Binary) cache is the output - it's the traslated page at the end of the translation process. The Target cache's primary goal is to speed up the site.
-*Keep cache*'s primary goal is to prevent premature translations from appearing on the site in question - even if the source site changes unexpectedly, Easyling will keep serving the Target cache's contents, until the cache is cleared, maintaining the illusion of a fully translated site.
+*Keep cache*'s primary goal is to prevent premature translations from appearing on the site in question - even if the source site changes unexpectedly, Easyling will keep serving the Target cache's contents, until the cache is cleared, maintaining the illusion of a fully translated site. However, this only works if at least one visitor has seen the published site, ad only if the translation ratio is high enough at the start (otherwise, if the ratio is low, new content will not produce enough of a ratio drop to trigger this cache)!
 
 ## Entry level exclusion
 
