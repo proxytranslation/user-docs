@@ -27,3 +27,10 @@ FAQ
    :glob:
 
    faq/*
+
+Tech
+=====
+
+.. toctree::
+
+   tech-manual/index.rst

@@ -1,0 +1,4 @@
+[submodule "tech-manual"]
+	path = tech-manual
+	url = https://github.com/easyling/tech-manual.git
+	branch = master
