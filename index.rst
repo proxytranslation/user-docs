@@ -2,35 +2,12 @@
 Easyling User Documentation
 ===========================
 
-Getting Started
-===============
-
 .. toctree::
-   easyling-intro
-   getting-started
-
-Easyling 3-phase workflow
-=========================
-
-.. toctree::
-   :glob:
-
-   quoting
-   ingesting
-   publishing
-   project-maintenance
-
-FAQ
-===
-
-.. toctree::
-   :glob:
-
-   faq/*
-
-Tech
-=====
-
-.. toctree::
-
-   tech-manual/index.rst
+   introduction/introduction
+   dashboard/dashboard_index.rst
+   workbench/workbench_index.rst
+   maintenance/maintenance_index.rst
+   technical_referemce/technical_reference_index.rst
+   troubleshooting/troubleshooting_index.rst
+   faq/faq
+   contact/contact
