@@ -179,6 +179,8 @@ To skip these pages you can use a regular expression like this: `(.+(\+|\?).+)`
 
 This one skips all pages that have `+` or `?` in their URL, but these skipped URLs will also be included in your pages list. After Discovery/Scan you can export your URL list and check if you need any of these skipped pages, and you can add the specific pages you need at any later time.
 
+**IMPORTANT!** Pages will only be skipped if the regular expression covers the full URL; partial matches will be discovered and scanned.
+
 
 Read more about URLs and their structure here:
 * [https://en.wikipedia.org/wiki/Uniform_resource_locator](https://en.wikipedia.org/wiki/Uniform_resource_locator)
