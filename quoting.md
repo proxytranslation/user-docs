@@ -168,7 +168,7 @@ Full URL: `https://www.yourdomain.com/something.php?fruit=1`
 
 ![Using regular expression during crawl](/img/CrawlRegEx.png)
 
-This option is available when you start a Discovery / Crawl. The regular expression you enter here will be saved, but it will only be applied to the current crawl. However, you can re-use it at any later time. This option is particularly useful on e-commerce sites, where you have the option to filter products based on size, design, model, colour, etc., and you can combine these filtering criteria. The search result will not provide any new content, only the existing product descriptions will be presented in a different way - and if you have many criteria with a number of choices for each, their combination can yield an enormous number of pages to check for content. 
+This option is available when you start a Discovery / Scan. The regular expression you enter here will be saved, but it will only be applied to the current crawl. However, you can re-use it at any later time. This option is particularly useful on e-commerce sites, where you have the option to filter products based on size, design, model, colour, etc., and you can combine these filtering criteria. The search result will not provide any new content, only the existing product descriptions will be presented in a different way - and if you have many criteria with a number of choices for each, their combination can yield an enormous number of pages to check for content. 
 
 An example:
 
