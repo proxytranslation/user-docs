@@ -14,6 +14,8 @@ There are several challenges both business owners and language service providers
 Easyling can, however, discover the website by following links and grabbing translatable and localizable content - and convert it into a translatable format. This gives a realistic view of the magnitude of the translation task, and, thanks to the translation proxy, even a partially translated site can give full user experience on the website visitor's side.  
 Data can be extracted with a couple of clicks - and the publication of the translated site is similarly easy.
 
+![Workflow](/img/Easyling-workflow.png)  
+
 ----------
 **More specifically:**  
 - Easyling easily processes HTML, and with proper configuration it can handle JavaScript/AJAX/JSON, XML
