@@ -161,8 +161,24 @@ A query string follows the `?name=value` format.
 An example:
 
 Full URL: `https://www.yourdomain.com/something.php?fruit=1`
-Query string: `?fruit=1`
-Name of query string: `fruit`
+<br>Query string: `?fruit=1`
+<br>Name of query string: `fruit`
+
+* Ignore pages matching the following regular expression during **this** crawl
+
+![Using regular expression during crawl](/img/CrawlRegEx.png)
+
+This option is available when you start a Discovery / Crawl. The regular expression you enter here will be saved, but it will only be applied to the current crawl. However, you can re-use it at any later time. This option is particularly useful on e-commerce sites, where you have the option to filter products based on size, design, model, colour, etc., and you can combine these filtering criteria. The search result will not provide any new content, only the existing product descriptions will be presented in a different way - and if you have many criteria with a number of choices for each, their combination can yield an enormous number of pages to check for content. 
+
+An example:
+
+The URL of the results page: `https://www.mybrandname.com/collections/dresses/0+10+14`
+<br>Or: `https://www.mybrandname.sg/collections/vendors?constraint=0%2B00%2B12%2B10&q=Designer`
+
+To skip these pages you can use a regular expression like this: `(.+(\+|\?).+)`
+
+This one skips all pages that have `+` or `?` in their URL, but these skipped URLs will also be included in your pages list. After Discovery/Scan you can export your URL list and check if you need any of these skipped pages, and you can add the specific pages you need at any later time.
+
 
 Read more about URLs and their structure here:
 * [https://en.wikipedia.org/wiki/Uniform_resource_locator](https://en.wikipedia.org/wiki/Uniform_resource_locator)
