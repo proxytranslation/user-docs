@@ -107,4 +107,12 @@ For more information see our [blog](https://www.easyling.com/blog/try-sales-tool
 <dt>Workbench</dt><dd>The online editing view of Easyling</dd>
 <dt>List view</dt><dd>The main view of the Workbench; a simple editor for online translation</dd>
 <dt>Highlight view</dt><dd>The secondary view mode of workbench, allowing for in-context editing</dd>
+<dt>Bleedthrough</dt><dd>When newly added, untranslated content appears on the translated site in the original language</dd>  
+<dt>Keep cache strategy</dt><dd>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready</dd>
+<dt>Exclusion rule</dt><dd>A rule specified for explicitly excluding pages from the translatable list</dd>
+<dt>Inclusion rule</dt><dd>A rule specified for explicitly including pages in the translatable list</dd>
+<dt>Page freeze</dt><dd>No new items can be added to the page-list marked for translation</dd>
+<dt>Dictionary freeze</dt><dd>No new items can be added to the translation memory. Only available when Page freeze is activated.</dd>
+<dt>102% match</dt><dd>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical.</dd>
+<dt>101% match</dt><dd>Contextual repetition. Tags within the segment and the neighbouring segments are repetitions / exact matches as well.</dd>
 </dl>
