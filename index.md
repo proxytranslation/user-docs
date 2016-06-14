@@ -8,10 +8,10 @@
 # Easyling 3-phase workflow #
 
 ###[Section 1: Quoting, setting up projects](quoting)  
-- [[Project creation|quoting#project-creation]]
-  + [[Advanced options|quoting#advanced-options-in-the-add-project-dialog]]  
-      * [[Exclusion and inclusion rules|quoting#exclusion-and-inclusions-rules-on-project-creation]]  
-      * [[Custom SRX file|quoting#provide-custom-srx-file]]  
+- [Project creation](quoting#project-creation)
+  + [Advanced options](quoting#advanced-options-in-the-add-project-dialog)  
+      * [Exclusion and inclusion rules](quoting#exclusion-and-inclusions-rules-on-project-creation)  
+      * [Custom SRX file](quoting#provide-custom-srx-file)  
   
 
 - [Discovery](quoting)
@@ -40,26 +40,26 @@
   + [Forums, e-commerce](quoting)
 
 ###[Section 2: Scanning, initial translation](ingesting)  
-+ [[Scan vs Discovery vs. Preview|ingesting#scan-vs-discovery-vs-preview-real-time-ingestion]]
-+ [[Cache (Source, Binary, Keep)|ingesting#cache-source-binary-keep]]
-+ [[Entry level exclusion|ingesting#entry-level-exclusion]]
-+ [[Page freeze and Dictionary Freeze|ingesting#page-freeze-and-dictionary-freeze]]
-+ [[XLIFF export + work packages|ingesting#xliff-export--work-packages]]
-+ [[XLIFF import + log|ingesting#xliff-import--log]]
-+ [[Translation workflow integration|ingesting#translation-workflow-integration-client-approval-proofreading]]
-   * [[Roles|ingesting#roles]]
-   * [[Client approval|ingesting#client-approval]]
-+ [[Translation memory|ingesting#translation-memory-populate-and-confirm]]
-+ [[Pre-translation|ingesting#pre-translation-with-a-tm]]
-+ [[Layout issues|ingesting#layout-issues-text-expansion-rtl]]
++ [Scan vs Discovery vs. Preview](ingesting#scan-vs-discovery-vs-preview-real-time-ingestion)
++ [Cache (Source, Binary, Keep)](ingesting#cache-source-binary-keep)
++ [Entry level exclusion](ingesting#entry-level-exclusion)
++ [Page freeze and Dictionary Freeze](ingesting#page-freeze-and-dictionary-freeze)
++ [XLIFF export + work packages](ingesting#xliff-export--work-packages)
++ [XLIFF import + log](ingesting#xliff-import--log)
++ [Translation workflow integration](ingesting#translation-workflow-integration-client-approval-proofreading)
+   * [Roles](ingesting#roles)
+   * [Client approval](ingesting#client-approval)
++ [Translation memory](ingesting#translation-memory-populate-and-confirm)
++ [Pre-translation](ingesting#pre-translation-with-a-tm)
++ [Layout issues](ingesting#layout-issues-text-expansion-rtl)
 
 ###[Section 3: Publishing, maintenance](Publishing)
-+ [[Publishing, domain names (CNAME)|Publishing#publishing-domain-names-cname]]
-  * [[Serving domain name|Publishing#serving-domain-mode]]
-  * [[Subdirectory publishing mode|Publishing#subdirectory-publishing-mode]]
-+ [[Language selector|Publishing#language-selector]]
-+ [[Cache maintenance|Publishing#cache-maintenance]]  
-+ [[Easyling for Wordpress|Publishing#easyling-for-wordpress]]
++ [Publishing, domain names (CNAME)](Publishing#publishing-domain-names-cname)
+  * [Serving domain name](Publishing#serving-domain-mode)
+  * [Subdirectory publishing mode](Publishing#subdirectory-publishing-mode)
++ [Language selector](Publishing#language-selector)
++ [Cache maintenance](Publishing#cache-maintenance)  
++ [Easyling for Wordpress](Publishing#easyling-for-wordpress)
 
 # FAQ #
 
