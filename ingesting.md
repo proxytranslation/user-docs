@@ -91,7 +91,7 @@ You can invite as many participants to the translation project as needed,from th
 ![Invite](/img/invite.jpg) 
 
 #### Roles
-######workflow roles
+#####workflow roles
 The translation workflow in Easyling is split into a maximum of four steps:  
 **Translation** (marked by a T and the color yellow),  
 two steps of **Proofreading** (first and second marked by a P and Q, and the colors cyan and violet, respectively), and  
@@ -101,7 +101,7 @@ You can specify these workflow roles when you invite users, and you can also edi
 
 ![Workflow roles](/img/invite_roles.jpg)
   
-######Project roles
+#####Project roles
 Based on the project features that are available for a user, the following project ropes are available:  
 
 * **Owner**: Every project has an owner, who has unlimited powers over the project: the owner may add or remove anyone on the project, edit any entry in any language, including adding new languages, any change any setting, including the advanced ones. There can only be one owner on a project, but owners may renounce ownership, designating another user and setting their own privileges.
