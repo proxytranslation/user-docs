@@ -72,11 +72,37 @@ The TM key is the string which comes after the 'projectcode_tm:', in this case:
 A good online tool for comparing texts:
 * [http://text-compare.com](http://text-compare.com)
 
+
 ## Translation Workflow integration (client approval, proofreading)
 
-### Roles
+Easyling offers 4 different pre-defined workflow options:  
+- Simple translation  
+- Translation + Proofreading  
+- Translation + Proofreading + Client approval  
+- Translation + 2xProofreading + Client approval  
+    
 
-The translation workflow in Easyling is split into a maximum of four steps: *Translation* (marked by a T and the color yellow), two steps of *Proofreading* (first and second marked by a P and Q, and the colors cyan and violet, respectively), and *Client approval* (marked by the letter C and the color aqua). Any user may be assigned any combination of these steps, useful for restricting access to entries in the List View.
+![Translation workflow](/img/translation_workflow.jpg)
+  
+You can select the appropriate workflow on the Dashboard, under Project workflow. This setting can be changed at any stage of the project, and the available roles will be determined by this workflow setting.  
+  
+You can invite as many participants to the translation project as needed,from the Dashboard / Sharing settings. When you send the invitation, you can add several settings that determine the rights of the user you invite, such as: role, assigned languages, features, workflow role(s). You can also enable e-mail notifications by checking the notification icon in the last column.    
+    
+![Invite](/img/invite.jpg) 
+
+#### Roles
+######workflow roles
+The translation workflow in Easyling is split into a maximum of four steps:  
+**Translation** (marked by a T and the color yellow),  
+two steps of **Proofreading** (first and second marked by a P and Q, and the colors cyan and violet, respectively), and  
+**Client approval** (marked by the letter C and the color aqua).  
+You can specify these workflow roles when you invite users, and you can also edit them at any later stage under Dashboard / Sharing settings.  Any user may be assigned any combination of these steps, useful for restricting access to entries in the List View.  
+  
+
+![Workflow roles](/img/invite_roles.jpg)
+  
+######Project roles
+Based on the project features that are available for a user, the following project ropes are available:  
 
 * **Owner**: Every project has an owner, who has unlimited powers over the project: the owner may add or remove anyone on the project, edit any entry in any language, including adding new languages, any change any setting, including the advanced ones. There can only be one owner on a project, but owners may renounce ownership, designating another user and setting their own privileges.
 * **Customer** (see next section below also): Customers are designated by the Customer role, and are intended to be representatives of the customer exercising oversight over the content for translation. This role is read-only, meaning despite the target language added to the user, they are unable to actually edit the translation, instead, they are able to move pending segments to either the approved or the excluded state using the “Manage segments” item in the Content menu.
@@ -84,7 +110,11 @@ The translation workflow in Easyling is split into a maximum of four steps: *Tra
 * **Contributor**s are the default users, capable of editing any entry in their selected language and workflow step, but are prevented from doing anything else on the project. They may receive notification emails and project update emails, but they may not edit their features, nor invite anyone else, nor access any of the advanced settings.
 * **Project Manager**s are designated by their power to invite others onto the project. Other features and roles can be added as well, but care must be exercised not to include other, conflicting roles, which could re-restrict their access.
 * **Advanced Project Manager**s are designated by the eponymous feature. They are given the power to edit languages, as well as any entry in the project, and editing most setting, up to, and including, the URL inclusion-exclusion rules. However, they cannot change segmentation settings, publishing settings, and certain advanced settings.
-* **Admin**s are designated by their *Backup Owner* role. Their powers equal that of project owners, being able to change any setting and entry, adding or removing users, and modifying the language settings.
+* **Admin**s are designated by their Backup Owner role. Their powers equal that of project owners, being able to change any setting and entry, adding or removing users, and modifying the language settings.  
+
+You can specify these project roles when you invite people to participate by enabling the appropriate features, and you can also modify them at any later stage under Dashboard / Sharing settings. 
+   
+![Project roles](/img/invite_features.jpg)  
 
 ### Client approval
 
