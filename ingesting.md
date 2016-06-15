@@ -91,7 +91,7 @@ You can invite as many participants to the translation project as needed,from th
 ![Invite](/img/invite.jpg) 
 
 #### Roles
-#####workflow roles
+##### Workflow roles
 
 The translation workflow in Easyling is split into a maximum of four steps:  
 **Translation** (marked by a T and the color yellow),  
@@ -102,7 +102,7 @@ You can specify these workflow roles when you invite users, and you can also edi
 
 ![Workflow roles](/img/invite_roles.jpg)
   
-#####Project roles
+##### Project roles
 
 Based on the project features that are available for a user, the following project ropes are available:  
 
