@@ -1,5 +1,29 @@
 # Giving a Quote
 
+## Before you begin
+
+All translation works start with a price quote, and for this you need an exact wordcount. You can get this information by running a Discovery on the site to be translated.
+
+**Before you begin,** find out about the following:  
+- ask the client which pages they need or don't need. They might be able to give you a specific list of URLs or a sitemap.  
+- check if the site has mixed-language content. If yes, ask the client to specify the source language(s) they need translated.  
+- ask if they already have translation memories that they wish to use for the website translation  
+- ask if they have region-specific offerings that need to be reflected on the translated sites  
+- ask if they have content behind secure login that needs translation  
+- ask if they have other domains or subdomains referenced on their site. If yes, you need a separate project for each domains, and you have to mutually link them all together. In this case you need to run Discovery an ALL projects separately.  
+- ask if they have any other special requirements that need to be matched.   
+- check if there's JavaScript-generated content on the website  
+- check how they implement search and filtering options  
+
+When you have all this information, you are ready to set up the required project(s) to get the wordcount for the quote. 
+  
+It is also advised to negotiate the expected workflow with the client at the quoting phase. The translation of a website is, in most cases, a never-ending process, as new content is added to the original site at certain intervals. 
+ 
+It raises the question how content added *after* the initial quote should be treated - both technically and financially. The questions you should clarify with your client is how they intend to treat new content. Do they wish to publish at the same time in all languages, or publish on the original site without delay, and then publish the translations later, as they become available. In the first case you need a staging server. The second option raises another question.  
+
+As a translation proxy is practically a translation layer on top of the original site, serving translations from the datastore by replacing original content on-the-fly, new content will not be replaced, as translation is not stored for that. In practice it means that newly added content will appear in the original language on the translated site. This is called *bleedthrough*. There are 2 approaches to this phenomenon: let bleedthrough happen, to make new content available right away, even if it is in a different language, or block new content from appearing until translation is done. Both have their clear advantages and drawbacks, so you have to discuss with your client which option is more acceptable for them - and set up your project accordingly.
+
+
 ## Project creation:
 
 You can create a new project with the **Add Project** dialog, using the dropdown menu on the Dashboard's top toolbar.  
@@ -14,13 +38,16 @@ This opens the **Add project** dialog box, where you can enter the URL of the we
 ![Add project](/img/add-discovery.png)  
 
 The **Start discovering automatically** option is selected by default.<br>***Discovery*** is the preliminary assessment of the website, without storing the website content. This process starts from the URL you specified, scans all the pages, follows all links, and returns the URL list of the visited pages, together with the wordcount and repetition rates. As Discovery costs 1EUR per thousand pages, you may want to disable automatic discovery. You can run discovery manually at any later time. You can disable automatic discovery by removing the check mark.  
-You can also select **Process pages in source language only** to restrict translatable pages; this feature is particularly useful for websites where content in different languages is mixed, without clear language distinction in the URL. Before using this option for the first time, you have to set up the Google Translate API by clicking on the link there. Please note that Google Translate API is available only as a paid service, and you need your own account.  
+You can also select **Process pages in source language only** to restrict translatable pages; this feature is particularly useful for websites where content in different languages is mixed, without clear language distinction in the URL. Before using this option for the first time, you have to set up the Google Translate API by clicking on the link there.   
+***Please note that Google Translate API is available only as a paid service, and you need your own account.***  
+  
+**If you don't have a Google Translate API subscription, and the content is mixed, all content will be discovered and treated as if it was in the project source language.**
 
 You can also use **Advanced options** to refine discovery. These include:  
 - **Check if the domain redirects to another domain** - when creating the project, Easyling will first check for redirections. By disabling this option, you can force the creation of the project tot he domain you specify, regardless of its existence or redirection settings. However, the root page (`/`) will not be added by default!  
 - **Include pages only starting with** - here you can limit discovery to a specific set of pages, like company  or contact information, services, products, etc. You can remove or add pages at any later stage, and you can remove this restriction as well.  
 - **Ignore these paths** - here you can exclude pages that you don't want to be assessed, like blog, forum and news entries. These are typical examples of pages where an enormous amount of irrelevant or outdated information can accumulate as years pass. Any page excluded here, upon project creation, can later be included in the project, if needed.   
-- **Provide custom SRX file** - easyling uses its own language-specific segmentation rules, but you also have the option to use your preferred rules, by uploading your own [.SRX file](https://en.wikipedia.org/wiki/Segmentation_Rules_eXchange). Please note that segmentation rules can't be modified once the project is created.  
+- **Provide custom SRX file** - Easyling uses its own language-specific segmentation rules, but you also have the option to use your preferred rules, by uploading your own [.SRX file](https://en.wikipedia.org/wiki/Segmentation_Rules_eXchange). Please note that segmentation rules can't be modified once the project is created.  
 
 #### Advanced options in the Add Project dialog
 
@@ -32,9 +59,9 @@ If you don't have a preliminary idea, or the initial discovery indicated a much 
 ##### Provide custom SRX file:
 
 Working with custom SRX files might be necessary in certain cases, like special requirements from clients, but more commonly for migration purposes.  
-Some clients might require the use of custom segmentation rules to optimize website content segmentation to their existing translation memories. It is not uncommon that business owners already have product catalogs and other business-related materials translated before they decide to have their website translated as well - and it is a sound business idea to re-use existing resources to the most possible extent. To meet this requirement you can use the client's own segmentation rules for your projects.  
-It is not uncommon either that clients switch from one platform or service provider to another, and wish to migrate all their existing data - including their website content. This, again, might require the use of custom segmentation rules, so that existing resources could be re-used.  
-As segmentation rules can't be modified once the project is created, please make sure to check if your client has any special segmentation requirements.
+Some clients might require the use of custom segmentation rules to optimize website content segmentation to their existing translation memories. It is not uncommon that business owners already have product catalogs and other business-related materials translated before they decide to have their website translated as well - and it is a sound business idea to re-use existing resources to the most possible extent. To meet this requirement you can use the client's own segmentation rules for your projects.<br>  
+It is not uncommon either that clients switch from one platform or service provider to another, and wish to migrate all their existing data - including their website content. This, again, might require the use of custom segmentation rules, so that existing resources could be re-used.<br>  
+<br>As segmentation rules can't be modified once the project is created, please make sure to check if your client has any special segmentation requirements.
 
 **Screenshot of the dialog:**
 
@@ -45,6 +72,13 @@ As segmentation rules can't be modified once the project is created, please make
 You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard.
 
 ![Run discovery](/img/discovery.png)  
+
+The process maps the structure of the site by scanning each page for link elements and trying to follow these links. The content of the website is not stored, only the URL address of the visited pages, together with their status info. Any page that is verified to exist is marked as Discovered, and the ones that returned an error message (most commonly redirection (HTTP301-302) and page not found (HTTP404)) are marked Unvisited in the list. For more information on HTTP status codes, see here.
+Although this process doesn't extract content, it provides a preliminary wordcount and a repetition rate as well. It has a cost of 1EUR per thousand pages.
+
+**IMPORTANT!**
+**If you exclude pages during discovery, changing the rules only will not include them in the new discovery; you have to add them manually through the "Add pages" dialog.**
+
 
 During the first discovery you can specify a discovery page limit, but you can also run unlimited discovery. By default this limit is set to 100, because it would give you a good overview of the website, and also a comfortable protection should anything go wrong with the website. Unlimited discovery is not recommended, unless you have a very thorough information on the site.
 
@@ -63,6 +97,12 @@ For the time being, a thorough explanation of Easyling's statistics can be found
 
 A 102% match is a special type of ICE-match, an entire block-level element (say, a paragraph), where every single segment (sentence) is 101% match (the segments match down to the tags, AND the segment immediately before and after are also such matches).
 There's a reason to this - auto-propagation. With auto-propagation, Easyling is able to provide 102% matches for free as only one entry is created in the datastore.
+
+Discovery also collects resources from the website, like images, downloadable files, etc. You can find them under Discovery > Resources.
+Please note that the translation/localisation of these resources is not done by Easyling, which means that the content of these resources is not extracted for translation. You have the option to replace them with the localised version for every language, and you can also replace external links.
+
+You can then remove or add pages to be translated, and run another discovery of the site with the new restricted or broadened options, or you can proceed to the next step, to extract content for translation.
+
 
 #### Unlimited Discovery:
 
