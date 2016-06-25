@@ -3,8 +3,8 @@
 Easyling is fundamentally a cloud-based translation proxy solution designed to make websites available in several languages. Easily.
 
 **What is a translation proxy?**<br>
-In effect a translation proxy is a layder placed between the browser and the original website, through which the visitor sees the original website in a different language.<br>
-There are several proxy solutions available in the market, yet Easyling is unique in that:
+In effect a translation proxy is a layer placed between the browser and the original website, through which the visitor sees the original website in a different language.<br>
+There are several proxy solutions available on the market, yet Easyling is unique in that:
 - it is a solution targeted primarily on LSPs - which also means that this is the ONLY LSP-independent solution on the market
 - also available as a whitelabel solution
 - standard-compilant XLIFF export option ensures CAT-independency
@@ -19,10 +19,10 @@ If you are a **language service provider** (LSP), you can offer cutting-edge web
 **Why is it important?**<br>
 There are several challenges both business owners and language service providers face during website translation. The "ideal" workflow would be to create the  content in the original language, get it translated into the desired languages, and then publish all language variants at the same time, from the website owner's own content management system (CMS) - right from the very first page on the website. But reality is different. Apart from the fact that not many CMSs are capable of handling several languages, usually website localization comes into the picture at a later stage, when there is already a huge amount of data published on the website. And, in most cases, the website owner can't extract the content for translation. If they can't extract the original, there's no easy way to load the translated content back either. Furthermore, if the website owner can't extract the content into translatable format, it is impossible to get a proper estimate for the translation costs in time and money...
 
-Easyling can, however, discover the website by following links and grabbing translatable and localizable content - and convert it into a translatable format. This gives a realistic view of the magnitude of the translation task, and, thanks to the translation proxy, even a partially translated site can give full user experience on the website visitor's side.  
+Easyling can, however, discover the website by following links and grabbing translatable and localizable content - and convert it into a translatable format. This gives a realistic view of the magnitude of the translation task, and, thanks to the translation proxy, even a partially translated site can give full user experience on the website visitor's side.
 Data can be extracted with a couple of clicks - and the publication of the translated site is similarly easy.
 
-**Where are we on the localisation workflow?**<br>
+**Where are we in the localisation workflow?**<br>
 Easyling bridges the gap between the CMS and the translation workflow; it enables you to extract content from the website in a translation-ready format that can be used  in ***any*** translation environment. 
 If you are a content owner, it means that you have a technology solution that enables you to choose any LSP that suits your language requirements the best.
 If you are an LSP, it means that you can take care of the website translation requirements of your clients.
