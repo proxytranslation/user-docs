@@ -40,7 +40,7 @@ To reflect this we created the following workflow:
 
 The first 2 phases, Prepare and Discovery, correspond to the quoting phase of LSPs, and the planning phase of the website lifecycle. In these 2 phases you get a thorough understanding of the site structure, and get an exact wordcount.<br>
 
-The next 2 phases, Scanning (content extraction) and Translation correspond to the translation and implementation phases. The web content is extracted in a translation-ready format, and the contend goes through the standard translation and proofing workflow. Ojce it is done, the content is ready for delivery / publisging.<br>
+The next 2 phases, Scanning (content extraction) and Translation correspond to the translation and implementation phases. The web content is extracted in a translation-ready format, and the contend goes through the standard translation and proofing workflow. Once it is done, the content is ready for delivery / publishing.<br>
 
 In case of website translation the workflow does not stop here, when the translated site goes live. The translation is served through the proxy and new content might be added to the original site any time, so it needs the Maintenance phase as well.
 
