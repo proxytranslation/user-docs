@@ -144,17 +144,30 @@ For more information see our [blog](https://www.easyling.com/blog/try-sales-tool
 
 ## Terminology
 
-***Scan***<br>Extracting content from the website for translation<br>
-***Discovery***<br>Checking the website for translatable content<br>
-***Resource***<br>Binary content found on the website (images, PDFs, CSS and JS files, etc.)<br>
-***Workbench***<br>The online editing view of Easyling<br>
-***List view***<br>The main view of the Workbench; a simple editor for online translation<br>
-***Highlight view***<br>The secondary view mode of workbench, allowing for in-context editing<br>
-***Bleedthrough***<br>When newly added, untranslated content appears on the translated site in the original language<br>
-***Keep cache strategy***<br>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready<br>
-***Exclusion rule***<br>A rule specified for explicitly excluding pages from the translatable list<br>
-***Inclusion rule***<br>A rule specified for explicitly including pages in the translatable list<br>
-***Page freeze***<br>No new items can be added to the page-list marked for translation<br>
-***Dictionary freeze***<br>No new items can be added to the translation memory. Only available when Page freeze is activated.<br>
-***102% match***<br>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical.<br>
-***101% match***<br>Contextual repetition. Tags within the segment and the neighbouring segments are repetitions / exact matches as well.
+***Scan*** <br>Extracting content from the website for translation  
+
+***Discovery*** <br>Checking the website for translatable content<br>  
+
+***Resource*** <br>Binary content found on the website (images, PDFs, CSS and JS files, etc.)  
+
+***Workbench*** <br>The online editing view of Easyling  
+
+***List view*** <br>The main view of the Workbench; a simple editor for online translation  
+
+***Highlight view*** <br>The secondary view mode of workbench, allowing for in-context editing  
+
+***Bleedthrough*** <br>When newly added, untranslated content appears on the translated site in the original language  
+
+***Keep cache strategy*** <br>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready  
+
+***Exclusion rule*** <br>A rule specified for explicitly excluding pages from the translatable list  
+
+***Inclusion rule*** <br>A rule specified for explicitly including pages in the translatable list  
+
+***Page freeze*** <br>No new items can be added to the page-list marked for translation  
+
+***Dictionary freeze*** <br>No new items can be added to the translation memory. Only available when Page freeze is activated.  
+
+***102% match*** <br>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical. 
+
+***101% match*** <br>Contextual repetition. Tags within the segment and the neighbouring segments are repetitions / exact matches as well.
