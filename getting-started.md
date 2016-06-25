@@ -1,12 +1,53 @@
 # Getting Started With Easyling
 
-**Workflow overview:**
+## In a nutshell
+  
+- Easyling easily processes HTML, and with proper configuration it can handle JavaScript/AJAX/JSON, XML
+- Easyling doesn't process Flash content
+- Use the X-Proxy to determine what would be currently translated. If it doesn't, use the Advanced Settings to fine-tune the JSON/XML path settings
+- The crawler can discover static pages / HTML content only. You have to manually add any extra AJAX URLs, with the proper parameters.
+- When you run the crawler, always use Discovery first, and be incremental: "Unlimited" really means unlimited, and as such, can yield to very-very high cost. Running an unlimited crawl on an e-commerce website is a very-very bad idea.
+- Based on the initial, limited crawls, fine-tune the "Ignore query" parameters, to help the crawler decide what URLs to handle as same, and what to visit in hope of new content to be discovered.
+- Always check all the forms for error messages, congratulation messages, etc.
+- Check all the images; some website like to bake the text into the image. Those will require your attention.
+- Pay attention to forms etc included from domains outside of Easyling. Typical examples: Marketo, optimizely.com, etc. You'll have to create new Easyling project for them, then linking together the projects.
+- Never underestimate the power of injecting CSS and/or JS into the translated pages
+- Regular expression is a great way to reduce the amount of content to be translated
+- Do read through and watch all the available documentation:
+
+  - [https://www.youtube.com/watch?v=S47kArNiJ1o](https://www.youtube.com/watch?v=S47kArNiJ1o)
+  - [https://www.youtube.com/watch?v=8VsBy2bGo64](https://www.youtube.com/watch?v=8VsBy2bGo64)
+  - [https://gitlab.com/easyling/wikis/home](https://gitlab.com/easyling/wikis/home)
+  - [https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA](https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA)
+
+  - [http://lesson101.tutorial.easyling.com/](http://lesson101.tutorial.easyling.com/)
+  - [http://lesson102.tutorial.easyling.com/](http://lesson102.tutorial.easyling.com/)
+  - [http://lesson103.tutorial.easyling.com/](http://lesson103.tutorial.easyling.com/)
+  - [http://lesson105.tutorial.easyling.com/](http://lesson105.tutorial.easyling.com/)
+
+- Follow the monthly Release Notes, along with the frequently updated Changelog
+
+  - [https://www.easyling.com/category/blogpost/release-notes/](https://www.easyling.com/category/blogpost/release-notes/)
+  - [https://www.easyling.com/change-logs/](https://www.easyling.com/change-logs/)
+
+
+## Workflow overview
+
+The standard translation workflow for an LSP consists of 3 main phases: quoting, translation and delivery. However, this workflow does not really fit the website translation task, as in this case the source, the website itself, might change by the time the first translation is ready. In this case the website lifecycle has to be taken into consideration: planning, implementation, publishing, maintenance and update.<br> 
+To reflect this we created the following workflow:
 
 ![Workflow overview](/img/workflow.png)  
 
+The first 2 phases, Prepare and Discovery, correspond to the quoting phase of LSPs, and the planning phase of the website lifecycle. In these 2 phases you get a thorough understanding of the site structure, and get an exact wordcount.<br>
+
+The next 2 phases, Scanning (content extraction) and Translation correspond to the translation and implementation phases. The web content is extracted in a translation-ready format, and the contend goes through the standard translation and proofing workflow. Ojce it is done, the content is ready for delivery / publisging.<br>
+
+In case of website translation the workflow does not stop here, when the translated site goes live. The translation is served through the proxy and new content might be added to the original site any time, so it needs the Maintenance phase as well.
+
+
 ## Getting started
 
-To use easyling, first you need to register and set up an account for the service: [https://app.easyling.com](https://app.easyling.com). You can register with your e-mail address or with an external account (XTM, Google or Yahoo), free of charge. A free one-month trial is also available, with access to all features, and a budget of 10 EUR.  
+To use Easyling, first you need to register and set up an account for the service: [https://app.easyling.com](https://app.easyling.com). You can register with your e-mail address or with an external account (XTM, Google or Yahoo), free of charge. A free one-month trial is also available, with access to all features, and a budget of 10 EUR.  
 
 Right after registration you can start using the service. When you log in for the first time, you can select if you are a Website owner, a Freelance translator or a Language Service Provider. This is for statistical purposes only, it has no influence at all on the User Experience later on. The actual work starts with creating your first project. To do this, please click on **Create new project** and choose **Add project** from the drop-down menu.
 
@@ -14,7 +55,7 @@ Right after registration you can start using the service. When you log in for th
 
 ![Create|thumb](/img/create.png)  
 
-### Creating a project
+## Creating a project
 
 This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project.  
 
@@ -36,7 +77,7 @@ You can also use **Advanced options** to refine discovery. These include:
 
 ![Advanced options](/img/add-advanced.png)  
 
-### Word count for a proposal
+## Word count for a proposal
 
 You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard.
 
@@ -54,7 +95,7 @@ Please note that the translation/localisation of these resources is not done by 
 
 You can then remove or add pages to be translated, and run another discovery of the site with the new restricted or broadened options, or you can proceed to the next step, to extract content for translation.
 
-### Source content extraction
+## Source content extraction
 
 Scanning is practically extracting content from the website for translation. You can initiate it under Content. The process is similar to Discovery, but this time content is stored, and this process costs 2EUR per thousand *source* words. Once again, you will receive an e-mail notification once content extraction is ready. You will again receive a list of URL addresses, and the status of the pages will change to **NEW** after extraction.
 
@@ -63,7 +104,7 @@ Scanning is practically extracting content from the website for translation. You
 ![Scanning](/img/scan.png)  
 
 
-### In-context review ad fine-tuning
+## Translation
 
 Once content is extracted, you can start translating the website to the chosen language(s). You can add target languages to your project on the Dashboard, under Languages.  
 
@@ -80,7 +121,10 @@ You can use the online editor interface right from the dashboard, or you can als
 
 Once translation is ready, you can import the translated XLIFF back to review and check the layout on the online editor interface in Highlight View, and make all the necessary correction. Your translated website is ready for publishing.  
 
-### Maintenance
+
+## In-context review and fine-tuning
+
+## Maintenance
 
 As content is regularly added to websites, website translation is a never-ending task. Maintenance is checking for new content on the website, extracting it for translation, and uploading the translated content. It is also possible to automate checks and content extractions: you can specify the frequency of the checks (daily, weekly, monthly), and if new content is added, easyling automatically extracts it and sends you an e-mail notification. Please note that this automation is not possible behind secure login.
 
@@ -92,27 +136,25 @@ As content is regularly added to websites, website translation is a never-ending
 Additionally, if a new page, or page with new content is visited through the proxy, either on the live serving domain or in Preview, that content is automatically extracted, and an email notification is sent to the project owner.     
 
 
-### Sales tool for mass production
+## Sales tool for mass quoting
 
 Easyling also offers a Sales Tool to help LSPs and freelancers in growing their business.   
 If you have a well-defined group of potential customers you'd like to offer your translation services to, like hotels or restaurants with only monolingual websites in your area, easyling makes it easy for you to impress the business owners. Just collect the URL addresses, add them to the Sales Tool, and easyling will automatically create a project for all webpages according to the settings you specify. Once the translation and post-editing of the translated main pages are ready, you can send a link to the business owners. If your potential clients are impressed with the translated page and the fact that no IT involvement is required on their end, you have a better chance to win the deal.
 For more information see our [blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/) or this short [video] (https://www.easyling.com/features/mass-sales-tool/)  
 
-### Terminology
+## Terminology
 
-<dl>
-<dt>Scan</dt><dd>Extracting content from the website for translation</dd>
-<dt>Discovery</dt><dd>Checking the website for translatable content</dd>
-<dt>Resource</dt><dd>Binary content found on the website (images, PDFs, CSS and JS files, etc.)</dd>
-<dt>Workbench</dt><dd>The online editing view of Easyling</dd>
-<dt>List view</dt><dd>The main view of the Workbench; a simple editor for online translation</dd>
-<dt>Highlight view</dt><dd>The secondary view mode of workbench, allowing for in-context editing</dd>
-<dt>Bleedthrough</dt><dd>When newly added, untranslated content appears on the translated site in the original language</dd>  
-<dt>Keep cache strategy</dt><dd>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready</dd>
-<dt>Exclusion rule</dt><dd>A rule specified for explicitly excluding pages from the translatable list</dd>
-<dt>Inclusion rule</dt><dd>A rule specified for explicitly including pages in the translatable list</dd>
-<dt>Page freeze</dt><dd>No new items can be added to the page-list marked for translation</dd>
-<dt>Dictionary freeze</dt><dd>No new items can be added to the translation memory. Only available when Page freeze is activated.</dd>
-<dt>102% match</dt><dd>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical.</dd>
-<dt>101% match</dt><dd>Contextual repetition. Tags within the segment and the neighbouring segments are repetitions / exact matches as well.</dd>
-</dl>
+***Scan***<br>Extracting content from the website for translation<br>
+***Discovery***<br>Checking the website for translatable content<br>
+***Resource***<br>Binary content found on the website (images, PDFs, CSS and JS files, etc.)<br>
+***Workbench***<br>The online editing view of Easyling<br>
+***List view***<br>The main view of the Workbench; a simple editor for online translation<br>
+***Highlight view***<br>The secondary view mode of workbench, allowing for in-context editing<br>
+***Bleedthrough***<br>When newly added, untranslated content appears on the translated site in the original language<br>
+***Keep cache strategy***<br>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready<br>
+***Exclusion rule***<br>A rule specified for explicitly excluding pages from the translatable list<br>
+***Inclusion rule***<br>A rule specified for explicitly including pages in the translatable list<br>
+***Page freeze***<br>No new items can be added to the page-list marked for translation<br>
+***Dictionary freeze***<br>No new items can be added to the translation memory. Only available when Page freeze is activated.<br>
+***102% match***<br>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical.<br>
+***101% match***<br>Contextual repetition. Tags within the segment and the neighbouring segments are repetitions / exact matches as well.
