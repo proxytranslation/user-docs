@@ -158,7 +158,7 @@ Content extraction and translation memory fees apply only once, so 102% repetiti
 The monthly fee:
 - for serving the translated site you pay a **1 EUR or 1.2 USD / 1000 page views** monthly proxy fee
  
-For this fee you get a guaranteed 99.99% website availability, and a capacity to handle prcatically unlimited traffic. You also have the option to serve the translated site from your server (no proxy fee will apply), but in this case availability and traffic handling depends on your infrastructure.
+For this fee you get a guaranteed 99.99% website availability, and a capacity to handle practically unlimited traffic. You also have the option to serve the translated site from your server (no proxy fee will apply), but in this case availability and traffic handling depends on your infrastructure.
 
 ## Terminology
 
