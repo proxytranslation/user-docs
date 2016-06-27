@@ -79,7 +79,7 @@ You can also use **Advanced options** to refine discovery. These include:
 
 ## Word count for a proposal
 
-You can run Discovery of the site automatically when you create the project, or at any later time manually from the Dashboard.
+To get the word count you need the function called Discovery. You can run Discovery of the site automatically when you create the project, or at any later time manually from the Discovery menu.
 
 **Run discovery:**
 
@@ -91,13 +91,13 @@ Although this process doesn't extract content, it provides a preliminary wordcou
 Once the discovery is ready, you receive an e-mail notification, and the statistics is updated on the Discovery page. Based on the results you can give a rough estimation for the website translation cost - both in time and money.  
 
 Discovery also collects ***resources*** from the website, like images, downloadable files, etc. You can find them under Discovery > Resources.  
-Please note that the translation/localisation of these resources is not done by easyling, which means that the **content** of these resources is not extracted for translation. You have the option to replace them with the localised version for every language, and you can also replace external links.
+**Please note that the translation/localisation of these resources is not done by Easyling**, which means that the ***content*** of these resources is not extracted for translation. You have the option to replace them with the localised version for every language, and you can also replace external links.
 
 You can then remove or add pages to be translated, and run another discovery of the site with the new restricted or broadened options, or you can proceed to the next step, to extract content for translation.
 
 ## Source content extraction
 
-Scanning is practically extracting content from the website for translation. You can initiate it under Content. The process is similar to Discovery, but this time content is stored, and this process costs 2EUR per thousand *source* words. Once again, you will receive an e-mail notification once content extraction is ready. You will again receive a list of URL addresses, and the status of the pages will change to **NEW** after extraction.
+Content extraction is called Scanning in Easyling. You can initiate it under Content. The process is similar to Discovery, but this time content is stored, and this process costs 2EUR per thousand **source words**. Once again, you will receive an e-mail notification once content extraction is ready. You will again receive a list of URL addresses, and the status of the pages will change to **NEW** after extraction.
 
 **Scanning:**
 
@@ -119,14 +119,16 @@ You can use the online editor interface right from the dashboard, or you can als
 
 ![XLIFF export](/img/export-bilingual.png)  
 
-Once translation is ready, you can import the translated XLIFF back to review and check the layout on the online editor interface in Highlight View, and make all the necessary correction. Your translated website is ready for publishing.  
-
+If you use the online editor you have visual feedback all along the translation process. You can also get live preview during transtation time in certain CAT tools. 
 
 ## In-context review and fine-tuning
 
+If you decided to do the translation in an external tool or in the List View of the online editor, you need to check how your translation fits the original layout. Once translation is ready, you can import the XLIFF back to review and check the layout on the online editor interface in Highlight View, and make all the necessary correction. Your translated website is ready for publishing.  
+
+
 ## Maintenance
 
-As content is regularly added to websites, website translation is a never-ending task. Maintenance is checking for new content on the website, extracting it for translation, and uploading the translated content. It is also possible to automate checks and content extractions: you can specify the frequency of the checks (daily, weekly, monthly), and if new content is added, easyling automatically extracts it and sends you an e-mail notification. Please note that this automation is not possible behind secure login.
+As content is regularly added to websites, website translation is a never-ending task. Maintenance is checking for new content on the website, extracting it for translation, and uploading the translated content. It is also possible to automate checks and content extractions: you can specify the frequency of the checks (daily, weekly, monthly), and if new content is added, Easyling automatically extracts it and sends you an e-mail notification. **Please note that this automation is not possible behind secure login.**
 
 
 **Scheduled scan:**
@@ -142,32 +144,48 @@ Easyling also offers a Sales Tool to help LSPs and freelancers in growing their 
 If you have a well-defined group of potential customers you'd like to offer your translation services to, like hotels or restaurants with only monolingual websites in your area, easyling makes it easy for you to impress the business owners. Just collect the URL addresses, add them to the Sales Tool, and easyling will automatically create a project for all webpages according to the settings you specify. Once the translation and post-editing of the translated main pages are ready, you can send a link to the business owners. If your potential clients are impressed with the translated page and the fact that no IT involvement is required on their end, you have a better chance to win the deal.
 For more information see our [blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/) or this short [video] (https://www.easyling.com/features/mass-sales-tool/)  
 
+## Pricing
+
+Our pricing follows the 'pay-as-you-go' model, so you only get charged for what you use. The total cost is made up 2 types of fees: one-time fees and a monthly charge.
+
+You pay the following one-time fees:
+- Discovery: every time you run a discovery, a **1 EUR or 1.2 USD / 1000 pages** charge is applied
+- Scan: content extraction costs **2 EUR or 2.4 USD / 1000 source words**
+- Translation Memory: storing your (human or machine) translation in the database costs **10 EUR or 12 USD / 1000 source words / target language**
+ 
+Content extraction and translation memory fees apply only once, so 102% repetitions are not counted. Once content is stored, every subsequent scan will treat it as repetition, so no additional charges will apply.
+
+The monthly fee:
+- for serving the translated site you pay a **1 EUR or 1.2 USD / 1000 page views** monthly proxy fee
+ 
+For this fee you get a guaranteed 99.99% website availability, and a capacity to handle prcatically unlimited traffic. You also have the option to serve the translated site from your server (no proxy fee will apply), but in this case availability and traffic handling depends on your infrastructure.
+
 ## Terminology
 
-***Scan*** <br>Extracting content from the website for translation  
+***Scan*** <br>Extracting content from the website for translation<br>  
 
 ***Discovery*** <br>Checking the website for translatable content<br>  
 
-***Resource*** <br>Binary content found on the website (images, PDFs, CSS and JS files, etc.)  
+***Resource*** <br>Binary content found on the website (images, PDFs, CSS and JS files, etc.)<br>  
 
-***Workbench*** <br>The online editing view of Easyling  
+***Workbench*** <br>The online editing view of Easyling<br>  
 
-***List view*** <br>The main view of the Workbench; a simple editor for online translation  
+***List view*** <br>The main view of the Workbench; a simple editor for online translation<br>  
 
-***Highlight view*** <br>The secondary view mode of workbench, allowing for in-context editing  
+***Highlight view*** <br>The secondary view mode of workbench, allowing for in-context editing<br>  
 
-***Bleedthrough*** <br>When newly added, untranslated content appears on the translated site in the original language  
+***Bleedthrough*** <br>When newly added, untranslated content appears on the translated site in the original language<br>  
 
-***Keep cache strategy*** <br>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready  
+***Keep cache strategy*** <br>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready<br>  
 
-***Exclusion rule*** <br>A rule specified for explicitly excluding pages from the translatable list  
+***Exclusion rule*** <br>A rule specified for explicitly excluding pages from the translatable list<br>  
 
-***Inclusion rule*** <br>A rule specified for explicitly including pages in the translatable list  
+***Inclusion rule*** <br>A rule specified for explicitly including pages in the translatable list<br>  
 
-***Page freeze*** <br>No new items can be added to the page-list marked for translation  
+***Page freeze*** <br>No new items can be added to the page-list marked for translation<br>  
 
-***Dictionary freeze*** <br>No new items can be added to the translation memory. Only available when Page freeze is activated.  
+***Dictionary freeze*** <br>No new items can be added to the translation memory. Only available when Page freeze is activated.<br>  
 
-***102% match*** <br>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical. 
+***102% match*** <br>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical.<br> 
 
 ***101% match*** <br>Contextual repetition. Tags within the segment and the neighbouring segments are repetitions / exact matches as well.
