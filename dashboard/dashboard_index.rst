@@ -4,7 +4,6 @@ The Dashboard
 
 .. toctree::
    loggingin
-   creating_a_project
    dashboard
    discovery
    content
