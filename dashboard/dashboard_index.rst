@@ -3,13 +3,10 @@ The Dashboard
 =============
 
 .. toctree::
-   loggingin
-   dashboard
-   discovery
-   content
-   pagemodifiers
-   publishwebsite
-   integrations
-   toppingup
-   account
+   menu/dashboard
+   menu/discovery
+   menu/content
+   menu/pagemodifiers
+   menu/publishwebsite
+   menu/integrations
    
