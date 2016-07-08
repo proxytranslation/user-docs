@@ -1,5 +1,5 @@
-# Domain settings
+### Domain settings
 
-# Language selector
+### Language selector
 
-# Wordpress plugin
+### Wordpress plugin

@@ -61,14 +61,14 @@ time and money.
 
 ![Discovery statistics](/img/discovery-statistics.png)
 
-## Statistics
+### Statistics
 
 See here for a detailed explanation of how statistics work in
 Easyling.
 
-# Discovery settings
+### Discovery settings
 
-## Pages
+### Pages
 
 The Page List is accessible from both the Discovery and Content
 menus. By default (before starting any Discoveries or Scans), only the
@@ -111,6 +111,6 @@ manually, you can use the Search Bar to look up any path names that
 match your query. This is a forward-Search (regexp is not supported in
 the Page list).
 
-## Resources
+### Resources
 
-## External links
+### External links

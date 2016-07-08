@@ -1,15 +1,19 @@
+# Menu
+
+#> Dashboard
+
 The Dashboard is your command center. It contains a variety of
 features you can use to manage your projects. In this manual, we'll
 take these options in the order that they appear in the menu on the
 left side of the screen.
 
-# Project statistcs
+##> Project statistcs
 
 <!---
 TODO: extend/explain
 -->
 
-# Alarm
+### Alarm
 
 You can set up alarms to be notified of any actions in your project
 that could potentially lead to undue expenses. Enter the value for the
@@ -32,7 +36,7 @@ The e-mails are sent to the owner by default, but you can add the
 'Receive notification emails' right to any participant in Dashboard >
 Sharing settings (see below).
 
-# Audit log
+### Audit log
 
 The audit log is the minutes-taking feature of Easyling. It records
 all activity on the project with a username/e-mail address attached to
@@ -44,7 +48,7 @@ reason, the Audit log displays onlythe first three lines of long
 entries by default. Use the grey bar with the downward-pointing arrow
 under a log entry to see the full text of that entry.
 
-# Sharing settings
+### Sharing settings
 
 In the world of website localization, it is rare for a project to be
 realized by a single person. As project owner or backup owner, use the
@@ -105,7 +109,7 @@ After a user redeems their invitation using the link they receive in
 an e-mail, their address and username will appear under the
 owner. Their features and workflow roles can be edited in the list.
 
-# Link projects
+### Link projects
 
 Use this function to link two projects together. For example,
 __example.com__ and __blog.example.com__ are separate domains, so two
@@ -114,13 +118,13 @@ translation for the site. When both projects are ready to be
 published, use this function to link and serve them together on the
 proxy.
 
-# Page Cache
+### Page Cache
 
 Caches can be one of the most useful and least understood features in
 Easyling, so we dedicate a separate section for their
 explanation. Please refer to it here.
 
-# Path settings - Cache & Cookie, Content Type Overrides
+### Path settings - Cache & Cookie, Content Type Overrides
 
 You can add project paths here and define Cache and Cookie overrides
 for them. Enter a new path, which you can set to be a prefix or an
@@ -140,7 +144,7 @@ to save your settings.
 You can always return here and add new paths and rules using the 'Add
 new path' button if there is a need for it.
 
-# Advanced settings
+### Advanced settings
 
 It is not an exxageration that the Advanced settings screen is where
 you can get a first taste of the advanced capabilities (the
@@ -190,7 +194,7 @@ We recommend that you visit regex101.com and test your regular
 expressions with example snippets before setting them on a live
 project.
 
-## Freeze
+### Freeze
 
 These options become important after translation has begun in
 earnest. At this point, it is a good idea to __freeze__ the page list
@@ -225,7 +229,7 @@ untranslated segments in their completely untranslated, original form.
 added to a project as long as this Freeze is turned on (automatically
 enables Page Freeze).
 
-# Translation memory
+### Translation memory
 
 Easyling's translation memories (TM) are used to store existing
 translations for segments. You can import translations from *.tmx
@@ -244,7 +248,7 @@ translations. Use the "Remove" button to delete the TM.
 The screen is furnished with a search field you can use to look up
 segments in a TM.
 
-# Pre-translate
+### Pre-translate
 
 By using the Pre-translate menu, you can initiate a process which
 supplies untranslated segments with a preliminary translation in order
@@ -257,7 +261,7 @@ In order to use Machine Translation, you need to go into your Account
 and set up your MT account Ids/authorization keys in the "Machine
 Translation" menu.
 
-# Auto pre-translate
+### Auto pre-translate
 
 Auto pre-translate is self-explanatory in that it is the
 automatization of pre-translate: here you can set up the project to
@@ -270,7 +274,7 @@ intervals, or send XLIFF files to external systems, such as your XTM,
 XTRF, or Dropbox account. There are links at the bottom of the dialog
 you can use to visit the settins screens of these accounts.
 
-# Remove project
+### Remove project
 
 This is always displayed in red. By clicking on it, you remove
 project. Be careful!
