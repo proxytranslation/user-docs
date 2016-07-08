@@ -4,7 +4,7 @@ Easyling User Documentation
 
 .. toctree::
    introduction/introduction
-   dashboard/dashboard_index.rst
+   dashboard/dashboard_index
    workbench/workbench_index.rst
    maintenance/maintenance_index.rst
    technical_referemce/technical_reference_index.rst
