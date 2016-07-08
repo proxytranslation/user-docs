@@ -1,3 +1,5 @@
+## Discovery
+
 **So, what is a Discovery?**
 
 Before you can translate a website, you need to **extract** all
