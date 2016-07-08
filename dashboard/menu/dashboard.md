@@ -1,6 +1,6 @@
 # Menu
 
-#> Dashboard
+## Dashboard
 
 The Dashboard is your command center. It contains a variety of
 features you can use to manage your projects. In this manual, we'll
