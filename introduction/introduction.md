@@ -52,6 +52,44 @@ visitor's side.
 Data can be extracted with a couple of clicks - and the publication of
 the translated site is similarly easy.
 
+# Features
+
+- processes HTML, handle JavaScript/AJAX/JSON, XML (note: translation
+  of Flash is not supported)
+  
+- Use the X-Proxy to determine what would be currently translated. If
+  it doesn't, use the Advanced Settings to fine-tune the JSON/XML path
+  settings
+  
+- The crawler can discover static pages / HTML content only. You have
+  to manually add any extra AJAX URLs, with the proper parameters.
+
+- When you run the crawler, always use Discovery first, and be
+  incremental: "Unlimited" really means unlimited, and as such, can
+  yield to very-very high cost. Running an unlimited crawl on an
+  e-commerce website is a very-very bad idea.
+
+- Based on the initial, limited crawls, fine-tune the "Ignore query"
+  parameters, to help the crawler decide what URLs to handle as same,
+  and what to visit in hope of new content to be discovered.
+
+- Always check all the forms for error messages, congratulation
+  messages, etc.
+
+- Check all the images; some website like to bake the text into the
+  image. Those will require your attention.
+
+- Pay attention to forms etc included from domains outside of
+  Easyling. Typical examples: Marketo, optimizely.com, etc. You'll
+  have to create new Easyling project for them, then linking together
+  the projects.
+
+- Never underestimate the power of injecting CSS and/or JS into the
+  translated pages
+
+- Regular expression is a great way to reduce the amount of content to
+  be translated.
+  
 # Getting started 
 
 In this section, we give you a quick overview of how you'll be using
@@ -123,18 +161,69 @@ Discovery process at face value.
 
 Investigate the source site and consider the following questions: is
 there a lot of **dynamic content**?  Is there a **search engine** in
-place? A **webshop** or **forum**? Some **web apps** that would
+place? A **webshop** or a **forum**? Some **web apps** that would
 require localization? Do the **average word lengths** of the source
 and target languages differ significantly? Is the **direction of the
 target language** different than that of the source language?
+
+There are yet a few additional considerations that may require input
+from the client:
+
+- which pages are targeted for translation? Which pages need to be
+  excluded? Ask the client if they have a specific page list.
+
+- does the site have mixed-language content? If yes, ask the client
+  to specify the source language(s) they need translated.
+
+- is there an extant Translation Memory that could be used?
+
+- is there any region-specific content? Does the site use geolocation?
+
+- is there any content behind a secure login?
+  
+- are there any subdomains? example.com and blog.example.com require
+  two separate projects that need to be linked.
+
+- are there any other special requirements?
+
+- is there any Javascript-generated content?
 
 Some of these issues will require attention, such as UI fixes and a
 measure of fiddling with the technology under the hood - take them
 into account when making your quote.
 
-If you are unsure about the functioning of a site, you can always
+If you are unsure about a functionality on a site, you can always
 contact our **Support Centre** and we'll help you get an accurate
-picture of all the costs involved.
+picture of the required effort and costs.
+
+It is also advised to negotiate the expected workflow with the client
+at the quoting phase. The translation of a website is, in most cases,
+a never-ending process, as new content is added to the original site
+at certain intervals.
+
+The question is, how content added *after* the initial quote should be
+treated - both technically and financially. It is a good idea to ask
+the client how they intend to treat new content. 
+
+Do they wish to publish at the same time in all languages? Or publish
+on the original site without delay, and then publish the translations
+later, as they become available? 
+
+In the first case you need a staging server. The second option raises
+another question.
+
+As a translation proxy is practically a translation layer on top of
+the original site, serving translations from the datastore by
+replacing original content on-the-fly, new content will not be
+replaced, as translation is not stored for that. In practice it means
+that newly added content will appear in the original language on the
+translated site. This is called *bleedthrough*. There are 2 approaches
+to this phenomenon: let bleedthrough happen, to make new content
+available right away, even if it is in a different language, or block
+new content from appearing until translation is done. Both have their
+clear advantages and drawbacks, so you have to discuss with your
+client which option is more acceptable for them - and set up your
+project accordingly.
 
 ### Sales tool for mass production
 
@@ -183,7 +272,7 @@ Barring crucial details (withheld for the convenience of introduction)
 the above process gets you started on a website translation project.
 
 The Easyling idea of that project can be summarized in the 3-phase
-Workflow. Here is how we think it goes.
+Workflow.
 
 ### 1. Discover & Quote 
 
@@ -202,10 +291,10 @@ features to ensure quality.
 
 ### 3. Publish & Maintain 
 
-After the translation by the proofreaders, you can verify the serving
-domain and publish the translated website. Add a language selector to
-the source site. Generally, it is with publishing a website that a
-deadline is met.
+After the translation is greenlit by the proofreaders, you can verify
+the serving domain and publish the translated website. Add a language
+selector to the source site. Generally, it is with publishing a
+website that a deadline is met.
 
 But don't forget that a website is a living thing, with new content
 arriving every day - the final stage of website localization is always
@@ -219,7 +308,10 @@ convenient than it would ordinarily be.
 
 Keep reading and find out all about it.
 
+# Pricing
 
+See [https://easyling.com/pricing](https://easyling.com/pricing) for
+detailed information about our service fees.
 
 ## Glossary
 
@@ -233,4 +325,31 @@ Support Channels - we collect them here for your reference.
 <dt>Workbench</dt><dd>The online editing view of Easyling</dd>
 <dt>List view</dt><dd>The main view of the Workbench; a simple editor for online translation</dd>
 <dt>Highlight view</dt><dd>The secondary view mode of workbench, allowing for in-context editing</dd>
+<dt>Bleedthough</dt><dd>When newly added, untranslated content appears on the translated site in the original language</dd>
+<dt>Keep Cache Strategy</dt><dd>The strategy used to avoid bleedthrough. The last fully translated version is available on the translated pages, and new content is only added when the translation is ready</dd>
+<dt>Exclusion rule</dt><dd>A rule specified for explicitly excluding pages from the translatable list</dd>
+<dt>Inclusion rule</dt><dd>A rule specified for explicitly including pages in the translatable list</dd>
+<dt>Page freeze</dt><dd>No new items can be added to the page-list marked for translation</dd>
+<dt>Dictionary freeze</dt><dd>No new items can be added to the translation memory. Only available when Page freeze is activated.</dd>
+<dt>102% match</dt><dd>Strong contextual repetition. Every single segment within a block is a 101% match, and all tags are identical.</dd>
+<dt>101% match</dt><dd>Contextual repetition. Tags within the segment and the neighbouring segments are repetitions / exact matches as well.</dd>
 </dl>
+
+## Further information
+
+**Tutorials**
+
+  - [https://www.youtube.com/watch?v=S47kArNiJ1o](https://www.youtube.com/watch?v=S47kArNiJ1o)
+  - [https://www.youtube.com/watch?v=8VsBy2bGo64](https://www.youtube.com/watch?v=8VsBy2bGo64)
+  - [https://gitlab.com/easyling/wikis/home](https://gitlab.com/easyling/wikis/home)
+  - [https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA](https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA)
+
+  - [http://lesson101.tutorial.easyling.com/](http://lesson101.tutorial.easyling.com/)
+  - [http://lesson102.tutorial.easyling.com/](http://lesson102.tutorial.easyling.com/)
+  - [http://lesson103.tutorial.easyling.com/](http://lesson103.tutorial.easyling.com/)
+  - [http://lesson105.tutorial.easyling.com/](http://lesson105.tutorial.easyling.com/)
+
+**Release notes**
+
+  - [https://www.easyling.com/category/blogpost/release-notes/](https://www.easyling.com/category/blogpost/release-notes/)
+  - [https://www.easyling.com/change-logs/](https://www.easyling.com/change-logs/)
