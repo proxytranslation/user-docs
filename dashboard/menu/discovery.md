@@ -110,8 +110,8 @@ spreadsheet in an e-mail.
 
 **Search bar** When the page list gets too long to scroll through
 manually, you can use the Search Bar to look up any path names that
-match your query. This is a forward-Search (regexp is not supported in
-the Page list).
+match your query. This is a forward-search (note that regexen are not
+supported in the Page list).
 
 ### Resources
 

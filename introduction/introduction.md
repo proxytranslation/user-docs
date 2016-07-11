@@ -52,7 +52,7 @@ visitor's side.
 Data can be extracted with a couple of clicks - and the publication of
 the translated site is similarly easy.
 
-# Features
+## Features
 
 - processes HTML, handle JavaScript/AJAX/JSON, XML (note: translation
   of Flash is not supported)
@@ -90,7 +90,7 @@ the translated site is similarly easy.
 - Regular expression is a great way to reduce the amount of content to
   be translated.
   
-# Getting started 
+## Getting started 
 
 In this section, we give you a quick overview of how you'll be using
 the Dashboard and we'll set up a simple Project.
@@ -308,7 +308,7 @@ convenient than it would ordinarily be.
 
 Keep reading and find out all about it.
 
-# Pricing
+## Pricing
 
 See [https://easyling.com/pricing](https://easyling.com/pricing) for
 detailed information about our service fees.

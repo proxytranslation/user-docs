@@ -1,4 +1,6 @@
-# General FAQ
+# FAQ
+
+## General
 
 **Some parts of a site are on a subdomain. How will the crawler pick them up?**
 
@@ -48,7 +50,7 @@ processes you need to [extract cookies](secure-login.html) with you
 browser's dev. tools and pass them on to the proxy. Some cookies get
 invalidated over time, and we don't store cookies either.
 
-# Cache FAQ
+## Caches
 
 **Can I preview newer content on the workbench without causing bleedthrough on the published site?**
 
