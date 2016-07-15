@@ -1,4 +1,0 @@
-.. toctree::
-   roles
-   collaboration
-   workpackages

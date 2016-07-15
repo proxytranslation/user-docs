@@ -1,4 +1,0 @@
-.. toctree::
-   editingsegments
-   menuactions
-   editingwindow
