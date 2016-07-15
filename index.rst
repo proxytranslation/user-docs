@@ -10,4 +10,4 @@ Easyling User Documentation
    technical_referemce/technical_reference_index.rst
    troubleshooting/troubleshooting_index.rst
    faq/faq
-   contact/contact
+   glossary/glossary
