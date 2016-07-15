@@ -1,4 +1,4 @@
-## Discovery
+### Discovery
 
 **So, what is a Discovery?**
 
