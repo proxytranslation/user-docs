@@ -1,7 +1,3 @@
-===============
-Workbench Views
-===============
-
 .. toctree::
    listview
    highlightview

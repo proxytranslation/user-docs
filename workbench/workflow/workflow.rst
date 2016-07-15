@@ -1,7 +1,3 @@
-===================
-Workflow management
-===================
-
 .. toctree::
    roles
    collaboration

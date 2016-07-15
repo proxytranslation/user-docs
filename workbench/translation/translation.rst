@@ -1,7 +1,3 @@
-===================
-Segment Translation
-===================
-
 .. toctree::
    editingsegments
    menuactions

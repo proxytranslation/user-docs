@@ -1,7 +1,3 @@
-========================
-Navigating the Workbench
-========================
-
 .. toctree::
    pagelist
    searching
