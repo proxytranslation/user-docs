@@ -1,7 +1,6 @@
-========
-Cookbook
-========
+# Cookbook
 
-# Trial recipe
+
+## Trial recipe
 
 ## Another trial recipe

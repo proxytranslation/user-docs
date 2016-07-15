@@ -1,6 +1,4 @@
-====
-Menu
-====
+# Menu
 
 ## Dashboard
 

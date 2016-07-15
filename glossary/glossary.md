@@ -1,6 +1,5 @@
-========
-Glossary
-========
+# Glossary
+
 
 We use a set of recurring terminology in this manual and also in our
 Support Channels - we collect them here for your reference.
