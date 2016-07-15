@@ -18,7 +18,7 @@ could potentially result in trailing links being thrown out.
 
 ### **Can I get page-specific repetition statistics?**
 
-Repetition statistics makes the most sense in a site-wide context. The
+Repetition statistics make the most sense in a site-wide context. The
 problem with controlling calculations on a per-page basis is that it
 is not true to life to call a segment on a given page a “canonical
 instance”. Take a navigation bar or a footer, for example. It will be
@@ -69,7 +69,7 @@ costs the same as a Discovery.
 
 ### **How can I check if a page uses the Source Cache?** 
 
-Go into **Pages view** in the Dashboards. If you hover with the mouse
+Go into **Pages view** in the Dashboard. If you hover with the mouse
 over a page in the list, you will see a **Cache** button. Click on it
 to verify Source Cache information for that page. If there is no
 Source Cache for that page, you will see the following screen:

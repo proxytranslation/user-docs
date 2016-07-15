@@ -30,10 +30,10 @@ over the proxy.
 
 ### CSS editor
 
-he Proxy Application can be used to insert locale-specific CSS rules
-into the site being served. The rules are inserted as the last element
-of the head on every page served through the proxy. A very common use
-case for this feature is RTL conversion of a website: almost always
+The proxy can be used to insert locale-specific CSS rules into the
+site being served. The rules are inserted as the last element of the
+head on every page served through the proxy. A very common use case
+for this feature is RTL conversion of a website: almost always
 necessary when one of the target languages is Arabic.
 
 There are a couple of caveats:
@@ -50,7 +50,7 @@ html[lang="fr-FR"] .another-selector h2 {
 }
 ```
 
-if you omit the `html[lang="fr-FR"]`, the CSS rule will be applied for
+If you omit the `html[lang="fr-FR"]`, the CSS rule will be applied in
 all target languages, which might not be the behavior you expect.
 
 ### Javascript editor
@@ -77,7 +77,7 @@ Here is a partial, but plausible example of a JavaScript Override:
     // make function page-specific. Altenatively, add check to eventListener above
     function resizeTextBoxOnContactPage() {
         if (document.location.pathname !== "/contact-us") { return };
-            // implementation details here
+        // implementation details here
     }
 
     // more function definitions here
@@ -98,7 +98,7 @@ but there is generally no limitation on the type of code that can be
 injected via Page Modifiers. **Security implications should always be
 considered when adding custom code to sites.**
 
-You can also use jQuery if it is present.
+You can also use jQuery if it is present on the original site.
 
 ### Content override
 
@@ -111,6 +111,3 @@ content-types can be entered, along with customized cache headers, and
 status codes (HTTP status codes are restricted to those permitted by
 the Java Servlet class!) - note that the 300-family of status codes
 requires the Location header to be defined as well.
-
-
-

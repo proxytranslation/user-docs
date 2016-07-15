@@ -10,3 +10,4 @@ The Dashboard
    menu/publishwebsite
    menu/integrations
    
+   cookbook/cookbook
