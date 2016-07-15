@@ -1,7 +1,7 @@
 # Moving around
 
-# Workbench Page List
+## Workbench Page List
 
-# Searching for segments
+## Searching for segments
 
-# Preview
+## Preview
