@@ -142,7 +142,7 @@ new path' button if there is a need for it.
 
 ### Advanced settings
 
-It is not an exxageration that the Advanced settings screen is where
+It is not an exaggeration that the Advanced settings screen is where
 you can get a first taste of the advanced capabilities (the
 nitty-gritty) of Easyling.
 
@@ -190,7 +190,7 @@ We recommend that you visit regex101.com and test your regular
 expressions with example snippets before setting them on a live
 project.
 
-### Freeze
+#### Freeze
 
 These options become important after translation has begun in
 earnest. At this point, it is a good idea to __freeze__ the page list

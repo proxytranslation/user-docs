@@ -1,7 +1,6 @@
 # Introduction 
 
-Welcome to the Workbench, the online CAT tool that ships with
-Easyling!
+The Workbench is a CAT tool in the cloud.
 
 If the Dashboard is our take on the project management side of webiste
 localization, then the Workbench is the analogous CAT tool you can use
@@ -22,11 +21,11 @@ There are a few ways to enter it:
 
 1. In the Dashboard menu, see the _Languages_ part. If you hover
    overany of the target languages, a menubar will be displayed to the
-   right. Click on "Translate in List View".
-2. Click on "Manage segments" in Content menu.
-3. Enter the Page list and hover over any entry to display a menu to
-   the right. Click on "Translate in List View"
+   right. Click on "Translate in List View"..
    
-Each action will take you to the Workbench in a new tab. It will look like this:
+2. Click on "Manage segments" in Content menu...
 
-Let's get into the details.
+3. Enter the Page list and hover over any entry to display a menu to
+   the right. Click on "Translate in List View"...
+   
+.. and the Workbench will open in a new tab.
