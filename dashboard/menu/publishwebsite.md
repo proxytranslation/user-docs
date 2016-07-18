@@ -116,7 +116,7 @@ in a preview window on the right. Both types contain the source
 language site by default.
 
 At the same time, the embed code text box changes and displays the
-<script> tag that needs to be embedded within the original site's
+`<script>` tag that needs to be embedded within the original site's
 `<head></head>` tags.
 
 
@@ -140,7 +140,7 @@ target languages.
 At the bottom of the menu, you can configure the **display names** for
 the different languages. 
 
-#### RYO selector
+#### RYO Selector
 
 The third option, implementing a language selector from scratch, does
 require development resources, but it also allows practically infinite
