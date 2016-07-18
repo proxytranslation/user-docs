@@ -124,28 +124,32 @@ displayed in the upper right corner Search field in orange, like this:
 
 ![Search with string](/img/workbench/search_orange.png)
 
-### For Advanced Users: Deletion of Segments
+### Deletion of Segments
 
 ![Delete segments](/img/workbench/segment_delete_dialog.png)
 
-A regex search reveals another feature of the Workbench you might need
-elsewhere: that of deleting segments. If you click on the Magnifying
-glass icon while the regex search is active (a bottom-facing triangle
-will indicate availability), the dialog above will open.
+You might be wondering what this has to do with navigation, but
+executing a regex search reveals another feature of the Workbench you
+might ordinarily look for someplace else: that of deleting
+segments. If you click on the Magnifying glass icon while the regex
+search is active (a bottom-facing triangle will indicate
+availability), the dialog above will open.
 
 ![The Mallard on Deletion](/img/misc/mallard_delete.png)
 
-The location of this feature is decidedly non-obvious. The warning
-above would generally apply to any situation where the words
-"_delete_" and "_regex_" appear in the same sentence, but to give you
-a measure of peace of mind, it is true that deletion of segments is
-not as _final_ as we make it out to be: when **TM Freeze** is
+The non-discoverability of this feature is premeditated. Skulls &
+Bones warnings would generally apply to **any** situation where the
+words "delete" and "regex" are intimated in the same sentence. That
+being said, to give you a measure of peace of mind, deletion of
+segments is not as final as we make it out to be: when TM Freeze is
 **disabled**, you can re-add segments anytime by Scanning or visiting
 in Preview the page that contains the deleted segments.
 
 But that is new words added each time. So, if for no other reason, be
 careful about deleting segments in order to avoid unnecessary
 expenses.
+
+Caveat emptor!
 
 ## Preview
 
