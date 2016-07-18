@@ -46,9 +46,9 @@ scroll down.
 By default, Scans will pick up new entries in "Approved" state, which
 in this case means "Approved for Translation", immediately available
 for translation. You can change this default behavior, by going into
-the Dashboard and changing it in
-[Link to Header](#advanced-settings)Advanced settings to either
-Pending or Excluded.
+the Dashboard and changing it in <a
+href="/dashboard/menu/dashboard.html#advanced-settings">Advanced
+settings</a> to either Pending or Excluded.
 
 ![Pending entries](/img/workbench/pending_entry.png)
 
