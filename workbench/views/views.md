@@ -8,10 +8,10 @@ exactly as it should in the original context.
 
 ## List View
 
-While not the most impressive, the List View is certainly the most
-useful view on the Workbench, which you can use to go over each and
-every segment that is being translated. Let's take a look at a segment
-and see what information the List view provides about it.
+While not the most impressive, the List View is certainly one of the
+most useful views on the Workbench. You can use it to go over each and
+every segment being translated. First off, let's take a look at a
+segment and see what information the List view provides about it.
 
 ### Anatomy of a Segment
 

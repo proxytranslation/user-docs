@@ -147,9 +147,7 @@ in Preview the page that contains the deleted segments.
 
 But that is new words added each time. So, if for no other reason, be
 careful about deleting segments in order to avoid unnecessary
-expenses.
-
-Caveat emptor!
+expenses. Buyer, beware!
 
 ## Preview
 
