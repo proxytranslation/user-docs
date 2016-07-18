@@ -1,15 +1,13 @@
-# Menu
-
-## Dashboard
+# Dashboard
 
 The Dashboard is your command center. It contains a variety of
 features you can use to manage your projects. In this manual, we'll
 take these options in the order that they appear in the menu on the
 left side of the screen.
 
-### Project statistcs
+## Project statistcs
 
-### Alarm
+## Alarm
 
 You can set up alarms to be notified of any actions in your project
 that could potentially lead to undue expenses. Enter the value for the
@@ -32,7 +30,7 @@ The e-mails are sent to the owner by default, but you can add the
 'Receive notification emails' right to any participant in Dashboard >
 Sharing settings (see below).
 
-### Audit log
+## Audit log
 
 The audit log is the minutes-taking feature of Easyling. It records
 all activity on the project with a username/e-mail address attached to
@@ -44,7 +42,7 @@ reason, the Audit log displays onlythe first three lines of long
 entries by default. Use the grey bar with the downward-pointing arrow
 under a log entry to see the full text of that entry.
 
-### Sharing settings
+## Sharing settings
 
 In the world of website localization, it is rare for a project to be
 realized by a single person. As project owner or backup owner, use the
@@ -105,7 +103,7 @@ After a user redeems their invitation using the link they receive in
 an e-mail, their address and username will appear under the
 owner. Their features and workflow roles can be edited in the list.
 
-### Link projects
+## Link projects
 
 Use this function to link two projects together. For example,
 __example.com__ and __blog.example.com__ are separate domains, so two
@@ -114,13 +112,13 @@ translation for the site. When both projects are ready to be
 published, use this function to link and serve them together on the
 proxy.
 
-### Page Cache
+## Page Cache
 
 Caches can be one of the most useful and least understood features in
 Easyling, so we dedicate a separate section for their
 explanation. Please refer to it here.
 
-### Path settings - Cache & Cookie, Content Type Overrides
+## Path settings - Cache & Cookie, Content Type Overrides
 
 You can add project paths here and define Cache and Cookie overrides
 for them. Enter a new path, which you can set to be a prefix or an
@@ -140,7 +138,7 @@ to save your settings.
 You can always return here and add new paths and rules using the 'Add
 new path' button if there is a need for it.
 
-### Advanced settings
+## Advanced settings
 
 It is not an exaggeration that the Advanced settings screen is where
 you can get a first taste of the advanced capabilities (the
@@ -190,7 +188,7 @@ We recommend that you visit regex101.com and test your regular
 expressions with example snippets before setting them on a live
 project.
 
-#### Freeze
+### Freeze
 
 These options become important after translation has begun in
 earnest. At this point, it is a good idea to __freeze__ the page list
@@ -225,7 +223,7 @@ untranslated segments in their completely untranslated, original form.
 added to a project as long as this Freeze is turned on (automatically
 enables Page Freeze).
 
-#### Group pages
+### Group pages
 
 the Proxy Application can group automatically generated pages
 together, preventing new pages from being added, but not removing
@@ -236,7 +234,7 @@ per line, with a “`\*`” as the wildcard character. This does not
 decrease the volume of pages that will be crawled, but it makes
 project maintenance easier.
 
-#### JavaScript translation
+### JavaScript translation
 
 This field contains the capture group definitions used to extract
 attribute-value pairs from JavaScript files selected for
@@ -260,7 +258,7 @@ value\\"}}")`, the path can be passed to a recursive JSON translator
 by appending “` json`” to the path, then extending the path on the
 next line by adding “`.json.`”.
 
-#### XPath Translation
+### XPath Translation
 
 the Proxy Application is able to translate XML (eXtensible Markup
 Language) files sent by the remote server, according to the XPath
@@ -269,7 +267,7 @@ JavaScript translation, entering the “` html`” switch will result in
 the HTML parser being applied, while no switch will parse the match as
 plaintext.
 
-#### Mark multiple Resources as Translatable
+### Mark multiple Resources as Translatable
 
 Using URL prefixes (N.B. fully qualified URL prefixes, including
 protocol, host, and possibly path structures!), the Proxy Application
@@ -281,7 +279,7 @@ case, entering the root of the API here will automatically capture all
 responses from that path without having to individually mark them as
 translatable from the Resources menu.
 
-#### Additional Remote Request Headers
+### Additional Remote Request Headers
 
 If the remote server requires certain headers to be present to serve
 legal responses, it will not be crawlable by default, as the crawler
@@ -290,20 +288,20 @@ in them being appended to every request sent by the Proxy Application,
 including the crawler requests, letting you crawl the site as
 required.
 
-#### Ignore Classes
+### Ignore Classes
 
 If a certain class of elements are not ought to be translated, they
 can be entered here. Elements with these classes will be treated as if
 they had the `<translate=no>` attribute, and will be treated as
 translation-invariant.
 
-#### Ignore IDs
+### Ignore IDs
 
 similar to the “Ignored classes” option, this allows the treating of
 specific elements as translation-invariant, this time through HTML
 IDs.
 
-#### Process Custom HTML Attributes
+### Process Custom HTML Attributes
 
 Some CMS-es may employ non-standard HTML attributes on elements to
 style the page or otherwise affect certain aspects of their
@@ -317,11 +315,10 @@ as well.
 On request, it is also possible to activate an HTML parser for certain
 attributes, should they contain HTML formatting in their values.
 
-#### Tweaks
+### Tweaks
 
 
-
-##### Retaining original `DOCTYPE`s 
+#### **Retaining original DOCTYPEs** 
 
 By default, the Proxy Application generates an HTML5
 standards-compliant file to send to the client. If, for some reason,
@@ -330,7 +327,7 @@ operation, some of which may be deprecated by HTML5, enabling this
 option will cause the Proxy Application to retain the original DOCTYPE
 declaration of the source page.
 
-##### *Determine document type by* `GET` *instead of* HEAD
+#### *Determine document type by* `GET` *instead of* HEAD
 
 some servers may return different responses to the HEAD request we use
 to determine document type than the GET request used to download
@@ -338,7 +335,7 @@ content. Enabling this option forces the Proxy Application to use GET
 requests for all operations, getting the correct content type from the
 server (as far as server-side configurations will allow).
 
-##### Detect JavaScript content type
+#### Detect JavaScript content type
 
 JavaScript may not be explicitly declared as such on the server, being
 sent to the client with misleading content types. This causes the
@@ -347,13 +344,13 @@ operations reserved for JS files. Enabling this option will force a
 deep check on each file sent to the client, to determine if they are
 indeed JavaScript code, regardless of their declared content type.
 
-##### Download images through the proxy 
+#### Download images through the proxy 
 
 this will instruct the Proxy Application to attempt to map all `<img
 src>` attributes to the proxied domain. This is especially useful if
 the images are served only after authentication.
 
-##### Attempt to place tags according to punctuation when using TM-based pre-translation 
+#### Attempt to place tags according to punctuation when using TM-based pre-translation 
 
 if using a TM-based pre-translation, the Proxy Application may
 encounter segments where it cannot replace the XLIFF tags
@@ -363,7 +360,7 @@ translator will try to replace the XLIFF tags according to their
 positions relative to punctuation marks in the segment. If successful,
 the TM entry’s confidence score will be increased by 0.1.
 
-##### Translate excluded pages when viewing them in Preview mode (but still not in live serving mode)*: 
+#### Translate excluded pages when viewing them in Preview mode (but still not in live serving mode)*: 
 
 It may be necessary sometimes to view excluded pages as if they were
 translated, in order to assess their layout, without actually making
@@ -371,7 +368,7 @@ them available on the live site. Enabling this option allows just
 that, by propagating translations to the excluded pages if viewed in
 Preview mode, but keeping them untranslated in Live serving mode.
 
-##### Translate `javascript:` attribute
+#### Translate `javascript:` attribute
 
 The Proxy is capable of extracting and translating code from the
 onclick attribute of elements. This feature may be used when a site
@@ -380,28 +377,28 @@ attribute and requires this content to be translated. Currently we
 only process the onclick event’s contents, all other events in the
 javascript attribute will be ignored.
 
-##### Detect and handle JSON-in-string responses, like* `"{\\"ResponseCode\\":\\"BadRequest\\"}`
+#### Detect and handle JSON-in-string responses, like* `"{\\"ResponseCode\\":\\"BadRequest\\"}`
 
 string-escaped JSON-format responses can be handled by activating this
 tweak. If active, the Proxy Application will first attempt to
 string-unescape the response before passing it to the JSON parser, in
 order to recreate its base form.
 
-##### Make content in `<script type="text/html"></script>` *translatable as a whole (don't try to parse it as HTML)
+#### Make content in `<script type="text/html"></script>` *translatable as a whole (don't try to parse it as HTML)
 
 Script blocks may contain template data requiring translation, which
 is often signified by the text/html content type (instead of the more
 usual application major type). In such cases, HTML parsing can be
 undesirable, and can be bypassed by activating this option.
 
-##### Send a canonical link http header pointing to the original page on externalized pages
+#### Send a canonical link http header pointing to the original page on externalized pages
 
 the Proxy Application can insert a Link header into externalized
 pages, in order to avoid the SEO penalty associated with duplicate
 content. This header will point to the original address, and have
 `rel=Canonical` added, to designate the relationship.
 
-#### Manual Publishing
+### Manual Publishing
 
 *Manual Publishing* is advanced project control feature that gives
 project owners the ability to hold back the translations from being
@@ -421,7 +418,7 @@ server will attempt to rectify this by publishing the entire entry,
 after confirmation from the user. If the error is not recoverable, it
 will list the segments in error.
 
-#### Default segment state
+### Default segment state
 
 By default, the Proxy Application will add new segments during a crawl
 as “Approved”, making them available for translation immediately
@@ -444,7 +441,7 @@ not included in exports and will not appear for translation unless
 filtered for specifically. Users able to alter segment states may
 approve them for translation, making them available.
 
-### Translation memory
+## Translation memory
 
 Easyling's translation memories (TM) are used to store existing
 translations for segments. You can import translations from *.tmx
@@ -463,7 +460,7 @@ translations. Use the "Remove" button to delete the TM.
 The screen is furnished with a search field you can use to look up
 segments in a TM.
 
-### Pre-translate
+## Pre-translate
 
 By using the Pre-translate menu, you can initiate a process which
 supplies untranslated segments with a preliminary translation in order
@@ -476,7 +473,7 @@ In order to use Machine Translation, you need to go into your Account
 and set up your MT account Ids/authorization keys in the "Machine
 Translation" menu.
 
-### Auto pre-translate
+## Auto pre-translate
 
 Auto pre-translate is self-explanatory in that it is the
 automatization of pre-translate: here you can set up the project to
@@ -489,7 +486,7 @@ intervals, or send XLIFF files to external systems, such as your XTM,
 XTRF, or Dropbox account. There are links at the bottom of the dialog
 you can use to visit the settins screens of these accounts.
 
-### Remove project
+## Remove project
 
 This is always displayed in red. By clicking on it, you remove the
 project. Be careful!
