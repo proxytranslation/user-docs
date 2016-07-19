@@ -1,8 +1,8 @@
 # Translation of Segments
 
-## Segment editing
+## Editing segments
 
-## Editing Window
+### Editing Window
 
 ## Automatic Translation
 
