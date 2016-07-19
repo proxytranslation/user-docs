@@ -62,12 +62,11 @@ entry and see what each part of a line does.
 8. **Confirm Tick** click on the tick to Confirm the segment for the
    current workflow and send it to the next stage. Confirmed entries
    remain editable as long as they are unedited by the next workflow
-   role. See the section on Workflow roles for details.
+   role.
 
 9. **Workflow Status Indicator**: Display the current workflow state
    of the segment. Note that this might differ depending on which user
-   in which workflow role is currently looking at the segment. See the
-   section on Workflow roles for details.
+   in which workflow role is currently looking at the segment.
 
 10. **Flag**: Display current translation source.
 
@@ -87,6 +86,9 @@ availability for editing:
 
 **C** - Customer (or Client)
 
+See the section on Workflow roles for a detailed description of the
+various workflow roles.
+
 ### Flags
 
 ## Highlight View
@@ -100,7 +102,7 @@ of adequate context during website localization.
 By selecting an Entry in List view and clicking on the Highlight View
 on the Workbench, you will be shown the text on the original webpage
 
-![Highlight view](/img/workbench/highlight_view.png)
+![Highlight View](/img/workbench/highlight_view.png)
 
 You may click on any part of a website and have a highlighting frame
 appear around that segment. At the same time, the editing box below
@@ -117,8 +119,8 @@ the original site from within the Workbench.
 
 **NOTE** The Highlight view is a wonderful tool we are very proud of,
 but don't forget that much of the textual content of a website is not
-clickable. Make sure you check your results in the other modes to make
-sure everything is covered!
+clickable. Check the other modes and the Preview to make sure that
+everything is covered!
 
 ## Free-Click View
 
@@ -134,8 +136,8 @@ page you are on. The following dialog will be displayed.
 
 ![Reload Segment List](/img/workbench/reload_segments_redirecting.png)
 
-Note that Highlight View will only work as long as the segment list is
-that of the current page.
+Highlight View will only work if the segment list is that of the
+current page.
 
 ## Pop-out View
 
