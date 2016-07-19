@@ -108,8 +108,30 @@ any edits are **automatically saved** upon leaving an entry.
 
 ## Automatic Translation
 
-Automatic translation can be used in multiple ways to ensure quality
-on the proxy.
+There are a number of Auto-translation features that you can employ to
+ensure quality on the proxy.
+
+The option to run pre-translation or set it up to run automatically is
+also available on the Dashboard. Here, we discuss the options
+available after clicking on the "Pre-translate" icon in the toolbar:
+
+![Pre-translate Icon](/img/workbench/pretranslate_icon.png)
+
+The following dialog is displayed:
+
+![Pre-Translate Dialog](/img/workbench/pretranslate_dialog.png)
+
+### Pseudo-translation
+
+This function is admittedly not translation in a meaningful sense, but
+string-reversing each and every word of every segment on the spot is
+very effective during a demo. Use it, then go to Preview to
+demonstrate to the client that website localization is as painless as
+using CAT tools in tandem with the Proxy. Good for the
+wow!-factor. Pseudo-translation can also be used to test the various
+editing features available on the Dashboard and the Workbench.
+
+### Translation Memory
 
 ## History
 

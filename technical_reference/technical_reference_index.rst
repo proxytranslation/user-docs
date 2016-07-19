@@ -1,5 +1,5 @@
 ===================
-Technical reference
+Technical Reference
 ===================
 
 .. tocree::
