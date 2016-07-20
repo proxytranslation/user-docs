@@ -78,6 +78,31 @@ Take caution when editing swap entries. All responsibility of
 rendering them successfully _and_safely is delegated to the requesting
 browser.
 
+### Filters
+
+There is a huge assortment of filters available if you click on the
+Filters icon in the toolbar:
+
+![Filters Icon](/img/workbench/filters_icon.png)
+
+Use the checkboxes to define your filtering settings in the dialog and
+click on "Set Filters".
+
+![Filters Dialog](/img/workbench/filters_dialog.png)
+
+The dialog will close and a new element will appear in the toolbar,
+indicating that Filtering is currently active. Click on the "X" to
+disable it. You may also click anywhere else on this indicator to
+re-open the Filters dialog and fine-tune your settings.
+
+![Filtering Indicator](/img/workbench/filters_indicator.png)
+
+These filters work with the various types of metadata associated with
+an Entry (such as currently assigned workflow role, enclosing block
+element in source, approval state or source of translation), **not**
+the specific text content - use the **Search** functionality to filter
+based on specific content.
+
 ## Searching for segments
 
 ![Search field in corner](/img/workbench/search.png)
@@ -110,10 +135,10 @@ radio buttons next to the Search field.
 
 ### Closing the Search Field
 
-It is important to remember that the search field also operates as a
+It is important to remember that the search field is also a
 **filter**: as long as it is active, segments will be filtered based
 on its contents regardless of being in All entries view or on a
-specific page. 
+specific page.
 
 If you wish to restore full view of segments, clear the search field
 and send an empty search.Use the close button next to the Search
@@ -141,12 +166,12 @@ The non-discoverability of this feature is premeditated. Skulls &
 Bones warnings would generally apply to **any** situation where the
 words "delete" and "regex" are intimated in the same sentence. That
 being said, to give you a measure of peace of mind, deletion of
-segments is not as final as we make it out to be: when TM Freeze is
-**disabled**, you can re-add segments anytime by Scanning or visiting
-in Preview the page that contains the deleted segments.
+segments is not as final as we seem to make it out to be: when TM
+Freeze is **disabled**, you can re-add segments anytime by Scanning or
+visiting in Preview the page that contains the deleted segments.
 
-But that is new words added each time. So, if for no other reason, be
-careful about deleting segments in order to avoid unnecessary
+_But that is new words added each time_. So, if for no other reason,
+be careful about deleting segments in order to avoid unnecessary
 expenses. Buyer, beware!
 
 ## Preview

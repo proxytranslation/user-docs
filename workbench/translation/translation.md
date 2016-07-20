@@ -128,13 +128,53 @@ string-reversing each and every word of every segment on the spot is
 very effective during a demo. Use it, then go to Preview to
 demonstrate to the client that website localization is as painless as
 using CAT tools in tandem with the Proxy. Good for the
-wow!-factor. Pseudo-translation can also be used to test the various
-editing features available on the Dashboard and the Workbench.
+wow!-factor. You can also use pseudo-translation can also be used to
+test the various editing features available on the Dashboard and the
+Workbench.
 
 ### Translation Memory
 
+If you have a populated Translation Memory on a project, you may use
+its contents to translate segments. Use this feature to translate your
+content with a preset match threshold.
+
+### Machine Translation
+
+You can choose to Machine Translate the currently selected batch of
+entries using one of the available MT APIs (Google Translate, Bing
+Translate, iTranslate4u and GeoFluent).
+
+Translation Memory and Machine pre-translation are both reproductions
+of the options accessible on the Dashboard, with the added
+functionality of being able to control which specific group of
+segments should be targeted by the process.
+
 ## History
+
+The proxy keeps tabs on what happens to each Entry in the project
+timeline, and the Workbench displays these tabs in the sidebar. You
+can use these to access previous editing states of an Entry. Here
+follows a short description of the History functionality.
 
 ### Translation Memories
 
+If you select a segment, TM suggestions will be displayed for it in
+the sidebar tab labeled "Suggestions". Click on any one of them to add
+it as a translation for the given Entry.
+
+A Search field is also provided that you can use for concordance
+lookups.
+
 ### Segment History
+
+Whether a result of a manual or an automatic edit, each saved state of
+an Entry will be saved with a username and a timestamp in the Entry
+history. You can access it in the sidebar tab labeled "History".
+
+![Entry History](/img/workbench/entry_history.png)
+
+This means you don't have to worry about ever losing translated
+content as a result of manual edits - you can always restore a
+previous state of an Entry by selecting the Entry in List View or
+Highlight View, going to History and copy & pasting a previous state
+of your choosing.

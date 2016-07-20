@@ -56,8 +56,9 @@ entry and see what each part of a line does.
    effort. All comments have a checkbox next to them, allowing you to
    mark them as settled.
 
-7. **Chainlink**: indicates that the segment is repeated verbatim in
-   the current view. Click on the icon to jump to the next repetition. 
+7. **Chain link**: indicates that the segment is repeated verbatim
+   (102% match) in the current view. Click on the icon to jump to the
+   next repetition.
 
 8. **Confirm Tick** click on the tick to Confirm the segment for the
    current workflow and send it to the next stage. Confirmed entries
