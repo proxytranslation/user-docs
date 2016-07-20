@@ -5,13 +5,13 @@ the Dashboard's Sharing settings to invite other people into the
 project, granted them the appropriate editing rights, the list of
 segments in the Workbench will look a bit different to each user.
 
-# Workflow Roles
+## Workflow Roles
 
 As mentioned previously, oles are predominantly a project management
 feature associated with work on the Workbench. To reiterate, there are
 four different roles:
 
-[Workflow Roles](/img/workbench/workflow_tags.png)
+![Workflow Roles](/img/workbench/workflow_tags.png)
 
 **T** - Translator (default)
 
@@ -37,7 +37,7 @@ Backup Owner may assign to any project participant. By default, only
 the Translator role is required. Owners have access to all workflow
 roles.
 
-## Workflow Roles in Action
+### Workflow Roles in Action
 
 Use the Workflow role dropdown in the toolbar to switch between the
 available Workflow roles:
@@ -78,7 +78,7 @@ A few things to keep in mind:
   
 And that's about it!
 
-# Work Packages
+## Work Packages
 
 If Workflow Roles is a method of grouping your users, then Work
 Packages is there to help you group your segments. See the Dashboard
