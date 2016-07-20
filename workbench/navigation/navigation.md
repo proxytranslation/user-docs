@@ -100,8 +100,8 @@ re-open the Filters dialog and fine-tune your settings.
 These filters work with the various types of metadata associated with
 an Entry (such as currently assigned workflow role, enclosing block
 element in source, approval state or source of translation), **not**
-the specific text content - use the **Search** functionality to filter
-based on specific content.
+content - use the **Search** functionality to filter for source or
+target text.
 
 ## Searching for segments
 
@@ -160,8 +160,6 @@ segments. If you click on the Magnifying glass icon while the regex
 search is active (a bottom-facing triangle will indicate
 availability), the dialog above will open.
 
-![The Mallard on Deletion](/img/misc/mallard_delete.png)
-
 The non-discoverability of this feature is premeditated. Skulls &
 Bones warnings would generally apply to **any** situation where the
 words "delete" and "regex" are intimated in the same sentence. That
@@ -174,14 +172,16 @@ _But that is new words added each time_. So, if for no other reason,
 be careful about deleting segments in order to avoid unnecessary
 expenses. Buyer, beware!
 
+![The Mallard on Deletion](/img/misc/mallard_delete.png)
+
 ## Preview
 
 By clicking on the "Eye" icon, you can visit the temporary domain to
 check your translations in their original context. This function is
-disabled as long as no segment is selected from the list.
+disabled if no segment is selected.
 
 If you select a segment in All Entries view, the Preview proxy will
-open on the page where it was seen for the first time.
+open on the page where it was seen by the crawler for the first time.
 
 ![Preview Icon](/img/workbench/preview_eye_icon.png)
 

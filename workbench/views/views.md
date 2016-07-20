@@ -92,6 +92,26 @@ various workflow roles.
 
 ### Flags
 
+### Ordering Segments in List View
+
+![Order By Dropdown](/img/workbench/order_by_dropdown.png)
+
+Use the "Order by" dropdown to alphabetize the target or source
+entries or reverse the order of segments based on their Workbench
+ID. The following Ordering methods are available from the dropdown:
+
+- **ID, lower first** (default)
+
+- **ID, higher first** (use to quickly navigate to new segments)
+
+- **Source A → Z**
+
+- **Source Z → A**
+
+- **Translation A → Z**
+
+- **Translation Z → A**
+
 ## Highlight View
 
 ![Highlight View Icon](/img/workbench/highlight_view_icon.png)
