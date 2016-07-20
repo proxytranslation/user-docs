@@ -128,9 +128,8 @@ string-reversing each and every word of every segment on the spot is
 very effective during a demo. Use it, then go to Preview to
 demonstrate to the client that website localization is as painless as
 using CAT tools in tandem with the Proxy. Good for the
-wow!-factor. You can also use pseudo-translation can also be used to
-test the various editing features available on the Dashboard and the
-Workbench.
+wow!-factor. You can also use pseudo-translation to test the various
+editing features available on the Dashboard and the Workbench.
 
 ### Translation Memory
 

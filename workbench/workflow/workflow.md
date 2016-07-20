@@ -24,7 +24,7 @@ four different roles:
 There are four different workflows on the proxy you may employ. You
 may set these on the Dashboard.
 
-- Simple Translation Workflow (*T*)
+- Simple Translation Workflow (**T**)
 
 - Translation + Proofreading (**TP**)
 
@@ -46,21 +46,23 @@ available Workflow roles:
 
 Take TPQC, the workflow with the most participants, for example.
 
-Each **approved** segment is assigned to the Translator role. When
-finished with a segment (either through manual edits, automatic
-translation or via XLIFF importing), the translator may click on the
-Confirm tick to declare that segment cleared for that phase and send
-it to the next role, the _proofreader_.
+1. Each **approved** segment is assigned to the Translator role.
 
-The _proofreader_ (and everyone) may use Filters to display only those
-segments that are assigned to that role. He takes the segments sent by
-the Translator, edits them, changes their wording as required. When
-finished with an entry, the _proofreader_ clicks on the Confirm tick,
-sending the segment along to Quality Check.
+2. When finished with a segment (either through manual edits,
+   automatic translation or via XLIFF importing), the translator
+   clicks on the Confirm tick to declare that segment cleared for that
+   phase and send it to the next role, the _proofreader_.
 
-This cycle is then repeated until a segment (more to the point, _all_
-segments) reach the final workflow role, that of the Customer, who
-approves translated entries.
+3. The _proofreader_ (and much everyone else) may use Filters to
+   display only those segments that are assigned to that role. He
+   takes the segments sent by the Translator, edits them, changes
+   their wording as required. When finished with an entry, the
+   _proofreader_ clicks on the Confirm tick, sending the segment along
+   to _Quality Check_.
+   
+And so on. This cycle is then repeated until a segment (more to the
+point, _all_ segments) reach the final workflow role, that of the
+Customer, who approves translated entries.
 
 A few things to keep in mind:
 
@@ -72,17 +74,17 @@ A few things to keep in mind:
 - Entries/segments belonging to another role are **greyed out**.
 
 - A segment remains available for editing after Confirming it just as
-  long as it is not touched by the next Workflow role. If you
-  mistakenly Confirmed an entry, you may, so to speak, **reclaim** it
-  during that time for further deliberation.
+  long as it is not touched by the next Workflow role. If you ever
+  mistakenly Confirm an entry, you may, so to speak, **reclaim** it
+  for some more work before the next role can get to it.
   
 And that's about it!
 
 ## Work Packages
 
 If Workflow Roles is a method of grouping your users, then Work
-Packages is there to help you group your segments. See the Dashboard
-chapter for the details of generating them.
+Packages are a method of grouping segments. See the Dashboard chapter
+for the details of how to generate them.
 
 Use the Work Package dropdown to select a Work package, and the
 Workbench will display only those Entries that belong to that Work
@@ -91,11 +93,12 @@ Package!). The dropdown looks like this.
 
 ![Work Package Dropdown](/img/workbench/work_package_dropdown.png)
 
-The only default entry in the dropdown is "All", which disables Work
-Package based filtering on the Workbench. As you generate new Work
-packages, this list will automatically update upon refreshing the
-window. The dropdown will always contain the names of the 100 latest
-Work Packages.
+The only default entry in the dropdown is "All", which means disabling
+Work Package based filtering on the Workbench. As new Work packages
+are generated, this list will automatically update after refreshing
+the window. The dropdown will always contain the names of the 100
+latest Work Packages.
 
 Clicking on "Manage workpackages..." will take you to the Dashboard
-Work package menu.
+where you can tend to your existing Work Packages or generate new
+ones.

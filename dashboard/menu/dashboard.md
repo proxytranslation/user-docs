@@ -317,86 +317,84 @@ attributes, should they contain HTML formatting in their values.
 
 ### Tweaks
 
+In this menu, you'll find checkboxes for settings that apply to very
+specific circumstances. For those special times, when you come across
+the occassional special snowflake. When in doubt, contact us!
 
-#### **Retaining original DOCTYPEs** 
+- **Retaining original DOCTYPEs**: By default, the Proxy Application
+  generates an HTML5 standards-compliant file to send to the
+  client. If, for some reason, this causes problems due to the site
+  relying on HTML4 standards for operation, some of which may be
+  deprecated by HTML5, enabling this option will cause the Proxy
+  Application to retain the original DOCTYPE declaration of the source
+  page.
 
-By default, the Proxy Application generates an HTML5
-standards-compliant file to send to the client. If, for some reason,
-this causes problems due to the site relying on HTML4 standards for
-operation, some of which may be deprecated by HTML5, enabling this
-option will cause the Proxy Application to retain the original DOCTYPE
-declaration of the source page.
+- **Determine document type by** `GET` **instead of HEAD**: some
+  servers may return different responses to the HEAD request we use to
+  determine document type than the GET request used to download
+  content. Enabling this option forces the Proxy Application to use
+  GET requests for all operations, getting the correct content type
+  from the server (as far as server-side configurations will allow).
 
-#### *Determine document type by* `GET` *instead of* HEAD
+- **Detect JavaScript content type**: JavaScript may not be explicitly
+  declared as such on the server, being sent to the client with
+  misleading content types. This causes the Proxy Application to
+  mis-identify such streams and not offer operations reserved for JS
+  files. Enabling this option will force a deep check on each file
+  sent to the client, to determine if they are indeed JavaScript code,
+  regardless of their declared content type.
 
-some servers may return different responses to the HEAD request we use
-to determine document type than the GET request used to download
-content. Enabling this option forces the Proxy Application to use GET
-requests for all operations, getting the correct content type from the
-server (as far as server-side configurations will allow).
+- **Download images through the proxy**: this will instruct the Proxy
+  Application to attempt to map all `<img src>` attributes to the
+  proxied domain. This is especially useful if the images are served
+  only after authentication.
 
-#### Detect JavaScript content type
+- **Attempt to place tags according to punctuation when using TM-based
+  pre-translation**: if using a TM-based pre-translation, the Proxy
+  Application may encounter segments where it cannot replace the XLIFF
+  tags automatically, due to overly large differences between the
+  contexts (possibly because of a changed site). If this option is
+  enabled, the translator will try to replace the XLIFF tags according
+  to their positions relative to punctuation marks in the segment. If
+  successful, the TM entry’s confidence score will be increased by
+  0.1.
 
-JavaScript may not be explicitly declared as such on the server, being
-sent to the client with misleading content types. This causes the
-Proxy Application to mis-identify such streams and not offer
-operations reserved for JS files. Enabling this option will force a
-deep check on each file sent to the client, to determine if they are
-indeed JavaScript code, regardless of their declared content type.
+- **Translate excluded pages when viewing them in Preview mode (but
+  still not in live serving mode)**: It may be necessary sometimes to
+  view excluded pages as if they were translated, in order to assess
+  their layout, without actually making them available on the live
+  site. Enabling this option allows just that, by propagating
+  translations to the excluded pages if viewed in Preview mode, but
+  keeping them untranslated in Live serving mode.
 
-#### Download images through the proxy 
+- **Translate** `javascript:` **attribute**: The Proxy is capable of
+  extracting and translating code from the onclick attribute of
+  elements. This feature may be used when a site uses this attribute
+  to store translatable content inlined into the attribute and
+  requires this content to be translated. Currently we only process
+  the onclick event’s contents, all other events in the javascript
+  attribute will be ignored.
 
-this will instruct the Proxy Application to attempt to map all `<img
-src>` attributes to the proxied domain. This is especially useful if
-the images are served only after authentication.
+- **Detect and handle JSON-in-string responses, like**
+  `"{\\"ResponseCode\\":\\"BadRequest\\"}`: string-escaped JSON-format
+  responses can be handled by activating this tweak. If active, the
+  Proxy Application will first attempt to string-unescape the response
+  before passing it to the JSON parser, in order to recreate its base
+  form.
 
-#### Attempt to place tags according to punctuation when using TM-based pre-translation 
+- **Make content in** `<script type="text/html"></script>`
+  **translatable as a whole (don't try to parse it as HTML)**: Script
+  blocks may contain template data requiring translation, which is
+  often signified by the text/html content type (instead of the more
+  usual application major type). In such cases, HTML parsing can be
+  undesirable, and can be bypassed by activating this option.
 
-if using a TM-based pre-translation, the Proxy Application may
-encounter segments where it cannot replace the XLIFF tags
-automatically, due to overly large differences between the contexts
-(possibly because of a changed site). If this option is enabled, the
-translator will try to replace the XLIFF tags according to their
-positions relative to punctuation marks in the segment. If successful,
-the TM entry’s confidence score will be increased by 0.1.
-
-#### Translate excluded pages when viewing them in Preview mode (but still not in live serving mode)*: 
-
-It may be necessary sometimes to view excluded pages as if they were
-translated, in order to assess their layout, without actually making
-them available on the live site. Enabling this option allows just
-that, by propagating translations to the excluded pages if viewed in
-Preview mode, but keeping them untranslated in Live serving mode.
-
-#### Translate `javascript:` attribute
-
-The Proxy is capable of extracting and translating code from the
-onclick attribute of elements. This feature may be used when a site
-uses this attribute to store translatable content inlined into the
-attribute and requires this content to be translated. Currently we
-only process the onclick event’s contents, all other events in the
-javascript attribute will be ignored.
-
-#### Detect and handle JSON-in-string responses, like* `"{\\"ResponseCode\\":\\"BadRequest\\"}`
-
-string-escaped JSON-format responses can be handled by activating this
-tweak. If active, the Proxy Application will first attempt to
-string-unescape the response before passing it to the JSON parser, in
-order to recreate its base form.
-
-#### Make content in `<script type="text/html"></script>` *translatable as a whole (don't try to parse it as HTML)
-
-Script blocks may contain template data requiring translation, which
-is often signified by the text/html content type (instead of the more
-usual application major type). In such cases, HTML parsing can be
-undesirable, and can be bypassed by activating this option.
-
-#### Send a canonical link http header pointing to the original page on externalized pages
-
-the Proxy Application can insert a Link header into externalized
-pages, in order to avoid the SEO penalty associated with duplicate
-content. This header will point to the original address, and have
-`rel=Canonical` added, to designate the relationship.
+- **Send a canonical link http header pointing to the original page on
+  externalized pages**: the Proxy Application can insert a Link header
+  into externalized pages, in order to avoid the SEO penalty
+  associated with duplicate content. This header will point to the
+  original address, and have `rel=Canonical` added, to designate the
+  relationship.
 
 ### Manual Publishing
 
