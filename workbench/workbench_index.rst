@@ -7,4 +7,4 @@ The Workbench
    navigation/navigation
    views/views
    translation/translation
-   
+   workflow/workflow
