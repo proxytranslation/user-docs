@@ -33,7 +33,8 @@ Easyling supports two kinds of caches: **Source Caches** and **Target
 Caches**. The term _Multi-Caching_ refers to the fact that Easyling
 users can create and maintain multiple caches for both types.
 
-##### WARNING: Source Caches and Target Caches are entirely different entities, they are NOT shared resources in any sense!
+**WARNING: Source Caches and Target Caches are entirely different
+entities, they are NOT shared resources in any sense!**
 
 Currently, the maximum allowed number for a given type of Cache is
 **5**. That is, you can have a maximum of 5 Source Caches and 5 Target

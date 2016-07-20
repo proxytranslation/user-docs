@@ -1,7 +1,7 @@
 # Contacting Support
 
 Website translation can be a complex task, even with the help of a
-piece of software like Easyling. Finding the root of the problem can
+piece of software like the proxy. Finding the root of the problem can
 be equally complex\ for us on support duty. Therefore, we would like
 to give you a few pointers on what the supply when you're contacting
 us.

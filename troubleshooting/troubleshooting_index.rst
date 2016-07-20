@@ -3,10 +3,15 @@ Troubleshooting & Support
 =========================
 
 .. toctree::
-   import_errors
-   publishing_issues
-   wpengine
-   captcha
    contact
+
+------
+Issues
+------
+
+   issues/import_errors
+   issues/publishing_issues
+   issues/wpengine
+   issues/captcha
 
 
