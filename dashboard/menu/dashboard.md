@@ -112,6 +112,11 @@ translation for the site. When both projects are ready to be
 published, use this function to link and serve them together on the
 proxy.
 
+The dialog has a single input field for project codes and it looks
+like this:
+
+![Link Projects](/img/link_project_dialog.png)
+
 ## Page Cache
 
 Caches can be one of the most useful and least understood features in
