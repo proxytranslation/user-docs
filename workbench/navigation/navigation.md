@@ -1,19 +1,19 @@
 # Moving around
 
-The Workbench is the cloud CAT tool to create, edit and fine-tune
-translations associated with the various segments that were collected
-during Scans.
+The Workbench has a single viewport, so every feature you'd need to
+navigate between pages and segments is always just a couple of clicks
+away.
 
-Below is an overview and explanation of the various parts of the Workbench:
-
-![The Workbench](/img/workbench/full_screen.png)
-
-(numbered explanations)
+You may switch between pages, search for text, filter for pages based
+on a variety of metadata, such as Approval state, containing block
+element, translation source and so forth. This section deals with the
+various ways to do that.
 
 ## Workbench Page List
 
-Click on the Page list right next to the logo to get an overview of
-all the pages that contain segments to be translated.
+A segment is tied to the specific page it was found on. You can use
+the Page list dropdown right next to the logo to get a list of all
+pages currently within the scope of translation.
 
 ![Page list](/img/workbench/pagelist)
 
@@ -30,13 +30,13 @@ mention:
 ### Show All Entries
 
 Most of the time, you will want segments displayed for a specific
-page, but to get an overview of all segments, this is the option to
-use.
+page, but you may also use this option to get an overview of all
+segments across all pages.
 
 **WARNING!** Only **List View** is available in this view, all other
 View buttons will be unavailable!
 
-The All Entries list doesn't flood your browser with every single
+The All Entries list doesn't flood your browser with every last
 segment all at once: segments will be loaded in batches of 500. The
 Workbench will automatically fetch a new batch of entries as you
 scroll down.
@@ -80,8 +80,9 @@ browser.
 
 ### Filters
 
-There is a huge assortment of filters available if you click on the
-Filters icon in the toolbar:
+There is a comprehensive assortment of filters available. Click on the
+Filters icon in the toolbar to get a an overview of all available
+filters:
 
 ![Filters Icon](/img/workbench/filters_icon.png)
 
@@ -91,9 +92,11 @@ click on "Set Filters".
 ![Filters Dialog](/img/workbench/filters_dialog.png)
 
 The dialog will close and a new element will appear in the toolbar,
-indicating that Filtering is currently active. Click on the "X" to
-disable it. You may also click anywhere else on this indicator to
-re-open the Filters dialog and fine-tune your settings.
+indicating that user-defined Filtering settings are currently active,
+and the segment list is updated accordingly. Click on the "X" to
+disable filtering. You may also click anywhere else on the toolbar
+indicator to open the Filters dialog again and fine-tune your
+settings.
 
 ![Filtering Indicator](/img/workbench/filters_indicator.png)
 

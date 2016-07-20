@@ -235,7 +235,7 @@ together, preventing new pages from being added, but not removing
 already added pages, and making the grouped pages share a single
 dictionary, necessitating translation of only one. The pages will be
 grouped according to the path rules specified in the textbox, one path
-per line, with a “`\*`” as the wildcard character. This does not
+per line, with a `\*` as the wildcard character. This does not
 decrease the volume of pages that will be crawled, but it makes
 project maintenance easier.
 

@@ -1,5 +1,7 @@
 # Introduction 
 
+![Workbench](/img/workbench/workbench_overview.png)
+
 The Workbench is a CAT tool in the cloud.
 
 If the Dashboard is our take on the project management side of webiste
