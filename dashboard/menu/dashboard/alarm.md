@@ -1,5 +1,7 @@
 # Alarm
 
+![Alarms](/img/dashboard/alarm_screen.png)
+
 You can set up alarms to be notified of any actions in your project
 that could potentially lead to undue expenses. Enter the value for the
 timeout (snooze) between subsequent e-mail notifications, to prevent

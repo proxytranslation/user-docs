@@ -1,5 +1,7 @@
 # Audit log
 
+![Audit log](/img/dashboard/audit_log_screen.png)
+
 The audit log is the minutes-taking feature of Easyling. It records
 all activity on the project with a username/e-mail address attached to
 each entry.
