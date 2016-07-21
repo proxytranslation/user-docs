@@ -2,6 +2,9 @@
 The Dashboard
 =============
 
+.. toctree::
+   menu/dashboard
+
 ----
 Menu
 ----
@@ -26,6 +29,7 @@ Discovery
 =========
 
 .. toctree::
+   menu/discovery
    menu/discovery/statistics
    menu/discovery/discoverysettings
    menu/discovery/pages
@@ -36,6 +40,7 @@ Content
 =======
 
 .. toctree::
+   menu/content
    menu/content/pages
    menu/discovery/resources
    menu/discovery/externallinks
@@ -50,6 +55,7 @@ Page Modifiers
 ==============
 
 .. toctree::
+   menu/pagemodifiers
    menu/pagemodifiers/csseditor
    menu/pagemodifiers/javascripteditor
    menu/pagemodifiers/contentoverride
@@ -58,6 +64,7 @@ Publish Website
 ===============
 
 .. toctree::
+   menu/publishwebsite
    menu/publishwebsite/domainsettings
    menu/publishwebsite/languageselector
    menu/publishwebsite/wordpressplugin
@@ -66,6 +73,7 @@ Integrations
 ============
 
 .. toctree::
+   menu/integrations
    menu/Integrations/dropbox
 
 --------
