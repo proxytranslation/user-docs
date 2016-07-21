@@ -3,7 +3,7 @@
 Easyling is a cloud-based translation proxy solution designed to make
 websites available in several languages. Easily.
 
-## What is a translation proxy?
+**What is a translation proxy?**
 
 In effect a translation proxy is a layer placed between the browser
 and the original website, through which the visitor sees the original
@@ -72,7 +72,7 @@ visitor's side.
 Data can be extracted with a couple of clicks - and the publication of
 the translated site is similarly easy.
 
-## Where are we in the localisation workflow?
+** Where are we in the localisation workflow?**
 
 ![Workflow](../img/Easyling-workflow.png)
 
