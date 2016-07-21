@@ -13,40 +13,35 @@ function on100() {
     $(".four").css("background-color", "LightGrey");
     $(".five").css("background-color", "pink");
   }
-
-  function off100() {
+function off100() {
     $(".one").css("background-color", "white");
     $(".two").css("background-color", "white");
     $(".three").css("background-color", "white");
     $(".four").css("background-color", "white");
     $(".five").css("background-color", "white");
   }
-
-  function on99() {
+function on99() {
     $(".one99").css("background-color", "yellow");
     $(".two99").css("background-color", "LightGreen");
     $(".three99").css("background-color", "LightBlue");
     $(".four99").css("background-color", "LightGrey");
     $(".five99").css("background-color", "pink");
   }
-
-  function off99() {
+function off99() {
     $(".one99").css("background-color", "white");
     $(".two99").css("background-color", "white");
     $(".three99").css("background-color", "white");
     $(".four99").css("background-color", "white");
     $(".five99").css("background-color", "white");
   }
-
-  function on98() {
+function on98() {
     $(".one98").css("background-color", "yellow");
     $(".two98").css("background-color", "LightGreen");
     $(".three98").css("background-color", "LightBlue");
     $(".four98").css("background-color", "LightGrey");
     $(".five98").css("background-color", "pink");
   }
-
-  function off98() {
+function off98() {
     $(".one98").css("background-color", "white");
     $(".two98").css("background-color", "white");
     $(".three98").css("background-color", "white");
