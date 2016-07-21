@@ -74,7 +74,7 @@ the translated site is similarly easy.
 
 ## Where are we in the localisation workflow?
 
-![Workflow](/img/Easyling-workflow.png)
+![Workflow](../img/Easyling-workflow.png)
 
 Easyling bridges the gap between the CMS and the translation workflow;
 it enables you to extract content from the website in a
