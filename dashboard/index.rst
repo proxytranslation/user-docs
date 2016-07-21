@@ -2,12 +2,75 @@
 The Dashboard
 =============
 
+----
+Menu
+----
+
+Dashboard
+=========
+
+.. toctree:: 
+   menu/dashboard/alarm
+   menu/dashboard/auditlog
+   menu/dashboard/sharingsettings
+   menu/dashboard/linkprojects
+   menu/dashboard/pagecache
+   menu/dashboard/pathsettings
+   menu/dashboard/advancedsettings
+   menu/dashboard/translationmemory
+   menu/dashboard/pretranslate
+   menu/dashboard/autopretranslate
+   menu/dashboard/removeproject
+
+Discovery
+=========
+
 .. toctree::
-   menu/dashboard
-   menu/discovery
-   menu/content
-   menu/pagemodifiers
-   menu/publishwebsite
-   menu/integrations
-   
+   menu/discovery/statistics
+   menu/discovery/discoverysettings
+   menu/discovery/pages
+   menu/discovery/resources
+   menu/discovery/externallinks
+
+Content
+=======
+
+.. toctree::
+   menu/content/pages
+   menu/discovery/resources
+   menu/discovery/externallinks
+   menu/content/managesegments
+   menu/content/proxymigration
+   menu/content/workpackages
+   menu/content/importtranslation
+   menu/content/exporttranslation
+   menu/content/previousexports
+
+Page Modifiers
+==============
+
+.. toctree::
+   menu/pagemodifiers/csseditor
+   menu/pagemodifiers/javascripteditor
+   menu/pagemodifiers/contentoverride
+
+Publish Website
+===============
+
+.. toctree::
+   menu/publishwebsite/domainsettings
+   menu/publishwebsite/languageselector
+   menu/publishwebsite/wordpressplugin
+
+Integrations
+============
+
+.. toctree::
+   menu/Integrations/dropbox
+
+--------
+Cookbook
+--------
+
+.. toctree::
    cookbook/cookbook
