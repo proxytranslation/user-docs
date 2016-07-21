@@ -138,16 +138,15 @@ setup" section for details.
 
 ## Further Information
 
-Visit our [Home page](https://easyling.com) and sing up for a
+Visit us at our [Home page](https://easyling.com) and sign up for a
 dedicated demo if you are new to translation over the proxy!
 
-See [https://easyling.com/pricing](https://easyling.com/pricing) for
+See <https://easyling.com/pricing> for
 detailed information about our service fees.
 
-Contact Our support channel:
-[support@easyling.com](mailto:support@easyling.com)
+Contact Our support Channel: <support@easyling.com>
 
-Check out our other tutorials:
+Check out all the other tutorials we've compiled:
 
 **Tutorials**
 
