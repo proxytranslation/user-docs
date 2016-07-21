@@ -3,7 +3,27 @@
 Easyling is a cloud-based translation proxy solution designed to make
 websites available in several languages. Easily.
 
-**What does it mean?**<br>
+## What is a translation proxy?
+
+In effect a translation proxy is a layer placed between the browser
+and the original website, through which the visitor sees the original
+website in a different language.
+
+There are several proxy solutions available on the market, yet
+Easyling is unique in that:
+
+- it is a solution targeted primarily on LSPs - which also means that
+  this is the ONLY LSP-independent solution on the market
+
+- also available as a whitelabel solution
+
+- standard-compilant XLIFF export option ensures CAT-independency
+
+- automated XLIFF export/import option between CAT / Translation
+  management systems and Easyling
+
+- in-context live preview available in certain CAT-tools at
+  translation-time
 
 If you are a **business owner**, it can help you reach a wider
 customer-base through providing information to your potential
@@ -52,6 +72,24 @@ visitor's side.
 Data can be extracted with a couple of clicks - and the publication of
 the translated site is similarly easy.
 
+## Where are we in the localisation workflow?
+
+![Workflow](/img/Easyling-workflow.png)
+
+Easyling bridges the gap between the CMS and the translation workflow;
+it enables you to extract content from the website in a
+translation-ready format that can be used in ***any*** translation
+environment.
+
+- If you are a content owner, it means that you have a
+technology solution that enables you to choose any LSP that suits your
+language requirements the best.
+
+- If you are an LSP, it means that you can take care of the website
+translation requirements of your clients.
+
+In either case, technology will no longer be the bottleneck.
+
 ## Features
 
 - processes HTML, handle JavaScript/AJAX/JSON, XML (note: translation
@@ -98,12 +136,18 @@ to use & sell Easyling as your own product. In order to create the
 branded version, seven criteria must be met. See the "Whitelabel
 setup" section for details.
 
-## Pricing & Information
+## Further Information
+
+Visit our [Home page](https://easyling.com) and sing up for a
+dedicated demo if you are new to translation over the proxy!
 
 See [https://easyling.com/pricing](https://easyling.com/pricing) for
 detailed information about our service fees.
 
-Make sure you check out our other tutorials, too!
+Contact Our support channel:
+[support@easyling.com](mailto:support@easyling.com)
+
+Check out our other tutorials:
 
 **Tutorials**
 
@@ -111,7 +155,6 @@ Make sure you check out our other tutorials, too!
   - [https://www.youtube.com/watch?v=8VsBy2bGo64](https://www.youtube.com/watch?v=8VsBy2bGo64)
   - [https://gitlab.com/easyling/wikis/home](https://gitlab.com/easyling/wikis/home)
   - [https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA](https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA)
-
   - [http://lesson101.tutorial.easyling.com/](http://lesson101.tutorial.easyling.com/)
   - [http://lesson102.tutorial.easyling.com/](http://lesson102.tutorial.easyling.com/)
   - [http://lesson103.tutorial.easyling.com/](http://lesson103.tutorial.easyling.com/)
