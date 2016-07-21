@@ -81,4 +81,5 @@ Cookbook
 --------
 
 .. toctree::
-   cookbook/cookbook
+   cookbook/whitelabel
+   cookbook/rtlconversion

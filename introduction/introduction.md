@@ -1,5 +1,3 @@
-# Introduction
-
 Easyling is a cloud-based translation proxy solution designed to make
 websites available in several languages. Easily.
 
@@ -47,7 +45,7 @@ grabbing translatable and localizable content - and convert it into a
 translatable format. This gives a realistic view of the magnitude of
 the translation task, and, thanks to the translation proxy, even a
 partially translated site can give full user experience on the website
-visitor's side.  
+visitor's side.
 
 Data can be extracted with a couple of clicks - and the publication of
 the translated site is similarly easy.
@@ -89,3 +87,35 @@ the translated site is similarly easy.
 
 - Regular expression is a great way to reduce the amount of content to
   be translated.
+
+## Whitelabel
+
+Easyling offers a white label version that can be customized with your
+corporate logos and domains to create a branded version, allowing you
+to use & sell Easyling as your own product. In order to create the
+branded version, seven criteria must be met. See the "Whitelabel
+setup" section for details.
+
+## Pricing & Information
+
+See [https://easyling.com/pricing](https://easyling.com/pricing) for
+detailed information about our service fees.
+
+Make sure you check out our other tutorials, too!
+
+**Tutorials**
+
+  - [https://www.youtube.com/watch?v=S47kArNiJ1o](https://www.youtube.com/watch?v=S47kArNiJ1o)
+  - [https://www.youtube.com/watch?v=8VsBy2bGo64](https://www.youtube.com/watch?v=8VsBy2bGo64)
+  - [https://gitlab.com/easyling/wikis/home](https://gitlab.com/easyling/wikis/home)
+  - [https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA](https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA)
+
+  - [http://lesson101.tutorial.easyling.com/](http://lesson101.tutorial.easyling.com/)
+  - [http://lesson102.tutorial.easyling.com/](http://lesson102.tutorial.easyling.com/)
+  - [http://lesson103.tutorial.easyling.com/](http://lesson103.tutorial.easyling.com/)
+  - [http://lesson105.tutorial.easyling.com/](http://lesson105.tutorial.easyling.com/)
+
+**Release notes**
+
+  - [https://www.easyling.com/category/blogpost/release-notes/](https://www.easyling.com/category/blogpost/release-notes/)
+  - [https://www.easyling.com/change-logs/](https://www.easyling.com/change-logs/)
