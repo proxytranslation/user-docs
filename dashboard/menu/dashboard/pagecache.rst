@@ -1,5 +1,5 @@
 Page Caches
-...........
+:::::::::::
 
 [[Screenshot of the Easyling Caching model]]
 
@@ -41,7 +41,14 @@ Caches for any given project.
 We discuss the two different kinds of caches in separate section.
 
 
+Source Cache
+............
 
 .. toctree::
    pagecache/sourcecache
+
+Target Cache
+............
+
+.. toctree::
    pagecache/targetcache
