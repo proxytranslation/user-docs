@@ -15,5 +15,3 @@ Issues
    issues/site-search
    issues/wpengine
    issues/captcha
-   
-

@@ -66,18 +66,17 @@ section was expanded with two new items and you have 4500 new source
 words to deal with - indelibly added to the project, but not part of
 the original deal. 
 
-You have the following options:
+The following features are available:
 
 **Freeze pagelist**: Prevent new pages from being added to the
 pagelist. If you turn this option on, you can use the various preview
 modes without having to worry about new content.
 
-**Handle unknown pages as externalized**: Pages that are not in the
-pagelist will be _externalized_, that is, not translated _at
-all_. Normally, if a page is not externalized, any content that is
-already translated somewhere else will be _propagated_ to the new
-page. By externalizing unknown pages, you let Easyling return
-untranslated segments in their completely untranslated, original form.
+**Handle unknown pages as externalized**: Pages that are not already
+in the pagelist will be _externalized_, that is, not translated _at
+all_, the same as if the page was manually excluded. Be aware that on
+a live site, this may result in an SEO penalty (due to duplicate
+content being detected by the crawler)!
 
 **Freeze translation memory**: No new translatable segments will be
 added to a project as long as this Freeze is turned on (automatically
@@ -286,14 +285,14 @@ changed to adding new segments in one of two states, “Pending” or
 backup owners, or users with the Customer [role][Sharing Settings] can
 alter segment states.
 
-“*Pending*” segments are those that are awaiting a decision on
+“**Pending**” segments are those that are awaiting a decision on
 translation. They will not be included into exports unless the
 relevant option is selected at export-time, and will not appear for
 translation unless filtered for specifically. Users able to alter
 segment states may move these into either one of the other two states,
 by approving them for translation, or excluding them entirely.
 
-“*Excluded*” segments are those that have been deemed as not requiring
+“**Excluded**” segments are those that have been deemed as not requiring
 translation at all. Unless the relevant option is selected, they are
 not included in exports and will not appear for translation unless
 filtered for specifically. Users able to alter segment states may
