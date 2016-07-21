@@ -2,6 +2,8 @@
 
 ![Discovery statistics](/img/discovery-statistics.png)
 
+<!-- Not very markdown-y, but we'll make an exception -->
+
 <body class="container">
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -66,11 +68,10 @@ function off98() {
 		padding: 3px;
 	}
 </style>
-<h1 translate="no"><center>Lesson 101 - Understanding Statistics</center></h1>
+
 <p translate="no">To understand the way statistics work in Easyling, we have to start with the most important fact: in our application, the largest unit of measurement is a <b>block</b>, which is usually represented by a <b>&lt;p&gt;</b> or a <b>&lt;div&gt;</b>. Blocks break down to segments, segments to words, words to letters. Since Easyling deals exclusively with content in webpages, HTML tags also play an important part in weighing the repetitions.</p>
 <p translate="no">It is also important to note that the statistics in Easyling are different degrees of repetitions. The website's content is repetitioned agaist itself, simulating a translation process, not unlike the Homogeneity feature in MemoQ.</p>
 <p translate="no">With that in mind, here is a breakdown of the percentages in our Statistics. You can find these explanations if you hover your mouse over each repetition row:</p>
-<center><img src="/4.png"></center>
 <h3 translate="no">102% - Strong contextual repetitions</h3>
 <p translate="no">These are block repetitions. Every segment in the block is a 101% repetition, and all the tags are identical. We do not charge for these repetitions and they are propagated automatically within the project.</p>
 <h3 translate="no">101% - Contextual repetitions</h3>
@@ -127,22 +128,4 @@ function off98() {
 </tbody>
 </table>
 <br/><br/>
-<!--
-<p>To demonstrate this, here are a few paragraphs, and then their repetitions highlighted for <span style="background-color: #DFAAE6">102%</span>, <span style="background-color: #AAC3E6">101%</span>, <span style="background-color: #AAE6C4">100%</span>, <span style="background-color: #E4E6AA">98%</span> and <span style="background-color: #E6C3AA">98%</span>.</p>
-<p style="border: 1px solid black; padding: 5px; background-color: #eeeeee;">The &lt;b&gt;<b>quick, brown</b>&lt;/b&gt; &lt;a  href="http://en.wikipedia.org/wiki/Fox"&gt;<a href="http://en.wikipedia.org/wiki/Fox">fox</a>&lt;/a&gt; jumps over the lazy dog. The dog gets really angry, and chases away the fox. The fox regrets the whole thing and quits jumping, &lt;i&gt;<i>leading</i>&lt;/i&gt; to its ultimate demise. The dog lives happily ever after. The End.</p> 
-
-<p><span style="background-color: #DFAAE6">The &lt;b&gt;<b>quick, brown</b>&lt;/b&gt; &lt;a  href="http://en.wikipedia.org/wiki/Fox"&gt;<a href="http://en.wikipedia.org/wiki/Fox">fox</a>&lt;/a&gt; jumps over the lazy dog. The dog gets really angry, and chases away the fox. The fox regrets the whole thing and quits jumping, &lt;i&gt;<i>leading</i>&lt;/i&gt; to its ultimate demise. The dog lives happily ever after. The End.</span></p> 
-<br/>
-<p style="border: 1px solid black; padding: 5px; background-color: #eeeeee;">&lt;b&gt;<b>John Smith</b>&lt;/b&gt; is the the new &lt;a  href="http://en.wikipedia.org/wiki/Smith"&gt;<a href="http://en.wikipedia.org/wiki/Smith">smith</a>&lt;/a&gt; in town. He gets the job done, and the townsfolk are happy with it. But when another Smith arrives in town, he can not handle the competition. They fight. It ends badly. The end.</p>
-<p><span style="background-color: #AAC3E6">&lt;b&gt;<b>John Smith</b>&lt;/b&gt; is the the new &lt;a  href="http://en.wikipedia.org/wiki/Smith"&gt;<a href="http://en.wikipedia.org/wiki/Smith">smith</a>&lt;/a&gt; in town. He gets the job done, and the townsfolk are happy with it. But when another Smith arrives in town, he can not handle the competition. They fight. It ends badly.</span> <span style="background-color: #E4E6AA">Maybe not the end just yet.</span></p>
-<br/>
-<p style="border: 1px solid black; padding: 5px; background-color: #eeeeee;">&lt;i&gt;<i>Once upon a time</i>&lt;/i&gt;, there was a boy. His name was Timmy. He was very happy with his life, but then something bad happened. And that is the end.</p>
-<p><span style="background-color: #AAE6C4">The end. He was very happy with his life, but then something bad happened. His name was Timmy. &lt;i&gt;<i>Once upon a time</i>&lt;/i&gt;, there was a boy.</span></p>
-<br/>
-<p style="border: 1px solid black; padding: 5px; background-color: #eeeeee;">Our new product has gotten &lt;b&gt;<b>excellent reviews</b>&lt;/b&gt;. And rightfully so, it is a great product. Customers all over the internet are raving about it. As a proof, we have attached a screenshot here.&lt;br/&gt;<br/>&lt;img src="/sample.png"&gt;<img src="/sample.png"></p>
-<p><span style="background-color: #E4E6AA">Customers all over the internet are raving about it.<br/> As a proof, we have attached a screenshot here. And rightfully so, it is a great product.<br/> Our new product has gotten excellent reviews.<br/></span></p>
-<br/>
-<p style="border: 1px solid black; padding: 5px; background-color: #eeeeee;">We have arrived at 98% now. &lt;b&gt;<b>Tags</b>&lt;/b&gt; do not matter anymore. Neither do all the 1234 numbers. Nor The Cases.</p>
-<p><span style="background-color: #E6C3AA">We have arrived &lt;b&gt;<b>at</b>&lt;/b&gt; 97% now. &lt;i&gt;<i>Tags</i>&lt;/i&gt; do not matter anymore. Neither &lt;b&gt;<b>do</b>&lt;/b&gt; all the 5678 numbers. Nor the &lt;u&gt;<u>cases</u>&lt;/u&gt;.</span></p>
--->
 </body>
