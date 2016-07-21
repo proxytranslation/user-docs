@@ -18,13 +18,13 @@ At the same time, the embed code text box changes and displays the
 `<script>` tag that needs to be embedded within the original site's
 `<head></head>` tags.
 
-# Sidebar
+## Sidebar
 
 The sidebar is an easy-to-deploy language selector that displays flags
 for each specified target locale on the left or right side of the
 website. The horizontal orientation and display names are settable.
 
-# Dropdown
+## Dropdown
 
 This variant is a bit more complex and feature-rich. It requires an
 **additional div element on the original page** besides the `<script>`
@@ -38,7 +38,7 @@ target languages.
 At the bottom of the menu, you can configure the **display names** for
 the different languages. 
 
-# RYO Selector
+## RYO Selector
 
 The third option, implementing a language selector from scratch, does
 require development resources, but it also allows practically infinite
