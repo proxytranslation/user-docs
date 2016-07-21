@@ -73,7 +73,6 @@
             padding: 3px;
         }
     </style>
-    </head>
 
     <body class="container">
         <h1 translate="no"><center>Lesson 101 - Understanding Statistics</center></h1>
