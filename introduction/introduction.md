@@ -7,6 +7,11 @@ websites available in several languages. Easily.
 
 **What is a translation proxy?**
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+<iframe src="//www.youtube.com/embed/S47kArNiJ1o" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+</iframe>
+</div>
+
 In effect a translation proxy is a layer placed between the browser
 and the original website, through which the visitor sees the original
 website in a different language.
