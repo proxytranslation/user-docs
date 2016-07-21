@@ -2,8 +2,49 @@
 
 ![Discovery statistics](/img/discovery-statistics.png)
 
-<!-- Not very markdown-y, but we'll make an exception -->
+To understand the way statistics work in Easyling, we have to start
+with the most important fact: in our application, the largest unit of
+measurement is a block, which is usually represented by a <p> or a
+<div>. Blocks break down to segments, segments to words, words to
+letters. Since Easyling deals exclusively with content in webpages,
+HTML tags also play an important part in weighing the repetitions.
 
+It is also important to note that the statistics in Easyling are
+different degrees of repetitions. The website's content is
+repetitioned agaist itself, simulating a translation process, not
+unlike the Homogeneity feature in MemoQ.
+
+With that in mind, here is a breakdown of the percentages in our
+Statistics. You can find these explanations if you hover your mouse
+over each repetition row:
+
+1. **102% - Strong contextual repetitions**: These are block
+   repetitions. Every segment in the block is a 101% repetition, and
+   all the tags are identical. We do not charge for these repetitions
+   and they are propagated automatically within the project.
+
+2. **101% - Contextual repetitions**: These repetitions are comparable
+   to the 101% repetitions in MemoQ, or Context Matches in SDL Trados
+   Studio. Both tags in the segment, and contexts (segments
+   immediately before and after) repetition.
+
+3. **100% - Regular repetitions**: This one is straightforward, and
+   comparable to the Repetitions count in MemoQ or Trados. The segment
+   is repeated exactly, including all tags.
+
+4. **99% - Strong fuzzy repetitions**: In this case, a repetition is
+   found after few transformations on the segment before comparing:
+   tags from the ends are stripped out, words lowercased, numbers
+   ignored.
+
+5. **98% - Weak fuzzy repetitions**:Here, all tags are stripped out,
+   not just the ones in the end; words lowercased, numbers ignored.
+
+You will find an illustration of the various repetitions in the table
+below. Hover your mouse over any of the matches to highlight the
+differences.
+
+<!-- Not very markdown-y, but we'll make an exception this time -->
 <body class="container">
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -55,35 +96,19 @@ function off98() {
 	.ui-field {
 		font-weight: bold;
 	}
-
 	.ui-value {
 		font-style: italic;
 	}
-
 	.ui-button {
 		font-weight: bold;
 	}
-
 	.pad {
 		padding: 3px;
 	}
 </style>
 
-<p translate="no">To understand the way statistics work in Easyling, we have to start with the most important fact: in our application, the largest unit of measurement is a <b>block</b>, which is usually represented by a <b>&lt;p&gt;</b> or a <b>&lt;div&gt;</b>. Blocks break down to segments, segments to words, words to letters. Since Easyling deals exclusively with content in webpages, HTML tags also play an important part in weighing the repetitions.</p>
-<p translate="no">It is also important to note that the statistics in Easyling are different degrees of repetitions. The website's content is repetitioned agaist itself, simulating a translation process, not unlike the Homogeneity feature in MemoQ.</p>
-<p translate="no">With that in mind, here is a breakdown of the percentages in our Statistics. You can find these explanations if you hover your mouse over each repetition row:</p>
-<h3 translate="no">102% - Strong contextual repetitions</h3>
-<p translate="no">These are block repetitions. Every segment in the block is a 101% repetition, and all the tags are identical. We do not charge for these repetitions and they are propagated automatically within the project.</p>
-<h3 translate="no">101% - Contextual repetitions</h3>
-<p translate="no">These repetitions are comparable to the 101% repetitions in MemoQ, or Context Matches in SDL Trados Studio. Both tags in the segment, and contexts (segments immediately before and after) repetition.</p>
-<h3 translate="no">100% - Regular repetitions</h3>
-<p translate="no">This one is straightforward, and comparable to the Repetitions count in MemoQ or Trados. The segment is repeated exactly, including all tags.</p>
-<h3 translate="no">99% - Strong fuzzy repetitions</h3>
-<p translate="no">In this case, a repetition is found after few transformations on the segment before comparing: tags from the ends are stripped out, words lowercased, numbers ignored.</p>
-<h3 translate="no">98% - Weak fuzzy repetitions</h3>
-<p translate="no">Here, all tags are stripped out, not just the ones in the end; words lowercased, numbers ignored.</p>
 <hr>
-<p translate="no">Hover your mouse over the matches to see the differences highlighted.</p>
+
 <table border="1">
 <thead>
 <tr>
@@ -118,14 +143,11 @@ function off98() {
 <td class="pad" translate="no">99%, 5 repetitions. Aside from the reversed order, some words are in a different case, and one segment even has a tag at the end (&lt;br/&gt;) which is not found in the source.</td>
 </tr>
 
-
 <tr>
 <td class="pad" onmouseover="on98();" onmouseout="off98();"><span class="one98">The <b>quick, brown</b> <a href="http://en.wikipedia.org/wiki/Fox">fox</a> jumps over the lazy doge.</span> <span class="two98">The doge gets really angry, and chases away the fox.</span> <span class="three98">The foxe regrets the whole thing and quits jumping, <i>leading</i> to its ultimate demise.</span> <span class="four98">The doge lives happily ever after.</span> <span class="five98">The End of story 3.</span></td>
 <td class="pad" onmouseover="on98();" onmouseout="off98();"><span class="five98">The <u>End</u> Of Story 4.</span> <span class="four98">The DOGE lives <u>happily</u> ever after.</span> <span class="three98">The foxe regrets the whole thing and quits jumping, <b>leading</b> to its ultimate demise.&lt;br/&gt;<br/></span> <span class="two98">The doge gets <b>Really Angry</b>, and chases away the FOX.</span> <span class="one98">The <i>quick, brown</i> <a href="http://en.wikipedia.org/wiki/Fox">fox</a> JUMPS over the lazy doge.</span></td>
 <td class="pad" translate="no">98%, 5 repetitions. Many tags are changed and/or inserted, and more words are in different cases now.</td>
 </tr>
-
 </tbody>
 </table>
-<br/><br/>
 </body>
