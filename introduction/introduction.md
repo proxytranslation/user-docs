@@ -46,7 +46,7 @@ business: cross-cultural communication. What's more, your translators
 don't need to learn using just another tool, they can keep using their
 own preferred CAT-tools.<br> 
 
-***Sounds good?***
+**Sounds good?**
 
 There are several challenges both business owners and language service
 providers face during website translation. The "ideal" workflow would
@@ -74,7 +74,7 @@ visitor's side.
 Data can be extracted with a couple of clicks - and the publication of
 the translated site is similarly easy.
 
-** Where are we in the localisation workflow?**
+**Where are we in the localisation workflow?**
 
 ![Workflow](../img/Easyling-workflow.png)
 
