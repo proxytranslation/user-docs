@@ -17,7 +17,7 @@ Dashboard
    menu/dashboard/auditlog
    menu/dashboard/sharingsettings
    menu/dashboard/linkprojects
-   menu/dashboard/pagecache
+   menu/dashboard/pagecache.rst
    menu/dashboard/pathsettings
    menu/dashboard/advancedsettings
    menu/dashboard/translationmemory
