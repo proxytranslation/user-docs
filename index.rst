@@ -3,7 +3,7 @@ Easyling User Documentation
 ===========================
 
 .. toctree::
-   introduction/introduction
+   introduction/introduction.rst
    dashboard/index.rst
    workbench/workbench_index.rst
    maintenance/maintenance_index.rst
