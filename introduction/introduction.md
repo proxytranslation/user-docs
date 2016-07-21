@@ -5,22 +5,20 @@
 Easyling is a cloud-based translation proxy solution designed to make
 websites available in several languages. Easily.
 
-**What is a translation proxy?**
+A translation proxy is a layer placed between the browser and the
+original website, through which the visitor sees the original website
+in a different language.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
 <iframe src="//www.youtube.com/embed/S47kArNiJ1o" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 </iframe>
-</div>
-
-In effect a translation proxy is a layer placed between the browser
-and the original website, through which the visitor sees the original
-website in a different language.
+</div><br/><br/>
 
 There are several proxy solutions available on the market, yet
 Easyling is unique in that:
 
-- it is a solution targeted primarily on LSPs - which also means that
-  this is the ONLY LSP-independent solution on the market
+- it is a solution targeted primarily at LSPs - which also means that
+  this is the **only** LSP-independent solution on the market
 
 - also available as a whitelabel solution
 
@@ -81,7 +79,7 @@ the translated site is similarly easy.
 
 **Where are we in the localisation workflow?**
 
-![Workflow](../img/Easyling-workflow.png)
+![Workflow](/img/misc/easyling_workflow.png)
 
 Easyling bridges the gap between the CMS and the translation workflow;
 it enables you to extract content from the website in a
@@ -145,15 +143,14 @@ setup" section for details.
 
 ## Further Information
 
-Visit us at our [Home page](https://easyling.com) and sign up for a
-dedicated demo if you are new to translation over the proxy!
+Visit us at <https://easyling.com> and sign up for a dedicated demo if
+you are new to translation over the proxy!
 
-See <https://easyling.com/pricing> for
-detailed information about our service fees.
+See <https://easyling.com/pricing> for pricing details.
 
-Contact Our support Channel: <support@easyling.com>
+Contact Support: <support@easyling.com>
 
-Check out all the other tutorials we've compiled:
+Be sure to check out all the other tutorials we've compiled:
 
 **Tutorials**
 
