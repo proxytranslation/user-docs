@@ -14,47 +14,66 @@ Freelance translator or a Language Service Provider. This is for
 statistical purposes only, it has no influence at all on the User
 Experience later on.
 
-## Introducing the Dashboard
-
-After logging in, you will be taken to the Dashboard. This will be
-your project management centre, and we'll get into the details of it
-shortly. But there won't be any projects the first time around -
-we'll have to set one up. 
+After logging in, you will be taken to the Dashboard. This is your
+project management centre, and we'll be getting into its details in
+the coming chapters of the manual. There will be no existing projects
+at the outset, so let's set one up.
 
 ## Setting up Your First Project 
 
-To do this, click on **Create new project** and choose **Add project**
-from the drop-down menu.
+To do this, click on **Create new project** dropdown at the top and
+choose **Add project**.
 
 This opens the **Add project** dialog box, where you can enter the URL
 of the website you would like to translate, and also select the
 website language; this sets the source language of the translation
 project.
 
+![Add Project](/img/dashboard/add_project_dialog.png)
+
+### Add a Target Lanuage
+
+![Add target language](/img/add-target-language.png)
+
+You will also need to add your target langauge(s), so use the option
+on the Dashboard to add then to the project. It's not just that there
+is not much to do in terms of translation without a target: many
+crucial features (including the Preview proxy and the entire
+Workbench) are entirely unavailable as long as no target langauges are
+set. 
+
 ## Running a Discovery
 
 ![Run discovery](/img/discovery.png)
 
-Discovering a website means running a ``crawler`` on it and allowing
-Easyling to 'explore' all its content to provide Statistics for
-you. As you can see in the 'Add project' dialog window, the Dashboard
-is set up to automatically start a Discovery on a webpage after
-creating a project - but don't worry! After clicking on the **Add
-project** button, a new dialog will open where you get to set up
-additional details of the Discovery before the process can run in
-earnest.
+The next challenge is to figure out what (and how much of it) to
+translate, all from a single URL
 
-There are many interesting details that go into setting up an
-effective Discovery, but let's set those aside for the moment. For
-now, simply Click on the 'Add project' button and after the Discovery
-dialog opens, click on Discover to start a crawl on the website.
+Discovering a website means running a ``crawler`` on it and allowing
+the proxy to 'explore' it in its entirety in order to provide
+Statistics for you. As you can see in the 'Add project' dialog window,
+the Dashboard is set up to automatically start a Discovery on a
+webpage after creating a project - but don't worry! After clicking on
+the **Add project** button, a new dialog will open where you get to
+set up additional details of the Discovery before really starting the
+process.
+
+There are many details that potentially have to be taken into account
+when setting up a truly effective Discovery, but let's set those aside
+for the moment. For now, simply Click on the 'Add project' button and
+after the Discovery dialog opens, click on Discover to start a crawl
+on the website. **The default settings are safe.**
 
 Depending on the size of the site, a Discovery can take quite some
-time to finish (a spinner on the Discovery page will indicate that the
-system is currently working, and there is a 100 page limit set by
-default). After the process is over, you'll receive an e-mail about
-the results. You also have your first Statistics from the Discovery -
-a word count total from all Discovered pages.
+time to finish. A spinner on the Discovery page will indicate that the
+system is currently working, but there is a default page limit of 100,
+which means that if the Discovery finds more than one hundred pages,
+it will automatically exit, allowing you to fine-tune your
+settings. 
+
+After the process is over, you'll receive an e-mail about the
+results. You also have your first Statistics from the Discovery - a
+word count total from all Discovered pages.
 
 ## Giving a Quote 
 
@@ -62,20 +81,24 @@ You can use the results of the Discovery to give a quote (based on
 **unique** source words) to your clients about the estimated
 work-hours and expenses you forecast for a given project.
 
-Please note that While the results themselves are a very good
-indication of the translation costs, it is prudent to consider other
-(technical) details before taking the word count results of the
-Discovery process at face value.
+The results are an accurate indication of the translation costs
+associated with the text. However, with websites, it is prudent to
+consider other (techincal) details before taking the word count
+results of the Discovery process at face value.
 
-Investigate the source site and consider the following questions: is
-there a lot of **dynamic content**?  Is there a **search engine** in
-place? A **webshop** or a **forum**? Some **web apps** that would
-require localization? Do the **average word lengths** of the source
-and target languages differ significantly? Is the **direction of the
-target language** different than that of the source language?
+Investigate the source site and consider the following questions: 
 
-There are yet a few additional considerations that may require input
-from the client:
+- is there a great deal of **dynamic content**?
+
+- Any **Site Search** functionality? A **webshop**? A **forum**?
+
+- any other **web apps** that would have to be localized?
+
+- Do the **average word lengths** of the source and target languages
+  differ significantly?
+
+- Is the **direction of the target language** different than that of
+  the source language?
 
 - which pages are targeted for translation? Which pages need to be
   excluded? Ask the client if they have a specific page list.
@@ -96,9 +119,9 @@ from the client:
 
 - is there any Javascript-generated content?
 
-Some of these issues will require attention, such as UI fixes and a
-measure of fiddling with the technology under the hood - take them
-into account when making your quote.
+These issues will require attention, often beyond the primary focus of
+translators: UI fixes and a measure of fiddling with what's under the
+hood - take those expenses into account when you make your quote.
 
 If you are unsure about a functionality on a site, you can always
 contact our **Support Centre** and we'll help you get an accurate
@@ -110,15 +133,15 @@ a never-ending process, as new content is added to the original site
 at certain intervals.
 
 The question is, how content added *after* the initial quote should be
-treated - both technically and financially. It is a good idea to ask
-the client how they intend to treat new content. 
+treated - both from a technological and fiscal viewpoint. It is a good
+idea to ask the client about their intentions for update cycles and
+new content.
 
 Do they wish to publish at the same time in all languages? Or publish
 on the original site without delay, and then publish the translations
-later, as they become available? 
-
-In the first case you need a staging server. The second option raises
-another question.
+later, as they become available? The different options will require
+different approaches when you get to the maintenance phase of the
+project.
 
 As a translation proxy is practically a translation layer on top of
 the original site, serving translations from the datastore by
@@ -157,12 +180,12 @@ or this short [video]
 
 ## On the Workbench
 
-Easyling makes it possible for you to export source segments,
-translate them in your CAT tool of choice and then reimport your
-results. But going through that cycle for each little change you make
-would get rapidly tedious - wouldn't it be great if you could edit &
-control your translations in the cloud, where it would all update in
-real time? That's what the Workbench is for.
+You can export all source segments, translate them in your CAT tool of
+choice and then reimport your results. But going through that cycle
+for every small change would get rapidly tedious - wouldn't it be
+great if you could edit & control your translations in the cloud,
+where it would all update in real time? You're looking for the
+Workbench.
 
 In Pages View, you can hover over any page - a menu will show up right
 next to it - choose 'Translation in List View' and you'll be taken to
@@ -176,10 +199,13 @@ manual for the details.
 
 ## The 3-Phase Workflow 
 
-Barring crucial details (withheld for the convenience of introduction)
-the above process gets you started on a website translation project.
+Barring some detail (withheld for the sake of a convenient
+introduction) the above process is all that you need to get a website
+translation project going.
 
-The Easyling idea of that project can be summarized in the 3-phase
+![Project Workflow Overview](/img/workflow)
+
+Our idea of a project's lifetime can be summarized in the 3-phase
 Workflow.
 
 ### 1. Discover & Quote 
@@ -211,7 +237,8 @@ to schedule, all the while ensuring that visitors to the site will not
 be inconvenienced by bleedthrough of untranslated content.
 
 Maintenance is the "long tail" of website translation - there are a
-variety of features in Easyling that render it a lot more
-convenient than it would ordinarily be.
+variety of features in the proxy that make it a lot easier than it
+would be anyway else.
 
-Keep reading and find out all about it.
+In the following pages, You will find everything there is to know
+about using the proxy. Keep reading!

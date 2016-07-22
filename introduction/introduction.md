@@ -22,13 +22,15 @@ Easyling is unique in that:
 
 - also available as a whitelabel solution
 
-- standard-compilant XLIFF export option ensures CAT-independency
+- standard-compilant XLIFF export option ensures CAT-independence
 
 - automated XLIFF export/import option between CAT / Translation
   management systems and Easyling
 
 - in-context live preview available in certain CAT-tools at
   translation-time
+
+**What does that mean?**
 
 If you are a **business owner**, it can help you reach a wider
 customer-base through providing information to your potential
@@ -77,14 +79,14 @@ visitor's side.
 Data can be extracted with a couple of clicks - and the publication of
 the translated site is similarly easy.
 
-**Where are we in the localisation workflow?**
-
-![Workflow](/img/misc/easyling_workflow.png)
+**Where do we fit in the localization workflow**
 
 Easyling bridges the gap between the CMS and the translation workflow;
 it enables you to extract content from the website in a
 translation-ready format that can be used in ***any*** translation
 environment.
+
+![Workflow](/img/misc/easyling_workflow.png)
 
 - If you are a content owner, it means that you have a
 technology solution that enables you to choose any LSP that suits your
@@ -97,41 +99,31 @@ In either case, technology will no longer be the bottleneck.
 
 ## Features
 
-- processes HTML, handle JavaScript/AJAX/JSON, XML (note: translation
+- process HTML, JavaScript/AJAX/JSON, XML (note: translation
   of Flash is not supported)
   
-- Use the X-Proxy to determine what would be currently translated. If
-  it doesn't, use the Advanced Settings to fine-tune the JSON/XML path
-  settings
+- Use the X-Proxy and other Preview mode domains to see everything in
+  context. use Advanced Settings to translate text coming from
+  JSON/XML sources.
   
-- The crawler can discover static pages / HTML content only. You have
-  to manually add any extra AJAX URLs, with the proper parameters.
+- Automatically crawl static pages / HTML content only. Add extra AJAX
+  URLs with the proper parameters.
 
-- When you run the crawler, always use Discovery first, and be
-  incremental: "Unlimited" really means unlimited, and as such, can
-  yield to very-very high cost. Running an unlimited crawl on an
-  e-commerce website is a very-very bad idea.
+- Fine-tune your settings to help the crawler decide what URLs to
+  handle as same, and what to visit looking for new content.
 
-- Based on the initial, limited crawls, fine-tune the "Ignore query"
-  parameters, to help the crawler decide what URLs to handle as same,
-  and what to visit in hope of new content to be discovered.
+- Translate forms, messages and dynamic content
 
-- Always check all the forms for error messages, congratulation
-  messages, etc.
+- Translate images: replace them with their localized counterparts on
+  a target-language basis.
 
-- Check all the images; some website like to bake the text into the
-  image. Those will require your attention.
+- Link any external domain via multiple projects.
 
-- Pay attention to forms etc included from domains outside of
-  Easyling. Typical examples: Marketo, optimizely.com, etc. You'll
-  have to create new Easyling project for them, then linking together
-  the projects.
+- Modify page behavior using customized CSS and JavaScript injection.
 
-- Never underestimate the power of injecting CSS and/or JS into the
-  translated pages
+- Use regular expressions to filter for content.
 
-- Regular expression is a great way to reduce the amount of content to
-  be translated.
+and many more!
 
 ## Whitelabel
 

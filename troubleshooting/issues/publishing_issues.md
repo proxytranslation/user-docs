@@ -18,3 +18,4 @@ If you have several languages, it might be more convenient to clear the entire T
 Google has never indexed the site in the first place, most likely due to the fact that there are no "hreflang" links on any of the pages, so the Googlebot has no idea there are other pages to look for. More information on the element and how it affects Google rankings may be found at [https://support.google.com/webmasters/answer/189077?hl=en](https://support.google.com/webmasters/answer/189077?hl=en)
 
 Additionally, creating and submitting a sitemap (more information at [https://support.google.com/webmasters/answer/2620865](https://support.google.com/webmasters/answer/2620865)) to Google in order to force an indexing of the pages can also help. Even so, without the hreflang attributes, it may mean that some penalty is applied to the rankings, due to perceived duplicate content.
+

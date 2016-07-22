@@ -68,6 +68,7 @@ Publish Website
    menu/publishwebsite/domainsettings
    menu/publishwebsite/languageselector
    menu/publishwebsite/wordpressplugin
+   menu/publishwebsite/clientsidetranslation
 
 Integrations
 ============
