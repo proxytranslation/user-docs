@@ -1,32 +1,33 @@
 # Advanced settings
 
-It is not an exaggeration that the Advanced settings screen is where
-you can get a first taste of the advanced capabilities (the
-nitty-gritty) of Easyling.
+The Advanced settings screen is the _nitty-gritty_ of the technical
+side of the proxy, the various features of which make complex project
+management and involved content extraction/management possible.
 
-Some, such az Freezes, are general enough to warrant close attention
-from all users, others, such as the Tweaks checkbox list are required
-only in specific cases, so you can go through many, many projects
-without ever having to worry about them. Let's take these features one
-by one.
+Some, such az **Freezes**, are general enough to warrant close
+attention from all users, others, such as the **Tweaks** checkbox list
+are required only in specific cases, so you can go through many, many
+projects without ever having to worry about them. In this section, we
+take a look at all options in the order that they appear on the
+Dashboard.
 
 **Pattern matching**: there is often a great deal of text on a website
-that is not targeted for translation, because they are highly
-repetitive (usernames, dates) or numeric in nature (prices), just to
-mention a few possibilities.
+that is not targeted for translation, because it is highly repetitive
+or numeric in nature, usernames, timestamps and prices fall into this
+category of content, to mention a few of many possible cases where
+Pattern Matching might come handy.
 
-You can construe regular expressions and add them here, one regular
-expression per line, and if that regex has a capturing group, anything
-that is **matched by that capturing group** will be treated as
-translation-invariable.
+You can construct regular expressions and add them here, one regular
+expression per line.
+
+If that regex has a capturing group, anything that is **matched by
+that capturing group** will be treated as **translation-invariable**.
 
 It is important to note that if you add regexes here later into the
 project, your existing segments will remain in the Workbench. Pattern
-matching does **NOT** delete any segments.
+matching does **NOT** delete or exclude any segments.
 
 **Example: filtering usernames and dates**
-
-Let's say you have content like the following on a site:
 
 ```
 Posted by youTuTroll on Apr. 4, 13:22, 2010
@@ -38,22 +39,23 @@ Posted by OMEGA on Apr. 7, 11:59, 2010
 
 Repetitive and inconsequential from a translation/word count
 viewpoint, the usernames and dates should be made
-translation-invariant. You can add a regex for it (such as the one
-below) in the textbox and Easyling will exclude whatever is matched
-within a capturing group.
+translation-invariant in the content above. You can add a regex for it
+(such as the one below) in the textbox and Easyling will exclude
+whatever is matched within a capturing group.
 
 `Posted by ([\w]+) on ([\w]{3}\.\s[0-9]{1,2},\s[0-9]{2}:[0-9]{2},\s2[0-9]{3})`
 
-We recommend that you visit regex101.com and test your regular
-expressions with example snippets before setting them on a live
-project.
+We recommend that you visit <http://www.regex101.com> and test your
+regular expressions with example snippets before setting them on a
+live project.
 
-### Freeze
+## Freeze
 
-These options become important after translation has begun in
-earnest. At this point, it is a good idea to __freeze__ the page list
-and the segments - that is, prevent _inadvertent_ addition of new
-text or pages to the list you are currently working on.
+The following are important options for when translation has already
+begun in earnest on a batch of content. At this point, it is a good
+idea to __freeze__ the page list and the segments - that is, prevent
+_inadvertent_ addition of new text or pages to the list you are
+currently working on.
 
 **WARNING:** These settings can be overriden via explicit user action:
 adding Pages via the blue icon in the page list, or running Scans with
@@ -64,7 +66,7 @@ specific state of the site at a given time), it wouldn't do to return
 a few days after winning the project only to find that the news
 section was expanded with two new items and you have 4500 new source
 words to deal with - indelibly added to the project, but not part of
-the original deal. 
+the original deal.
 
 The following features are available:
 
@@ -84,14 +86,16 @@ enables Page Freeze).
 
 ## Group pages
 
-the Proxy Application can group automatically generated pages
-together, preventing new pages from being added, but not removing
-already added pages, and making the grouped pages share a single
-dictionary, necessitating translation of only one. The pages will be
-grouped according to the path rules specified in the textbox, one path
-per line, with a `\*` as the wildcard character. This does not
-decrease the volume of pages that will be crawled, but it makes
-project maintenance easier.
+Specify path rules to group pages into one entry, preventing new pages
+from being added, but not removing preexisting pages, and making the
+grouped pages share a single dictionary, necessitating translation of
+only one. The pages will be grouped according to the path rules
+specified in the textbox, one path per line. 
+
+This feature is not meant to and does not decrease the amount of pages
+a Discovery has to crawl, but it makes project maintenance easier, as
+it prevents your page lists from being overcrowded with repetitive
+URLs.
 
 ## JavaScript translation
 
@@ -103,13 +107,15 @@ JavaScript files as translatable pages in the pagelist, from where
 they can be selected for translation in the List View like regular
 pages, and any values for the selected attributes will be made
 available as translatable entries, which are treated identical to
-regular entries. Entering “` html`” (note that the switch is separated
-by a space!) after the path specification will result in the Proxy
-Application applying its HTML parser to the match instead of a
-plaintext parser, stripping out HTML markup and only offering the
-actual content for translation (otherwise, should the match contain
-markup, the translator must take care not to alter it, or risk
-breaking the translated site).
+regular entries. 
+
+Entering “` html`” (note that the switch is separated by a space!)
+after the path specification will result in the Proxy Application
+applying its HTML parser to the match instead of a plaintext parser,
+stripping out HTML markup and only offering the actual content for
+translation (otherwise, should the match contain markup, the
+translator must take care not to alter it, or risk breaking the
+translated site).
 
 If a field of the JSON being parsed contains further JSON data in a
 stringified form `("key": "{\\"key\\":{\\"key\\":\\"value value
@@ -119,24 +125,24 @@ next line by adding “`.json.`”.
 
 ## XPath Translation
 
-The Proxy Application is able to translate XML (eXtensible Markup
-Language) files sent by the remote server, according to the XPath
-standard of specifying elements of the XML structure. Similar to
-JavaScript translation, entering the “` html`” switch will result in
-the HTML parser being applied, while no switch will parse the match as
+The Proxy Application can translate XML (eXtensible Markup Language)
+files sent by the remote server, according to the XPath standard of
+specifying elements of the XML structure. Similar to JavaScript
+translation, entering the “` html`” switch will result in the HTML
+parser being applied, while no switch will parse the match as
 plaintext.
 
 ## Mark multiple Resources as Translatable
 
 Using URL prefixes (N.B. fully qualified URL prefixes, including
-protocol, host, and possibly path structures!), the Proxy Application
-can enforce dictionaries over multiple resources in a single
-rule. This is especially useful if the site under translation contains
-an API (especially CREST APIs) whose responses also require
-translation, and each endpoint is served on a different path; in this
-case, entering the root of the API here will automatically capture all
-responses from that path without having to individually mark them as
-translatable from the Resources menu.
+protocol, host, and possibly path structures!), the Proxy can enforce
+dictionaries over multiple resources in a single rule. This is
+especially useful if the site under translation contains an API
+(especially CREST APIs) whose responses also require translation, and
+each endpoint is served on a different path; in this case, entering
+the root of the API here will automatically capture all responses from
+that path without having to individually mark them as translatable
+from the Resources menu.
 
 ## Additional Remote Request Headers
 
@@ -162,14 +168,14 @@ IDs.
 
 ## Process Custom HTML Attributes
 
-Some CMS-es may employ non-standard HTML attributes on elements to
-style the page or otherwise affect certain aspects of their
-operation. If some of these attributes contain translatable text, you
-can enter them into the “As text” field to instruct the Proxy
-Application to extract them. If they contain URLs that need to be
-mapped to the translated domain, you can use the “As link” field to
-instruct the Proxy Application to map those non-standard link elements
-as well.
+Some Content Management Systems may employ non-standard HTML
+attributes on various elements to style the page or otherwise affect
+aspects of their operation. If some of these attributes contain
+translatable text, you can enter them into the “As text” field to
+instruct the Proxy Application to extract them. If they contain URLs
+that need to be mapped to the translated domain, you can use the “As
+link” field to instruct the Proxy Application to map those
+non-standard link elements as well.
 
 On request, it is also possible to activate an HTML parser for certain
 attributes, should they contain HTML formatting in their values.
@@ -177,8 +183,8 @@ attributes, should they contain HTML formatting in their values.
 ## Tweaks
 
 In this menu, you'll find checkboxes for settings that apply to very
-specific circumstances. For those special times, when you come across
-the occassional special snowflake. When in doubt, contact us!
+specific circumstances. For those special snowflakes and
+occassions. When in doubt, contact us!
 
 - **Retaining original DOCTYPEs**: By default, the Proxy Application
   generates an HTML5 standards-compliant file to send to the
@@ -258,42 +264,45 @@ the occassional special snowflake. When in doubt, contact us!
 ## Manual Publishing
 
 *Manual Publishing* is advanced project control feature that gives
-project owners the ability to hold back the translations from being
+project owners the ability to withhold the translations from being
 published on the live page (but not the preview, as it will always
 display the latest translation available!) until further notice.
 
 The feature can be activated from the Advanced Settings page. Once
 activated, it will affect all translations going forward, but
-already-existing ones will not be “unpublished”.
+already-existing ones will not be “un-published”.
 
-Once activated, a new item will appear in the Bulk Actions menu,
-“Publish”. Selecting this action will cause all selected segments to
-be synchronized with their displayed translations, and once the action
-finishes, the markers in the status bar on the right of the entries
-will change to reflect this. If the action encounters an error, the
-server will attempt to rectify this by publishing the entire entry,
-after confirmation from the user. If the error is not recoverable, it
-will list the segments in error.
+Once active, a new item will appear in the Bulk Actions menu of the
+Workbench: “Publish”. Running this action will cause all selected
+segments to be synchronized with their displayed translations, and
+once the action finishes, the markers in the status bar on the right
+of the entries will change to reflect this. If the action encounters
+an error, the server will attempt to rectify this by publishing the
+entire entry, after confirmation from the user. If the error is not
+recoverable, it will list the segments in error.
 
 ## Default segment state
 
 By default, the Proxy Application will add new segments during a crawl
-as “Approved”, making them available for translation immediately
-after. However, if the user/client desires, this behavior can be
-changed to adding new segments in one of two states, “Pending” or
-“Excluded”. If the default setting is changed, the project owner,
-backup owners, or users with the Customer [role][Sharing Settings] can
-alter segment states.
+as “Approved”, making them available for translation
+immediately. However, if the user/client so desires, this behavior can
+be changed to adding new segments in one of the two other states,
+“Pending” or “Excluded”. If the default setting is changed, the
+project owner, backup owners, or users with the Customer
+![role](/dashboard/menu/dashboard/sharingsettings.html) can alter
+segment states.
 
 “**Pending**” segments are those that are awaiting a decision on
-translation. They will not be included into exports unless the
-relevant option is selected at export-time, and will not appear for
-translation unless filtered for specifically. Users able to alter
-segment states may move these into either one of the other two states,
-by approving them for translation, or excluding them entirely.
+translation. They will not be included in exports unless the relevant
+option is selected at export-time, and they will not appear in the
+Workbench for translation unless filtered for specifically. Those
+users able to alter segment states may change the state of these
+segments either by approving them for translation or excluding them
+altogether.
 
-“**Excluded**” segments are those that have been deemed as not requiring
-translation at all. Unless the relevant option is selected, they are
-not included in exports and will not appear for translation unless
-filtered for specifically. Users able to alter segment states may
-approve them for translation, making them available.
+“**Excluded**” segments are those that have been deemed as not
+requiring translation at all. Unless the relevant option is selected,
+they are not included in exports and will not appear for translation
+unless filtered for specifically. Excluding a segment is not final,
+however: those users able to alter segment states may approve them for
+translation, making them available again.

@@ -158,11 +158,11 @@ segment is stored, subsequent scans will treat it as repetition and
 A 1 EUR or 1.2 USD / 1000 page views monthly fee applies to serving
 your tranlated content over the proxy.
 
-For this fee you get a guaranteed 99.99% website availability, and a
+In exchange, you get a guaranteed 99.99% website availability, and a
 capacity to handle practically unlimited traffic. You also have the
-option to serve the translated site from your server (no proxy fee
-will apply), but in this case availability and traffic handling
-depends on your infrastructure.
+option to serve the translated site from your server (in which case no
+proxy fee will apply), but in this case availability and traffic
+handling depends on your infrastructure.
 
 ## Further Information
 

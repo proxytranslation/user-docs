@@ -1,23 +1,24 @@
 # Getting started 
 
-In this section, we give you a quick overview of how you'll be using
-the Dashboard and we'll set up a simple Project.
+Let us give you a quick overview of how the proxy is used. In this
+section, we give you a quick introduction to the Dashboard and we'll
+also set up a simple project.
 
 ## Registration & Login 
 
-To use easyling, first you need to register and set up an account for
-the service at [https://app.easyling.com](https://app.easyling.com).
+To use Easyling, you need to register and set up an account for the
+service at [https://app.easyling.com](https://app.easyling.com).
 
-Right after registration you can start using the service. When you log
-in for the first time, you can select if you are a Website owner, a
-Freelance translator or a Language Service Provider. This is for
-statistical purposes only, it has no influence at all on the User
-Experience later on.
+You can start using the service right away after registration. When
+you log in for the first time, you can select if you are a Website
+owner, a Freelance translator or a Language Service Provider. This is
+for statistical purposes only, it has no bearing on available features
+or user experience at all.
 
-After logging in, you will be taken to the Dashboard. This is your
-project management centre, and we'll be getting into its details in
-the coming chapters of the manual. There will be no existing projects
-at the outset, so let's set one up.
+Logging in, you will be taken to the Dashboard, which is the project
+management center. every detail of which we'll get to in later
+sections of this manual. There will be no existing projects at the
+outset, so let's try setting one up.
 
 ## Setting up Your First Project 
 
@@ -34,22 +35,25 @@ such as custom SRX files.
 
 ### Add a Target Lanuage
 
-![Add target language](/img/add-target-language.png)
-
 You will also need to add your target langauge(s), so use the option
 on the Dashboard to add then to the project. It's not just that there
 is not much to do in terms of translation without a target: many
 crucial features (including the Preview proxy and the entire
 Workbench) are entirely unavailable as long as no target langauges are
-set. 
+set.
+
+![Add target language](/img/add_target_language.png)
+
+You can add any number of target languages. You can use the search
+function to lookup languages based on locale code or country name.
 
 ## Running a Discovery
 
 ![Run discovery](/img/discovery.png)
 
-The next challenge is to figure out what (and how much of it) to
-translate and do it from a single target URL. For this, a Discovery
-has to be run on the site.
+The next step is to figure out what (and how much of it) to translate
+and do it from a single target URL. For this, a Discovery has to be
+run on the site.
 
 Discovering a website means running a ``crawler`` on it and allowing
 the proxy to 'explore' it in its entirety in order to provide
@@ -177,9 +181,9 @@ involvement is required on their end, you have a better chance to win
 the deal.
 
 For more information see our
-[blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/)
-or this short [video]
-(https://www.easyling.com/features/mass-sales-tool/)
+![blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/)
+or this short
+![video](https://www.easyling.com/features/mass-sales-tool/)
 
 ## On the Workbench
 
@@ -206,7 +210,7 @@ Barring some detail (withheld for the sake of a convenient
 introduction) the above process is all that you need to get a website
 translation project going.
 
-![Project Workflow Overview](/img/workflow)
+![Project Workflow Overview](../img/workflow)
 
 Our idea of a project's lifetime can be summarized in the 3-phase
 Workflow.

@@ -16,7 +16,7 @@ final, you can change them later.**
 
 ## Features
 
-![Project roles](/img/invite_features.jpg)
+![Project roles](../../../img/invite_features.jpg)
 
 The various **features**, (administrative rights) deserve to be
 detailed, Here they are:
