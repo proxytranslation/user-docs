@@ -1,4 +1,5 @@
-![Easyling Logo](/img/misc/logo.png)
+.. image:: img/misc/logo.png
+   :align: center
 
 ===========================
 Easyling User Documentation
