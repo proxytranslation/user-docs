@@ -137,25 +137,26 @@ Our pricing follows the ‘pay-as-you-go’ model, so you only get charged
 for what you use. The total cost is made up 2 types of fees: one-time
 fees and a monthly charge.
 
-One-time fees:
+### One-Time Fees:
 
-**Discovery**: 1 EUR or 1.2 USD / 1000 pages for every Discovery
+- **Discovery**: 1 EUR or 1.2 USD / 1000 pages for every Discovery
 
-**Scan**: 2 EUR or 2.4 USD / 1000 source words for each **new** word
+- **Scan**: 2 EUR or 2.4 USD / 1000 source words for each **new** word
+  during a Scan (if no new words are found, a Scan counts as a Discovery)
 
-**Translation Memory**: storing your (human or machine) translation in
-the database costs 10 EUR or 12 USD / 1000 source words / target
-language
+- **Translation Memory**: storing your (human or machine) translation
+  in the database costs 10 EUR or 12 USD / 1000 source words / target
+  language
 
-Content extraction and translation memory fees apply only once, so
-102% repetitions are not counted. Once content is stored, every
-subsequent scan will treat it as repetition, so no additional charges
-will apply.
+Content extraction and translation memory fees apply only the first
+time around, which means 102% repetitions are not counted. Once a
+segment is stored, subsequent scans will treat it as repetition and
+**no additional charges** will apply.
 
-The monthly fees:
+### Monthly Fees:
 
-for serving the translated site you pay a 1 EUR or 1.2 USD / 1000 page
-views monthly proxy fee
+A 1 EUR or 1.2 USD / 1000 page views monthly fee applies to serving
+your tranlated content over the proxy.
 
 For this fee you get a guaranteed 99.99% website availability, and a
 capacity to handle practically unlimited traffic. You also have the
@@ -168,7 +169,8 @@ depends on your infrastructure.
 Visit us at <https://easyling.com> and sign up for a dedicated demo if
 you are new to translation over the proxy!
 
-See <https://easyling.com/pricing> for pricing details.
+See <https://easyling.com/pricing> for pricing details. Try our Price
+Calculator, too!
 
 Contact Support: <support@easyling.com>
 
