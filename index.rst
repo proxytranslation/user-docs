@@ -1,9 +1,9 @@
 .. image:: img/misc/logo.png
    :align: center
 
-===========================
-Easyling User Documentation
-===========================
+===================
+User Documentation
+===================
 
 .. toctree::
    introduction/introduction

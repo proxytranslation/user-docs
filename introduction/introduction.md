@@ -1,7 +1,5 @@
 # Introduction
 
-![Easyling Logo](/img/misc/logo.png)
-
 Easyling is a cloud-based translation proxy solution designed to make
 websites available in several languages. Easily.
 
