@@ -1,3 +1,5 @@
+![Easyling Logo](/img/misc/logo.png)
+
 ===========================
 Easyling User Documentation
 ===========================
