@@ -32,8 +32,12 @@ superfluous pages using this feature.
 
 **Group pages by ignoring query parameters:** In the same vein, you
 can also group pages based on ignored query parameters by adding those
-query parameters to this field. Also be sure to check out the Page
-grouping feature in Advanced settings.
+query parameters to this field. Query parameters are bona fide part of
+the URL, and therefore may or may not induce changes on a case-by-case
+basis. For every changed query parameter, we create a new page
+record. If you are sure about a set of query parameters not inducing
+any changes in page content, you can use this function to prevent them
+from getting picked up.
 
 **Discovery cookies** You may extract the cookies from a user session
 and pass them to a Discovery. This feature is most useful when you
@@ -149,3 +153,4 @@ After clicking on the blue "Discover" button, the Discovery starts and
 you will be returned to the main Discovery screen, where you can
 follow the word count statistics and check the status of the currently
 running process.
+

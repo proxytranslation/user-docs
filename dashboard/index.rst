@@ -83,4 +83,7 @@ Cookbook
 
 .. toctree::
    cookbook/whitelabel
+   cookbook/resourcetranslation
    cookbook/rtlconversion
+   cookbook/ssl_certificates
+   cookbook/proxymodes

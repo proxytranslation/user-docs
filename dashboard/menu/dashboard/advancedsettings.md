@@ -103,8 +103,8 @@ JavaScript files as translatable pages in the pagelist, from where
 they can be selected for translation in the List View like regular
 pages, and any values for the selected attributes will be made
 available as translatable entries, which are treated identical to
-regular entries. Entering “` html`” (N. B. The switch is separated by
-a space!) after the path specification will result in the Proxy
+regular entries. Entering “` html`” (note that the switch is separated
+by a space!) after the path specification will result in the Proxy
 Application applying its HTML parser to the match instead of a
 plaintext parser, stripping out HTML markup and only offering the
 actual content for translation (otherwise, should the match contain
@@ -119,7 +119,7 @@ next line by adding “`.json.`”.
 
 ## XPath Translation
 
-the Proxy Application is able to translate XML (eXtensible Markup
+The Proxy Application is able to translate XML (eXtensible Markup
 Language) files sent by the remote server, according to the XPath
 standard of specifying elements of the XML structure. Similar to
 JavaScript translation, entering the “` html`” switch will result in

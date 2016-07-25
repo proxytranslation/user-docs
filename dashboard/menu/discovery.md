@@ -58,4 +58,3 @@ Once the discovery is ready, you will receive an e-mail notification
 and the statistics will show up on the Discovery page. Based on this
 you can give a rough estimation for the website translation cost -
 both in time and money.
-

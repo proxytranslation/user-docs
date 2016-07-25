@@ -50,7 +50,7 @@ the proxy.
 
 ## The 'Keep Cache Strategy'
 
-the Keep cache is actually a serving mode of the Target cache, used
+The Keep cache is actually a serving mode of the Target cache, used
 mainly to prevent the source language bleed-through effect, or
 Bleeding Effect in short. It operates by checking the cached content’s
 translation ration against the remote server’s response. If the cached

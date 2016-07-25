@@ -27,7 +27,8 @@ choose **Add project**.
 This opens the **Add project** dialog box, where you can enter the URL
 of the website you would like to translate, and also select the
 website language; this sets the source language of the translation
-project.
+project. Click on Advanced Settings to access extended functionality,
+such as custom SRX files.
 
 ![Add Project](/img/dashboard/add_project_dialog.png)
 
@@ -47,7 +48,8 @@ set.
 ![Run discovery](/img/discovery.png)
 
 The next challenge is to figure out what (and how much of it) to
-translate, all from a single URL
+translate and do it from a single target URL. For this, a Discovery
+has to be run on the site.
 
 Discovering a website means running a ``crawler`` on it and allowing
 the proxy to 'explore' it in its entirety in order to provide
@@ -83,10 +85,10 @@ work-hours and expenses you forecast for a given project.
 
 The results are an accurate indication of the translation costs
 associated with the text. However, with websites, it is prudent to
-consider other (techincal) details before taking the word count
+**consider other (techincal) details** before taking the word count
 results of the Discovery process at face value.
 
-Investigate the source site and consider the following questions: 
+Investigate the source site and consider the following: 
 
 - is there a great deal of **dynamic content**?
 
@@ -119,13 +121,14 @@ Investigate the source site and consider the following questions:
 
 - is there any Javascript-generated content?
 
-These issues will require attention, often beyond the primary focus of
-translators: UI fixes and a measure of fiddling with what's under the
-hood - take those expenses into account when you make your quote.
+If you answered yes to any of those questions, that will require some
+deliberation, often beyond the primary focus of translators: UI fixes
+and a measure of fiddling with what's under the hood - take those
+expenses into account when you make your quote.
 
-If you are unsure about a functionality on a site, you can always
-contact our **Support Centre** and we'll help you get an accurate
-picture of the required effort and costs.
+**NOTE!**: If you are unsure as to how to go about translating a part
+of a website, feel free to contact our **Support Centre** and we'll
+help you get an accurate picture of the required effort and costs.
 
 It is also advised to negotiate the expected workflow with the client
 at the quoting phase. The translation of a website is, in most cases,
