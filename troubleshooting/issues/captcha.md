@@ -9,7 +9,7 @@ the Source cache for the project one hash is saved, so it beco\ mes
 static, while it should be changing on each occasion. As a result, the
 server rejects the request because of the outdated verification image.
 
-**Troubleshooting:**
+**Fix:**
 
 - disable caching altogether to make captcha work
 

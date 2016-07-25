@@ -1,4 +1,4 @@
-# Whitelabel setup
+# Whitelabel Setup
 
 >Note: This article will use variable values, that will change for
 >everyone. These variables are written here in the UNIX style of

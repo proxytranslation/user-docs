@@ -13,8 +13,8 @@ interface, and you can also download an XLIFF for translation.<br>
 has an associated cost of EUR 2 per 1000 words.**
 
 You can enable this option in **Content > Settings > Look for
-changes**. (Of course, you can set it to **Only manually**, if the
-site does not update frequently.)
+changes**. Of course, you can set it to **Only manually**, if the site
+does not update frequently.
 
 ![Scheduled Scan](/img/scheduledScan.png)
 
