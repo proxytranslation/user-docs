@@ -131,6 +131,38 @@ to use & sell Easyling as your own product. In order to create the
 branded version, seven criteria must be met. See the "Whitelabel
 setup" section for details.
 
+## Pricing
+
+Our pricing follows the ‘pay-as-you-go’ model, so you only get charged
+for what you use. The total cost is made up 2 types of fees: one-time
+fees and a monthly charge.
+
+One-time fees:
+
+**Discovery**: 1 EUR or 1.2 USD / 1000 pages for every Discovery
+
+**Scan**: 2 EUR or 2.4 USD / 1000 source words for each **new** word
+
+**Translation Memory**: storing your (human or machine) translation in
+the database costs 10 EUR or 12 USD / 1000 source words / target
+language
+
+Content extraction and translation memory fees apply only once, so
+102% repetitions are not counted. Once content is stored, every
+subsequent scan will treat it as repetition, so no additional charges
+will apply.
+
+The monthly fees:
+
+for serving the translated site you pay a 1 EUR or 1.2 USD / 1000 page
+views monthly proxy fee
+
+For this fee you get a guaranteed 99.99% website availability, and a
+capacity to handle practically unlimited traffic. You also have the
+option to serve the translated site from your server (no proxy fee
+will apply), but in this case availability and traffic handling
+depends on your infrastructure.
+
 ## Further Information
 
 Visit us at <https://easyling.com> and sign up for a dedicated demo if
