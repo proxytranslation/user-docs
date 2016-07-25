@@ -42,14 +42,14 @@ crucial features (including the Preview proxy and the entire
 Workbench) are entirely unavailable as long as no target langauges are
 set.
 
-![Add target language](/img/add_target_language.png)
+![Add target language](/img/dashboard/add_target_language.png)
 
 You can add any number of target languages. You can use the search
 function to lookup languages based on locale code or country name.
 
 ## Running a Discovery
 
-![Run discovery](/img/discovery.png)
+![Run discovery](/img/dashboard/discovery_dialog.png)
 
 The next step is to figure out what (and how much of it) to translate
 and do it from a single target URL. For this, a Discovery has to be
@@ -181,9 +181,9 @@ involvement is required on their end, you have a better chance to win
 the deal.
 
 For more information see our
-![blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/)
+[blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/)
 or this short
-![video](https://www.easyling.com/features/mass-sales-tool/)
+[video](https://www.easyling.com/features/mass-sales-tool/)
 
 ## On the Workbench
 
@@ -210,7 +210,7 @@ Barring some detail (withheld for the sake of a convenient
 introduction) the above process is all that you need to get a website
 translation project going.
 
-![Project Workflow Overview](../img/workflow)
+![Project Workflow Overview](/img/workflow.png)
 
 Our idea of a project's lifetime can be summarized in the 3-phase
 Workflow.

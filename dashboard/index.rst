@@ -13,6 +13,7 @@ Dashboard
 =========
 
 .. toctree:: 
+   menu/dashboard/projectstatistics
    menu/dashboard/alarm
    menu/dashboard/auditlog
    menu/dashboard/sharingsettings
