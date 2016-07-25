@@ -17,12 +17,12 @@ translations. Use the "Remove" button to delete the TM.
 The screen is furnished with a search field you can use to look up
 segments in a TM.
 
-# **NOTE!** 
+## **NOTE!** 
 
 The TMs you manage on this screen and the Workbench are different from
-the Translation Memory that is billed: this TM is used for concordance
-lookups and automatic translation - creating and managing these TMs is
-completely free.
+the Translation Memory that is billed: they are used for concordance
+lookups and automatic translation, and they are completely free to
+create and use.
 
 On the other hand, the proxy TM associated with a project is a
 database in the cloud that holds translations of segments. When you

@@ -1,4 +1,4 @@
-# Moving around
+# Moving Around
 
 The Workbench has a single viewport, so every feature you'd need to
 navigate between pages and segments is always just a couple of clicks

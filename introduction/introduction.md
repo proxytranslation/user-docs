@@ -137,7 +137,7 @@ Our pricing follows the ‘pay-as-you-go’ model, so you only get charged
 for what you use. The total cost is made up 2 types of fees: one-time
 fees and a monthly charge.
 
-### One-Time Fees:
+### One-Time Fees
 
 - **Discovery**: 1 EUR or 1.2 USD / 1000 pages for every Discovery
 
@@ -153,7 +153,7 @@ time around, which means 102% repetitions are not counted. Once a
 segment is stored, subsequent scans will treat it as repetition and
 **no additional charges** will apply.
 
-### Monthly Fees:
+### Monthly Fees
 
 A 1 EUR or 1.2 USD / 1000 page views monthly fee applies to serving
 your tranlated content over the proxy.
