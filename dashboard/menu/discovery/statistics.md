@@ -2,46 +2,23 @@
 
 ![Discovery statistics](/img/discovery-statistics.png)
 
-To understand the way statistics work in Easyling, we have to start
-with the most important fact: in our application, the largest unit of
-measurement is a block, which is usually represented by a `<p>` or a
-`<div>`. Blocks break down to segments, segments to words, words to
-letters. Since Easyling deals exclusively with content in webpages,
-HTML tags also play an important part in weighing the repetitions.
+To understand the way statistics work in Easyling, we have to start with the most important fact: in our application, the largest unit of measurement is a block, which is usually represented by a `<p>` or a `<div>`. Blocks break down to segments, segments to words, words to letters. Since Easyling deals exclusively with content in webpages, HTML tags also play an important part in weighing the repetitions.
 
-It is also important to note that the statistics in Easyling are
-different degrees of repetitions. The website's content is
-repetitioned agaist itself, simulating a translation process, not
-unlike the Homogeneity feature in MemoQ.
+It is also important to note that the statistics in Easyling are different degrees of repetitions. The website's content is repetitioned agaist itself, simulating a translation process, not unlike the Homogeneity feature in MemoQ.
 
-With that in mind, here is a breakdown of the percentages in our
-Statistics. You can find these explanations if you hover your mouse
-over each repetition row:
+With that in mind, here is a breakdown of the percentages in our Statistics. You can find these explanations if you hover your mouse over each repetition row:
 
-**102% - Strong contextual repetitions**: These are block
-repetitions. Every segment in the block is a 101% repetition, and all
-the tags are identical. We do not charge for these repetitions and
-they are propagated automatically within the project.
+**102% - Strong contextual repetitions**: These are block repetitions. Every segment in the block is a 101% repetition, and all the tags are identical. We do not charge for these repetitions and they are propagated automatically within the project.
 
-**101% - Contextual repetitions**: These repetitions are comparable to
-the 101% repetitions in MemoQ, or Context Matches in SDL Trados
-Studio. Both tags in the segment, and contexts (segments immediately
-before and after) repetition.
+**101% - Contextual repetitions**: These repetitions are comparable to the 101% repetitions in MemoQ, or Context Matches in SDL Trados Studio. Both tags in the segment, and contexts (segments immediately before and after) repetition.
 
-**100% - Regular repetitions**: This one is straightforward, and
-comparable to the Repetitions count in MemoQ or Trados. The segment is
-repeated exactly, including all tags.
+**100% - Regular repetitions**: This one is straightforward, and comparable to the Repetitions count in MemoQ or Trados. The segment is repeated exactly, including all tags.
 
-**99% - Strong fuzzy repetitions**: In this case, a repetition is
-found after few transformations on the segment before comparing: tags
-from the ends are stripped out, words lowercased, numbers ignored.
+**99% - Strong fuzzy repetitions**: In this case, a repetition is found after few transformations on the segment before comparing: tags from the ends are stripped out, words lowercased, numbers ignored.
 
-**98% - Weak fuzzy repetitions**:Here, all tags are stripped out, not
-just the ones in the end; words lowercased, numbers ignored.
+**98% - Weak fuzzy repetitions**:Here, all tags are stripped out, not just the ones in the end; words lowercased, numbers ignored.
 
-You will find an illustration of the various repetitions in the table
-below. Hover your mouse over any of the matches to highlight the
-differences.
+You will find an illustration of the various repetitions in the table below. Hover your mouse over any of the matches to highlight the differences.
 
 <!-- Not very markdown-y, but we'll make an exception this time -->
 <body class="container">
