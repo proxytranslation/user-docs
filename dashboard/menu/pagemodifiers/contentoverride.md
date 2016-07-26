@@ -1,6 +1,6 @@
 # Content override
 
-The Proxy Application can create a “virtual” page in the site or
+The proxy can create a “virtual” page in the site or
 override an existing one with custom code. For any requests to an
 overridden page, the corresponding remote server request is not sent,
 and the override contents are used as the basis of the

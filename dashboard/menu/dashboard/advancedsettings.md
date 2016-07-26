@@ -102,7 +102,7 @@ URLs.
 This field contains the capture group definitions used to extract
 attribute-value pairs from JavaScript files selected for
 translation/localization. After entering the capture parameters and
-re-crawling the site, the Proxy Application will display the selected
+re-crawling the site, the proxy will display the selected
 JavaScript files as translatable pages in the pagelist, from where
 they can be selected for translation in the List View like regular
 pages, and any values for the selected attributes will be made
@@ -110,7 +110,7 @@ available as translatable entries, which are treated identical to
 regular entries. 
 
 Entering “` html`” (note that the switch is separated by a space!)
-after the path specification will result in the Proxy Application
+after the path specification will result in the proxy
 applying its HTML parser to the match instead of a plaintext parser,
 stripping out HTML markup and only offering the actual content for
 translation (otherwise, should the match contain markup, the
@@ -125,7 +125,7 @@ next line by adding “`.json.`”.
 
 ## XPath Translation
 
-The Proxy Application can translate XML (eXtensible Markup Language)
+The proxy can translate XML (eXtensible Markup Language)
 files sent by the remote server, according to the XPath standard of
 specifying elements of the XML structure. Similar to JavaScript
 translation, entering the “` html`” switch will result in the HTML
@@ -149,7 +149,7 @@ from the Resources menu.
 If the remote server requires certain headers to be present to serve
 legal responses, it will not be crawlable by default, as the crawler
 will not supply these. Entering the required headers here will result
-in them being appended to every request sent by the Proxy Application,
+in them being appended to every request sent by the proxy,
 including the crawler requests, letting you crawl the site as
 required.
 
@@ -172,9 +172,9 @@ Some Content Management Systems may employ non-standard HTML
 attributes on various elements to style the page or otherwise affect
 aspects of their operation. If some of these attributes contain
 translatable text, you can enter them into the “As text” field to
-instruct the Proxy Application to extract them. If they contain URLs
+instruct the proxy to extract them. If they contain URLs
 that need to be mapped to the translated domain, you can use the “As
-link” field to instruct the Proxy Application to map those
+link” field to instruct the proxy to map those
 non-standard link elements as well.
 
 On request, it is also possible to activate an HTML parser for certain
@@ -186,7 +186,7 @@ In this menu, you'll find checkboxes for settings that apply to very
 specific circumstances. For those special snowflakes and
 occassions. When in doubt, contact us!
 
-- **Retaining original DOCTYPEs**: By default, the Proxy Application
+- **Retaining original DOCTYPEs**: By default, the proxy
   generates an HTML5 standards-compliant file to send to the
   client. If, for some reason, this causes problems due to the site
   relying on HTML4 standards for operation, some of which may be
@@ -197,13 +197,13 @@ occassions. When in doubt, contact us!
 - **Determine document type by** `GET` **instead of HEAD**: some
   servers may return different responses to the HEAD request we use to
   determine document type than the GET request used to download
-  content. Enabling this option forces the Proxy Application to use
+  content. Enabling this option forces the proxy to use
   GET requests for all operations, getting the correct content type
   from the server (as far as server-side configurations will allow).
 
 - **Detect JavaScript content type**: JavaScript may not be explicitly
   declared as such on the server, being sent to the client with
-  misleading content types. This causes the Proxy Application to
+  misleading content types. This causes the proxy to
   mis-identify such streams and not offer operations reserved for JS
   files. Enabling this option will force a deep check on each file
   sent to the client, to determine if they are indeed JavaScript code,
@@ -243,7 +243,7 @@ occassions. When in doubt, contact us!
 - **Detect and handle JSON-in-string responses, like**
   `"{\\"ResponseCode\\":\\"BadRequest\\"}`: string-escaped JSON-format
   responses can be handled by activating this tweak. If active, the
-  Proxy Application will first attempt to string-unescape the response
+  proxy will first attempt to string-unescape the response
   before passing it to the JSON parser, in order to recreate its base
   form.
 
@@ -255,7 +255,7 @@ occassions. When in doubt, contact us!
   undesirable, and can be bypassed by activating this option.
 
 - **Send a canonical link http header pointing to the original page on
-  externalized pages**: the Proxy Application can insert a Link header
+  externalized pages**: the proxy can insert a Link header
   into externalized pages, in order to avoid the SEO penalty
   associated with duplicate content. This header will point to the
   original address, and have `rel=Canonical` added, to designate the
@@ -283,7 +283,7 @@ recoverable, it will list the segments in error.
 
 ## Default segment state
 
-By default, the Proxy Application will add new segments during a crawl
+By default, the proxy will add new segments during a crawl
 as “Approved”, making them available for translation
 immediately. However, if the user/client so desires, this behavior can
 be changed to adding new segments in one of the two other states,
