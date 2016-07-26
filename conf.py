@@ -17,8 +17,8 @@ release = 'latest'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 htmlhelp_basename = 'easyling-wiki-docs'
-html_theme = 'sphinx_rtd_theme'
-html_style = 'css/style.css'
+html_theme = 'proxytheme'
+html_theme_path = ["."]
 file_insertion_enabled = False
 latex_documents = [
   ('index', 'easyling-wiki-docs.tex', u'Easyling wiki docs Documentation',
