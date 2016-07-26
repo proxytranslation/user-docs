@@ -18,7 +18,6 @@ exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 htmlhelp_basename = 'easyling-wiki-docs'
 html_theme = 'proxytheme'
-html_theme_path = ["./proxytheme"]
 file_insertion_enabled = False
 latex_documents = [
   ('index', 'easyling-wiki-docs.tex', u'Easyling wiki docs Documentation',
