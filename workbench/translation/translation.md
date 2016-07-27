@@ -90,6 +90,26 @@ You can choose to Machine Translate the currently selected batch of entries usin
 
 Translation Memory and Machine pre-translation are both reproductions of the options accessible on the Dashboard, with the added functionality of being able to control which specific group of segments should be targeted by the process.
 
+## Search & Replace
+
+The Workbench has a Search & Replace feature you can access by clicking on this icon in List View:
+
+![Search & Replace Icon](/img/workbench/search_and_replace_icon.png)
+
+It always operates on the currently listed set (or subset) of editable segments. The dialog that opens will look like this:
+
+![Search & Replace Dialog](/img/workbench/search_and_replace_dialog.png)
+
+Both ‘Search in target’ and ‘Replace in target’ values are required, while ‘Filter by source’ is optional. You can use either simple strings or regular expressions as search terms (simple strings are the default, check the ‘Regex’ option next to the field to use a regular expression). The function is case-sensitive.
+
+Choose ‘Test run (no changes will be made)’ to check how the operation would affect your translation. To see the entries affected by replacement, check the ‘Preview changes on a few segments first’; the segments will appear in the Preview area (Preview can’t be used without Test run). You can also start replacement right away, without preliminary checking.
+
+Once the operation is ready, you will receive an e-mail notification with a detailed report on the entries affected.
+
+Please note that the replacement is done in the database, not in the TM. If you want your TM to reflect these changes, you need to run ‘Populate TM’ from the Dashboard.
+
+Keep in mind that **the operation cannot be undone!**
+
 ## History
 
 The proxy keeps tabs on what happens to each Entry in the project timeline, and the Workbench displays these tabs in the sidebar. You can use these to access previous editing states of an Entry. Here follows a short description of the History functionality.
