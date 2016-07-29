@@ -13,4 +13,4 @@ The Workbench
 Cookbook
 --------
 
-   cookbook/seachandreplace
+   cookbook/searchandreplace
