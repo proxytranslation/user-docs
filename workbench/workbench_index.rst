@@ -12,5 +12,5 @@ The Workbench
 --------
 Cookbook
 --------
-
+.. toctree::
    cookbook/searchandreplace
