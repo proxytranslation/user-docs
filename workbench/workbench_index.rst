@@ -8,3 +8,9 @@ The Workbench
    views/views
    translation/translation
    workflow/workflow
+
+--------
+Cookbook
+--------
+
+   cookbook/seachandreplace
