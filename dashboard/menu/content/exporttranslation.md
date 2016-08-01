@@ -16,7 +16,7 @@ By clicking on this link, the general Export dialog will open. Most of the optio
 
 **Split** enter the number of segments that you'd like to have in a single file, and the export will split your segments into separate files accordingly.
 
-**Copy source to target where empty**
+**Copy source to target where empty** Some CAT-tools require a target entry on import. Activating this option will copy the source content to the target entry during the export, so the tool can be used to edit it.
 
 **Send XLIFF files** Choose among your XTM, XRTF or Dropbox accounts to send your exported files to. Each of these accounts has a link at the bottom of the dialog that will take you to the given account's setting screen.
 
