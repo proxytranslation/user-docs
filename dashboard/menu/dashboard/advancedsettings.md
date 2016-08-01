@@ -76,7 +76,7 @@ If a certain class of elements are not ought to be translated, they can be enter
 
 ## Ignore IDs
 
-similar to the “Ignored classes” option, this allows the treating of specific elements as translation-invariant, this time through HTML IDs.
+Similar to the “Ignored classes” option, this allows the treating of specific elements as translation-invariant, this time through HTML IDs.
 
 ## Process Custom HTML Attributes
 
@@ -86,7 +86,7 @@ On request, it is also possible to activate an HTML parser for certain attribute
 
 ## Tweaks
 
-In this menu, you'll find checkboxes for settings that apply to very specific circumstances. For those special snowflakes and occassions. When in doubt, contact us!
+In this section, you'll find checkboxes for settings that apply to very specific circumstances. For those special snowflakes and occassions. When in doubt, contact us!
 
 - **Retaining original DOCTYPEs**: By default, the proxy generates an HTML5 standards-compliant file to send to the client. If, for some reason, this causes problems due to the site relying on HTML4 standards for operation, some of which may be deprecated by HTML5, enabling this option will cause the Proxy Application to retain the original DOCTYPE declaration of the source page.
 
