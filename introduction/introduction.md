@@ -15,7 +15,7 @@ There are several proxy solutions available on the market, yet Easyling is uniqu
 
 - also available as a whitelabel solution
 
-- standard-compilant XLIFF export option ensures CAT-independence
+- standard-compliant XLIFF export option ensures CAT-independence
 
 - automated XLIFF export/import option between CAT / Translation management systems and Easyling
 
