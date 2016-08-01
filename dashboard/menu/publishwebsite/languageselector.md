@@ -4,7 +4,7 @@ The "finishing touch" is to add a language selector to your published project. T
 
 We'll focus on the internally provided solutions. There are two types of language selectors available: the **Dropdown** and the **Sidebar**.
 
-Use the **Language selector tye** option to select between the two types. You'll notice that the menu changes somewhat based on your choice, and the currently active language selector choice is displayed in a preview window on the right. Both types contain the source language site by default.
+Use the **Language selector type** option to select between the two types. You'll notice that the menu changes somewhat based on your choice, and the currently active language selector choice is displayed in a preview window on the right. Both types contain the source language site by default.
 
 At the same time, the embed code text box changes and displays the `<script>` tag that needs to be embedded within the original site's `<head></head>` tags.
 
