@@ -12,4 +12,4 @@ The screen is furnished with a search field you can use to look up segments in a
 
 The TMs you manage on this screen and the Workbench are different from the Translation Memory that is billed: they are used for concordance lookups and automatic translation, and they are completely free to create and use.
 
-On the other hand, the proxy TM associated with a project is a database in the cloud that holds translations of segments. When you reimport your XLIFF files or run auto-pretranslate, you are writing to this project TM, which is billed the first time around..
+On the other hand, the proxy TM associated with a project is a database in the cloud that holds translations of segments. When you reimport your XLIFF files or run auto-pretranslate, you are writing to this project TM, which is billed the first time around.
