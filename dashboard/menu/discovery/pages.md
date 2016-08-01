@@ -16,4 +16,4 @@ At the top, you will see a few icons you can click to access detailed function a
 
 **Copy current URL list to clipboard** will open a new dialog containing project information and all pages in a pre-selected list.  You can copy & paste this list, or click on Export to receive an XLS spreadsheet in an e-mail.
 
-**Search bar** When the page list gets too long to scroll through manually, you can use the Search Bar to look up any path names that match your query. This is a forward-search (note that regexen are not supported in the Page list).
+**Search bar** When the page list gets too long to scroll through manually, you can use the Search Bar to look up any path names that match your query. This is a forward-search (note that regular expressions are not supported in the Page list).
