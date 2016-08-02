@@ -18,8 +18,6 @@ Dashboard
    menu/dashboard/projectstatistics
    menu/dashboard/alarm
    menu/dashboard/auditlog
-
-.. _lbl-sharingsettings:
    menu/dashboard/sharingsettings
    menu/dashboard/linkprojects
    menu/dashboard/pagecache.rst
