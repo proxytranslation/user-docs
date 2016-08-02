@@ -2,7 +2,7 @@
 
 The Workbench has a single viewport, so every feature you'd need to navigate between pages and segments is always just a couple of clicks away.
 
-You may switch between pages, search for text, filter for pages based on a variety of metadata, such as Approval state, containing block element, translation source and so forth. This section deals with the various ways to do that.
+You may switch between pages, search for text, filter for segments based on a variety of metadata, such as Approval state, containing block element, translation source and so forth. This section deals with the various ways to do that.
 
 ## Workbench Page List
 
@@ -10,7 +10,7 @@ A segment is tied to the specific page it was found on. You can use the Page lis
 
 ![Page list](/img/workbench/pagelist)
 
-You can click on any page entry in the list to visit that page and get an overview of all segments associated with that page. Websites can get very large with a huge list of pages - use the search field embedded in this dropdown to locate a specific page (you may use regexen with the usual format of including them between two slashes like this: `/[regular expression]/`).
+You can click on any page entry in the list to visit that page and get an overview of all segments associated with that page. Websites can get very large with a huge list of pages - use the search field embedded in this dropdown to locate a specific page (you may use regular expressions with the usual format of including them between two slashes like this: `/[regular expression]/`).
 
 There are three options at the top of the dropdown that bear special mention:
 
@@ -40,7 +40,7 @@ They are special in that they are added to the Workbench without processing thei
 
 ![Swap entries](/img/workbench/swap_entry.png)
 
-Take caution when editing swap entries. All responsibility of rendering them successfully _and_safely is delegated to the requesting browser.
+Take caution when editing swap entries. All responsibility of rendering them successfully _and_ safely is delegated to the requesting browser.
 
 ### Filters
 
@@ -88,7 +88,7 @@ If a search string is still present, it will be preserved and displayed in the u
 
 You might be wondering what this has to do with navigation, but executing a regex search reveals another feature of the Workbench you might ordinarily look for someplace else: that of deleting segments. If you click on the Magnifying glass icon while the regex search is active (a bottom-facing triangle will indicate availability), the dialog above will open.
 
-The non-discoverability of this feature is premeditated. Skulls & Bones warnings would generally apply to **any** situation where the words "delete" and "regex" are intimated in the same sentence. That being said, to give you a measure of peace of mind, deletion of segments is not as final as we seem to make it out to be: when TM Freeze is **disabled**, you can re-add segments anytime by Scanning or visiting in Preview the page that contains the deleted segments.
+The non-discoverability of this feature is premeditated. Skulls & Bones warnings would generally apply to **any** situation where the words "delete" and "regex" are found in the same sentence. That being said, to give you a measure of peace of mind, deletion of segments is not as final as we seem to make it out to be: when TM Freeze is **disabled**, you can re-add segments anytime by Scanning or visiting in Preview the page that contains the deleted segments.
 
 _But that is new words added each time_. So, if for no other reason, be careful about deleting segments in order to avoid unnecessary expenses. Buyer, beware!
 
@@ -96,7 +96,7 @@ _But that is new words added each time_. So, if for no other reason, be careful 
 
 ## Preview
 
-By clicking on the "Eye" icon, you can visit the temporary domain to check your translations in their original context. This function is disabled if no segment is selected.
+By clicking on the "Eye" icon, you can visit the temporary domain to check your translations in their original context. In the "All Entries" view, this function is disabled if no segment is selected - without picking a segment, the Workbench has no information on which page to show you. Otherwise, if a Page view is open, the selected page will be loaded.
 
 If you select a segment in All Entries view, the Preview proxy will open on the page where it was seen by the crawler for the first time.
 
