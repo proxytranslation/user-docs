@@ -8,7 +8,7 @@ You might want to set up one Source Cache for publishing content and another to 
 
 - If you have at least one Source Cache enabled and built, you have essentially decoupled new content from what you are serving over the proxy (you are in control of untranslated content).
   
-  **Note:** Source Caches can only be built by Scans. They will never pick up new content unless you expressly run a Content Extraction to update them.
+  **Note:** Source Caches can only be built by Scans. They will *never* pick up new content unless you expressly run a Content Extraction to update them.
   
   _See Case Study #1 for an in-depth coverage of this scenario._
   
@@ -38,7 +38,7 @@ Check **Build source cache** and run the Scan. As a result of building the SC, a
 
 If you are updating a SC, you can use the dropdown menu to select the cache you'd like to overwrite.
 
-The '**Preserve & use existing source cache**' option ensures that a SC will not be written to during a Scan. Having both '**Build source cache**' and '**Preserve & use existing source cache**' enabled for a Scan will currently result in an inconsequential action.
+The '**Preserve & use existing source cache**' option ensures that a SC will not be written to during a Scan. Having both '**Build source cache**' and '**Preserve & use existing source cache**' enabled for a Scan will currently result in an inconsequential action (except for pages that are not in the current cache but referred - these will then be loaded into the cache).
 
 ### Custom settings
 

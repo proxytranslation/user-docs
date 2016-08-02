@@ -4,11 +4,9 @@ Let us give you a quick overview of how the proxy is used. In this section, we g
 
 ## Registration & Login
 
-To use Easyling, you need to register and set up an account for the service at [https://app.easyling.com](https://app.easyling.com).
+To use Easyling, you need to register and set up an account for the service at [https://app.easyling.com](https://app.easyling.com). You can start using the service right away after registration.
 
-You can start using the service right away after registration. When you log in for the first time, you can select if you are a Website owner, a Freelance translator or a Language Service Provider. This is for statistical purposes only, it has no bearing on available features or user experience at all.
-
-Logging in, you will be taken to the Dashboard, which is the project management center. every detail of which we'll get to in later sections of this manual. There will be no existing projects at the outset, so let's try setting one up.
+Logging in, you will be taken to the Dashboard, which is the project management center, every detail of which we'll get to in later sections of this manual. There will be no existing projects at the outset, so let's try setting one up.
 
 ## Setting up Your First Project
 
@@ -20,7 +18,7 @@ This opens the **Add project** dialog box, where you can enter the URL of the we
 
 ### Add a Target Lanuage
 
-You will also need to add your target langauge(s), so use the option on the Dashboard to add then to the project. It's not just that there is not much to do in terms of translation without a target: many crucial features (including the Preview proxy and the entire Workbench) are entirely unavailable as long as no target langauges are set.
+You will also need to add your target language(s), so use the option on the Dashboard to add then to the project. It's not just that there is not much to do in terms of translation without a target: many crucial features (including the Preview proxy and the entire Workbench) are entirely unavailable as long as no target languages are set.
 
 ![Add target language](/img/dashboard/add_target_language.png)
 
@@ -48,17 +46,17 @@ The results are an accurate indication of the translation costs associated with 
 
 Investigate the source site and consider the following:
 
-- is there a great deal of **dynamic content**?
+- Is there a great deal of **dynamic content**?
 
 - Any **Site Search** functionality? A **webshop**? A **forum**?
 
-- any other **web apps** that would have to be localized?
+- Any other **web apps** that would have to be localized?
 
 - Do the **average word lengths** of the source and target languages differ significantly?
 
 - Is the **direction of the target language** different than that of the source language?
 
-- which pages are targeted for translation? Which pages need to be excluded? Ask the client if they have a specific page list.
+- Which pages are targeted for translation? Which pages need to be excluded? Ask the client if they have a specific page list.
 
 - does the site have mixed-language content? If yes, ask the client to specify the source language(s) they need translated.
 

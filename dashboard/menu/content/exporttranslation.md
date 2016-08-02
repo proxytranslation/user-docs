@@ -1,6 +1,6 @@
 # Export translation
 
-By clicking on this link, the general Export dialog will open. Most of the options will be familiar from the Work package generation dialog.  Choose a file format of your preference (with XLIFF being the _de facto_ industry standard, it is recommended that you go with this option, as it is more structured than CSV. Use JS if you are using Client-Side Translation).
+By clicking on this link, the general Export dialog will open. Most of the options will be familiar from the Work package generation dialog.  Choose a file format of your preference (with XLIFF being the _de facto_ industry standard, it is recommended that you go with this option, as it is more structured than CSV).
 
 **Languages to export** You can choose to export more than one target languages in one go, or choose to export them all.
 
@@ -16,7 +16,7 @@ By clicking on this link, the general Export dialog will open. Most of the optio
 
 **Split** enter the number of segments that you'd like to have in a single file, and the export will split your segments into separate files accordingly.
 
-**Copy source to target where empty**
+**Copy source to target where empty** Some CAT-tools require a target entry on import. Activating this option will copy the source content to the target entry during the export, so the tool can be used to edit it.
 
 **Send XLIFF files** Choose among your XTM, XRTF or Dropbox accounts to send your exported files to. Each of these accounts has a link at the bottom of the dialog that will take you to the given account's setting screen.
 

@@ -6,7 +6,7 @@ Initially, the screen will be empty, but if you click on the blue "plus" icon, a
 
 ## Work package generation
 
-**Work package name** You can name your work package any way you like. As a suggestion, it is recommended that you give it a name that accurately reflects its contents, so as to make project management using work packages easier. So, for example, if you generate a work package for Arabic as a target language on April 10th, 2016 for all new content, you would name it something like _sa-AR-untranslatedContent-2016-04-10-_ and so on.
+**Work package name** You can name your work package any way you like. As a suggestion, it is recommended that you give it a name that accurately reflects its contents, so as to make project management using work packages easier. So, for example, if you generate a work package for Arabic as a target language on April 10th, 2016 for all new content, you would name it something like _ar-SA-untranslatedContent-2016-04-10_ and so on.
 
 **Source language** The source language for the project is displayed in this field (settable from the Dashboard main screen).
 

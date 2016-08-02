@@ -4,7 +4,7 @@ The proxy can be used to insert locale-specific CSS rules into the site being se
 
 There are a couple of caveats:
 
-It is good practice to make each CSS rule language specific:
+It is good practice to make each CSS rule language specific (Easyling will always insert the appropriate locale code into the HTML):
 
 ```css
 html[lang="de-DE"] ul.one-selector li a {
