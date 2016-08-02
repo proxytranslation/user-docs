@@ -8,7 +8,7 @@ You may switch between pages, search for text, filter for pages based on a varie
 
 A segment is tied to the specific page it was found on. You can use the Page list dropdown right next to the logo to get a list of all pages currently within the scope of translation.
 
-![Page list](/img/workbench/pagelist)
+![Page list](/img/workbench/page_list.png)
 
 You can click on any page entry in the list to visit that page and get an overview of all segments associated with that page. Websites can get very large with a huge list of pages - use the search field embedded in this dropdown to locate a specific page (you may use regexen with the usual format of including them between two slashes like this: `/[regular expression]/`).
 
@@ -24,11 +24,9 @@ The All Entries list doesn't flood your browser with every last segment all at o
 
 ### Show Pending Entries
 
-By default, Scans will pick up new entries in "Approved" state, which in this case means "Approved for Translation", immediately available for translation. You can change this default behavior, by going into the Dashboard and changing it in <a href="/dashboard/menu/dashboard.html#advanced-settings">Advanced settings</a> to either Pending or Excluded.
+By default, Scans will pick up new entries in "Approved" state, which in this case means "Approved for Translation", immediately available for translation. You can change this default behavior, by going into the Dashboard and changing it in <a href="/en/latest/dashboard/menu/dashboard.html#advanced-settings">Advanced settings</a> to either Pending or Excluded.
 
-![Pending entries](/img/workbench/pending_entry.png)
-
-By clicking on "Show pending entries", you will get a list of all entries that are currently waiting for Approval. In their current state, They will not be included into exports unless the relevant option is selected at export-time, and will not appear for translation unless filtered for specifically.
+By clicking on "Show pending entries" in the page list, the list of all entries that are currently waiting for Approval is displayed. In their current state, They will not be included into exports unless the relevant option is selected at export-time, and will not appear for translation unless filtered for specifically.
 
 Project or backup owners, or users with the Customer role can move these into either one of the other two states, by **approving** them or **excluding** them entirely from the scope of translation.
 
