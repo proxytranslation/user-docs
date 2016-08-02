@@ -118,7 +118,7 @@ Once active, a new item will appear in the Bulk Actions menu of the Workbench: �
 
 ## Default segment state
 
-By default, the proxy will add new segments during a crawl as “Approved”, making them available for translation immediately. However, if the user/client so desires, this behavior can be changed to adding new segments in one of the two other states, “Pending” or “Excluded”. If the default setting is changed, the project owner, backup owners, or users with the Customer ![role](/dashboard/menu/dashboard/sharingsettings.html) can alter segment states.
+By default, the proxy will add new segments during a crawl as “Approved”, making them available for translation immediately. However, if the user/client so desires, this behavior can be changed to adding new segments in one of the two other states, “Pending” or “Excluded”. If the default setting is changed, the project owner, backup owners, or users with the Customer Role can alter segment states.
 
 “**Pending**” segments are those that are awaiting a decision on translation. They will not be included in exports unless the relevant option is selected at export-time, and they will not appear in the Workbench for translation unless filtered for specifically. Those users able to alter segment states may change the state of these segments either by approving them for translation or excluding them altogether.
 

@@ -6,7 +6,7 @@ At the bottom of the Dialog, you will see the line, "Invite People:" if you clic
 
 ## Features
 
-![Project roles](../../../img/invite_features.jpg)
+![Sharing Settings Screen](/img/dashboard/sharing_settings_dialog.png)
 
 The various **features**, (administrative rights) deserve to be detailed, Here they are:
 
