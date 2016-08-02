@@ -14,7 +14,7 @@ You can access the Workbench anytime after adding at least one target language.
 
 There are a few ways to enter it:
 
-1. In the Dashboard menu, see the _Languages_ part. If you hover overany of the target languages, a menubar will be displayed to the right. Click on "Translate in List View"..
+1. In the Dashboard menu, see the _Languages_ part. If you hover over any of the target languages, a menu bar will be displayed to the right. Click on "Translate in List View"..
    
 2. Click on "Manage segments" in Content menu...
 
