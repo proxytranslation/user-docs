@@ -6,7 +6,7 @@ This first thing we need is the **project code**. This eight-character unique st
 
 ![The project code can be found easiest from the browser Address Bar](../img/ProjectCode.png )
 
-We also need a **thorough description of the problem**.  Screenshots are tremendously helpful, especially if you have layout issues on the translated site. If you're running into translation issues, please give an example segmentalong with the page link it can be found on.
+We also need a **thorough description of the problem**.  Screenshots are tremendously helpful, especially if you have layout issues on the translated site. If you're running into translation issues, please give an example segment along with the page link it can be found on.
 
 If you have issues with importing XLIFF or TMX files, please attach them so that we can take a look. If you have questions about statistics, reports, or crawl logs, attaching or linking them in your query will considerably speed things up for us.
 
