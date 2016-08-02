@@ -122,10 +122,6 @@ By default, the proxy will add new segments during a crawl as “Approved”, ma
 
 Try ref reference: :ref:`lbl-projectroles`.
 
-Try doc reference: :doc:`sharingsettings`
-
-Try explicit text: :doc:`Hello world! <sharingsettings>`
-
 “**Pending**” segments are those that are awaiting a decision on translation. They will not be included in exports unless the relevant option is selected at export-time, and they will not appear in the Workbench for translation unless filtered for specifically. Those users able to alter segment states may change the state of these segments either by approving them for translation or excluding them altogether.
 
 “**Excluded**” segments are those that have been deemed as not requiring translation at all. Unless the relevant option is selected, they are not included in exports and will not appear for translation unless filtered for specifically. Excluding a segment is not final, however: those users able to alter segment states may approve them for translation, making them available again.

@@ -1,11 +1,9 @@
-.. _lbl-sharingsettings:
 # Sharing settings
 
 In the world of website localization, it is rare for a project to be realized by a single person. As project owner or backup owner, use the Sharing settings dialog to invite people into the project and assign roles/editing roles to any one of them.
 
 At the bottom of the Dialog, you will see the line, "Invite People:" if you click on the field, the invitation settings part of the dialog will slide up, allowing you to enter further details of the project participant to be added. You can assign languages, enable admin/access features and workflow roles for each user you invite. You can do this by clicking on the blue plus icon next to each of those options. Make your choices in the small pop-up lists. **These settings are not final, you can change them later.**
 
-.. _lbl-features:
 ## Features
 
 ![Project roles](../../../img/invite_features.jpg)
@@ -30,7 +28,6 @@ After a user redeems their invitation using the link they receive in an e-mail, 
 
 You can invite as many participants to the translation project as you'd like. You can also enable e-mail notifications for any of them by checking the notification icon in the last column.
 
-.. _lbl-projectroles:
 ## Project Roles
 
 Based on the project features that are available for a user, the following project ropes are available:
@@ -49,7 +46,6 @@ Based on the project features that are available for a user, the following proje
 
 * **Customer**: This role intended for a representative of the customer who excercises oversight over content. This role is read-only, meaning despite the target language added to the user, they are unable to actually make edits. They can _Approve_ or _Exclude_ segments.
 
-.. _lbl-clientapproval:
 ### Client Approval
 
 Sometimes there is need for the client to view and check new segments before they enter the translation workflow.
