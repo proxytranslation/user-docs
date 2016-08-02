@@ -1,3 +1,5 @@
+# General
+
 **So, what is a Discovery?**
 
 Before you can translate a website, you need to **extract** all content from it using the Scan function. A Scan, however, writes to the database, which, as you know from our pricing model, will cost you money. In that sense, it would be risky to let loose an unlimited Scan on a website you're not familiar with. To forego Content Extraction and limit the crawler's actions to finding out about the structure and word count of a given web site, a more tentative approach is needed: a Discovery.

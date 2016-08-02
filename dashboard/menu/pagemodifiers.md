@@ -1,3 +1,5 @@
+# General
+
 While translation over the proxy makes website localization easy, it is also a fact that UI issues can sometimes surface when a page is proxied.
 
 Suddenly served in a different language from the one the UI designers anticipated, websites can display a variety of UI quirks. As website translation is still, sadly, more often than not an afterthought, these issues have to be dealt with in the translation pipeline.

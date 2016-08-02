@@ -1,3 +1,5 @@
+# General
+
 The main difference between Discoveries and Scans is that Discoveries do not extract or store content. They are used for statistical purposes, such as providing a word count or mapping a site’s URL structure.
 
 A Content Scan, however, writes into the database. It extracts and stores the source content to be translated. New source words added to the database are billed, therefore care must be taken when starting Scans. If you are not really sure about a site, stick to Discovery until you gain better understanding of its structure! Unlimited Scans especially require attention: they will relentlessly add all content to the database according to the specification you set for them.
