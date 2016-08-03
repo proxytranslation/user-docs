@@ -40,7 +40,7 @@ You can use Content Scan with the appropriate options checked to build your Sour
 
 Go into **Pages view** in the Dashboard. If you hover with the mouse over a page in the list, you will see a **Cache** button. Click on it to verify Source Cache information for that page. If there is no Source Cache for that page, you will see the following screen:
 
-[[Source cache does not exist]]
+[Cache Does Not Exist For Page](/img/dashboard/no_source_cache_for_page.png)
 
 ### **Does building a Target Cache cost any money?**
 
