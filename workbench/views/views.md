@@ -1,6 +1,6 @@
-
-
 There is more than one way of looking at content on the Workbench, and the default, the List View is only one of them. In this section, we go over the various in-context 'Views' you can access from the Workbench and use to edit your translation while making sure that it is behaving exactly as it should in the original context.
+
+# Views
 
 ## List View
 

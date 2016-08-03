@@ -1,4 +1,4 @@
-### Automation possibilities
+# Automation possibilities
 
 The first two activities can be set to be carried out automatically at daily, weekly or monthly intervals, depending on how frequently content is updated on the website. This is called **scheduled crawl**.<br> If you turn on this feature, changes will be checked and retrieved for translation at the specified intervals, and e-mail notification will be sent to all project participants. The new content is available right away for translation in the online editor interface, and you can also download an XLIFF for translation.<br>
 
