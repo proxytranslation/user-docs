@@ -29,7 +29,7 @@ and so on. Replace all instances of the word `donut` with the `doughnut` variant
 
 That's all there is to setting things up, the rest is about making sure your changes will not cause any problems.
 
-![Settings Before Preview](/img/workbench/cookbook/search_and_replace_settings.png)
+![Settings Before Preview](/img/workbench/search_and_replace_settings.png)
 
 5. Click on **Preview!** to see your changes applied to a subset of segments.
 
