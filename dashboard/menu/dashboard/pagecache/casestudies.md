@@ -16,7 +16,7 @@ For this example, the client has declined to use a staging server to allow you t
 
 Once the initial translations are completed, the caches are set up according to the image below:
 
-![Sample Cache configuration](/img/multicache/custom_source_caches.png )
+![Sample Cache configuration](/img/dashboard/custom_source_caches.png )
 
 By driving the published site from a separate cache entity, you gain the ability to decouple the content ingestion cycle from the translation and update cycles.
 
