@@ -6,8 +6,6 @@ In this example, the client has declined to use a staging server, as well as dec
 
 In this case, the solution is to enable the Source cache, and populate it with a Scan before the first round of translation commences. This creates what is effectively a static snapshot of the site, which remains the same regardless of the updates the client makes in the meantime, providing a stable environment for the translation and review processes.
 
-![Sample Cache configuration](/img/multicache/update-1.jpg )
-
 By using a Source cache to serve the translated sites, they are decoupled from the original, and content updates there will not be reflected in the translations.
 
 However, source content will accumulate in the meantime, and once the cache is purged, bleedthrough will occur! To counter this, the second scenario can be enacted.
@@ -18,7 +16,7 @@ For this example, the client has declined to use a staging server to allow you t
 
 Once the initial translations are completed, the caches are set up according to the image below:
 
-![Sample Cache configuration](/img/multicache/update-2.jpg )
+![Sample Cache configuration](/img/multicache/custom_source_caches.png )
 
 By driving the published site from a separate cache entity, you gain the ability to decouple the content ingestion cycle from the translation and update cycles.
 
