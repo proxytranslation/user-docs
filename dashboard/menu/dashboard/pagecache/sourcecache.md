@@ -32,7 +32,7 @@ You can enable and create a new Source Cache by checking **Enabled** in the _Pag
 
 After enabling the Source Cache, you need to Scan for content to build it. In the Content Scan Dialog, some options become available:
 
-[[Image of Scan Dialog]]
+![Scan Cache Settings](/img/dashboard/scan_dialog_cache_settings.png)
 
 Check **Build source cache** and run the Scan. As a result of building the SC, all content that was set to be picked up by the Content Scan is added to the current SC.
 
@@ -44,7 +44,7 @@ The '**Preserve & use existing source cache**' option ensures that a SC will not
 
 If you have more than one Source Caches that you've built throughout multiple Content Scans, you can visit the Page Cache menu again and configure which Source Cache should be used for which proxy mode, as shown in the screenshot below:
 
-[[ custom settings screenshot ]]
+![Custom Source Cache Settings](/img/dashboard/custom_source_caches.png)
 
 Choose a highly translated Source Cache for publishing, so that you can be sure that visitors to the proxied site will not experience bleedthrough.
 

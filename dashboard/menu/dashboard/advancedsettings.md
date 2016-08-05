@@ -38,7 +38,7 @@ As you based quote on a specific Discovery/Scan (in other words, a specific stat
 
 The following features are available:
 
-**Freeze pagelist**: Prevent new pages from being added to the pagelist. If you turn this option on, you can use the various preview modes without having to worry about new content.
+**Freeze pagelist**: Prevent new pages from being added to the pagelist. If you turn this option on, you can use the various preview modes withouht having to worry about new content.
 
 **Handle unknown pages as externalized**: Pages that are not already in the pagelist will be _externalized_, that is, not translated _at all_, the same as if the page was manually excluded. Be aware that on a live site, this may result in an SEO penalty (due to duplicate content being detected by the crawler)!
 
