@@ -9,8 +9,6 @@ This is not always desirable, however, as a site without such cache headers will
 ## Inspecting Cache Headers
 You can investigate how well a site may be cached using the Developer Tools in most major browsers. In Chrome, for instance, the DevTool can be summoned using by pressing the F12 key (or Alt+Cmd+I on under Mac OS), and after refreshing the page, the Network tab can be used to browse traffic associated with the tab. By selecting any entry in the list, you can view its details, in particular, the request and response headers. To tell whether or not a given resource will be requested again, you need to look at the "Response Headers" section, and look for the keys `Cache-Control` and `Pragma`.
 
-![Chrome's Developer Tools](//img/cache-headers/devtool-network-2.png)
-
 If you see `Pragma:private` and/or `Cache-control:no-cache`, it is safe to say that the given resource will not be cached and each visitor will result in another hit. Files like this will likely prove resource drains if the site receives large amounts of traffic.</br>
 On the other hand, `Pragma:public` and `Cache-Control:public, max-age=\d+` (where `\d+` means at least one digit, or more) are good signs in that these files will be stored on the client's device after the first request, and will not be requested until `max-age` seconds have elapsed since the last load, and will save resources in the long run. Of course, this also means that visitors may be seeing an "outdated" version of the resource for a limited time before their caches expire and are reloaded.
 
