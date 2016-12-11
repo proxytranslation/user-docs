@@ -117,6 +117,8 @@ Once we receive the files, we will again upload them to AppEngine
 after decrypting the keyfile, at which point it will be available for
 use with the proxied site.
 
+N.B.: When selecting an SSL provider, bear in mind that Google only accepts certificates that are either self-signed or signed by a publicly trusted root Certificate Authority. One important point that needs to be highlighted is that the root CA for CloudFlare's Origin certificate system is *not* publicly trusted. Thus, we are unable to make use of Origin certificates generated via CloudFlare's system - in this case, please contact us for a `CSR` file for use with a provider of your choice.
+
 ## SSL Manipulation Commands
 
 ### Converting private keys to RSA
@@ -124,11 +126,11 @@ use with the proxied site.
 When uploading the keys into AppEngine, the file must be in RSA
 format. To verify, the beginning of the file should be
 
-`-----BEGIN RSA PRIVATE KEY-----` . 
+`-----BEGIN RSA PRIVATE KEY-----` .
 
-If you read 
+If you read
 
-`-----BEGIN PRIVATE KEY-----`, 
+`-----BEGIN PRIVATE KEY-----`,
 
 you need to convert it, using the following command:
 
