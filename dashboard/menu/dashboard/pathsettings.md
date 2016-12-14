@@ -34,6 +34,6 @@ The result is a considerable lightening of server load, and a decrease in the nu
 
 #### Important Notes!
 
-    1. The feature is meant to be used in specific cases with binary/static resources that are unlikely to be changed quickly and often. Although any type of resource can be marked as publicly cache-able, these settings should not be applied to dynamic content (be warned of the **likely discrepancies** between the original and cached content!). **Careful Consideration Required!**
+* The feature is meant to be used in specific cases with binary/static resources that are unlikely to be changed quickly and often. Although any type of resource can be marked as publicly cache-able, these settings should not be applied to dynamic content (be warned of the **likely discrepancies** between the original and cached content!). **Careful Consideration is Required!**
 
-    2. Since Public Caching relies on the network to offload the burden of serving resources, changes take time to propagate. The `max-age` directive of the Cache Header indicates how long a cached instance of a resource will stay cached - the default is 24 hours. When the time declared for `max-age` is up, the resource is cached again via a request for the original.
+* Since Public Caching relies on the network to offload the burden of serving resources, changes take time to propagate. The `max-age` directive of the Cache Header indicates how long a cached instance of a resource will stay cached - the default is 24 hours. When the time declared for `max-age` is up, the resource is cached again via a request for the original.
