@@ -58,7 +58,7 @@ which the provider consumes to produce a cryptographically signed
 certificate.
 
 Using a CSR has several distinct advantages over generating your own
-certificate at the issuer: since the Easyling support crew is in
+certificate at the issuer: since the the translation proxy support crew is in
 control of the final product, we can tailor the request to generate
 the certificate we need from you; and since the private key remains
 safe with us, you do not need to take special precautions when sending

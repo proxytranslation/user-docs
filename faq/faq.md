@@ -12,7 +12,7 @@ A crawl will finish the current round and visit the redirects and links on the l
 
 ### **Can I get page-specific repetition statistics?**
 
-Repetition statistics make the most sense in a site-wide context. The problem with controlling calculations on a per-page basis is that it is not true to life to call a segment on a given page a “canonical instance”. Take a navigation bar or a footer, for example. It will be “repeated” on all pages, but it cannot be said to “belong” to any one of them. Easyling stores the first instance it comes across and then propagates its translation to all other instances.
+Repetition statistics make the most sense in a site-wide context. The problem with controlling calculations on a per-page basis is that it is not true to life to call a segment on a given page a “canonical instance”. Take a navigation bar or a footer, for example. It will be “repeated” on all pages, but it cannot be said to “belong” to any one of them. the translation proxy stores the first instance it comes across and then propagates its translation to all other instances.
 
 ### **The page I'm trying to translate has prices. What can I do to handle local currencies?**
 

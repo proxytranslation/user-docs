@@ -5,16 +5,16 @@
 >`${VARIABLE_NAME}`. When providing us information, simply replace the
 >entire construct (not just the name itself) with the data in mind.
 >There is also "global" variable to keep in mind: `${APP_DOMAIN}`
->refers to the domain chosen in point #3 to serve Easyling on.
+>refers to the domain chosen in point #3 to serve the translation proxy on.
 
-1. A €200 EUR topup / month (recurring): Easyling under your own brand
+1. A €200 EUR topup / month (recurring): the translation proxy under your own brand
    name is special service, offered to customers who cater not only to
    one or two clients, but put their weight behind the punch and open
    up whole new markets with our proxy solution.
 
 2. A one-time setup fee of €200.
 
-3. A custom domain name: you will need a place to serve Easyling (as
+3. A custom domain name: you will need a place to serve the translation proxy (as
    well as any previews) on. Generally, our clients settle on
    `app.${yourdomain}.com`, but we can use practically anything that
    comes to your mind - the only limitation is that we are unable to
@@ -29,10 +29,10 @@
    the Dashboard logo is set at 200x62px, while the Workbench logo
    needs to be 109x44px.
 
-5. An SSL certificate: Easyling uses encrypted channels to communicate
+5. An SSL certificate: the translation proxy uses encrypted channels to communicate
    on, and for that, we require an SSL certificate to be made out for
    the domain name of your choice, and any subdomains it may have -
-   Easyling uses your "app domain" to serve previews until they're
+   the translation proxy uses your "app domain" to serve previews until they're
    published, so your certificate must be a so-called "wildcard
    certificate" (a type of SSL certificate valid not only for
    `app.yourdomain.com`, but also `*.app.yourdomain.com`). Certificate
@@ -60,7 +60,7 @@ the appropriate data.
 6. The final step is to configure your DNS servers; and if you use
    Google Apps for `yourdomain.com`, the setup process will require
    someone with Google Apps admin rights as well. You will need to add
-   the following CNAME records to enable Easyling on your domain:
+   the following CNAME records to enable the translation proxy on your domain:
 
 	1. `${APPENGINE_KEY}.${APP_DOMAIN}` CNAME `${APPENGINE_HASH}` - these values will be provided to you.
     
@@ -68,7 +68,7 @@ the appropriate data.
     
 	3. `*.${APP_DOMAIN}` CNAME `ghs.domainverify.net`
     
-7. In order for Easyling to be able to send emails from under your
+7. In order for the translation proxy to be able to send emails from under your
    domain, you will need to provide authorization to the email
    service. This is done by adding specialized DNS records.
 

@@ -22,7 +22,7 @@ Posted by bornToBe27 on Apr. 6, 10:01, 2010
 Posted by OMEGA on Apr. 7, 11:59, 2010
 ```
 
-Repetitive and inconsequential from a translation/word count viewpoint, the usernames and dates should be made translation-invariant in the content above. You can add a regex for it (such as the one below) in the textbox and Easyling will exclude whatever is matched within a capturing group.
+Repetitive and inconsequential from a translation/word count viewpoint, the usernames and dates should be made translation-invariant in the content above. You can add a regex for it (such as the one below) in the textbox and the translation proxy will exclude whatever is matched within a capturing group.
 
 `Posted by ([\w]+) on ([\w]{3}\.\s[0-9]{1,2},\s[0-9]{2}:[0-9]{2},\s2[0-9]{3})`
 

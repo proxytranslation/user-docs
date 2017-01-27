@@ -9,7 +9,7 @@ A translation proxy is a layer placed between the browser and the original websi
 </iframe>
 </div><br/><br/>
 
-There are several proxy solutions available on the market, yet Easyling is unique in that:
+There are several proxy solutions available on the market, yet the translation proxy is unique in that:
 
 - it is a solution targeted primarily at LSPs - which also means that this is the **only** LSP-independent solution on the market
 
@@ -23,9 +23,9 @@ There are several proxy solutions available on the market, yet Easyling is uniqu
 
 **What does that mean?**
 
-If you are a **business owner**, it can help you reach a wider customer-base through providing information to your potential customers in their native language. What's more, you can do more than just translating the text on your website, you can ***localize*** it: you can also adapt your message, the images displayed, or even your product range offered to the targeted culture. And all this without the need of heavy upfront investment in IT infrastructure and personnel, and the hassle with regular maintenance and upgrade. Easyling takes care of the IT part, so that you could concentrate on the content - and growing your business.
+If you are a **business owner**, it can help you reach a wider customer-base through providing information to your potential customers in their native language. What's more, you can do more than just translating the text on your website, you can ***localize*** it: you can also adapt your message, the images displayed, or even your product range offered to the targeted culture. And all this without the need of heavy upfront investment in IT infrastructure and personnel, and the hassle with regular maintenance and upgrade. the translation proxy takes care of the IT part, so that you could concentrate on the content - and growing your business.
 
-If you are a **language service provider** (LSP), you can offer cutting-edge website localization services to your customers - even under your own brand name! Easyling provides the technology, takes care of the IT infrastructure, leaving you to concentrate on your core business: cross-cultural communication. What's more, your translators don't need to learn using just another tool, they can keep using their own preferred CAT-tools.<br>
+If you are a **language service provider** (LSP), you can offer cutting-edge website localization services to your customers - even under your own brand name! the translation proxy provides the technology, takes care of the IT infrastructure, leaving you to concentrate on your core business: cross-cultural communication. What's more, your translators don't need to learn using just another tool, they can keep using their own preferred CAT-tools.<br>
 
 **Sounds good?**
 
@@ -71,7 +71,7 @@ and many more!
 
 ## Whitelabel
 
-Easyling offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell Easyling as your own product. In order to create the branded version, seven criteria must be met. See the "Whitelabel setup" section for details.
+Easyling offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell the translation proxy as your own product. In order to create the branded version, seven criteria must be met. See the "Whitelabel setup" section for details.
 
 ## Pricing
 

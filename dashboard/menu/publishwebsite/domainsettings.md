@@ -10,7 +10,7 @@ This screen opens by default after clicking on "Publish website". The following 
 
 ## Serving domain mode (de.example.com)
 
-In the serving domain mode, Easyling will publish the translated site either on a subdomain of the original (the default behavior, such as `de.example.com`), or on a completely separate naked domain (such as `example.com`). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the three to five records (three for subdomains, five for new naked domains) that need to be inserted in your DNS settings are found below the two input fields, and will change as you enter the desired serving domain.
+In the serving domain mode, the translation proxy will publish the translated site either on a subdomain of the original (the default behavior, such as `de.example.com`), or on a completely separate naked domain (such as `example.com`). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the three to five records (three for subdomains, five for new naked domains) that need to be inserted in your DNS settings are found below the two input fields, and will change as you enter the desired serving domain.
 
 ### CNAME settings
 
@@ -22,7 +22,7 @@ There are three CNAME settings that are required on your domain to enable publis
 
 **CNAME 3** The third line verifies ownership of the original domain. This is computed from the user’s ID who is currently looking at the publishing page (i.e. different users will see different values, so one person should communicate this to the client and hit the Verify button), and needs to be added only once per serving domain as well. You can set the subdomain and domain where the translated site will appear.
 
-After all the settings have been entered into the DNS records, there is short time while the changes propagate and are replicated across the world. This can vary wildly with the DNS and hosting providers, taking anywhere between one and twenty-four hours. It is recommended to wait out the twenty-four hours, as Easyling will not be able to save the published domain until all checks are passed.
+After all the settings have been entered into the DNS records, there is short time while the changes propagate and are replicated across the world. This can vary wildly with the DNS and hosting providers, taking anywhere between one and twenty-four hours. It is recommended to wait out the twenty-four hours, as the translation proxy will not be able to save the published domain until all checks are passed.
 
 ### HTTPS & SSL certificates
 
