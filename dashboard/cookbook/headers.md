@@ -1,7 +1,7 @@
 # HTTP Headers
 
 ## What are HTTP Headers?
-HTTP header fields are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP). They define the operating parameters of an HTTP transaction. The header fields are transmitted after the request or response line, which is the first line of a message. Header fields are colon-separated name-value pairs in clear-text string format, terminated by a carriage return (CR) and line feed (LF) character sequence. The end of the header section is indicated by an empty field, resulting in the transmission of two consecutive CR-LF pairs. ((Wikipedia)[https://en.wikipedia.org/wiki/List_of_HTTP_header_fields])
+HTTP header fields are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP). They define the operating parameters of an HTTP transaction. The header fields are transmitted after the request or response line, which is the first line of a message. Header fields are colon-separated name-value pairs in clear-text string format, terminated by a carriage return (CR) and line feed (LF) character sequence. The end of the header section is indicated by an empty field, resulting in the transmission of two consecutive CR-LF pairs. ([Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields))
 
 ## Headers and the proxy
 The Proxy strives to be as transparent when it comes to headers as possible. Therefore, we forward the majority of headers added to any incoming request, with a few exceptions where the presence of said header could cause undesirable operation in the original server.
