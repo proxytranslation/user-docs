@@ -14,7 +14,7 @@ Menu
 Dashboard
 =========
 
-.. toctree:: 
+.. toctree::
    menu/dashboard/projectstatistics
    menu/dashboard/alarm
    menu/dashboard/auditlog
@@ -90,3 +90,4 @@ Cookbook
    cookbook/rtlconversion
    cookbook/ssl_certificates
    cookbook/proxymodes
+   cookbook/headers
