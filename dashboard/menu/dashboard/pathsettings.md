@@ -1,3 +1,5 @@
+.. _path_settings:
+
 ## Path settings - Cache & Cookie, Content Type Overrides
 
 Here, you can add target domain paths and define Cache and Cookie overrides for them. Enter a new path (you can set it to be a prefix or an exact URL), then click on Add Path. A New rule dropdown is displayed. You can choose either Cache and Cookie Overrides, Content Type Overrides, or both. After selecting one, the dropdown will disappear, but you'll still be able to add the other using the plus icon that appears next to the path.
@@ -18,13 +20,12 @@ Another common issue that lead to this feature is that  static resources often h
 
 ![Cache Override](/img/dashboard/path_settings_cache_override.png)
 
-The screenshot above shows an override that will operate on all images that are located on the `/res/img` path and override their Cache Headers to the following default values:
+The screenshot above shows an override that will operate on all images that are located on the `/res/img` path, clear cookies (which usually shouldn't be cached) andd override their Cache Headers to be the following (default) values:
 
 
 ```
-cache override: public 
-max-age: 86400
-cookie override: clear cookies
+cache-control: public, max-age=86400
+
 ```
 
 This way, the resources become publicly cache-able on various independent nodes on the network. Depending on the location of the caching node and the pathway of the request, the content will be served from caches instead of going through the proxy pipeline. 

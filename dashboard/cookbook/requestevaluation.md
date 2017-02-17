@@ -1,8 +1,8 @@
-# Page Request Evaluation ()
+# Page Request Evaluation 
 
-A crucial statistic of the original site is the number of requests needed to load and build a given page. This has monthly cost implications over the proxy. In this tutorial, we provide some pointers on how to get a working estimate for this number. We investigate the English Wikipedia as an example.
+A crucial statistic of the original site is the number of requests needed to load and build a given page. This has monthly cost implications over the proxy. In this tutorial, we provide some pointers on how to get a working estimate for this number using the Chrome DevTool. (The tutorial below uses the English Wikipedia in the screenshots).
 
-Request evaluation is often necessary since website owners/maintainers usually focus on tracking the number of *page visits*, a useful metric to gain knowledge about visitors to a site, but different from the individual HTTP *requests* in the stricter, technical sense.
+Request evaluation is often necessary since website owners/maintainers usually focus on tracking the number of *page visits*, more specifically *page visits from end users* (and therefore usually excluding, for example, the indexing bots of the various search engines). *User visits* are a useful metric to gain knowledge about visitors to a site, but different from the individual HTTP *requests* in the stricter, technical sense. 
 
 The number of HTTP requests that will have to go through the proxy when a page visit happens will be the multiplier to use when estimating monthly page views.
 
@@ -14,7 +14,7 @@ Investigation of the number of requests can be done on the original site. With t
 
     2. Select "All" to track all requests.
 
-    3. Enable "Use large request rows" (next to "View" in the menu bar).
+    3. Enable "Use large request rows" (to the right of "View" in the toolbar).
 
     4. You can leave the "Hide data URLs" option on
 
@@ -52,20 +52,45 @@ If you click on a request in the list, a new sidebar will appear with informatio
 
 PNG/JPG images, JS and CSS files are those resources that tend not to change rapidly. You can override the Cache Headers of such Resources in Dashboard > Path settings  - with the effective result being that the burden of serving that content is offloaded to independent caching nodes on the global network.
 
-Re-caching happens for each cached entity after the duration of the `max-age` directive passes. Using `max-age`, you declare a timeframe during which you will enlist the help of the network to serve the content in unchanged form. It can be used to fine-tune the time that you'll allow a specific cached instance of a resource to persist.
+Re-caching happens for each cached entity after the duration of the `max-age` directive passes. Using `max-age`, you declare a time-frame during which you will enlist the help of the network to serve the content in unchanged form. It can be used to fine-tune the time that you'll allow a specific cached instance of a resource to persist.
 
-**NOTE** While Cache Header overrides work in the great majority of cases, there is no "law" to force caching nodes to respect them: consequently, the pace at which various Resources are cached/re-cached on the global network is, to a degree, arbitrary.
+**NOTE** While Cache Header overrides work in the overwhelming majority of cases, there is no "law" to force caching nodes to respect them: consequently, the pace at which various Resources are cached/re-cached on the global network is, to a degree, arbitrary.
 
-While technically possible, making Document resources cacheable requires careful consideration, but as little as 10 minutes can be useful.
+While technically possible, making Document resources cacheable requires careful consideration, but as little as 10 to 60 minutes can be very useful. Consider that in most cases, the landing page receives the most page requests. Consequently, allowing it to be cached with a controlled  `max-age` value means considerable savings on the proxy (with the caveat that any changes will take at most the time declared for `max-age` to propagate across the network).
 
 ### Does the requested resource change often/constantly according to context?
 
 #### Dynamic Resource
 
-XHRs/AJAX calls/dynamic content cannot be cached without rapidly running into many problems on the published site. Rather, they simply can not be cached. This also applies to those requests that are sent throughout the user session on the page after loading it (and in lieu of hard data, it is very difficult to forecast the number of dynamic requests a given user will start).
+XHRs/AJAX calls/dynamic content cannot be cached without rapidly running into many problems on the published site. It is better to say that they simply can not be cached. This also applies to those requests that are sent throughout the user session on the page after loading it (and in lieu of hard data, it is very difficult to forecast the number of dynamic requests a given user will start).
 
-Salient examples are search field handler scripts, webshop endpoints, PHP scripts, backend endpoints and other similar sources that give wildly varying responses based on the parameters sent in the requests.
+Salient examples are search field handler scripts, web-shop endpoints, PHP scripts, backend endpoints and other similar sources that give wildly varying responses based on the parameters sent in the requests.
 
 #### Frequently Iterated Resource
 
 If a site is undergoing development, for example, it is usually not a good idea to add Cache Header overrides (certainly not overly long ones). This  would in effect delay propagation of any changes by the value of `max-age`, resulting in syncing problems between the original site and its translated counterparts.
+
+## Overriding Cache Headers
+
+Evaluation of the number of requests is most useful when estimating the monthly cost associated with serving a site. For overriding cache headers on the Dashboard see the :ref:`Path Settings _path_settings` section of this documentation. Enable the public caching tweak in Dashboard > Advanced settings to facilitate further speedups on the Easyling end.
+
+## Example Scenario & Conclusions
+
+If the following information is available:
+
+    * The original site has 50,000 monthly user visits
+    * A single target language sub-domain is expected to receive about half of that, 25,000
+    * Each page uses between 50-70 requests to build
+
+Using the consideration points above, it is determined that most of those requests can be counted out and the rest cached for 24 hours. The site will require 3 non-cacheable requests from a user coming in from a location where there is no caching node on the way. 
+
+From this you will be able to conclude the following:
+
+    * 2 requests are necessary, so 25,000 * 3 = 75.000 expected page requests
+    * BUT: consider also the number and visit frequency of revisitors - each time a cached entity's max-age (24 hours in this hypothetical scenario) expires, that resource has to be re-cached, which will increase the number of requests going through the proxy with a certain amount (although this amount is usually negligible).
+    
+With the appropriate Cache Headers, Google's geographically specific Edge Cache, the public internet, the various ISP caching nodes, and at the other end of the process, the user's browser cache will participate in offloading the page request from the proxy's translation pipeline.
+
+## Conclusion
+
+Armed with this knowledge of an overarching view of requests that will have go through the proxy, you will be able to provide accurate estimates for the monthly costs of the proxy
