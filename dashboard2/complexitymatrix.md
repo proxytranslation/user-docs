@@ -1,7 +1,7 @@
 Complexity Matrix
 =================
 
-The Complexity Matrix (CM) is two things: first, it is a **note-taking application** where you can order your knowledge of a site and various issues in relation to the project. Second, it is the first feature to showcase the look & feel of the **Dashboard 2**. Feedback is welcome!
+The Complexity Matrix (CM) is two things: first, it is a **note-taking application** where you can get your knowledge of a project domain and various potential issues in order. Second, it is the first feature to showcase the look & feel of the **Dashboard 2**. Feedback is welcome!
 
 You'll recall from the introduction that there are a number of questions to ask when you embark on a new project, so as to create better forecasts for your project expenses and the required amount of work to get the project going. The CM is meant to make this easier via a screen that you can use to track issues from within the project itself.
 
@@ -173,6 +173,10 @@ Not only does the CSS/JS parts of RTL redesign (which has to be done before the 
 Responsive site design is a compounding factor for all extant layout issues. Websites are expected to work with a wide variety of screen sizes and browser settings, you have to take it into account. Use the Chrome DevTool's device mode to gain understanding of site behavior over the proxy (and in general). 
 
 ## Code Issues
+
+The list of potential issues is not meant to be exhaustive. Nevertheless, it is heavily **work-in-progress**. Suggestions and feedback are welcome! 
+
+<To-Be-Written>
 
 ### Translatable Content in JavaScript
 
