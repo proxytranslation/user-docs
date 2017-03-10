@@ -154,9 +154,23 @@ Other times, enclosing elements (such as border boxes) will change their size ba
 
 - *Some things can be made to fit via CSS tricks and Page Modifiers. In other cases, only rewording will help if extensive reworking of the site layout is not an option.*
 
+- *The other case may also happen: Chinese terminology, for example, can be considerably shorter than its German counterpart. Too much room is less often a problem than too little, but it is useful to keep in mind nevertheless.*
+
 #### Text Direction
 
+Some target languages, such as Hebrew or Arabic require that the site be redesigned from Left-To-Right to Right-To-Left via CSS rules/page modifiers/framework-specific RTL libraries. This usually means an extensive reworking of the site structure using development tools. 
+
+Not only does the CSS/JS parts of RTL redesign (which has to be done before the project is published) take a long time, there are some parts of a site that require even more detail work. Images with specific directionality (a left-pointing arrow, for)
+
+**Things to Note**
+
+- *Keep track of UI elements that have explicit directions (such as images).
+
+- *Interactive elements and vendor plugins usually mean many hours of work to get everything just so. Be extra careful!*
+
 #### Responsive Layout
+
+Responsive site design is a compounding factor for all extant layout issues. Websites are expected to work with a wide variety of screen sizes and browser settings, you have to take it into account. Use the Chrome DevTool's device mode to gain understanding of site behavior over the proxy (and in general). 
 
 ## Code Issues
 
