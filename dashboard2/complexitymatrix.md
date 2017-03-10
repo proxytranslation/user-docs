@@ -5,11 +5,11 @@ The Complexity Matrix (CM) is two things: first, it is a **note-taking applicati
 
 You'll recall from the introduction that there are a number of questions to ask when you embark on a new project, so as to create better forecasts for your project expenses and the required amount of work to get the project going. The CM is meant to make this easier via a screen that you can use to track issues from within the project itself.
 
-# Accessing & Using the CM
+## Accessing & Using the CM
 
 While incremental development of the Dashboard 2.0 is ongoing, the old interface remains available. From there, go into the Dashboard menu and click on **Complexity Matrix** to access the new Dashboard and the CM screen.
 
-## Navigating the CM
+### Navigating the CM
 
 [Complexity Matrix Screen](/img/dashboard2/complexity-matrix.png)
 
@@ -35,13 +35,13 @@ Each of the categories can be clicked to reveal an editing field that you can us
 
 In the following sections, we'll discuss the various aspects of a project's potential complexity using the various available categories in the Complexity Matrix, and list a few examples that are worth documenting if you come across them.
 
-# QA Tests
+## QA Tests
 
 QA tests should be considered as part of the project setup phase. In the remainder of this documentation page, You will find a non-exhaustive list of possible issues that warrant careful consideration.
 
-## JavaScript
+### JavaScript
 
-### Content in JavaScript
+#### Content in JavaScript
 
 The proxy will find all translatable content in the HTML source, but such is not the case with JS: the appropriate JS Translation paths need to be worked out and added to the Advanced settings. Use the x-proxy after Discovering/Scanning a site to reveal any content that was not found by the crawl.
 
@@ -67,9 +67,9 @@ JS code often contains URLs or pathnames that are referred to elsewhere when mak
 **Things to Note**
 - *Fully qualified, non-concatenated URLs can be remapped via a tweak available in Advanced settings.*
 
-## Functionality
+### Functionality
 
-### HTTP and HTTPS
+#### HTTP and HTTPS
 
 If you notice that a site uses HTTPS, pay attention. Since the proxy preview domains are certified themselves, you can go a long way without realizing that the Live target language sub-domains will also require certification. Procuring an appropriate SSL certificate takes time, and it can become blocking in the Publishing phase.
 
@@ -77,7 +77,7 @@ If you notice that a site uses HTTPS, pay attention. Since the proxy preview dom
 
 - *An SSL certificate for the published sub-domains is necessary.*
 
-### Site Search
+#### Site Search
 
 Most large-scale websites nowadays have a site search functionality that requires additional work on the proxy end of things to intergrate appropriately.
 
@@ -87,7 +87,7 @@ Most large-scale websites nowadays have a site search functionality that require
 
 - *The proxy supports Google's Custom Search Engine. The integration has to happen via JavaScript page modifiers to maintain the original look and feel of the site - this, however, means coding work.*
 
-### Language Selector
+#### Language Selector
 
 Many sites already have some sort of localization solution in place. Investigate the current language selection mechanism for potential issues.
 
@@ -97,9 +97,9 @@ Many sites already have some sort of localization solution in place. Investigate
 
 - *If there is no selector, it will have to be implemented,or one of the default proxy selectors used. This requires action from someone who has **access to the source** on the original server - these changes can increase the time it takes for a project to go live.*
 
-### Plugins
+#### Plugins
 
-### External i18n Modules
+#### External i18n Modules
 
 Closely related to the Language Selector, the presence of i18n modules can life easier or more difficult, depending on what you can do with them. Consider whether these modules can be reused in the context of the proxy or if new translations will have to be provided.
 
@@ -107,7 +107,7 @@ Closely related to the Language Selector, the presence of i18n modules can life 
 
 - *Is the i18n module part of minified code? Is it dynamic content? These are usually extremely difficult to reliably reuse.*
 
-### User Sessions & Logins
+#### User Sessions & Logins
 
 Sites often have sections that require login credentials. The proxy can handle these sections if it is passed the appropriate **session cookies**.
 
@@ -115,7 +115,7 @@ Sites often have sections that require login credentials. The proxy can handle t
 
 - *Extracting session cookies is an additional step that needs to be executed for each Scan/Content Ingestion Cycle.*
 
-### Query Parameters
+#### Query Parameters
 
 Sometimes, the project page list will contain many instances of the same path with different query parameters after a Discovery. The thing about query parameters is that they do not necessarily imply unique content for the specific settings they engender. For example,
 
@@ -131,20 +131,20 @@ could plausibly serve exactly the same content, only in different order. Convers
 
 - *Consider also that independently made changes to the original site might instantly deprecate your current project settings - this also has implications for the maintenance phase of a project.*
 
-## Dynamic Content
+### Dynamic Content
 
-### XHR, AJAX, XML and JSON
+#### XHR, AJAX, XML and JSON
 
 **Things to Note**
 - *Dynamic content has to be extracted manually **via the Preview***.
 
-### Webshops
+#### Webshops
 
-### Single-Page Applications (Angular, etc.)
+#### Single-Page Applications (Angular, etc.)
 
-## Layout & CSS
+### Layout & CSS
 
-### Word lengths
+#### Word lengths
 
 English and German, for example, differ considerably in their average word lenght. While not normally an issue in the case of paragraphs, this can become an issue if some part of the site layout is too tight (for example, a navigation header with widths declared in pixels). If too many assumptions are ingrained in it about the amount of content that has to fit in a given element, that might need some tweaks.
 
@@ -154,28 +154,28 @@ Other times, enclosing elements (such as border boxes) will change their size ba
 
 - *Some things can be made to fit via CSS tricks and Page Modifiers. In other cases, only rewording will help if extensive reworking of the site layout is not an option.*
 
-### Text Direction
+#### Text Direction
+
+#### Responsive Layout
+
+## Code Issues
+
+### Translatable Content in JavaScript
+
+### External Content, Project Linking, Forms, iframes
+
+#### Hubspot & Marketo
+
+## Layout
 
 ### Responsive Layout
 
-# Code Issues
+### Proxy Compatibility
 
-## Translatable Content in JavaScript
+## User Experience
 
-## External Content, Project Linking, Forms, *<iframe>* tags
+### Wording, Layout
 
-### Hubspot & Marketo
+### Content Access
 
-# Layout
-
-## Responsive Layout
-
-## Proxy Compatibility
-
-# User Experience
-
-## Wording, Layout
-
-## Content Access
-
-## Consistency
+### Consistency
