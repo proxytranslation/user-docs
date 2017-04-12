@@ -11,7 +11,7 @@ While incremental development of the Dashboard 2.0 is ongoing, the old interface
 
 ### Navigating the CM
 
-[Complexity Matrix Screen](/img/dashboard2/complexity-matrix.png)
+![Complexity Matrix Screen](/img/dashboard2/complexity-matrix.png)
 
 Expect the left-side menu to have additional items added as development of the new interface progresses. For now, it contains the menu entries for the Complexity Matrix itself and a link to what we have now retroactively dubbed *Dashboard 1.0*, the old user interface. The left-side menu itself can be hidden using the hamburger menu icon on the left-side of the header.
 
