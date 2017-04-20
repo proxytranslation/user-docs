@@ -10,7 +10,7 @@ source_parsers = {
             '.md': CommonMarkParser,		
         }
 master_doc = 'index'
-project = u'Easyling wiki docs'
+project = u'Translation Proxy Documentation'
 copyright = u'2016'
 version = 'latest'
 release = 'latest'
