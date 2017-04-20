@@ -21,7 +21,7 @@ html_theme = 'proxytheme'
 html_theme_path = ["."]
 file_insertion_enabled = False
 latex_documents = [
-  ('index', 'easyling-wiki-docs.tex', u'Easyling wiki docs Documentation',
+  ('index', 'easyling-wiki-docs.tex', u'Translation Proxy Online Documentation',
    u'', 'manual'),
 ]
 
@@ -107,9 +107,9 @@ context = {
     'subprojects': [ 
     ],
     'slug': 'easyling-wiki-docs',
-    'name': u'Easyling wiki docs',
+    'name': u'Proxy Translation Documentation',
     'rtd_language': u'en',
-    'canonical_url': 'http://docs.easyling.com/en/latest/',
+    'canonical_url': 'https://proxytranslation.readthedocs.io/en/latest/',
     'analytics_code': 'UA-77268466-1',
     'single_version': False,
     'conf_py_path': '/./',
