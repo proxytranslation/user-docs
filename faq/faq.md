@@ -35,7 +35,7 @@ No, scanning can't be automated behind secure login. For such processes you need
 |*New*|the page was content extracted, with no translations on it yet (or pending progress update).|
 |*Excluded*|the page was excluded by clicking on the "Exclude" button in the hover menu.|
 |*Excluded by rule*|the page is excluded by a rule declared at the top of the page list.|
-|*<Progress bar>*|repetitions were propagated to the page, or its translation is in-progress.|
+|*Progress bar*|repetitions were propagated to the page, or its translation is in-progress.|
 
 ## Caches
 
