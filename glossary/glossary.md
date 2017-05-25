@@ -34,3 +34,17 @@ We use a set of recurring terminology in this manual and also in our Support Cha
 <dt>Workbench</dt><dd>The online editing view of the proxy</dd>
 
 </dl>
+
+## Page List Tags
+
+<dt>Discovered</dt><dd>the page was visited and content on it was included in a previous word count.</dd>
+
+<dt>Excluded by rule</dt><dd>the page is excluded by a rule declared at the top of the page list.</dd>
+
+<dt>Excluded</dt><dd>page was excluded by clicking on the "Exclude" button in the hover menu.</dd>
+
+<dt>New</dt><dd>the page was content extracted, with no translations on it yet (or pending progress update).</dd>
+
+<dt>Progress bar</dt><dd> repetitions were propagated to the page, or its translation is in-progress.</dd>
+
+<dt>Unvisited</dt><dd>the page was collected as a new URL, but it hasn't been Discovered/Scanned yet.</dd>
