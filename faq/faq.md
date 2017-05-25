@@ -28,14 +28,7 @@ No, scanning can't be automated behind secure login. For such processes you need
 
 ### **What do the various tags mean next to each page in the page list?**
 
-|Tag|Meaning|
-|:--|:------|
-|*Unvisited* | the page was collected as a new URL, but it hasn't been Discovered/Scanned yet.|
-|*Discovered*| the page was visited and content on it was included in a previous word count.|
-|*New*|the page was content extracted, with no translations on it yet (or pending progress update).|
-|*Excluded*|the page was excluded by clicking on the "Exclude" button in the hover menu.|
-|*Excluded by rule*|the page is excluded by a rule declared at the top of the page list.|
-|*Progress bar*|repetitions were propagated to the page, or its translation is in-progress.|
+See the Glossary for a detailing of the various tags encountered in the page list.
 
 ## Caches
 
