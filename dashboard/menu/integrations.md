@@ -14,7 +14,7 @@ Easyling is capable of integrating with various external systems, TMSes, storage
 + Integration with MemoQ Web
 # Storage drivers
 ### [Dropbox](integrations/dropbox.html)
-Export into a designated folder, split by projects; import translations directly from uploads after email notifications
++ Export into a designated folder, split by projects; import translations directly from uploads after email notifications
 # MT engines
 ### GeoFluent
 + Automatic language detection
