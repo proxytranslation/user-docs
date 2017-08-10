@@ -9,7 +9,7 @@ Easyling is capable of integrating with various external systems, TMSes, storage
 ### XTM
 + Export into XTM projects
 + Automatic import from XTM projects on completion of the workflow
-### MemoQ
+### [MemoQ](integrations/memoq.html)
 + Live preview of translations using MemoQ Desktop
 + Integration with MemoQ Web
 # Storage drivers
