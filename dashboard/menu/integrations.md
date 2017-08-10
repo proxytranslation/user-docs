@@ -6,7 +6,7 @@ Easyling is capable of integrating with various external systems, TMSes, storage
 ### XTRF
 + Export into XTRF projects
 # CAT tools
-### XTM
+### [XTM](integrations/xtm.html)
 + Export into XTM projects
 + Automatic import from XTM projects on completion of the workflow
 ### [MemoQ](integrations/memoq.html)
