@@ -14,6 +14,6 @@ To add a new account, you'll be required to log in with a valid Dropbox account,
 
 ## Using
 
-During export, select the option to submit to an external system, and choose Dropbox from the dropdown. Once the export completes, the file will be automatically uploaded to Dropbox. Already-existing exports can be submitted from the Previous Exports dialog.
+During export, select the option to submit to an external system, and choose Dropbox from the dropdown. Once the export completes, the file will be automatically uploaded to Dropbox, in the project's `export` folder. Already-existing exports can be submitted from the Previous Exports dialog.
 
 On uploading a file to the `import` folder of a project, you will be notified via email. From the Import Translations dialog, you can view the contents of the project's `import` folder via the Dropbox tab, where the system will automatically designate files uploaded since the last import for processing - you are free to modify this selection, however. On starting the import, the files will be downloaded from your account, and processed through the regular import process.
