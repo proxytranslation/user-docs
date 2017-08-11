@@ -19,7 +19,7 @@ Easyling is capable of integrating with various external systems, TMSes, storage
 ### GeoFluent
 + Automatic language detection
 + Use in pre-translation
-### Google Translate (Dictionary-based)
+### [Google Translate (Dictionary-based)](integrations/google.html#dictionary-based)
 + Traditional machine translation on Google's infrastructure
 + Use in pre-translation
 ### Google Translate (Neural net-based)
