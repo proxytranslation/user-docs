@@ -25,7 +25,7 @@ Easyling is capable of integrating with various external systems, TMSes, storage
 ### [Google Translate (Neural net-based)](integrations/google.html#neural-net-based-beta)
 + Machine translation using Google's neural net-based approach
 + Use in pre-translation
-### Microsoft Cognitive Services - Translation API
+### [Microsoft Cognitive Services - Translation API](integrations/microsoft.html)
 + Microsoft Translation system
 + Use in pre-translation
 ### Itranslate4EU
