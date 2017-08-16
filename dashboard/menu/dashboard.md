@@ -10,7 +10,7 @@ This alternative name will be displayed in the Project dropdown below the URL, f
 
 ## Website Address
 
-The website address is a property of your project that is unchanging. Once declared in the Add Project dialog, it cannot be altered.
+Exactly what it says on the tin, the website address is a property of your project that cannot be altered once declared during project creation. 
 
 There is one exception to this rule: by default, the proxy will follow redirects from the initial URL and will create the project for the address it is redirected to.
 
