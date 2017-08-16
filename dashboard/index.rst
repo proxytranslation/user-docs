@@ -88,6 +88,7 @@ Cookbook
    cookbook/whitelabel
    cookbook/resourcetranslation
    cookbook/requestevaluation
+   cookbook/stagingdomain
    cookbook/rtlconversion
    cookbook/ssl_certificates
    cookbook/proxymodes
