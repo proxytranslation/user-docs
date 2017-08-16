@@ -1,8 +1,6 @@
 # Staging Domains
 
-While it is true that the project URL is a property that cannot be changed once created, there is no reason why you should not be able to change/swap the *source* of the content entirely. 
-
-Website maintainers like to do test runs on any changes they make in the context of a devserver, and the same devserver can also serve as a testing ground for any untranslated content - you can use the Staging Domain option just to do that. 
+Website maintainers like to do test runs on any changes they make on a devserver, and the same devserver can also serve as a testing ground for any untranslated content - you can use the Staging Domain option to use staging server data in Preview, while leaving content on the Live Serving Domain undisturbed.
 
 If the project URL is `example.com`, and a devserver exists at `dev.example.com`, you can enter that URL into the Staging Domain field and click on "Add Staging Domain". The staging server is added to the menu below the text field automatically and enabled as default in all Preview domains. 
 
