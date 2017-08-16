@@ -32,7 +32,7 @@ Change the number of project participants and project workflow type using this d
 
 ## Staging Domain 
 
-Please see the Cookbook recipe [on Staging domains](../dashboard/cookbook/stagingdomain.html)
+Please see the Cookbook recipe [on Staging domains](../cookbook/stagingdomain.html)
 
 
 ## Language Selector
