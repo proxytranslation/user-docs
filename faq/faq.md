@@ -4,13 +4,19 @@
 
 ### **Where are my translations published?**
 
+Instead of "where?", a better question to ask is "how?".
+
 Imagine the proxy as standing between the original site and a visitor's browser. Publishing the Japanese translation of example.com on the jp.example.com subdomain means mapping jp.example.com (presumably owned by the owner of example.com) to point to the proxy. 
 
 Visiting jp.example.com/contact.html results in that request being caught by the proxy and relayed to example.com/contact.html - the origin server.  The contact.html page is served as a response, which is caught on the way back, translated on-the-fly at blazing speeds and served to the visitor. 
 
-This requires that jp.example.com be mapped in the owner's DNS settings.
+This requires that jp.example.com be mapped to the cloud proxy application in the owner's DNS settings.
 
-Instead of "where?", a better question to ask is "how?". The proxy does not store any copies of the original site pages, it only stores translations, which it uses to process responses served by the original site to visitor's queries.
+### **Does the proxy host a copy of my site?**
+
+No. The proxy does not store any copies of the original site pages, it only stores translations, which it uses to process responses served by the original site to visitor's queries.
+
+There is one exception to this principle: if a source cache is built and enabled for a proxy mode, that cached version of the page will be used in place of the origin server's response.
 
 ### **Some parts of a site are on a subdomain. How will the crawler pick them up?**
 
