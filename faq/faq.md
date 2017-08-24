@@ -2,6 +2,16 @@
 
 ## General
 
+### **Where are my translations published?**
+
+Imagine the proxy as standing between the original site and a visitor's browser. Publishing the Japanese translation of example.com on the jp.example.com subdomain means mapping jp.example.com (presumably owned by the owner of example.com) to point to the proxy. 
+
+Visiting jp.example.com/contact.html results in that request being caught by the proxy and relayed to example.com/contact.html - the origin server. example.com/contact.html, an HTML page, is served as a response. This response is caught, translated on-the-fly at blazing speeds and served to the visitor. 
+
+This requires that jp.example.com be mapped in the owner's DNS settings.
+
+Instead of "**Where?**", a better question to ask is "**How?**". From the above, you can see that the proxy does not store any copies of the original site pages - it only stores translations, which it uses to process responses served by the original site to visitor's queries.
+
 ### **Some parts of a site are on a subdomain. How will the crawler pick them up?**
 
 The sites www.company.com and blog.company.com are treated as separate domains by the crawler. From the vantage point of a crawler running on www.company.com, a path on blog.company.com is an external and will be treated as such. The solution is to create two separate projects and link those with each other.
