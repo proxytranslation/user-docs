@@ -24,6 +24,4 @@ Additionally, automatic change detection is not an option with a JS-based publis
 
 # Publishing process
 
-The publishing method is in open beta phase and available with a little help from our end, so if you are interested in trying it out, please contact our support team and we'll help you set it up. 
-
-Stay tuned until Client-side translation option shows up on the Dashboard!
+The publishing method is in open beta phase and is available for testing and live use with a bit of help from our end. If you are interested in taking it for test drive, please contact our support team and we'll help you set it up. 
