@@ -62,4 +62,67 @@ The language selector contains a menu button, a container and target language en
 
 ### RYO or Existing Selector
 
-If a language selector is already present on the site, by far the easiest method to integrate the translated subdomains/subdirectories is to add them to the existing selector (although it does require the development resources of the site owner). An important feature of the proxy is the “__ptNoRemap” class, which can be used to prevent the links within the language selector from being changed over the proxy. Adding it to the link `<a>` tags or other functionally equivalent markup will allow the proxy to keep these links intact. It is especially prudent to protect the original site’s link (the proxy should not remap the link to the original site in the language selector). You may also wish to use the translate=”no” attribute in places where you want the proxy to ignore the textual content of the HTML element.
+It is possible that site undergoing translation is also running (or was previously running) a different localization solution, in which case a language selector is usually already present. It is relatively straightforward to extend an existing language selector with the proxy-published target languages. 
+
+Since that language selector is also proxied, it is important to protect the link pointing to the original language site from being remapped in the process. 
+
+In order to do this, the `__ptNoRemap` special class can be used to indicate to the proxy that it should not change any links in the given tag.
+
+A brief example of how the original site link can be protected from remapping with `__ptNoRemap`:
+
+
+``` html
+<ul id="languageSelector">
+    <div class="language selected">English </div>
+    <ul>
+        <!-- PREVENT REMAPPING OF ORIGINAL LINK-->
+        <li><a class="__ptNoRemap" href="www.example.com">English</a></li>
+        <li><a href="de.example.com">Deutsch</a></li>
+        <li><a href="fr.example.com"> Francais</a></li>
+    </ul>
+</ul>
+```
+
+
+You may also wish to use the translate=”no” attribute in places where you want the proxy to ignore the textual content of the HTML element.
+
+#### RYO selector + Client-Side Translation
+
+If a project is published using Client-side translation, either an existing language selector needs to be used, or a new one developed to trigger translations after selection. 
+
+CST translation is activated when the target locale code is stored in the browser with the help of the `__ptLanguage` query parameter. 
+
+In order to trigger language selection/translation in-browser, add this query parameter with the appropriate published locale codes as values. Note that in order for the method to work, URL navigation has to happen once, which means a full reload is required in order to change languages.
+
+Let's modify the exampe above to suit the needs of CST:
+
+
+``` html
+<ul id="languageSelector">
+    <div class="language selected">English </div>
+    <ul>
+        <li><a href="/?__ptLanguage=en-GB">English</a></li>
+        <li><a href="/?__ptLanguage=de-DE">Deutsch</a></li>
+        <li><a href="/?__ptLanguage=fr-FR"> Francais</a></li>
+    </ul>
+</ul>
+```
+
+The value of `__ptLanguage` will persist across sessions, the JS file will rely on it until the user changes their mind about their preferred language.
+
+Visiting `www.example.com/?__ptLanguage=ja-JP` will change target languages into Japanese and store the setting. Visiting `www.example.com` the next time around will result in the site being translated into Japanese automatically. 
+
+The default browser locale can be detected successfully to be a published target language, CST will attempt a locale-specific translation without having had a query parameter provided to it.
+
+Although that is about it, it is useful to keep in mind a few things when setting up a language selector to work with CST. 
+
+Somewhat different from the proxy method, CST requires that we provide all locale codes explicitly, especially the **original** language. Since CST *stores* the user's selection in the browser's local storage, the query parameter is necessary in order to allow the user return to the original language version. 
+
+CST publishing does not require any proxy traffic, but the Workbench In-Context editing screen remains available. This can sometimes result in the Client-Side Translation getting mixed up with the proxy-based translations, so if you are using the proxy modes for your translation work while publishing with Client-Side translation, it is generally a good idea to ignore the language selector in Preview.
+
+
+
+
+
+
+

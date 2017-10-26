@@ -1,7 +1,29 @@
 # Client-Side Translation
 
-The Proxy also provides an additional translation engine in JavaScript. A project can be exported into a ready-made JavaScript file that couples with the translation stub provided to enable translation within the client's browser.
+**CST is currently in a live-tested beta phase.**
 
-This mode of operation is not without drawbacks, however! Currently, binary resources such as images will not be replaced, nor will additional JavaScript/CSS modifiers be injected, as the site now bypasses the Proxy entirely. Additionally, Automatic Change Detection will be restricted to the recurring crawls set up on the project, for the same reason.
+## What is CST?
 
-The Client-Side Translation offering was premiered on 1 June 2016, and is currently in open beta phase. If you would like to participate as an Alpha Customer, please contact our support team from within the Proxy!
+To summarize briefly, Client-side Translation is a **publishing method** that lets you use your translations on the original domain. 
+
+As opposed to the proxy method, which involves standing between the user request and the original site and translating responses on-the-fly, Client-Side translation does not require the proxy pipeline to serve content.
+
+That is, instead of being processed in the Cloud, translation of the page will happen in the user's browser, using a JavaScript based dictionary file that can be exported from your project and embedded right in the original site's HTML source.
+
+## Pros & Cons
+
+Client-side translation is especially suited to lightweight, streamlined sites with comparatively few pages, or sites that are not publicly accessible, such as intranets.
+
+It does not require the proxy pipeline to serve content, which means that there is no monthly cost involved. 
+
+Image translation is supported.
+
+On the other hand, given the nature of the translation process, the target language content cannot be indexed by search engines. 
+
+Additionally, automatic change detection is not an option with a JS-based publishing method, so the only way to detect changes is by setting up a recurring crawl. 
+
+# Publishing process
+
+The publishing method is in open beta phase and available with a little help from our end, so if you are interested in trying it out, please contact our support team and we'll help you set it up. 
+
+Stay tuned until Client-side translation option shows up on the Dashboard!
