@@ -38,7 +38,7 @@ See the pertaining section of the documentation [here](../../cookbook/ssl_certif
 
 The alternative to subdomain-based publishing is to retain your own domain and publish the site as a subdirectory. I.e. the translated pages will appear under separate paths under the same domain as the one the project was created for (the original domain). 
 
-Due to the way the proxy works, this requires a reverse proxy configuration to be placed in front of the webserver. A variety of load balancer/reverse proxy solutions are available on the market, with `nginx` and `CloudFlare` being two of the most well-known solutions available. See the vendor documentation for the details of setting up a reverse proxy (do note that nowadays, reverse proxies are monumentally powerful network solutions, and discussion of all their features is beyond the scope of this introductory description).
+Due to the way the proxy works, this requires a reverse proxy configuration to be placed in front of the webserver. A variety of load balancer/reverse proxy solutions are available on the market, with `nginx`, `CloudFlare` and `AWS CloudFront` being three of the most well-known solutions available. See the vendor documentation for the details of setting up a reverse proxy (do note that nowadays, reverse proxies are monumentally powerful network solutions, and discussion of all their features is beyond the scope of this introductory description).
 
 If you go to the Dashboard and go to the Publish Website menu, you'll see that the *Subdirectory Publishing* option displays an example `nginx` configuration. A shortcut for the expert, let us refer this example verbatim:
 
