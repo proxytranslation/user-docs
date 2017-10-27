@@ -78,7 +78,7 @@ A brief example of how the original site link can be protected from remapping wi
         <!-- PREVENT REMAPPING OF ORIGINAL LINK-->
         <li><a class="__ptNoRemap" href="www.example.com">English</a></li>
         <li><a href="de.example.com">Deutsch</a></li>
-        <li><a href="fr.example.com"> Francais</a></li>
+        <li><a href="fr.example.com">Francais</a></li>
     </ul>
 </ul>
 ```
@@ -103,7 +103,7 @@ Let's modify the exampe above to suit the needs of CST:
     <ul>
         <li><a href="/?__ptLanguage=en-GB">English</a></li>
         <li><a href="/?__ptLanguage=de-DE">Deutsch</a></li>
-        <li><a href="/?__ptLanguage=fr-FR"> Francais</a></li>
+        <li><a href="/?__ptLanguage=fr-FR">Francais</a></li>
     </ul>
 </ul>
 ```
