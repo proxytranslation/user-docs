@@ -26,9 +26,9 @@ After all the settings have been entered into the DNS records, there is short ti
 
 ### HTTPS & SSL certificates
 
-Additionally, if the original site was HTTPS, or the translated sites will be served over a secure channel, an appropriate certificate and its associated key will also be needed. Ideally a wildcard certificate (one certificate for all subdomain), but Extended Validation certificates can also be used, although they require more setup work. 
+Additionally, if the original site was HTTPS, or the translated sites will be served over a secure channel, an appropriate certificate and its associated key will also be needed. Ideally a wildcard certificate (one certificate for all subdomain), but Extended Validation certificates can also be used, although they require more setup work.
 
-Our support team can also provide you with the *Certificate Signing Requests* necessary for the generation of these certificates - this will also have the added benefit of not having to send the private keys over the wider web for recording in AppEngine.
+Our support team can also provide you with the *Certificate Signing Requests* necessary for the generation of these certificates - this will also have the added benefit of not having to send the private keys over the wider web for recording in AppEngine.  
 Additionally, we have a *Managed Certificate* program, where the proxy handles SSL certification automatically for published websites. The Managed Certificate program has a cost of 50EUR (60USD)/proxied domain/year or 100EUR (120USD)/proxied domain/**three** years.
 
 See the pertaining section of the documentation here.
