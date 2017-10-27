@@ -26,14 +26,76 @@ After all the settings have been entered into the DNS records, there is short ti
 
 ### HTTPS & SSL certificates
 
-Additionally, if the original site was HTTPS, or the translated sites will be served over a secure channel, an appropriate certificate and its associated key will also be needed. Ideally a wildcard certificate (one certificate for all subdomain), but Extended Validation certificates can also be used, although they require more setup work. Our support team can also provide you with the Certificate Signing Requests necessary for the generation of these certificates - this will also have the added benefit of not having to send the private keys over the wider web for recording in AppEngine.
+Additionally, if the original site was HTTPS, or the translated sites will be served over a secure channel, an appropriate certificate and its associated key will also be needed. Ideally a wildcard certificate (one certificate for all subdomain), but Extended Validation certificates can also be used, although they require more setup work.
 
-See the pertaining section of the documentation here.
+Our support team can also provide you with the *Certificate Signing Requests* necessary for the generation of these certificates - this will also have the added benefit of not having to send the private keys over the wider web for recording in AppEngine.
+
+Additionally, we have a *Managed Certificate* program, where the proxy handles SSL certification automatically for published websites. The Managed Certificate program has a cost of 50EUR (60USD)/proxied domain/year or 100EUR (120USD)/proxied domain/**three** years.
+
+See the pertaining section of the documentation [here](../../cookbook/ssl_certificates.html).
 
 ## Subdirectory publishing (example.com/de)
 
-The alternative to subdomain-based publishing is to publish the site to retain your own domain, and publish the site as a subdirectory of the existing domain, i.e. the translated pages will be available on separate paths under your own domain. However, due to the way the proxy operates, this will require a specifically configured nginx reverse proxy server to be prepared and placed in front of your own webserver.
+The alternative to subdomain-based publishing is to retain your own domain and publish the site as a subdirectory. I.e. the translated pages will appear under separate paths under the same domain as the one the project was created for (the original domain). 
 
-An example configuration snippet is available on the publishing interface, but this should be treated as only a guideline, to be customized according to your specific setup!
+Due to the way the proxy works, this requires a reverse proxy configuration to be placed in front of the webserver. A variety of load balancer/reverse proxy solutions are available on the market, with `nginx` and `CloudFlare` being two of the most well-known solutions available. See the vendor documentation for the details of setting up a reverse proxy (do note that nowadays, reverse proxies are monumentally powerful network solutions, and discussion of all their features is beyond the scope of this introductory description).
 
-There are a variety of options at your disposal when implementing subdirectory publishing on your domain. You may choose to use `nginx`, `CloudFront` or any similar solution to use as a reverse proxy.
+If you go to the Dashboard and go to the Publish Website menu, you'll see that the *Subdirectory Publishing* option displays an example `nginx` configuration. A shortcut for the expert, let us refer this example verbatim:
+
+```
+location ~* ^/(de) {
+    resolver 8.8.8.8;
+
+    set $xhost $1-your_temporary_serving_domain;
+
+    proxy_set_header X-TranslationProxy-Cache-Info   disable;
+    proxy_set_header X-TranslationProxy-EnableDeepRoot true;
+    proxy_set_header X-TranslationProxy-AllowRobots true;
+    proxy_set_header X-TranslationProxy-ServingDomain $host;
+    proxy_set_header Host $xhost;
+
+    //old nginx
+    //  proxy_pass $scheme://$xhost;
+    //new nginx:
+    proxy_pass $scheme://ghs.googlehosted.com;
+}
+```
+
+The goal of any reverse proxy configuration interoperating with a translation proxy domain requires that its configuration reflect the intent of the configuration example above.
+
+Let's clarify this pithy snippet with a more general, high-level explanation of a reverse proxy in operation.
+
+### Example:
+
+Suppose that we know the following about a translation project about to be published using a reverse proxy.
+
+1. The origin server domain is `www.example.com`.
+2. Source language is English.
+3. Translation exists for German
+4. German serving domain: `de-de-gereblye.app.proxytranslation.com`
+
+![Reverse proxy setup](/img/dot-graphs/reverse-proxy.png)
+
+The task of the reverse proxy, standing right at the beginning of the pipeline that will serve a client request, is to decide which target language is requested by the user and to ensure that the request is relayed to the appropriate domain that can respond with content in the appropriate language. 
+
+In our example scenario, the reverse proxy has to make one decision: is the user requesting a resource in English or in German?
+
+##### Translation proxy
+
+From our perspective, The most interesting case is when a user from Germany requests `www.example.com/de/about`, the reverse proxy decides that the target language should be served via Translation proxy. It relays the request to the Google Cloud, where it is resolved to what we call the **temporary serving domain**, defined as `de-de-gereblye.app.proxytranslation.com`. In the serving subdomain mode, this domain is hidden from the user by the DNS settings added. In subdirectory publishing, the reverse proxy hides the temporary domain.
+
+You can see that `de-de-gereblye.app.proxytranslation.com` will -- same as with subdomain publishing -- relay the request and all necessary request headers to the origin server, which will respond accordingly with source language content that the Proxy then processes on the way back and sends long to the client in a translated form.
+
+Setting aside the exact details of that cloud translation pipeline, that's about it.
+
+#### Source language request
+
+Requesting the original content is a relatively straightforward process that we should nevertheless describe in brief for the sake of completeness.
+
+If a user in England requests `www.example.com/en/about`. The reverse proxy strips the `/en` prefix, decides on the language to be served and relays the request to the origin server. 
+
+In this case, there is no more proxy mediation (that is, no Translation Proxy) between the origin server and the requesting client, so the server response is returned and the user can peruse the webpage in the original language.
+
+Note that on the origin server, the `/en` prefix does not exist as part of the directory structure - it is a virtual prefix used by the reverse proxy to dispatch to different domains based on the target language.
+
+If the origin server is capable of providing content in more than one target language, the reverse proxy should presumably do the same thing for each of those target languages. If a request for `www.example.com/jp/about` can be fullfilled by the origin server alone, the reverse proxy will relay that request straight to the origin server (where it is assumed that the server backend will make the decision based on the HTTP request headers received).
