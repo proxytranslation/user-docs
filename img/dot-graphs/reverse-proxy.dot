@@ -1,0 +1,23 @@
+digraph rp {
+        // Graph, node, edge settings
+        graph [overlap="false", splines="ortho"];
+        edge [fontname="Terminus", fontsize=8];
+
+        // Node declarations
+        germany [label="Germany", color="red"];
+        england [label="England", color="blue"];
+        trproxy [label="Translation Proxy", shape="box"];
+        trproxy_de [label="de-de-gereblye.appspot.com", fontname="Terminus"];
+        revers  [label="Reverse Proxy", shape="box"];
+        origin [label="www.example.com/about", fontname="Terminus"];
+        
+        
+        // define graph
+        england    -> revers [xlabel="/en/about", color="blue"];
+        subgraph proxies { // proxy routes
+                germany -> revers [xlabel="/de/about", color="red"];
+                revers -> trproxy -> trproxy_de [xlabel="/about", color="red"];
+        }        
+        revers -> origin [xlabel="/about", color="blue"];
+        trproxy_de -> origin [color="red"];
+}
