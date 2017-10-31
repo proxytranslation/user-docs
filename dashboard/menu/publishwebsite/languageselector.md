@@ -89,7 +89,7 @@ You may also wish to use the translate=”no” attribute in places where you wa
 
 #### Example
 
-Depending on how involved it is, a language selector may have to react to user input/animate dropdowns/start XHR requests, etc. Its appearance and behavior depend on the number of languages, publishing method, site layout & design etc, which is beyond the scope of this manual. But to get you started with a suggestion, a commented minimal example in vanilla JS/CSS follows below, which is also available in a slightly modified form as a JSFiddle [here](https://jsfiddle.net/entjj497/).
+Depending on how involved it is, a language selector may have to react to user input/animate dropdowns/start XHR requests, etc. Its appearance and behavior depend on the number of languages, publishing method, site layout & design etc, which is beyond the scope of this manual. But to get you started with a suggestion, a commented minimal example in vanilla JS/CSS follows below, which is also available in a slightly modified form as a JSFiddle [here](https://jsfiddle.net/a8Lhwcuj/).
 
 
 ``` javascript
