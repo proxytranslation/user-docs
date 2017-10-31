@@ -62,9 +62,9 @@ The language selector contains a menu button, a container and target language en
 
 ### RYO or Existing Selector
 
-It is possible that site undergoing translation is also running (or was previously running) a different localization solution, in which case a language selector is usually already present. It is relatively straightforward to extend an existing language selector with the proxy-published target languages. 
+It is possible that site undergoing translation is also running (or was previously running) a different localization solution, in which case a language selector is usually already present. It is relatively straightforward to extend an existing language selector with the proxy-published target languages.
 
-Since that language selector is also proxied, it is important to protect the link pointing to the original language site from being remapped in the process. 
+Since that language selector is also proxied, it is important to protect the link pointing to the original language site from being remapped in the process.
 
 In order to do this, the `__ptNoRemap` special class can be used to indicate to the proxy that it should not change any links in the given tag.
 
@@ -72,25 +72,162 @@ A brief example of how the original site link can be protected from remapping wi
 
 
 ``` html
-<ul id="languageSelector">
-    <div class="language selected">English </div>
-    <ul>
-        <!-- PREVENT REMAPPING OF ORIGINAL LINK-->
-        <li><a class="__ptNoRemap" href="www.example.com">English</a></li>
-        <li><a href="de.example.com">Deutsch</a></li>
-        <li><a href="fr.example.com">Francais</a></li>
+<div class="selector-container">
+    <ul id="selector">
+        <!-- PREVENT REMAPPING OF ORIGINAL LINK - this requires a full domain-->
+        <li id="en-US" class="language selected"><a href="//www.example.com" class="__ptNoRemap">English</a></li>
+        <ul class="dropdown">
+            <li id="de-DE" class="language"><a href="//de.example.com">Deutsch</a></li>
+            <li id="fr-FR" class="language"><a href="//fr.example.com">Francais</a></li>
+        </ul>
     </ul>
-</ul>
+</div>
 ```
 
 
 You may also wish to use the translate=”no” attribute in places where you want the proxy to ignore the textual content of the HTML element.
 
+#### Example
+
+Depending on its level of detail, a language selector has to react to user input/animate/start XHR requests, etc. Its appearance and behavior depend on the number of languages, publishing method, etc, which is beyond the scope of this tutorial. As a convenience and suggestion, a commented minimal example in vanilla JS/CSS follows below to get you started.
+
+Also available in a slightly modified form as a JSFIddle [here](https://jsfiddle.net/entjj497/).
+
+``` javascript
+(function () {
+    "use strict";
+    /* The target locale code, a two-letter language code plus a two
+       letter country code, separated by a dash, is added
+       automatically over the proxy. Either this value or the HTML
+       markup might have to be adjusted to be applicable on the
+       original site */
+    var lang = document.querySelector("html").getAttribute("lang") || "en-US";
+    /* The usual "readystatechange" event listener works if
+       you need to wait
+
+       document.addEventListener("readystatechange", function () {
+            if (document.readyState === "complete") init();
+       }))
+    */
+
+    init();
+
+    function init () {
+        selectDefault();
+        setEventHandlers();
+    }
+
+    function setEventHandlers () {
+        var items = document.querySelectorAll("div.selector-container li.language a");
+        for (var i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function (e) {
+                selectLanguage(e.target.parentNode);
+            })
+        }
+    }
+
+    function selectDefault () {
+        /* See if we can select anything in the language selector
+           based on our locale code. */
+        var base = document.querySelector("div.selector-container li#" + lang);
+        /* ...and try to default to anything we've found */
+        if (base !== "undefined") selectLanguage(base);
+    }
+
+    function selectLanguage (target) {
+        /* 'click' event was triggered on any of the language selector
+           entries. */
+        var selected = document.querySelector("li.selected");
+        var dropdown = document.querySelector(".dropdown");
+
+        /* don't do anything if we would be switching to the same
+           language */
+        if (target === selected) return;
+
+        /* SWITCH LANGUAGE.
+
+           ...but we are only "swapping elements" in the menu (the
+           code doesn't navigate in actuality). A target language
+           domain or a CST query parameter could result in a page
+           load.
+
+           The "dropdown" approach showcased here is also an
+           illustration of a frequent issue: when selectLanguage() is
+           called, the selected target language is replacing the
+           current one in the dropdown list. So, if you are particular
+           about the target languages being listed in a set order, a
+           hide/show approach might work better than DOM element
+           swapping. */
+        target.setAttribute("class", "language selected");
+        selected.setAttribute("class", "language");
+
+        selected.parentNode.replaceChild(target, selected);
+        dropdown.insertBefore(selected, dropdown.firstChild);
+    }
+})()
+
+```
+
+Below are the associated CSS rules.
+
+```
+div.selector-container ul {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5) !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#selector {
+  list-style-type: none;
+  text-align: center;
+  background-color: #f5f5f5;
+  max-width: 100px;
+}
+
+ul#selector li {
+  list-style-type: none;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul#selector a {
+  color: black;
+  text-decoration: none;
+}
+
+ul#selector li.selected:hover a {
+  color: grey;
+}
+
+ul#selector li.selected:hover + ul.dropdown {
+  display: block;
+}
+
+ul#selector ul.dropdown:hover {
+  display: block;
+}
+
+ul.dropdown {
+  display: none;
+}
+
+ul.dropdown li.language {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul.dropdown li.language:hover {
+  background-color: chartreuse;
+}
+```
+
 #### RYO selector + Client-Side Translation
 
-If a project is published using Client-side translation, either an existing language selector needs to be used, or a new one developed to trigger translations after selection. 
+If a project is published using Client-side translation, either an existing language selector needs to be used, or a new one developed to trigger translations after selection.
 
-CST translation is activated when the target locale code is stored in the browser with the help of the `__ptLanguage` query parameter. 
+CST translation is activated when the target locale code is stored in the browser with the help of the `__ptLanguage` query parameter.
 
 In order to trigger language selection/translation in-browser, add this query parameter with the appropriate published locale codes as values. Note that in order for the method to work, URL navigation has to happen once, which means a full reload is required in order to change languages.
 
@@ -99,7 +236,7 @@ Let's modify the exampe above to suit the needs of CST:
 
 ``` html
 <ul id="languageSelector">
-    <div class="language selected">English </div>
+    <li class="language selected">English</li>
     <ul>
         <li><a href="/?__ptLanguage=en-GB">English</a></li>
         <li><a href="/?__ptLanguage=de-DE">Deutsch</a></li>
@@ -110,19 +247,12 @@ Let's modify the exampe above to suit the needs of CST:
 
 The value of `__ptLanguage` will persist across sessions, the JS file will rely on it until the user changes their mind about their preferred language.
 
-Visiting `www.example.com/?__ptLanguage=ja-JP` will change target languages into Japanese and store the setting. Visiting `www.example.com` the next time around will result in the site being translated into Japanese automatically. 
+Visiting `www.example.com/?__ptLanguage=ja-JP` will change target languages into Japanese and store the setting. Visiting `www.example.com` the next time around will result in the site being translated into Japanese automatically.
 
 The default browser locale can be detected successfully to be a published target language, CST will attempt a locale-specific translation without having had a query parameter provided to it.
 
-Although that is about it, it is useful to keep in mind a few things when setting up a language selector to work with CST. 
+Although that is about it, it is useful to keep in mind a few things when setting up a language selector to work with CST.
 
-Somewhat different from the proxy method, CST requires that we provide all locale codes explicitly, especially the **original** language. Since CST *stores* the user's selection in the browser's local storage, the query parameter is necessary in order to allow the user return to the original language version. 
+Somewhat different from the proxy method, CST requires that we provide all locale codes explicitly, especially the **original** language. Since CST *stores* the user's selection in the browser's local storage, the query parameter is necessary in order to allow the user return to the original language version.
 
 CST publishing does not require any proxy traffic, but the Workbench In-Context editing screen remains available. This can sometimes result in the Client-Side Translation getting mixed up with the proxy-based translations, so if you are using the proxy modes for your translation work while publishing with Client-Side translation, it is generally a good idea to ignore the language selector in Preview.
-
-
-
-
-
-
-
