@@ -40,13 +40,15 @@ The alternative to subdomain-based publishing is to retain your own domain and p
 
 Due to the way the proxy works, this requires a reverse proxy configuration to be placed in front of the webserver. A variety of load balancer/reverse proxy solutions are available on the market, with `nginx`, `CloudFlare` and `AWS CloudFront` being three of the most well-known solutions available. See the vendor documentation for the details of setting up a reverse proxy (do note that nowadays, reverse proxies are monumentally powerful network solutions, and discussion of all their features is beyond the scope of this introductory description).
 
-If you go to the Dashboard and go to the Publish Website menu, you'll see that the *Subdirectory Publishing* option displays an example `nginx` configuration. A shortcut for the expert, let us refer this example verbatim:
+If you go to the Dashboard and go to the Publish Website menu, you'll see that the *Subdirectory Publishing* option displays an example `nginx` configuration. Below is a list of the absolute minimum configurations required to achieve a workable reverse proxy using the three most popular webserver systems (Nginx, Apache httpd, and Microsoft Internet Information Systems)
+
+### Nginx
 
 ```
-location ~* ^/(de) {
+location ~* ^/(jp) {
     resolver 8.8.8.8;
 
-    set $xhost $1-your_temporary_serving_domain;
+    set $xhost ja-jp-gereblye.app.proxytranslation.com;
 
     proxy_set_header X-TranslationProxy-Cache-Info   disable;
     proxy_set_header X-TranslationProxy-EnableDeepRoot true;
@@ -60,6 +62,54 @@ location ~* ^/(de) {
     proxy_pass $scheme://ghs.googlehosted.com;
 }
 ```
+
+### Apache httpd
+
+```
+<VirtualHost *:80>
+	Define domain example.com
+    Define previewDomain http://ja-jp-gereblye.app.proxytranslation.com
+    ServerName ${domain}
+
+	<LocationMatch "/jp/(.*)">
+		RequestHeader set X-TranslationProxy-ServingDomain "${domain}"
+		RequestHeader set X-TranslationProxy-Cache-Info "disable"
+		RequestHeader set X-TranslationProxy-EnableDeepRoot "true"
+		RequestHeader set X-TranslationProxy-AllowRobots "true"
+		RequestHeader set Host "${previewDomain}"
+		
+		ProxyPass "${previewDomain}"
+	</LocationMatch>
+</VirtualHost>
+```
+
+### Microsoft IIS
+
+*Please note that for IIS, server variables need to be whitelisted before this configuration is applied correctly!*
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <rewrite>
+            <rules>
+                <remove name="ReverseProxyInboundRule1" />
+                <rule name="ReverseProxyInboundRule1" stopProcessing="true">
+                    <match url="^/jp(.*)" negate="false" />
+                    <action type="Rewrite" url="http://ja-jp-gereblye.app.proxytranslation.com{R:1}" />
+                    <serverVariables>
+                        <set name="X-TranslationProxy-EnableDeepRoot" value="true" />
+                        <set name="X-TranslationProxy-ServingDomain" value="example.com" />
+                        <set name="X-TranslationProxy-Cache-Info" value="disable" />
+                        <set name="X-TranslationProxy-AllowRobots" value="true" />
+                    </serverVariables>
+                </rule>
+            </rules>
+        </rewrite>
+    </system.webServer>
+</configuration>
+```
+
 
 The goal of any reverse proxy configuration interoperating with a translation proxy domain requires that its configuration reflect the intent of the configuration example above.
 

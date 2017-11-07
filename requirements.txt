@@ -1,2 +1,0 @@
-# interim workaround for sphinx unindexed term search
-sphinx==1.4.9
