@@ -34,7 +34,7 @@ Additionally, we have a *Managed Certificate* program, where the proxy handles S
 
 See the pertaining section of the documentation [here](../../cookbook/ssl_certificates.html).
 
-## Subdirectory publishing (example.com/jp)
+## Subdirectory publishing (example.com/de)
 
 The alternative to subdomain-based publishing is to retain your own domain and publish the site as a subdirectory. I.e. the translated pages will appear under separate paths under the same domain as the one the project was created for (the original domain). 
 
@@ -45,10 +45,10 @@ If you go to the Dashboard and go to the Publish Website menu, you'll see that t
 ### Nginx
 
 ```
-location ~* ^/(jp) {
+location ~* ^/(de) {
     resolver 8.8.8.8;
 
-    set $xhost ja-jp-gereblye.app.proxytranslation.com;
+    set $xhost de-de-gereblye.app.proxytranslation.com;
 
     proxy_set_header X-TranslationProxy-Cache-Info   disable;
     proxy_set_header X-TranslationProxy-EnableDeepRoot true;
@@ -68,10 +68,10 @@ location ~* ^/(jp) {
 ```
 <VirtualHost *:80>
 	Define domain example.com
-    Define previewDomain http://ja-jp-gereblye.app.proxytranslation.com
+    Define previewDomain http://de-de-gereblye.app.proxytranslation.com
     ServerName ${domain}
 
-	<LocationMatch "/jp/(.*)">
+	<LocationMatch "/de/(.*)">
 		RequestHeader set X-TranslationProxy-ServingDomain "${domain}"
 		RequestHeader set X-TranslationProxy-Cache-Info "disable"
 		RequestHeader set X-TranslationProxy-EnableDeepRoot "true"
@@ -95,8 +95,8 @@ location ~* ^/(jp) {
             <rules>
                 <remove name="ReverseProxyInboundRule1" />
                 <rule name="ReverseProxyInboundRule1" stopProcessing="true">
-                    <match url="^/jp(.*)" negate="false" />
-                    <action type="Rewrite" url="http://ja-jp-gereblye.app.proxytranslation.com{R:1}" />
+                    <match url="^/de(.*)" negate="false" />
+                    <action type="Rewrite" url="http://de-de-gereblye.app.proxytranslation.com{R:1}" />
                     <serverVariables>
                         <set name="X-TranslationProxy-EnableDeepRoot" value="true" />
                         <set name="X-TranslationProxy-ServingDomain" value="example.com" />
@@ -122,7 +122,7 @@ Suppose that we know the following about a translation project about to be publi
 1. The origin server domain is `www.example.com`.
 2. Source language is English.
 3. Translation exists for German
-4. German serving domain: `jp-jp-gereblye.app.proxytranslation.com`
+4. German serving domain: `de-de-gereblye.app.proxytranslation.com`
 
 ![Reverse proxy setup](/img/dot-graphs/reverse-proxy.png)
 
@@ -132,9 +132,9 @@ In our example scenario, the reverse proxy has to make one decision: is the user
 
 ##### Translation proxy
 
-From our perspective, The most interesting case is when a user from Germany requests `www.example.com/jp/about`, the reverse proxy decides that the target language should be served via Translation proxy. It relays the request to the Google Cloud, where it is resolved to what we call the **temporary serving domain**, defined as `jp-jp-gereblye.app.proxytranslation.com`. In the serving subdomain mode, this domain is hidden from the user by the DNS settings added. In subdirectory publishing, the reverse proxy hides the temporary domain.
+From our perspective, The most interesting case is when a user from Germany requests `www.example.com/de/about`, the reverse proxy decides that the target language should be served via Translation proxy. It relays the request to the Google Cloud, where it is resolved to what we call the **temporary serving domain**, defined as `de-de-gereblye.app.proxytranslation.com`. In the serving subdomain mode, this domain is hidden from the user by the DNS settings added. In subdirectory publishing, the reverse proxy hides the temporary domain.
 
-You can see that `jp-jp-gereblye.app.proxytranslation.com` will -- same as with subdomain publishing -- relay the request and all necessary request headers to the origin server, which will respond accordingly with source language content that the Proxy then processes on the way back and sends long to the client in a translated form.
+You can see that `de-de-gereblye.app.proxytranslation.com` will -- same as with subdomain publishing -- relay the request and all necessary request headers to the origin server, which will respond accordingly with source language content that the Proxy then processes on the way back and sends long to the client in a translated form.
 
 Setting aside the exact details of that cloud translation pipeline, that's about it.
 
@@ -148,4 +148,4 @@ In this case, there is no more proxy mediation (that is, no Translation Proxy) b
 
 Note that on the origin server, the `/en` prefix does not exist as part of the directory structure - it is a virtual prefix used by the reverse proxy to dispatch to different domains based on the target language.
 
-If the origin server is capable of providing content in more than one target language, the reverse proxy should presumably do the same thing for each of those target languages. If a request for `www.example.com/jp/about` can be fullfilled by the origin server alone, the reverse proxy will relay that request straight to the origin server (where it is assumed that the server backend will make the decision based on the HTTP request headers received).
+If the origin server is capable of providing content in more than one target language, the reverse proxy should presumably do the same thing for each of those target languages. If a request for `www.example.com/de/about` can be fullfilled by the origin server alone, the reverse proxy will relay that request straight to the origin server (where it is assumed that the server backend will make the decision based on the HTTP request headers received).
