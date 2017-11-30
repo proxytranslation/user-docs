@@ -51,6 +51,8 @@ location ~* ^/(de) {
     set $xhost de-de-gereblye.app.proxytranslation.com;
 
     proxy_set_header X-TranslationProxy-Cache-Info   disable;
+    proxy_set_header Server $xhost;
+    proxy_ssl_name $xhost;
     proxy_set_header X-TranslationProxy-EnableDeepRoot true;
     proxy_set_header X-TranslationProxy-AllowRobots true;
     proxy_set_header X-TranslationProxy-ServingDomain $host;
