@@ -16,7 +16,7 @@ To scan content behind secure login, please follow this procedure:
 - Go to the address bar and type in the URL of the login-protected
   page.<br>
 
-![Login page through the proxy](../img/preview_login.jpg)
+![Login page through the proxy](/img/preview_login.png)
 
 4. Enter your login details.<br>
 
@@ -24,14 +24,14 @@ To scan content behind secure login, please follow this procedure:
 
 6. Go to** Network** and reload the page.<br>
 
-![Getting the cookie](../img/network_dev.jpg) 
+![Getting the cookie](/img/network_dev.jpg) 
 
 7. Scroll up to the first item and click on it.<br>
 
 8. Under headers scroll to the cookie header (among request headers),
    and copy the entire header.<br>
 
-![Cookie header](../img/cookie_header.jpg) 
+![Cookie header](/img/cookie_header.jpg) 
 
 9. Pass it to the Proxy: go back to your project and click on
    **Content**. Paste the entire content in the **Scanning cookies**
