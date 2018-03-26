@@ -1,40 +1,73 @@
-.. _path_settings:
+## Path settings
 
-## Path settings - Cache & Cookie, Content Type Overrides
+The proxy supports the declaration and use of rules called path overrides (alternatively called subtree overrides). They can be used to apply a variety of changes to an exact (e.g. `/about-us.html`) or prefix paths (e.g. all pages under `/products`). 
 
-Here, you can add target domain paths and define Cache and Cookie overrides for them. Enter a new path (you can set it to be a prefix or an exact URL), then click on Add Path. A New rule dropdown is displayed. You can choose either Cache and Cookie Overrides, Content Type Overrides, or both. After selecting one, the dropdown will disappear, but you'll still be able to add the other using the plus icon that appears next to the path.
+![Path settings dialog default view](../../../img/dashboard/path_settings_default.png)
 
-By clicking on 'Edit rule', you can set the Cache override to public, private or ignore according to your needs. set the maxAge and override type (whether to clear or use cookies) and you're set.
+A project has no overrides by default. Besides the search field at the top, the "Add new path" button is available. Click on it to type or copy & paste your path/prefix. Click on the "Add path" button to the right of the row to add it to the list. The option to choose the type  of the path (exact URL or prefix) is available as a dropdown.
 
-Use the Save icon next to the rule name or the blue 'Save all' button to save your settings.
+You'll notice that adding new paths and setting up corresponding overrides are done at two separate stages. Any path can have more than one type of override associated with it (but overrides differ in how many of each can be present on a given path).
 
-You can always return here and add new paths and rules using the 'Add new path' button if there is a need for it.
+There is a row of icons to the right of each path that you can use to edit the overrides. Click on the blue plus icon to add a new override for a path. Each type will also have another set of icons for editing and deletion.
 
-### Cache Header Overrides
+Keep in mind:
 
-Loading a page in the browser usually involves multiple requests for resources on the original site and other domains. A page can use multiple static resources (such as images) that require no localization. 
+- overrides are applied only on **intra-domain** paths (elsewhere called the project URL). They cannot be applied on any path referenced on an external domain.
 
-If an image is referenced by relative name, such as `/logo.jp`, the hand of the proxy is forced: it has to assume the domain to be the proxy domain. The access path of the resource will become `fr.exmaple.com/logo.jp` assuming a French translation of `example.com`. This is a page request over the proxy, and therefore costs money. 
+- overrides are applied early on in the pipeline, before any translated text is inserted. They are also **not** target-language specific.
 
-Another common issue that lead to this feature is that  static resources often have suboptimal Cache Headers. This leads to the same, unchanging content being served from the original server for each request individually, potentially decreasing the efficiency of the site and certainly adding to the number of requests that would have to go through the proxy. The Path Settings dialog can be used to override the default Cache Headers of resources of a given path or exact URL):
+- query parameters (`?q=value` etc.) are **not** supported. Do not add them to path overrides.
 
-![Cache Override](/img/dashboard/path_settings_cache_override.png)
+- When declaring a content type, mak sure you use an *exact* description: `text/html` does not equal `text/html; charset=utf-8` or vice-versa. Be specific.
 
-The screenshot above shows an override that will operate on all images that are located on the `/res/img` path, clear cookies (which usually shouldn't be cached) andd override their Cache Headers to be the following (default) values:
+- Some of the overrides (particularly search & replace overrides) become non-editable after they are saved. You'll need to delete and re-add these rules to change them.
 
+**Important!** *Add/edit multiple paths and overrides at once, but remember that all changes are **UNSAVED** until you click on "Apply settings"!* Keep an eye out for the ⚠ icons on the right, as shown in the screenshot below.
 
-```
-cache-control: public, max-age=86400
+![A set of edits before saving changes](../../../img/dashboard/path_settings_unsaved_changes.png)
 
-```
+### Cache & Cookie Overrides
 
-This way, the resources become publicly cache-able on various independent nodes on the network. Depending on the location of the caching node and the pathway of the request, the content will be served from caches instead of going through the proxy pipeline. 
+This override allows you to declare the `Cache-Control` and `max-age` headers for a prefix or URL and optionally clear the cookies. 
 
-The result is a considerable lightening of server load, and a decrease in the number of page requests that go through the proxy. 
+![An example of a typical cache override (/wp-content)](../../../img/dashboard/path_settings_cache_override.png)
 
+The path seen in the screenshot above is a typical use case: it ensures that resources on the `/wp-content` prefix, associated with WordPress sites, can be cached for 24 hours.
 
-#### Important Notes!
+Setting ` cache-control: public, max-age=86400` on a URL/prefix in this way broadcasts to the network that the resource(s) there can be publicly cached. Depending on the location of the caching node and the pathway of the request, the content will be served from caches instead of going through the proxy pipeline. 
 
-* The feature is meant to be used in specific cases with binary/static resources that are unlikely to be changed quickly and often. Although any type of resource can be marked as publicly cache-able, these settings should not be applied to dynamic content (be warned of the **likely discrepancies** between the original and cached content!). **Careful Consideration is Required!**
+This is beneficial for both speed and cost reasons. What is otherwise tolerable server load on the original site might be unnecessary page view cost overhead over the proxy (with speed overhead not being much of a concern). We provide this capability as a useful cost optimization strategy. 
 
-* Since Public Caching relies on the network to offload the burden of serving resources, changes take time to propagate. The `max-age` directive of the Cache Header indicates how long a cached instance of a resource will stay cached - the default is 24 hours. When the time declared for `max-age` is up, the resource is cached again via a request for the original.
+**Important!** Do NOT add overly general paths or too large `max-age` values without considering the effects! Please read through [our description of the issue](/dashboard/cookbook/stagingdomain.html) before using the feature.
+
+**Only one** cache & cookie override may be present on each path or prefix.
+
+### Search & Replace Override
+
+Run a search & replace on the page or pages on the prefix. This lets you apply simple changes to the page source. You can choose between string or regexp replacement.
+
+![A sequence of search & replace rules on a prefix](../../../img/dashboard/path_settings_search_and_replace.png)
+
+In the example above, search & replace is used to extend the list of classes for any element that possesses only the *hello-world* class.
+
+![Using regexp backreferences](../../../img/dashboard/path_settings_search_and_replace_backreferences.png)
+
+The replacement field supports regexp backreferences via the `$n` format, as in the screenshot above. The example looks for "**aaa bbb ccc**" in the page source, stores backreferences to each letter group and reverses their order, resulting in the output "**ccc bbb aaa**".
+
+Refer to the [`java.util.regex.Pattern` documentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html) for the details of the supported regular expression format. 
+
+Note that search & replace is a "naive" operation both for strings and regexps: HTML is not parsed, nor JavaScript evaluated at this stage (roughly, S&R runs as if it were working on a plain text source file). It cannot be used to solve recursive tasks.
+
+**Multiple** S&R overrides can be added on the same prefix, and they will be applied *sequentially*. No two replacement strings/regexps may match, the dialog will display an error if you attempt to enter the same replacement rule twice.
+
+### Default Charset Override
+
+This override is presented as a simple text field, the contents of which will be used for `<meta charset="...">` tags. Useful in cases where the original site is declared to be in an encoding that is incompatible with one of the target languages.
+
+**Only one** charset override may be present on each path or prefix.
+
+### Content-Type Override
+
+Override the Content-Type HTTP header for a given path or prefix. Frequently used with template URLs or JS resources with mischaracterized Content-Types, it is sometimes useful to avoid encoding or character escaping troubles.
+
+**Multiple** `Content-Type` overrides can be added on each path or prefix, but no two such fields may match.

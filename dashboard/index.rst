@@ -88,8 +88,10 @@ Cookbook
    cookbook/whitelabel
    cookbook/resourcetranslation
    cookbook/requestevaluation
+   cookbook/pageviewsandcaching
    cookbook/stagingdomain
    cookbook/rtlconversion
+   cookbook/sitesearch
    cookbook/ssl_certificates
    cookbook/proxymodes
    cookbook/headers
