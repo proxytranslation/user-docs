@@ -20,8 +20,6 @@ The fact that the proxy is quite CMS-agnostic and generally doesn't require that
 
 The original site might not be storing the translations, but the proxied pages themselves are  _publicly available & indexable_. _Search vendors_ can be relied on to provide localized search capability via client-side JavaScript.
 
-(to-be-written)
-
 ### Third-party Integrations
 
 #### Bing

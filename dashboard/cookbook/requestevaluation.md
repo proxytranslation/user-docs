@@ -1,10 +1,6 @@
 # Page Request Evaluation 
 
-A crucial statistic of the original site is the number of requests needed to load and build a given page. This has monthly cost implications over the proxy. In this tutorial, we provide some pointers on how to get a working estimate for this number using the Chrome DevTool. (The tutorial below uses the English Wikipedia in the screenshots).
-
-Request evaluation is often necessary since website owners/maintainers usually focus on tracking the number of *page visits*, more specifically *page visits from end users* (and therefore usually excluding, for example, the indexing bots of the various search engines). *User visits* are a useful metric to gain knowledge about visitors to a site, but different from the individual HTTP *requests* in the stricter, technical sense. 
-
-The number of HTTP requests that will have to go through the proxy when a page visit happens will be the multiplier to use when estimating monthly page views.
+In this recipe, we go over one possible method of evaluating a page for the number of *HTTP requests* that it sends to the project domain when it loads.
 
 ### Opening the DevTool
 
