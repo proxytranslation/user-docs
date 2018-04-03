@@ -68,7 +68,7 @@ If a site is undergoing development, for example, it is usually not a good idea 
 
 ## Overriding Cache Headers
 
-Evaluation of the number of requests is most useful when estimating the monthly cost associated with serving a site. For overriding cache headers on the Dashboard, see the [Path Settings](/dashboard/menu/dashboard/pathsettings.html) section of this documentation. Enable the public caching tweak in Dashboard > Advanced settings to facilitate further speedups on the Easyling end.
+Evaluation of the number of requests is most useful when estimating the monthly cost associated with serving a site. For overriding cache headers on the Dashboard, see the [Path Settings](../../dashboard/menu/dashboard/pathsettings.html) section of this documentation. Enable the public caching tweak in Dashboard > Advanced settings to facilitate further speedups on the Easyling end.
 
 ## Example Scenario & Conclusions
 
