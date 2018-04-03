@@ -87,8 +87,8 @@ Cookbook
 .. toctree::
    cookbook/whitelabel
    cookbook/resourcetranslation
-   cookbook/requestevaluation
    cookbook/pageviewsandcaching
+   cookbook/requestevaluation
    cookbook/stagingdomain
    cookbook/rtlconversion
    cookbook/sitesearch
