@@ -38,7 +38,7 @@ Setting ` cache-control: public, max-age=86400` on a URL/prefix in this way broa
 
 This is beneficial for both speed and cost reasons. What is otherwise tolerable server load on the original site might be unnecessary page view cost overhead over the proxy (with speed overhead not being much of a concern). We provide this capability as a useful cost optimization strategy. 
 
-**Important!** Do NOT add overly general paths or too large `max-age` values without considering the effects! Please read through [our description of the issue](../../dashboard/cookbook/pageviewsandcaching.html) before using the feature.
+**Important!** Do NOT add overly general paths or too large `max-age` values without considering the effects! Please read through [our description of the issue](../../cookbook/pageviewsandcaching.html) before using the feature.
 
 **Only one** cache & cookie override may be present on each path or prefix.
 
