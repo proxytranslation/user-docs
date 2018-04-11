@@ -48,7 +48,7 @@ The structure below can serve as an even simpler skeleton for a page modificatio
 })()
 ```
 
-Of course, the possibilities of code injection are endless. See our tutorial for [site search integration](../../dashboard/cookbook/sitesearch.html) for a comparatively detailed example to help you get a glimpse of the possibilities of injected JavaScript. 
+Of course, the possibilities of code injection are endless. See our tutorial for [site search integration](../../cookbook/sitesearch.html) for a comparatively detailed example to help you get a glimpse of the possibilities of injected JavaScript. 
 
 The code injection feature puts the power of all client-side coding at your fingertips, and a truly in-depth discussion of the core web technoliges is not possible in this documentation. The excellent [Mozilla Developers Network](https://developer.mozilla.org/) contains all the details you could ever need, and the [W3mschools](https://www.w3schools.com/) website contains useful tutorials on various web-related topics if you are just starting out.
 
