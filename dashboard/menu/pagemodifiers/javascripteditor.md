@@ -1,6 +1,6 @@
 # Javascript editor
 
-Here is a partial, but plausible example of a JavaScript Override:
+An editor with syntax highlighting support is available on the Dashboard. You can add JavaScript code here, which will be injected into the `head` tag of each page. By default, it contains placeholder code that demonstrates page modifier use. The following snippet also demonstrates a plausible page modifier:
 
 ```javascript 
 
@@ -30,8 +30,29 @@ Here is a partial, but plausible example of a JavaScript Override:
 
 ```
 
-**IIFE**s (Immediately Invoked Functional Expressions), such as in the script above, are a generally good design pattern for Page Modifiers, since the programmer can work within the confines of their local scope. The function and variable definitions will never escape into the global namespace - which is a conversely bad idea, as it could potentially conflict with original code on a site.
+**IIFE**s (Immediately Invoked Functional Expressions), such as in the script above, are a generally good pattern to use with a page modifier. In this way, a programmer can continue to work within the confines of their local scope, and the function and variable definitions will not intrude on the global namespace - when it comes to page modifiers, it is very important that the modification has as little chance to clash with site code as possible (unless in a considered move).
 
-An in-depth discussion of JavaScript is not possible in this manual, but there is generally no limitation on the type of code that can be injected via Page Modifiers. **Security implications should always be considered when adding custom code to sites.**
+The structure below can serve as an even simpler skeleton for a page modification:
 
-You can also use jQuery if it is present on the original site.
+``` javascript
+(function () {
+
+    "use strict"
+
+    $(document).ready(modifyPage); // if jQuery is present
+
+    function modifyPage () {
+        console.log("modifications go here");
+    }
+
+})()
+```
+
+Of course, the possibilities of code injection are endless. See our tutorial for [site search integration](../../dashboard/cookbook/sitesearch.html) for a comparatively detailed example to help you get a glimpse of the possibilities of injected JavaScript. 
+
+The code injection feature puts the power of all client-side coding at your fingertips, and a truly in-depth discussion of the core web technoliges is not possible in this documentation. The excellent [Mozilla Developers Network](https://developer.mozilla.org/) contains all the details you could ever need, and the [W3mschools](https://www.w3schools.com/) website contains useful tutorials on various web-related topics if you are just starting out.
+
+Development Tip: a userscript extension, such as Tampermonkey can be used to develop page modifiers locally. While the Dashboard editor is adequate for basic editing, it is not meant to replace the many powerful editors available. Tampermonkey can `@require` your script from the filesystem if it is granted `file://` access (supported by Google Chrome), in which case you can use your editor of choice and retain preview-on-refresh capability.
+
+But keep security in mind!
+
