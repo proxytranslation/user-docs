@@ -58,7 +58,11 @@ But useful exceptions should be made. For example, images that are not localized
 
 The `__ptNoRemap` HTML class is handled specially by the proxy. If this class name is detected, the `href` or `src` attribute of the given element will not be mapped to the proxy (avoiding the request cost).
 
-If sed in a systematic manner, this change would have to be applied on the origin server, which is a potential downside if you don't have source/admin access. It bears mentioning that the class is reported to have solved one-off problems by being search & replaced into targeted spots in the page source).
+```
+/* ... */
+```
+
+If sed*** in a systematic manner, this change would have to be applied on the origin server, which is a potential downside if you don't have source/admin access. It bears mentioning that the class is reported to have solved one-off problems by being search & replaced into targeted spots in the page source)***.
 
 #### CDNs
 
@@ -82,7 +86,7 @@ This way, the caching/serving/trafficking burden evens out on the network, and m
 
 Keep the following important points in mind:
 
-1. caching naturally introduces **update delays**. A user getting cached content will have to wait for it expire before seeing a new version.
+1. Caching naturally introduces **update delays**. A user getting cached content will have to wait for it expire before seeing a new version.
 
 2. Frequently updated HTML pages (such as those with a newsstream) should not be targeted for caching, and URLs serving **dynamic resources should never be cached!**
 
