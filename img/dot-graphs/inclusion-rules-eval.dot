@@ -1,0 +1,28 @@
+// render with:
+// $ dot -Tpng inclusion-rules-eval.dot > inclusion-rules-eval.png
+digraph inclusions {
+        // graph
+        label="Inclusion/Exclusion Evaluation"
+        graph [overlap="false", splines="ortho"];
+        edge [fontsize=12];
+
+        // nodes
+        start [label="start"];
+        if_include_only[shape="diamond", label="Is \"Include only\" set?"];
+        if_inclusion_applies_to_page[shape="diamond", label="Does the page match \nan inclusion prefix?"];
+        if_exclusion_applies_to_page[shape="diamond", label="Does the page match \nan exclusion prefix?"];
+        exclude_page[shape="parallelogram", label="Exclude page"];
+        include_page[shape="parallelogram", label="Include page"];
+        end   [label="end"];
+
+        // edges
+        start -> if_include_only;
+        if_include_only -> if_inclusion_applies_to_page[label="yes"];
+        if_include_only -> if_exclusion_applies_to_page[label="no"];
+        if_inclusion_applies_to_page -> if_exclusion_applies_to_page[label="yes"];
+        if_inclusion_applies_to_page -> exclude_page[label="no"];
+        if_exclusion_applies_to_page -> include_page[label="no"];
+        if_exclusion_applies_to_page -> exclude_page[label="yes"];
+        exclude_page -> end;
+        include_page -> end;
+}
