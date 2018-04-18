@@ -56,9 +56,27 @@ If *www.example.com* is being translated into German and published on *de.exampl
 
 But useful exceptions should be made. For example, images that are not localized do not get mapped by default, which means that the image will be downloaded from the original *www.example.com* site instead of the TL domain, naturally preventing an HTTP request from going through the proxy. Altough a tweak exists in Advanced settings to force images through the proxy, you should consider the cost implications of this tweak before turning it on (and look into the subsection on caching to offset increased costs).
 
-The `__ptNoRemap` HTML class is handled specially by the proxy. If this class name is detected, the `href` or `src` attribute of the given element will not be mapped to the proxy (avoiding the request cost).
+The `__ptNoRemap` HTML class is handled specially by the proxy. If this class name is detected, the `href` or `src` attribute of the given element will not be mapped to the proxy (avoiding the request cost). 
 
-If sed in a systematic manner, this change would have to be applied on the origin server, which is a potential downside if you don't have source/admin access. It bears mentioning that the class is reported to have solved one-off problems by being search & replaced into targeted spots in the page source).
+For example, on a project for `www.example.com`, an achor tag such as
+
+``` html
+<script src="https://www.example.com/client.min.js"></script>
+
+```
+would be remapped by default, and it would look like this if published on `de.example.com`:
+
+``` html
+<script src="https://de.example.com/client.min.js"></script>
+```
+
+The `__ptNoRemap` class disables this default action, so the script `src` is not remapped even if the page is opened over the proxy:
+
+``` html
+<script src="https://www.example.com/client.min.js" class="__ptNoRemap"></script>
+```
+
+Used in a systematic manner, this change has to be applied on the origin server, which is a potential downside if you don't have source/admin access. It bears mentioning that the class is reported to have solved one-off problems by being search & replaced into targeted spots in the page source.
 
 #### CDNs
 
