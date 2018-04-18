@@ -100,7 +100,7 @@ This way, the caching/serving/trafficking burden evens out on the network, and m
 
 Keep the following important points in mind:
 
-1. caching naturally introduces **update delays**. A user getting cached content will have to wait for it expire before seeing a new version.
+1. Caching naturally introduces **update delays**. A user getting cached content will have to wait for it expire before seeing a new version.
 
 2. Frequently updated HTML pages (such as those with a newsstream) should not be targeted for caching, and URLs serving **dynamic resources should never be cached!**
 
