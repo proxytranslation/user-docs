@@ -68,17 +68,17 @@ Above a certain reasonable threshold, the Dashboard will not render the whole pa
 
 ### Add New Pages
 
-The Add pages dialog is a powerful feature: it lets you start *page-specific crawls*. use it to add new pages or refresh already extracted pages in a "surgical" fashion.
+The Add pages dialog is a powerful feature: it lets you start *page-specific crawls*. Use it to add new pages or refresh already extracted pages in a "surgical" fashion.
 
-You might find yourself in a situation where a specific set of pages would benefit from a content extraction, but you don't want to start a full crawl for this purpose alone. Perhaps you'd like to add a few images for localization (it is frequent that  only a few of the images on a site require translation, so this use case tends to come up a lot).
+You might find yourself in a situation where a specific set of pages would benefit from a content extraction, but you don't want to start a full crawl for this purpose alone. Perhaps you'd like to add a few images for localization (it is frequent that only a few of the images on a site require translation, so this use case tends to come up a lot).
 
 The Add Pages lets you do all these things without the overhead of a full-blown crawl.
 
 ![Add Pages](/img/dashboard/page_list_add_pages_dialog.png)
 
-Note the examples in the screenshot: HTTPS URLs are added using fully qualified URLs. If you specific the pathname only, such as `/about-us.html` in the screenshot above, the proxy will default to requesting the page over HTTP. The same applies to any resource that is available via both HTTP and HTTPS: add both URLs to ensure that you have all possible versions of the resource.
+Note the examples in the screenshot: HTTPS URLs are added using fully qualified URLs. If you specify the pathname only, such as `/about-us.html` in the screenshot above, the proxy will default to requesting the page over HTTP. The same applies to any resource that is available via both HTTP and HTTPS: add both URLs to ensure that you have all possible versions of the resource.
 
-Features that limit the crawl's scope (e.g. page limit) are not present in this dialog as the list of URLs effectively tells the crawler where to go. Source cache-related settings are available, however, and you have the option to add a sitemap link for the proxy to crawl.
+Features that limit the crawl's scope (e.g. page limit) are not present in this dialog as the list of URLs effectively tells the crawler where to go. Source cache-related settings are available, however, you have the option to add a sitemap link for the proxy to crawl.
 
 **IMPORTANT!** There is an important difference between the Add Pages dialogs of the two page lists: If the Add Pages dialog is opened from Discovery > Pages, it will start a word count Discovery; opening it from the Content > Pages menu will result in a content extraction Scan!
 
@@ -193,7 +193,7 @@ There are a number of states that a page can be in throughout the lifetime of a 
 
 2. **Discovered**: a page that was included in a word count previously is said to be Discovered. The content on it is accounted for in at least one of the word count statistics, but the translatable content **has not been extracted for translation** yet.
 
-3. **NEW**: the "new" in this part refers to the fact that the page is content extracted and in a "pristine" state: no entries on it have been translated yet. It is usual to find pages in "NEW" state right after the first content extraction crawl (when a project has all the content ready for translation, but no translations have been provided yet)
+3. **NEW**: the "new" in this part refers to the fact that the page is content extracted and in a "pristine" state: no entries on it have been translated yet. It is usual to find pages in "NEW" state right after the first content extraction crawl (when a project has all the content ready for translation, but no translations have been provided yet).
 
 4. **Progress bar**: will be shown when a non-zero percentage of the entries that the given page refers to have been translated. Note that due to automatic propagation, translating one entry can influence the progress bars of multiple pages). Hovering over the progress bar will show more specific numbers in the tooltip, but progress is also color-coded as follows (end value decimal places are omitted):
 
