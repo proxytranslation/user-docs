@@ -50,23 +50,25 @@ What sets resources apart from pages is that by default, they have no associated
 
 So, to mark a resource as translatable:
 
+![Switch to List View](/img/dashboard/resources_list_view_filter.png)
+
 1. switch from thumbnail view to list view
 
 2. click on the "Translate" button in the hover menu of a resource
 
-![Resource List View](/img/dashboard/resources_list_view.png)
+![Translate Resource](/img/dashboard/resources_list_view_translate.png)
 
 The resource is moved to the page list and from that point onward, it can be opened on the Workbench. Note, however, that we have not yet told the proxy what and how to translate in it.
 
 ### Prefix
 
-You can do the marking via prefixes. Go to Advanced settings to find the "Mark Multiple Resources as Translatable" text field. Copy & paste the URL like you see in the screenshot below:
+You can do the marking via prefixes. Go to Advanced settings to find the "Mark Multiple Resources as Translatable" text field. Copy & paste the prefixes of your choice and click on Save to apply your changes.
 
 ![Mark Multiple Resources](/img/dashboard/advanced_multiple_resources.png)
 
-Note that HTTP and HTTPS prefixes are handled differently. Prefixes are treated as simple strings by the proxy when matching them against a pathname. You are free to add as many of them as you like. 
+Note that in the screenshot above, HTTP and HTTPS prefixes are handled separately, a recommended practice for sites that support both kinds of traffic. Prefixes are treated as simple strings by the proxy when matching them against a pathname. You are free to add as many of them as you like. 
 
-This feature is made available because cherry-picking resources for translation is not always feasible. For instance, versioned URLs are liable to create new resources on a project whenever a file is updated on the original site (the proxy keeps these URLs separate by default), but the new resources are not marked automatically. 
+This feature is made available because cherry-picking resources for translation is not always feasible. For instance, versioned URLs are liable to create new resources on a project whenever a file is updated on the original site (the proxy keeps these URLs separate by default), but the new resources are not marked automatically.
 
 You will recognize those cases where you want to apply the exact same translation rules and process to a set of URLs that differ in minimal ways. A resource prefix will let you do do this without having to mark things one-by-one as they come. 
 
@@ -109,11 +111,9 @@ We'll use the following JavaScript snippet in the remainder of this section. It 
 })();
 ```
 
-Copy & paste it into the upper field (you can also use the Fetch URL button on top to load an entire script if you're working on a full file) and click on "Analyze script". The proxy will process the file in the Cloud, when it's finished, you should see the following results:
+You can copy & paste code into the upper field (or fetch the entire file via the field & button on top if you have the URL) and click on "Analyze script". The file/text will be requested/sent for analysis in the cloud, when it's finished, you should get a highlighted representation of the same code in the dialog.
 
-![Path results](/img/dashboard/path_tester_results.png)
-
-Click on any of the blue icons to generate a **JS path** for the string in question. If you click on each, you should end up with a list of paths in the upper text field that look like this:
+Click on any of the blue icons to generate a **JS path** for the string in question. If you generate paths for all available strings in the example , the list of paths in the upper text field should look like this:
 
 ```
 "%"."exampleVar"
@@ -132,7 +132,9 @@ Click on any of the blue icons to generate a **JS path** for the string in quest
 
 Some of these paths require adjustment before they'll behave correctly. 
 
-Supported strings are highlighted in **red**, and those that are already covered by a listed JS path are be highlighted **green**.
+Supported strings are highlighted in **red**, and those that are already covered by a listed JS path are be highlighted **green**. Your results should look 
+
+![Path results](/img/dashboard/path_tester_results.png)
 
 When you have all the JS paths you need, copy & paste them into the main JS translation text field in Advanced settings. Click on "Save" to apply your changes.
 
