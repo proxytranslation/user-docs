@@ -110,7 +110,7 @@ A set of radio buttons in the inclusion column lets you toggle inclusion rules o
 
 **Include All** disables any inclusion limits on the project. No rule in the *include* column will be applied. but exceptions listed in the "Except" column on the right will be adhered to.
 
-**Include only selected** enables inclusion-based limitations. E.g., if you have a single inclusion prefix `/en/` in the left side list and enable "Include only selected", the crawler will only process pages that can be found in the `/en/` directory on the server.
+**Include only selected** enables inclusion-based limitations. E.g., if you have a single inclusion prefix `/en/` in the left side list and enable "Include only selected", the crawler will only process pages that can be found in the `/en/` directory on the server (to put it more accurately, it will process only those URLS in which the pathname part matches the string `/en/` from the beginning).
 
 If you have multiple inclusion rules listed, you can selectively enable/disable any one of them using the checkboxes to the left of each rule. If you hover over a rule, a small delete icon will appear to the right, use this to remove a rule.
 
@@ -130,7 +130,7 @@ A few points of note concerning inclusion/exclusion rules:
 
 - pathnames are first checked for inclusion, then exclusion.
 
-- a pathname needs to match a single rules from the enabled set. Each such rule is applied to the path in sequence until a match is found or there are no more rules.
+- a pathname has to match only one from the set of enabled rules. Each such rule is applied to the path in sequence until a match is found or there are no more rules.
 
 - the rules are **strings** and matched from the beginning of the pathname. The proxy does not analyze them in detail or produce complex internal representations.
 
@@ -142,13 +142,13 @@ A few points of note concerning inclusion/exclusion rules:
 
 **NOTE:** If all pages are excluded on a project, crawls *cannot be started*, even if the currently active rules would allow for the inclusion of *some, as-of-yet undiscovered page*. In this case, crawls will exit after 0 pages visited. You have to ensure an entry point: that at least one of the known pages is in an included state. Otherwise, the crawler can't set its foot in the door.
 
-Though it may seem nonsensical to exclude all projects on a project, we note the case because such a state can come about from inadvertent use of *inclusion rules*.
+Though it may seem nonsensical to exclude every single URL on a project, we note this unusal case because it can come about from inadvertent use of *inclusion rules*.
 
 Consider, for example, that if you set `/en/` as the sole "Include only" rule on your project, but no page starting with `/en/` is in the page list, then not a single valid entry point is provided to the crawler.
 
 ## Page List
 
-The page list contains all pages that the proxy has seen and collected previously, either via crawls or via user visits (to prevent the page list from being automatically extended in this latter fashion, enable "Page Freeze" in Advanced settings).
+The page list contains all pages that the proxy has seen and collected previously, either via crawls or via user visits (to prevent the page list from being automatically extended in this latter fashion, [enable "Page Freeze" in Advanced settings](../../menu/dashboard/advancedsettings.html#freeze)).
 
 ### Parts of a page list entry
 
