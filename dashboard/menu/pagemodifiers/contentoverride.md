@@ -12,7 +12,7 @@ If a visitor requests an URL over the proxy that has an associated PCO, then the
 
 The source need not be HTML: any custom content-type can be entered (as long as it is a textual type), such as `text/xml` or `application/javascript` along with customized cache headers and status codes. 
 
-Of the many content types that can be used, the behavior of `text/html`is special in an important way: CSS and JS page modifiers on the project will be **injected** into such PCOs. The corresponding `<style>` and `<script>` tags are injected even if the PCO is a simple HTML snippet (that is, it lacks an `<html>` or `<head>` tag).
+Of the many content types that can be used, the behavior of `text/html` is special in an important way: CSS and JS page modifiers on the project will be **injected** into such PCOs. The corresponding `<style>` and `<script>` tags are injected even if the PCO is a simple HTML snippet (that is, it lacks an `<html>` or `<head>` tag).
 
 Syntax highlighting is automatically activated for a subset of content types after the Header field is filled out.
 
