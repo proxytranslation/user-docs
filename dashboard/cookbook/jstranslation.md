@@ -78,7 +78,7 @@ You will recognize those cases where you want to apply the exact same translatio
 
 ## Annotating JS/JSON
 
-Picking up JSON/JS/XML content *wholesale* would be both costly and unwieldy, however. When you have successfully identified the source of content and earmarked it for translation, the last major task is to annotate those parts of it that really want to translate. **JS/JSON paths** and **Xpaths** can be used for this purpose.
+Picking up JSON/JS/XML content *wholesale* would be both costly and unwieldy. When you have successfully identified the source of content and earmarked it for translation, the last major task is to annotate those parts of it that really want to translate. **JS/JSON paths** and **Xpaths** can be used for this purpose.
 
 ### JS/JSON paths
 
