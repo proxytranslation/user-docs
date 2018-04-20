@@ -4,7 +4,7 @@ In this section, we describe the process of translating content in JavaScript fi
 
 ## General
 
-Translation of HTML is mostly automatized over the proxy. But websites rely on many additional resources besides the document itself, such as JS libraries, CSS stylesheets, webfonts, dynamic requests and images. Not all of these resource types require translation, but JSON and XML responses frequently do. Such responsescan also be very inhospitable to the translator and proxy specialist.
+Translation of HTML is mostly automatized over the proxy. But websites rely on many additional resources besides the document itself, such as JS libraries, CSS stylesheets, webfonts, dynamic requests and images. Not all of these resource types require translation, but JSON and XML responses frequently do. Such responses can also be very inhospitable to the translator and proxy specialist.
 
 One of the problems is detection: proxy crawls/analyses do not operate in a browser-like environment. There is no headless browser or VM running in which a page load could be initiated or JavaScript evaluated for content detection purposes. Inherent complexity is another issue: the enormous diversity (to put it charitably) of web technologies in use nowadays prevents reliable automation of such a process.
 
