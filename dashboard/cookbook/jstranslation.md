@@ -44,7 +44,7 @@ There are many ingenious ways in which webpages encode content, and the proxy ha
 
 ## Marking Resources
 
-You can mark a resource as translatable manually on the Resource screen or  using a prefix in Advanced Settings.
+You can mark a resource as translatable manually on the Resource screen or using a prefix in Advanced Settings.
 
 ### Manual
 
@@ -74,7 +74,7 @@ Note that in the screenshot above, HTTP and HTTPS prefixes are handled separatel
 
 This feature is made available because cherry-picking resources for translation is not always feasible. For instance, versioned URLs are liable to create new resources on a project whenever a file is updated on the original site (the proxy keeps these URLs separate by default), but the new resources are not marked automatically.
 
-You will recognize those cases where you want to apply the exact same translation rules and process to a set of URLs that differ in minimal ways. A resource prefix will let you do do this without having to mark things one-by-one as they come.
+You will recognize those cases where you want to apply the exact same translation rules and process to a set of URLs that differ in minimal ways. A resource prefix will let you do this without having to mark things one-by-one as they come.
 
 ## Annotating JS/JSON
 
@@ -142,7 +142,7 @@ Supported strings are highlighted in **red**, and those that are already covered
 
 When you have all the JS paths you need, copy & paste them into the main JS translation text field in Advanced settings. Click on "Save" to apply your changes.
 
-#### Keys / Vriables
+#### Keys / Variables
 
 Translatable elements are specified by a dot-separated list of words, each optionally double quoted and constituting either a.) a valid JS variable/JSON key name or b.) a token specifying one or more hierarchical levels (anonymous function, array index or globbing mark).
 
@@ -164,7 +164,7 @@ Double asterisks are even more inclusive: they recursively glob all child nodes.
 ```
 `%`.**."value"
 ```
-marks any variable or property called  `value` it finds *at any hierarchical level* within an anonymous function call. If a JS path *ends* with the `**`, then the entire subtree is marked as translatable. Incautious use of this construct is not recommended.
+marks any variable or property called `value` it finds *at any hierarchical level* within an anonymous function call. If a JS path *ends* with the `**`, then the entire subtree is marked as translatable. Incautious use of this construct is not recommended.
 
 #### Processing Modes
 
