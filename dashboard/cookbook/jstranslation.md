@@ -186,6 +186,10 @@ Variables can contain either *the project URL* or some other important location 
 "%"."exampleHtmlString" html[@process]
 ```
 
+![Extraction with and without HTML-processing](/img/workbench/js_entry_wo_markup_comparison.png)
+
+The screenshot above demonstrates the difference HTML-processing makes. Picking up HTML-markup explicitly as text is generally considered error-prone and disadvantageous from a localization viewpoint, and isn't recommended.
+
 `[@process]` is optional. By adding it, you instruct the proxy to apply the translation-invariable regular expressions currently set on the project.
 
 ##### Nested Javascript
@@ -212,7 +216,7 @@ Note that the JSON Path tester tool is not equipped to display the nested use ca
 Xpaths for XML AJAX responses in a similar way as JS/JSON paths do for their respective content types. For example, `/ajax-response/component[1]/text() html`
 assumes that the first `<component>` node contains translatable HTML markup.
 
-Due to space constraints, we stop at this brief mention and decline to reproduce a full Xpath tutorial in this documentation. We direct the reader's attention to the many tutorial resources available online.
+Due to space constraints, we decline to reproduce a full Xpath tutorial in this documentation, and direct the reader's attention to the many tutorial resources available online. The W3Schools [summary of Xpath syntax](https://www.w3schools.com/xml/xpath_syntax.asp) serves as a good starting point.
 
 ### Limitations
 
@@ -224,6 +228,8 @@ The solution is to extract content **via Preview**. Open the page in Preview mod
 
 Note the influence of **TM Freeze** on this approach: you need to disable it temporarily for Preview-based content extraction to work.
 
-#### Computed Values
+#### String Concatenation & Computed Values
 
 JS translation cannot be used with values such as `var string = "You have " + getCartItems().length + " items in your basked"`). In these cases, you either have to forego translation or change the content so that no *computed expression* is present among the concatenated elements.
+
+This implies that those instances of string concatenation where *no* token of the expression is computable are supported. This is indeed so, and provided that the appropriate tweak is enabled in [Advanced settings](../../menu/dashboard/advancedsettings.html#tweaks), the proxy can perform string concatenation *upfront* and handle the resulting string as a whole.
