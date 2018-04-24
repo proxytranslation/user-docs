@@ -1,5 +1,5 @@
 # Pages & Resources & External links
 
-These screens are duplicated between the Discovery and Content menus for ease of access. See the pertaining documentation of them in the Discovery part of this section.
+Currently, these three submenus are duplicated between the Discovery and Content menus. See the pertaining [Discovery section](../../menu/discovery/pages.md) for details.
 
-There is one major difference between the two lists: the exact behavior of the Add Pages button depends on where it is clicked, since it will start the appropriate crawl. If the dialog is opened on the Discovery-pages screen, a Discovery will result; summoning it from Content-pages will start a Content Extraction crawl, generating potentially greater costs!
+**IMPORTANT!** There is an important difference between the Add Pages dialogs of the two page lists: If the Add Pages dialog is opened from Discovery > Pages, it will start a word count Discovery; opening it from the Content > Pages menu will result in a content extraction Scan!
