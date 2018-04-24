@@ -22,7 +22,7 @@ Loading overrides over the proxy also [count as page requests](../../cookbook/pa
 
 ### Response Codes & Location
 
-The 300-family of status codes requires the Location header to be defined as well, to specify the target of redirection. Note also that only those HTTP status codes can be used that are permitted by the Java Servlet class!
+The 300-family of status codes requires the Location header to be defined as well, to specify the target of redirection. Note also that only those HTTP status codes can be used that are permitted by the Java Servlet class. Detailed documentation can be found [here](http://hc.apache.org/httpcomponents-core-ga/httpcore/apidocs/org/apache/http/HttpStatus.html). 
 
 ## Search result pages
 
