@@ -87,6 +87,7 @@ Cookbook
 .. toctree::
    cookbook/whitelabel
    cookbook/resourcetranslation
+   cookbook/hubspotforms
    cookbook/pageviewsandcaching
    cookbook/requestevaluation
    cookbook/stagingdomain
