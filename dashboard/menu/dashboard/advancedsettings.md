@@ -108,6 +108,8 @@ In this section, you'll find checkboxes for settings that apply to very specific
 
 - **Send a canonical link http header pointing to the original page on externalized pages**: the proxy can insert a Link header into externalized pages, in order to avoid the SEO penalty associated with duplicate content. This header will point to the original address, and have `rel=Canonical` added, to designate the relationship.
 
+- **Perform string concatenation in JavaScript before parsing.**: the proxy will perform string concatenation and treat the result as a whole when translating/extracting it. This tweak is only useful if *no computable expression* is featured in a given concatenation.
+
 ## Manual Publishing
 
 *Manual Publishing* is advanced project control feature that gives project owners the ability to withhold the translations from being published on the live page (but not the preview, as it will always display the latest translation available!) until further notice.
