@@ -195,7 +195,7 @@ var settings = {
 }
 ```
 
-if the API key is valid and version-compatible with the endpoint, Bing responds with a JSON to each request, details of which can be found [here](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-web-api-v7-reference#searchresponse). The `webPages.value` property of this response is particularly important, a JSON array containing the first batch of search results.
+If the API key is valid and version-compatible with the endpoint, Bing responds with a JSON to each request, details of which can be found [here](https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-web-api-v7-reference#searchresponse). The `webPages.value` property of this response is particularly important, a JSON array containing the first batch of search results.
 
 Note that `settings.DOMAIN` is set to `location.host`. Encoded in this fact is the assumption that `location.host` (the site in which the code is running) is to be used for searches and it is already indexed.
 
@@ -215,7 +215,7 @@ In order to work out the imlementation for our example webpage, we turn our atte
 
 In the same breath, we can add the basic structure of `renderResult` right away. The bare minimum functionality is to clear the result list and add the one that was received and passed as argument.
 
-```
+``` javascript
 function renderResult(response) {
   $("#results").empty();
   if (typeof response.webPages.value !== "undefined") {
@@ -227,15 +227,16 @@ function renderResult(response) {
 
 `createResultItem` constructs an element for a result item using information provided by Bing, but copying the element structure from the original, which has a huge benefit: existing CSS styles will apply to the search integrated results automatically. Inspecting the search results produced by the original server, we learn that a search result item looks like this:
 
-```
+``` html
 <div class="result-item">
   <h2><a href="#">Result title</a></h2>
   <p>Result summary</p>
 </div>
 ```
+
 Knowing this, we can implement `createResultItem` in the following simple fashion:
 
-```
+``` javascript
 function createResultItem (result) {
   return $("<div>").attr("class", "result-item")
     .append($("<h2>")
