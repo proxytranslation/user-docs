@@ -51,29 +51,29 @@ This resource contains a crucial variable called `urlRoot`, which has to be **re
 3. create a PCO for the `/forms/v2.js` pathname in Page modifiers > Content Override. The response code default is 200, and the `Content-Type` header is `application/javascript; charset=utf-8`. We'll return to `Cache-Control` and `Pragma` later, after setup is complete.
 
 4. Add the following line to the top of the PCO:
-    ``` javascript
+
+``` javascript
 var HUBSPOT_URL_ROOT = "https://forms.hubspot.com";
 ```
-
 5. Search for `this.urlRoot`. It is set in a line similar to the one below:
 
-    ``` javascript
+``` javascript
  o ? this.urlRoot = "https://f.hsforms" + e + ".net/fallback" : null != a ? this.urlRoot = "" + a : this.urlRoot = "https://forms.hubspot" + e + ".com";
 ```
-
 6. Add the following line after it to make it use the "accessible" value:
-    ``` javascript
+
+``` javascript
 this.urlRoot = HUBSPOT_URL_ROOT
 ```
-
 7. Use the *Mark multiple resources as Translatable* text field in Advanced settings. Simply add the pathname prefix of the PCO to the list:
-   ```
+
+```
 /forms/v2.js
 ```
-
 8. URL Translation & HTTP/HTTPS
    Finally, add the following JS path to the list of translatable paths in Advanced settings:
-   ```
+
+```
 "HUBSPOT_URL_ROOT" url
 ```
 
