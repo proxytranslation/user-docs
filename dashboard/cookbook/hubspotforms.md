@@ -51,7 +51,6 @@ This resource contains a crucial variable called `urlRoot`, which has to be **re
 3. create a PCO for the `/forms/v2.js` pathname in Page modifiers > Content Override. The response code default is 200, and the `Content-Type` header is `application/javascript; charset=utf-8`. We'll return to `Cache-Control` and `Pragma` later, after setup is complete.
 
 4. Add the following line to the top of the PCO:
-
     ``` javascript
 var HUBSPOT_URL_ROOT = "https://forms.hubspot.com";
 ```
