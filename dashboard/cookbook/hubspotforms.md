@@ -8,11 +8,11 @@ The proxy supports translation of HubSpot (or similar) forms via a combination o
 
 ## Method #1: Proxy
 
-The proxy approach traces he structure of the main and form domains via linked projects. Affected JS resources/endpoints are overridden and the responses marked as translatable.
+The proxy approach traces the structure of the main and form domains via linked projects. Affected JS resources/endpoints are overridden and the responses marked as translatable.
 
 ### Project Creation & Setup
 
-HubSpot uses several external domains to drive a form. You will see   [https://js.hsforms.net/forms/v2.js](https://js.hsforms.net/forms/v2.js) referenced in the page source. This file itself references [https://forms.hubspot.com](https://forms.hubspot.com), which is where the translatable form contents are coming from.
+HubSpot uses several external domains to drive a form. You will see [https://js.hsforms.net/forms/v2.js](https://js.hsforms.net/forms/v2.js) referenced in the page source. This file itself references [https://forms.hubspot.com](https://forms.hubspot.com), which is where the translatable form contents are coming from.
 
 Domains used by a HubSpot form are related to the main project and each other in the following manner:
 
@@ -30,7 +30,7 @@ Don't forget to add every target language of the main project to each project yo
 
 ### Link Projects
 
-Open each project in a separate tab and link each project according to the [section on Project Linking]("../../menu/dashboard/linkprojects.hhtml"). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
+Open each project in a separate tab and link each project according to the [section on Project Linking]("../../menu/dashboard/linkprojects.html"). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
 
 ### Alternative: Search & Replace
 
@@ -38,7 +38,7 @@ The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purp
 
 1. **create a path override** for the exact URL where the form is present (the diagram above shows `/contact` as an illustration).
 
-2. **add a regex Search & Replace rule**: replace `https?://js.hsforms.net` with the empty string to turn the reference to`/forms/v2.js` into a relative URL (and effectively point it toward a page content override on the project domain that will be created in a moment).
+2. **add a regex Search & Replace rule**: replace `https?://js.hsforms.net` with the empty string to turn the reference to `/forms/v2.js` into a relative URL (and effectively point it toward a page content override on the project domain that will be created in a moment).
 
 ### Overriding `v2.js`
 
@@ -83,7 +83,7 @@ Open the PCO link over any one of the proxy preview domains to test it. If all p
 
 Set up the HubSpot content endpoint as translatable on the project for `forms.hubspot.com` [according to the JS translation section](../../cookbook/jstranslation.html). In summary:
 
-1. locate the form request using the DevTool and add it to the "Mark multiple resources as translatable" list of prefixes. For any given HubSpot form, translatable content will usually be associated with a  prefix similar to the one below (it will also have a `callback` query parameter).
+1. locate the form request using the DevTool and add it to the "Mark multiple resources as translatable" list of prefixes. For any given HubSpot form, translatable content will usually be associated with a prefix similar to the one below (it will also have a `callback` query parameter).
 
 ```
 /embed/v3/form/{numericId}/{formId}
