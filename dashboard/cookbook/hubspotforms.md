@@ -2,9 +2,9 @@
 
 The proxy supports translation of HubSpot (or similar) forms via a combination of [project linking](../../menu/dashboard/linkprojects.html) and [JS translation](../../cookbook/jstranslation.html).
 
-**Method #1** marshals a combination of advanced proxy features. No change on the original server is necessary (which a frequent constraint). It's benefit is that it is entirely **hands-off** from the site maintainer's perspective.
+**Method #1** marshals a combination of advanced proxy features. It is entirely **hands-off** from the site maintainer's perspective, no change on the original server is necessary (which is a rather frequent constraint).
 
-**Method #2** relies on HubSpot for localized forms and uses a proxy-compatible injected JS approach.
+**Method #2** relies on injected JS and HubSpot to provide separate, localized forms for each target language. Compared to **#1**, it is a clean and simple approach.
 
 ## Method #1: Proxy
 
@@ -38,11 +38,11 @@ The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purp
 
 1. **create a path override** for the exact URL where the form is present (the diagram above shows `/contact` as an illustration).
 
-2. **add a regex Search & Replace rule**: replace `https?://js.hsforms.net` with the empty string to turn the reference to `/forms/v2.js` into a relative URL (and effectively point it toward a page content override on the project domain that will be created in a moment).
+2. **add a Search & Replace rule**: replace `https?://js.hsforms.net` (a regex matching both HTTP and HTTPS versions of the same URL) with the empty string. This turns the reference to `/forms/v2.js` into a relative URL, pointing it toward a page content override that is to be created in a moment).
 
 ### Overriding `v2.js`
 
-This resource contains a crucial variable called `urlRoot`, which has to be **remappable** over the proxy. However, it is set via a *computed expression*, which is unsupported by the proxy for reasons discussed in [the section on JS translation](../../cookbook/jstranslation.html), so an override and a small change becomes unavoidable (regardless of the presence/absence of the intermediate project). Follow the steps below to create the override:
+This resource contains a crucial variable called `urlRoot`, which has to be **remappable** over the proxy. However, it is set via a *computed expression*, which is unsupported by the proxy for reasons discussed in [the section on JS translation](../../cookbook/jstranslation.html), so an override and a small change is unavoidable (regardless of the presence/absence of the intermediate project). Follow the steps below to create the override:
 
 1. visit `https://js.hsforms.net/forms/v2.js` and **copy & paste** the contents of the JS file.
 
@@ -77,7 +77,7 @@ this.urlRoot = HUBSPOT_URL_ROOT
 "HUBSPOT_URL_ROOT" url
 ```
 
-Open the PCO link over any one of the proxy preview domains to test it. If all projects are correctly linked and you followed the setup steps correctly, the `HUBSPOT_URL_ROOT` variable will hold an appropriate proxy-mapped domain (and consequently `this.urlRoot` will be set to the same value). 
+Open the PCO link over any one of the proxy preview domains to test it. If all projects are correctly linked and you followed the setup steps correctly, the `HUBSPOT_URL_ROOT` variable will hold an appropriate proxy-mapped domain (and consequently `this.urlRoot` will be set to the same value).
 
 ### Form Contents
 
@@ -101,7 +101,7 @@ Once setup, translation and publishing is complete, you are free to set an appro
 
 ## Method #2: HubSpot & Injected JS
 
-If you don't mind having a separate form for each language, you can use HubSpot itself to localize the form property names after [cloning your form for each target language](https://community.hubspot.com/t5/Lists-Lead-Scoring-Workflows/Translation-of-contact-properties-for-different-forms/td-p/8109). JavaScript can drive the forms on the client-side for each target language, resulting in an arguably cleaner approach.
+You can rely on HubSpot to localize the form property names after [cloning your form for each target language](https://community.hubspot.com/t5/Lists-Lead-Scoring-Workflows/Translation-of-contact-properties-for-different-forms/td-p/8109), and rely on a little JavaScript zo drive the forms on the client-side for each target language. This approach is cleaner than the one described above, as long as you don't mind having a separate form for each target language.
 
 The proxy sets the `lang` attribute of the `<html>` tag to the appropriate locale code on each target language domain, which you can use for branching. The code below demonstrates one example of how such code could look in practice:
 
