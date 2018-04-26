@@ -50,7 +50,7 @@ In the rest of this documentation page, let us detail how a simple site search i
 
 ### Page Modifiers
 
-Customized JavaScript can be injected into the `<head>` tag of each page over the proxy. This capability is the entryway for a search override. To add injected JavaScripYou'll find an editor in Page Modifiers > Javascript editor, where you can type or copy & paste Javascript code. After saving the modifier, it will show up in the page source over the proxy after a refresh (but note that cache settings might get in the way of an instantaneous update on the live domain!).
+Customized JavaScript can be injected into the `<head>` tag of each page over the proxy. This capability is the entryway for a search override. To add injected JavaScript you'll find an editor in Page Modifiers > Javascript editor, where you can type or copy & paste Javascript code. After saving the modifier, it will show up in the page source over the proxy after a refresh (but note that cache settings might get in the way of an instantaneous update on the live domain!).
 
 Site search functionality is frequently displayed to the visitor in the form of an input field and a button. We'll go with this familiar scenario and use the following minimal webpage for this tutorial:
 
