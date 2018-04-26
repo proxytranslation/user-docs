@@ -1,6 +1,6 @@
 # HubSpot Forms
 
-The proxy supports translation of HubSpot (or similar) forms via a combination of [project linking](../../../menu/dashboard/linkprojects.html) and [JS translation](../../../cookbook/jstranslation.html).
+The proxy supports translation of HubSpot (or similar) forms via a combination of [project linking](../menu/dashboard/linkprojects.html) and [JS translation](../cookbook/jstranslation.html).
 
 **Method #1** marshals a combination of advanced proxy features. It is entirely **hands-off** from the site maintainer's perspective, no change on the original server is necessary (which is a rather frequent constraint).
 
