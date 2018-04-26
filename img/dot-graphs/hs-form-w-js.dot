@@ -1,0 +1,18 @@
+// render with:
+// $ dot -Tpng hs-form-w-js.dot > hs-form-w-js.png
+digraph hubspot_js {
+        // graph
+        graph [overlap="false", splines="ortho"];
+        edge [fontname="Terminus", fontsize=8, dir="both"];
+
+        // nodes
+        main [label="www.example.com/about"];
+        js [label="js.hsforms.com"];
+        forms [label="forms.hubspot.com"];
+
+        // edges
+        main -> js  [label="link"];
+        js -> forms [label="link"];
+
+        { rank = same; js; forms }
+}

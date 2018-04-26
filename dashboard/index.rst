@@ -88,6 +88,7 @@ Cookbook
    cookbook/whitelabel
    cookbook/jstranslation
    cookbook/resourcetranslation
+   cookbook/hubspotforms
    cookbook/pageviewsandcaching
    cookbook/requestevaluation
    cookbook/stagingdomain
