@@ -1,6 +1,6 @@
 # HubSpot Forms
 
-The proxy supports translation of HubSpot (or similar) forms via a combination of [project linking](../../menu/dashboard/linkprojects.html) and [JS translation](../../cookbook/jstranslation.html).
+The proxy supports translation of HubSpot (or similar) forms via a combination of [project linking](../../../menu/dashboard/linkprojects.html) and [JS translation](../../../cookbook/jstranslation.html).
 
 **Method #1** marshals a combination of advanced proxy features. It is entirely **hands-off** from the site maintainer's perspective, no change on the original server is necessary (which is a rather frequent constraint).
 
@@ -30,11 +30,11 @@ Don't forget to add every target language of the main project to each project yo
 
 ### Link Projects
 
-Open each project in a separate tab and link each project according to the [section on Project Linking]("../../menu/dashboard/linkprojects.html"). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
+Open each project in a separate tab and link each project according to the [section on Project Linking]("../../../menu/dashboard/linkprojects.html"). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
 
 ### Alternative: Search & Replace
 
-The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purpose is merely to expose a slightly modified version of the `/forms/v2.js` script. If its URL is referred to in a way that makes it possible, you can *sidestep* the domain using a combination of [Search & Replace](../../menu/dashboard/pathsettings.html#search-replace-override) and a [page content override](../../menu/pagemodifiers/contentoverride.html). The setup steps for this are as follows (done on the main project):
+The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purpose is merely to expose a slightly modified version of the `/forms/v2.js` script. If its URL is referred to in a way that makes it possible, you can *sidestep* the domain using a combination of [Search & Replace](../../../menu/dashboard/pathsettings.html#search-replace-override) and a [page content override](../../../menu/pagemodifiers/contentoverride.html). The setup steps for this are as follows (done on the main project):
 
 1. **create a path override** for the exact URL where the form is present (the diagram above shows `/contact` as an illustration).
 
@@ -42,7 +42,7 @@ The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purp
 
 ### Overriding `v2.js`
 
-This resource contains a crucial variable called `urlRoot`, which has to be **remappable** over the proxy. However, it is set via a *computed expression*, which is unsupported by the proxy for reasons discussed in [the section on JS translation](../../cookbook/jstranslation.html), so an override and a small change is unavoidable (regardless of the presence/absence of the intermediate project). Follow the steps below to create the override:
+This resource contains a crucial variable called `urlRoot`, which has to be **remappable** over the proxy. However, it is set via a *computed expression*, which is unsupported by the proxy for reasons discussed in [the section on JS translation](../../../cookbook/jstranslation.html), so an override and a small change is unavoidable (regardless of the presence/absence of the intermediate project). Follow the steps below to create the override:
 
 1. visit `https://js.hsforms.net/forms/v2.js` and **copy & paste** the contents of the JS file.
 
@@ -81,7 +81,7 @@ Open the PCO link over any one of the proxy preview domains to test it. If all p
 
 ### Form Contents
 
-Set up the HubSpot content endpoint as translatable on the project for `forms.hubspot.com` [according to the JS translation section](../../cookbook/jstranslation.html). In summary:
+Set up the HubSpot content endpoint as translatable on the project for `forms.hubspot.com` [according to the JS translation section](../../../cookbook/jstranslation.html). In summary:
 
 1. locate the form request using the DevTool and add it to the "Mark multiple resources as translatable" list of prefixes. For any given HubSpot form, translatable content will usually be associated with a prefix similar to the one below (it will also have a `callback` query parameter).
 
@@ -97,7 +97,7 @@ Set up the HubSpot content endpoint as translatable on the project for `forms.hu
 
 All projects need to be published together in all target languages. Note that you don't need to publish on a subdomain of the original server: you are free to proxy the German version of `forms.hubspot.com` through `hs-de.mydomain.com`, for example.
 
-Once setup, translation and publishing is complete, you are free to set an appropriate Cache Header on your page content overrides (either on the PCO itself or [on a prefix-basis](../../menu/dashboard/pathsettings.html)) to reduce page request costs.
+Once setup, translation and publishing is complete, you are free to set an appropriate Cache Header on your page content overrides (either on the PCO itself or [on a prefix-basis](../../../menu/dashboard/pathsettings.html)) to reduce page request costs.
 
 ## Method #2: HubSpot & Injected JS
 
