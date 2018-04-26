@@ -16,11 +16,11 @@ Let's say that a visitor uses the search field of `www.example.com` to search fo
 
 On a proxied site, however, we run up against a problem: the original does not know about the translations. Requests are automatically relayed to the original server. If a visitor were to type "**produkt**" on the German domain (resulting in an URL navigation to `https://de.example.com/search?q=produkt`), that is the same as relaying a search query with German language content to the original site.
 
-Not possessing a _German language index_, the response is certain to contain 0 results. The fact that the proxy is CMS-agnostic and that it generally doesn't require that translated content be shared with the original server also means that this same content will not be available to the indexing/search software that is running on the original. 
+Not possessing a _German language index_, the response is certain to contain 0 results. The fact that the proxy is CMS-agnostic and that it generally doesn't require that translated content be shared with the original server also means that this same content will not be available to the indexing/search software that is running on the original.
 
 ### Recommended Solution
 
-The way out of this conundrum is that proxied pages themselves are  _publicly available for indexing by search engine bots_. A search engine that supports site-specific queries can provide localized search via client-side AJAX requests. 
+The way out of this conundrum is that proxied pages themselves are  _publicly available for indexing by search engine bots_. A search engine that supports site-specific queries can provide localized search via client-side AJAX requests.
 
 There are two aspects to this kind of solution that you should consider:
 
@@ -37,6 +37,12 @@ On the same note, the [publishing method](../../dashboard/index.html#publish-web
 Bing's Web Search API can be used for site search integration purposes over the proxy. In order to access Bing's API, you will need to purchase an API key. See the details on [Microsoft Azure](https://azure.microsoft.com/en-us/try/cognitive-services/?api=bing-web-search-api) on procuring one, and see the [pricing page](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/search-api/web/) for a detailed description of the various service tiers.
 
 Consult the [Webmaster Tools Documentation](https://www.bing.com/webmaster/help/help-center-661b2d18) concerning general usage-related matters. You can submit a domain for indexing in Bing [here](https://www.bing.com/toolbox/submit-site-url). Submission of specific URLs is possible [here](https://www.bing.com/webmaster/help/submit-urls-to-bing-62f2860a), but this feature is limited to root domains at the time of writing: until such time as this limitation is lifted, you might only be able to use this targeted indexing feature with subdirectory publishing.
+
+##### Bing: Verification of subdomains
+
+If you want to track the indexing of your subdomains in Webmaster Tools and do SEO tracking, you'll need to verify ownership of the target language subdomains. The available methods are [described here](https://www.bing.com/webmaster/help/how-to-verify-ownership-of-your-site-afcfefc6).
+
+The XML-based approach is the simplest to implement over the proxy (it can be done without having to apply any changes on the origin): create a temporary [Page Content Override](../../menu/pagemodifiers/contentoverride.html) with the contents of `BingSiteAuth.xml` (content type should be `text/xml`). This exposes the authorization XML over the proxy domains. From then on, you are free to add the target language subdomains in Webmaster Tools and verify them one-by-one.
 
 ## Part II: Example
 
@@ -251,9 +257,9 @@ Our tutorial, however, does not extend to those details and we conclude it here.
 
 ### Notes
 
-Some comparatively frequent but non-essential complexity of client-side search is omitted in the example: 
+Some frequent, but non-essential complexity of client-side search is omitted from our example:
 
-- offsets (a Bing-specific term) are only alluded to, for example. They enable requests for the next batch of search results for the same search query. This is usually exposed to the end user in the form of a pager that, when clicked, sends the same request but increments the `offset` by 10. Such a feature causes both `renderResult` to manage the concept of a pager and `sendRequest`/`createRequest` to have to keep tabs on tne current `offset`.
+- offsets (a Bing-specific term) are only alluded to. Any search API will support requests for the next batch of search results for the same search query. This is usually exposed to the end user in the form of a pager that, when clicked, sends the same request but increments the `offset` by 10. Such a feature causes both `renderResult` to manage the concept of a pager and `sendRequest`/`createRequest` to have to keep tabs on tne current `offset`.
 
 - a search field is also generally available on all pages on a site, not just the search results page.  This means that an integration needs to ensure that the user is redirected to the search results page and that query parameters are appropriately handled. Besides using the values of the input field (a user-driven query after page load), a search integration usually has to be able to extract `produkt` from `https://de.example.com/search?q=produkt` to start a default search on the search results page when it loads for the first time. This is usually not difficult, but as we've said previously, much depends on specific circumstance.
 
