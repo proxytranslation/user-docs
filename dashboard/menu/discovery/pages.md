@@ -6,31 +6,31 @@ Aside from the overview of and direct access to content on the individual pages,
 
 ## Side menu
 
-The display of pages can be influenced by the various filters available in the left-side menu:
+The number of pages that are displayed is influenced by the various filters available in the left-side menu:
 
 ![Side menu](/img/dashboard/page_list_filters.png)
 
 ### Language Selector
 
-This selector influences the behavior of the page list in important ways. The information in the translation progress bars will refer to the selected language, and both the List and Highlight Views will open to this target language. The same applies to the available Preview links.
+Though strictly speaking not a filter at all, the language selector influences the page list in important ways. Information in the translation progress bars will refer to the selected language, and both the List and Highlight Views will open for the selected target language. The same is true for the various types of Preview links. 
 
-*Ensure that you have selected a target language* to gain access to many simple features. If you do not (or there is no target language on the project at all, in which case, the source language is selected), neither the Workbench links, nor the Previews will available, and most of the hover menu options will be greyed out:
+*Ensure that you have selected a target language* to gain access to many powerful features in the page list. If you do not (or there is no target language on the project at all, in which case, the source language is selected), then neither the Workbench links, nor the Previews will be available, and most of the hover menu options will be greyed out:
 
 ![Inactive Hover Menu](/img/dashboard/page_list_hover_menu_inactive.png)
 
 #### Update Translation Progress link
 
-Click here to update the translation progress bars for the selected target language. Update are normally run every 24 hours, but you can force it on a language basis. Note that the process takes time to finish depending on the amount of content that has to be aggregated.
+Click here whenever you want to receive updated information about the current translation ratio in the page progress bars. Information will refer to the selected target language. Updates are automatically  run every 24 hours. Note that the process can take from a few seconds to a few minutes of time to finish, depending on the amount of content to be aggregated.
 
 ### Timeline
 
-Use the dropdown in the screenshot below to filter for pages that registered new content (either via a content extraction crawl or Preview auto-extraction) before or after a given recorded date. Set the value to "After Project creation" or click on Reset timeline to undo this filter.
+Use the dropdown illustrated the screenshot below to filter for pages that registered new content (either via a content extraction crawl or automatic extraction in Preview) before or after a given recorded date. Set the value to "After Project creation" or click on Reset timeline to undo this filter.
 
 ![Timeline Filter Dialog](/img/dashboard/page_list_timeline_filter_dialog.png)
 
 ### Filters
 
-This general-sounding dropdown lets you filter for pages currently in a given state. The possible options are
+This dropdown, though it may sound general, does a specific thing: lets you filter for pages that are in the selected state. The possible options are
 
 1. **Visited (Scanned) only**: filter for pages that are already Scanned (content extracted). These pages will show a status of "NEW" or a translation progress bar, indicating that they are in-progress.
 
@@ -42,7 +42,9 @@ This general-sounding dropdown lets you filter for pages currently in a given st
 
 ### Exclusion State
 
-A project can keep tabs on many distinct URLs. For example, query parameters, especially in combination tend to increase the number of URLs, potentially crowding the page list and result in much unnecessary scrolling. Use the exclusion filters at the bottom of the side menu (together with the search field) to get a clearer view of your currently selected or excluded set of URLs (see below for the details of exclusion/inclusion rules).
+A project can keep tabs on many distinct URLs. For example, query parameters, especially in combination tend to increase the number of URLs, potentially crowding the page list and resulting in much unnecessary scrolling. Use the exclusion filters at the bottom of the side menu (and in combination with the search field on top) to get a clear view of your currently selected or excluded set of URLs (see below for the details of exclusion/inclusion rules).
+
+Note that you can use the search field to search for *any part* of a URL, not just the beginning.
 
 ## Top Menu
 
