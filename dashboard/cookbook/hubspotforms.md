@@ -84,7 +84,8 @@ Open the PCO link over any one of the proxy preview domains to test it. If all p
 Set up the HubSpot content endpoint as translatable on the project for `forms.hubspot.com` [according to the JS translation section](../cookbook/jstranslation.html). In summary:
 
 1. locate the form request using the DevTool and add it to the "Mark multiple resources as translatable" list of prefixes. For any given HubSpot form, translatable content will usually be associated with a prefix similar to the one below (it will also have a `callback` query parameter).
-    ```
+
+```
 /embed/v3/form/{numericId}/{formId}
 ```
 
