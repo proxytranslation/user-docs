@@ -29,15 +29,19 @@
    the Dashboard logo is set at 200x62px, while the Workbench logo
    needs to be 109x44px.
 
-5. An SSL certificate: the translation proxy uses encrypted channels to communicate
-   on, and for that, we require an SSL certificate to be made out for
-   the domain name of your choice, and any subdomains it may have -
-   the translation proxy uses your "app domain" to serve previews until they're
-   published, so your certificate must be a so-called "wildcard
-   certificate" (a type of SSL certificate valid not only for
-   `app.yourdomain.com`, but also `*.app.yourdomain.com`). Certificate
-   issuers are likely to request a Certificate Signing Request (CSR)
-   for the certificate, which we will have to provide.
+5. An SSL certificate: the translation proxy uses encrypted channels
+   to communicate on, and for that, we require an SSL certificate to
+   be made out for the domain name of your choice, and any subdomains
+   it may have - the translation proxy uses your "app domain" to serve
+   previews until they're published, so your certificate must be a
+   so-called "wildcard certificate". This is a type of SSL certificate
+   that is valid not only for `app.yourdomain.com`, but also
+   `*.app.yourdomain.com`, needed in order to ensure SSL coverage of all
+   project-specific preview subdomains (the names of which are created
+   by combining an arbitrary locale code and the *randomly
+   generated* project code). Certificate issuers are likely to request
+   a Certificate Signing Request (CSR) for the certificate, which we
+   will have to provide.
 
 In order to generate a CSR for you, you'll need to provide a few
 pieces of data related to your company, which need to be incorporated
