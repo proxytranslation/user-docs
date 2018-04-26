@@ -30,7 +30,7 @@ Don't forget to add every target language of the main project to each project yo
 
 ### Link Projects
 
-Open each project in a separate tab and link each project according to the [section on Project Linking]("../menu/dashboard/linkprojects.html"). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
+Open each project in a separate tab and link each project according to the [section on Project Linking](../menu/dashboard/linkprojects.html). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
 
 ### Alternative: Search & Replace
 
