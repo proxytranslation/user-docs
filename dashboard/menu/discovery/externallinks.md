@@ -10,9 +10,9 @@ You can start from either Discovery > External links or Content > External links
 
 2. click on "Select" in the hover menu of a link to start the localization process. Alternatively, if you have already clicked on the link and the localization frame is active, click on the "Mark this external link as localizable".
 
-3. Input the external link that you want to use.
+3. input the external link that you want to use.
 
-4. click on "Set link"
+4. click on "Set link".
 
 ![Localization of an external link](/img/dashboard/external_links_localization.png)
 
