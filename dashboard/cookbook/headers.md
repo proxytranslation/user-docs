@@ -11,7 +11,7 @@ Request headers contain additional information on the client viewing the site an
 
 + `X-TranslationProxy-Translating-To: ja-JP`: This gives the language of the translated version the client is browsing.
 + `X-TranslationProxy-Translating-Host: jp.eveonline.com`: This header contains the domain under which the Proxy is serving the translated site.
-+ `X-TranslationProxy-Originating-IP: 192.168.168.192`: If enabled, this header contains the IP address of the requester, which may be hidden by CDNs and other proxies.
++ `X-TranslationProxy-Originator-IP: 192.168.168.192`: If enabled, this header contains the IP address of the requester, which may be hidden by CDNs and other proxies.
 + Future headers of the `X-TranslationProxy` containing other metadata
 + `User-Agent`: This header is somewhat special, in the sense that it's not specific to The Proxy, rather, it is sent by almost all browsers to identify themselves. The reason it finds a place in this article is that it can be used to identify Proxy-served requests. Google AppEngine modifies this header when sending requests, in a way that ensure no further tampering before the header reaches the original server, by adding `AppEngine-Google; (+http://code.google.com/appengine; appid: u~skawa-easyling)` - this can be used to whitelist the Proxy.
 
