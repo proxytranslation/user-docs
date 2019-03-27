@@ -10,7 +10,6 @@ Issues
 ------
 
 .. toctree::
-   issues/secure_login
    issues/import_errors
    issues/publishing_issues
    issues/hreflang
