@@ -5,7 +5,7 @@ To scan content behind secure login, please follow this procedure:
 1. Open your project and navigate to the **Content** menu.<br>
 2. Open the **Pages** list.
 
-3. Visit the page with the login, if it is listed, and click **Preview**.
+3. Visit the page with the login, if it is listed, and click **Preview** (you'll need at least one target language on the project for **Preview** to be selectable!).
 
 **OR**
 
@@ -22,7 +22,7 @@ To scan content behind secure login, please follow this procedure:
 
 5. Open your browser's DevTools from the Menu (F12 on Windows).<br>
 
-6. Go to** Network** and reload the page.<br>
+6. Go to **Network** and reload the page.<br>
 
 ![Getting the cookie](/img/network_dev.jpg) 
 
@@ -33,12 +33,8 @@ To scan content behind secure login, please follow this procedure:
 
 ![Cookie header](/img/cookie_header.jpg) 
 
-9. Pass it to the Proxy: go back to your project and click on
-   **Content**. Paste the entire content in the **Scanning cookies**
-   field.<br>
+9. Pass it to the Proxy: go back to your project and start a new crawl in the Crawl Wizard. Proceed as usual to step #4 (Fine-tune), then paste the contents of the cookie you just copied to the **Session Cookie** tab.<br>
 
-![Passing the cookie to the proxy](/img/pass_cookie.jpg)
+![Passing the cookie to the proxy](/img/pass_cookie.png)
 
-10. Click on **Scan manually** and specify the required scanning
-    settings. You will receive an e-mail notification once scanning is
-    ready and new content is available for translation.
+10. configure the rest of the crawl and launch it as usual.
