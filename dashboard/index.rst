@@ -97,3 +97,4 @@ Cookbook
    cookbook/ssl_certificates
    cookbook/proxymodes
    cookbook/headers
+   cookbook/securelogin
