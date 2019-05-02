@@ -41,6 +41,8 @@ Due to the way the proxy works, this requires a reverse proxy configuration to b
 
 There are three CNAME settings that are required on your domain to enable publishing of your website. Each of the lines in the table that is displayed has a specific function:
 
+![Serving domain verification](/img/dashboard2/serving_domain.png)
+
 **CNAME 1** Allows mapping of the subdomain in Google AppEngine, enabling us to alter the datastream and translate the site. This row is computed from the serving domain entered in the first step called _Serving domain_, and needs to be added once per serving domain.
 
 **CNAME 2** The second line determines where the currently selected target language will be published. This defaults to the language code, but you are not obligated to keep it that way. This has to be entered separately for every target language you publish.
