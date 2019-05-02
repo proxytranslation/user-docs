@@ -133,17 +133,17 @@ _Translated path prefix (removed from original path, added to translated)_ `/en/
 
 Removed from original path means that the original / remote server will never receive this path prefix, it will be visible only in the client translated URL, as you can see below:
 
-![Translated path prefix test](/img/dot-graphs/translated_path_prefix.png)
+![Translated path prefix test](/img/dashboard2/translated_path_prefix.png)
 
 However, be aware that the directory depth number will increase according to the number of path prefix you describe in this field:
 
-![Translated path prefix second test](/img/dot-graphs/translated_path_prefix2.png)
+![Translated path prefix second test](/img/dashboard2/translated_path_prefix2.png)
 
 _Original path prefix (added to original path, removed from translated)_ `/en/`
 
 Using together Translated and Original path prefix options, they can be used to swap the root element of the link:
 
-![Translated path prefix second test](/img/dot-graphs/original_path_prefix.png)
+![Translated path prefix second test](/img/dashboard2/original_path_prefix.png)
 
 ### Path segment translation
 
