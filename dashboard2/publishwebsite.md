@@ -27,13 +27,15 @@ The proxy will only publish a project on one domain name at a time, the question
 
 ##### Serving domain mode (fr.example.com)
 
-In the serving domain mode, the translation proxy will publish the translated site either on a subdomain of the original (the default behavior, such as fr.example.com), or on a completely separate naked domain (such as example.com). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the three to five records (three for subdomains, five for new naked domains) that need to be inserted in your DNS settings are found under the _Verification_ menu. These records will change as you enter or change the desired serving domain in the first step called _Serving domain_.
+In the serving domain mode, the translation proxy will publish the translated site either on a subdomain of the original (the default behavior, such as **fr.example.com**), or on a completely separate naked domain (such as **example.com**). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the three to five records (three for subdomains, five for new naked domains) that need to be inserted in your DNS settings are found under the _Verification_ menu. These records will change as you enter or change the desired serving domain in the first step called _Serving domain_.
 
 ##### Subdirectory publishing (example.com/fr)
 
 The alternative to subdomain-based publishing is to retain your own domain and publish the site as a subdirectory. I.e. the translated pages will appear under separate paths under the same domain as the one the project was created for (the original domain).
 
-Due to the way the proxy works, this requires a reverse proxy configuration to be placed in front of the web server. A variety of load balancer/reverse proxy solutions are available on the market, with `nginx`, `CloudFlare` and `AWS CloudFront` being three of the most well-known solutions available. See the vendor documentation for the details of setting up a reverse proxy (do note that nowadays, reverse proxies are monumentally powerful network solutions, and discussion of all their features is beyond the scope of this introductory description).
+Due to the way the proxy works, this requires a reverse proxy configuration to be placed in front of the web server. A variety of load balancer/reverse proxy solutions are available on the market, with **nginx**, **CloudFlare** and **AWS CloudFront** being three of the most well-known solutions available. See the vendor documentation for the details of setting up a reverse proxy (do note that nowadays, reverse proxies are monumentally powerful network solutions, and discussion of all their features is beyond the scope of this introductory description).
+
+
 
 #### STEP 3 [Selected publishing mode: Serving domain] - Verification
 
@@ -43,7 +45,7 @@ There are three CNAME settings that are required on your domain to enable publis
 
 **CNAME 2** The second line determines where the currently selected target language will be published. This defaults to the language code, but you are not obligated to keep it that way. This has to be entered separately for every target language you publish.
 
-**CNAME 3*** The third line verifies ownership of the original domain. This is computed from the user’s ID who is currently looking at the publishing page (i.e. different users will see different values, so one person should communicate this to the client and hit the **Verify** button), and needs to be added only once per serving domain as well. You can set the subdomain and domain where the translated site will appear.
+**CNAME 3** The third line verifies ownership of the original domain. This is computed from the user’s ID who is currently looking at the publishing page (i.e. different users will see different values, so one person should communicate this to the client and hit the **Verify** button), and needs to be added only once per serving domain as well. You can set the subdomain and domain where the translated site will appear.
 
 After all the settings have been entered into the DNS records, there is short time while the changes propagate and are replicated across the world. This can vary wildly with the DNS and hosting providers, taking anywhere between one and twenty-four hours. It is recommended to wait out the twenty-four hours, as you will not be able to click on the Next button until all checks are passed.
 
@@ -55,11 +57,13 @@ Our support team can also provide you with the *Certificate Signing Requests* ne
 
 Additionally, we have a *Managed Certificate* program, where the proxy handles SSL certification automatically for published websites. The *Managed Certificate* program has a cost of 50EUR (60USD)/proxied domain/**year** or 100EUR (120USD)/proxied domain/**three** years.
 
-See the pertaining section of the documentation [here](../../cookbook/ssl_certificates.html).
+See the pertaining section of the documentation [here](../dashboard/cookbook/ssl_certificates.html).
 
 #### STEP 3 [Selected publishing mode: Subdirectory publishing] - CDN / Reverse proxy
 
 We tried to provide you the absolute minimum example configurations required to achieve a workable reverse proxy using the three most popular webserver systems (Nginx, Apache httpd, and Microsoft Internet Information Systems), and also an example configuration for AWS Cloudfront CDN.
+
+![CDN / Reverse proxy options](/img/dashboard2/subdirectory.png)
 
 If you select an option, for example _Multiple locales as a subdirectory at depth 1_, it will only show you a different configuration as an example, but as we wrote previously, you need to set up your own reverse proxy or CDN, configured appropriately. You can also setup path prefix rules under the menu _Path Specific Settings_, and we will discuss about these configuration options later.
 
@@ -108,14 +112,14 @@ After configuring your publishing mode, in this last step, you will see a short 
 
 If the publishing is successful, then the serving domain name will appear in the Live domain column.
 
-#### Unpublish
+#### Deactivate / Delete
 
-There are basically two options available for you:
+There are two different option for disabling the translation, and based on the selected publishing mode, you can choose either **Deactivate** or **Delete**.
 
-- **Unpublish:** In this case, the related entities from our database will be removed, and it would make an error page appear when the translations are requested, which means that the publishing is disabled by our side. When you select this option, the serving domain name will be visible under the column called _Verified domain._
+- **Deactivate [Selected publishing mode: Serving domain]:** In this case, the related entities from our database will be removed, and it would make an error page appear when the translations are requested, which means that the publishing is disabled by our side. When you select this option, the serving domain name will be visible under the column called _Verified domain._
 Alternatively, if you or your client removes the DNS records relating to the projects (especially the ghs.domainverify.net or ghs.googlehosted.com records), the requests will no longer reach the proxy, and translations will cease to be served.
 
-- **Delete:** Removing the target locale will disable the translated website and make all the translated segments disappear. However, translations are retained in case of deleted languages as well, which means that the language can be re-added and the translations will be immediately available.
+- **Delete [Selected publishing mode: Subdirectory publishing]:** Removing the target locale will disable the translated website and make all the translated segments disappear. However, translations are retained in case of deleted languages as well, which means that the language can be re-added and the translations will be immediately available.
 
 
 ### Path specific settings
@@ -133,22 +137,22 @@ _Translated path prefix (removed from original path, added to translated)_ `/en/
 
 Removed from original path means that the original / remote server will never receive this path prefix, it will be visible only in the client translated URL, as you can see below:
 
-![Translated path prefix test](/img/dashboard2/translated_path_prefix.png)
+![Translated path prefix manipulation](/img/dashboard2/translated_path_prefix.png)
 
 However, be aware that the directory depth number will increase according to the number of path prefix you describe in this field:
 
-![Translated path prefix second test](/img/dashboard2/translated_path_prefix2.png)
+![Translated path prefix manipulation with more than one directory](/img/dashboard2/translated_path_prefix2.png)
 
 _Original path prefix (added to original path, removed from translated)_ `/en/`
 
 Using together Translated and Original path prefix options, they can be used to swap the root element of the link:
 
-![Translated path prefix second test](/img/dashboard2/original_path_prefix.png)
+![How you can swap the root element](/img/dashboard2/original_path_prefix.png)
 
 #### Path segment translation
 
 With this option, you will be able to add paths segments (words between two forward slashes) here to translate them. You are limited to 50 entries at any time, but these will be translated _wherever_ they occur, for example:
 
-www.example.com/example --> www.example.com/translation
+```www.example.com/**example** --> www.example.com/translation
 
-www.example.com/notexample/nottranlated/example/text --> www.example.com/notexample/nottranlated/translation/text
+www.example.com/notexample/nottranlated/example/text --> www.example.com/notexample/nottranlated/translation/text```
