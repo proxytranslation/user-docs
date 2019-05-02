@@ -10,14 +10,15 @@ digraph rp {
         trproxy_de [label="de-de-gereblye.appspot.com", fontname="Terminus"];
         revers  [label="Reverse Proxy", shape="box"];
         origin [label="www.example.com/about", fontname="Terminus"];
-        
-        
+
+
         // define graph
         england    -> revers [xlabel="/en/about", color="blue"];
         subgraph proxies { // proxy routes
                 germany -> revers [xlabel="/de/about", color="red"];
-                revers -> trproxy -> trproxy_de [xlabel="/about", color="red"];
-        }        
+                revers -> trproxy [xlabel="/de/about", color="red"];
+                trproxy -> trproxy_de [xlabel="/about", color="red"];
+        }
         revers -> origin [xlabel="/about", color="blue"];
         trproxy_de -> origin [color="red"];
 }
