@@ -21,15 +21,15 @@ Under this menu, you will be able to publish your website either in Serving doma
 #### STEP 1 - Serving domain
 
 As a first step, you need to provide the domain name on which the translated website is to be published.
-The proxy will only publish a project on one domain name at a time, the question is which one should be the primary - naked domain (example.com) or subdomain (www.example.com)? Once that question is decided, you should then set up server-side redirection to the "main" domain (best practice prefers the `HTTP301 MOVED PERMANENTLY` status code with the `Location` header).
+The proxy will only publish a project on one domain name at a time, the question is which one should be the primary - naked domain (`example.com`) or subdomain (`www.example.com`)? Once that question is decided, you should then set up server-side redirection to the "main" domain (best practice prefers the `HTTP301 MOVED PERMANENTLY` status code with the `Location` header).
 
 #### STEP 2 - Publishing mode
 
-##### Serving domain mode (fr.example.com)
+##### Serving domain mode (`fr.example.com`)
 
-In the serving domain mode, the translation proxy will publish the translated site either on a subdomain of the original (the default behavior, such as **fr.example.com**), or on a completely separate naked domain (such as **example.com**). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the three to five records (three for subdomains, five for new naked domains) that need to be inserted in your DNS settings are found under the _Verification_ menu. These records will change as you enter or change the desired serving domain in the first step called _Serving domain_.
+In the serving domain mode, the translation proxy will publish the translated site either on a subdomain of the original (the default behavior, such as `fr.example.com`), or on a completely separate naked domain (such as `example.com`). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the three to five records (three for subdomains, five for new naked domains) that need to be inserted in your DNS settings are found under the _Verification_ menu. These records will change as you enter or change the desired serving domain in the first step called _Serving domain_.
 
-##### Subdirectory publishing (example.com/fr)
+##### Subdirectory publishing (`example.com/fr`)
 
 The alternative to subdomain-based publishing is to retain your own domain and publish the site as a subdirectory. I.e. the translated pages will appear under separate paths under the same domain as the one the project was created for (the original domain).
 
@@ -88,7 +88,7 @@ In our example scenario, the reverse proxy has to make one decision: is the user
 
 ###### Translation proxy
 
-From our perspective, The most interesting case is when a user from Germany requests `www.example.com/de/about`, the reverse proxy decides that the target language should be served via Translation proxy. It relays the request to the Google Cloud, where it is resolved to what we call the **temporary serving domain**, defined as `de-de-gereblye.app.proxytranslation.com`. In the serving subdomain mode, this domain is hidden from the user by the DNS settings added. In subdirectory publishing, the reverse proxy hides the temporary domain.
+From our perspective, the most interesting case is when a user from Germany requests `www.example.com/de/about`, the reverse proxy decides that the target language should be served via Translation proxy. It relays the request to the Google Cloud, where it is resolved to what we call the **temporary serving domain**, defined as `de-de-gereblye.app.proxytranslation.com`. In the serving subdomain mode, this domain is hidden from the user by the DNS settings added. In subdirectory publishing, the reverse proxy hides the temporary domain.
 
 You can see that `de-de-gereblye.app.proxytranslation.com` will -- same as with subdomain publishing -- relay the request and all necessary request headers to the origin server, which will respond accordingly with source language content that the Proxy then processes on the way back and sends long to the client in a translated form.
 
@@ -153,6 +153,8 @@ Using together Translated and Original path prefix options, they can be used to 
 
 With this option, you will be able to add paths segments (words between two forward slashes) here to translate them. You are limited to 50 entries at any time, but these will be translated _wherever_ they occur, for example:
 
-```www.example.com/**example** --> www.example.com/translation
+```
+www.example.com/example --> www.example.com/translation
 
-www.example.com/notexample/nottranlated/example/text --> www.example.com/notexample/nottranlated/translation/text```
+www.example.com/notexample/nottranlated/example/text --> www.example.com/notexample/nottranlated/translation/text
+```
