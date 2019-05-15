@@ -5,8 +5,11 @@ After using the _Crawl Wizard tool_, and running a _Wordcount (Discovery)_ or a 
 
 When you click on the filter button, a new window will pop up, where you can narrow down the results of the log.
 
+![Open crawl log filter](/img/dashboard2/open_crawl_log_filter.png)
+
 ### Crawl status
 
+![Crawl log filter](/img/dashboard2/crawl_log_filter.png)
 
 **Processed:** The page was successfully added to the pages list, the crawler was able to process it.
 
@@ -30,14 +33,21 @@ When you click on the filter button, a new window will pop up, where you can nar
 
 ### Response type
 
-You can also filter the log results by content-types.
+You can also filter the log results by content-types, for example, you can select different resource types, like CSS, JS, images etc.
 
 
 ### Response code
 
-With this filter you can narrow down the log list by [HTTP status](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) codes.
+With this filter you can narrow down the log list by [HTTP status](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) codes:
+
+>1xx (Informational): The request was received, continuing process
+2xx (Successful): The request was successfully received, understood, and accepted
+3xx (Redirection): Further action needs to be taken in order to complete the request
+4xx (Client Error): The request contains bad syntax or cannot be fulfilled
+5xx (Server Error): The server failed to fulfill an apparently valid request
 
 
 ### Regexp
 
-Inserting here links or other texts, will be treated as strings, but you can specify regular expressions as well. 
+Inserting here links or other texts, will be treated as strings, but you can specify `java/util/Pattern` regular expressions as well.
+You can test your regex [here](http://www.regexplanet.com/advanced/java/index.html).
