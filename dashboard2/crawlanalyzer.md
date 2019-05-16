@@ -9,8 +9,7 @@ When you click on the filter button, a new window will pop up, where you can nar
 
 ### Crawl status
 
-<img src="../_images/crawl_log_filter.png" alt="Crawl log filter">
-<br/>
+![](/img/dashboard2/crawl_log_filter.png)
 Crawl log filter
 
 **Processed:** The page was successfully added to the pages list, the crawler was able to process it.
