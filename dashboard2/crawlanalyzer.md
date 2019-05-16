@@ -10,6 +10,7 @@ When you click on the filter button, a new window will pop up, where you can nar
 ### Crawl status
 
 ![](/img/dashboard2/crawl_log_filter.png)
+<br/>
 Crawl log filter
 
 **Processed:** The page was successfully added to the pages list, the crawler was able to process it.
