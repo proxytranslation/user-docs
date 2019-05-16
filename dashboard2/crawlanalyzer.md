@@ -9,7 +9,9 @@ When you click on the filter button, a new window will pop up, where you can nar
 
 ### Crawl status
 
-![Crawl log filter](/img/dashboard2/crawl_log_filter.png)
+<img src="/img/dashboard2/crawl_log_filter.png" alt="Crawl log filter">
+<br/>
+Crawl log filter
 
 **Processed:** The page was successfully added to the pages list, the crawler was able to process it.
 
@@ -40,11 +42,11 @@ You can also filter the log results by content-types, for example, you can selec
 
 With this filter you can narrow down the log list by [HTTP status](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) codes:
 
->1xx (Informational): The request was received, continuing process
-2xx (Successful): The request was successfully received, understood, and accepted
-3xx (Redirection): Further action needs to be taken in order to complete the request
-4xx (Client Error): The request contains bad syntax or cannot be fulfilled
-5xx (Server Error): The server failed to fulfill an apparently valid request
+>1xx (Informational): The request was received, continuing process  
+2xx (Successful): The request was successfully received, understood, and accepted  
+3xx (Redirection): Further action needs to be taken in order to complete the request  
+4xx (Client Error): The request contains bad syntax or cannot be fulfilled  
+5xx (Server Error): The server failed to fulfill an apparently valid request  
 
 
 ### Regexp
