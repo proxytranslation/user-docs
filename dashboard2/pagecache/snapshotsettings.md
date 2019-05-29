@@ -16,4 +16,4 @@ This is where you can copy the contents of your selected Snapshot into an other 
 
 ## Clear
 
-This part does exactly what the title suggests. Choosing to clear a Snapshot removes all content from it. Note that until you rebuild the Snapshot, the content itself isn’t deleted completely and can be recovered. If you accidentally clear a Snapshot, it’s recommended to immediatelynotify everyone else working on the project not to overwrite it and to contact our support team.
+This part does exactly what the title suggests. Choosing to clear a Snapshot removes all content from it. Note that until you rebuild the Snapshot, the content itself isn’t deleted completely and can be recovered. If you accidentally clear a Snapshot, it’s recommended to immediately notify everyone else working on the project not to overwrite it and to contact our support team.
