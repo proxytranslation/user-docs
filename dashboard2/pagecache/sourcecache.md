@@ -14,7 +14,7 @@ You might want to set up an Origin Snapshot for publishing content and another t
   
 - Multiple Origin Snapshots let you decouple published content from untranslated material – you are free to update any Origin Snapshots you are not currently using for published content over the proxy. This way, you are always serving 100% translated content (using the Snapshot that is highly translated), and you can schedule for translation updates (on all the others you are free to update anytime with a Scan). 
   
-  _See [Case Study #2](casestudies.html##case-study-2-decoupling-content-update-from-ingestion-and-publishing) for an in-depth coverage of this scenario._
+  _See [Case Study #2](casestudies.html#case-study-2-decoupling-content-update-from-ingestion-and-publishing) for an in-depth coverage of this scenario._
 
 ## When to build?
 
