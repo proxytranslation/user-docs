@@ -5,7 +5,7 @@ Presumably, one of the most important tools for your working process is the craw
 
 You can also read a more technical description of the crawler [here](../tech-manual/crawler.html).
 
-## What is a Wordcount (Discovery)?
+## Wordcount (Discovery)
 
 Before you can translate a website, you need to extract all content from it using the Content extraction (Scan) function. Scan, however, writes to the database, which, as you know from our pricing model, will cost you money. In that sense, it would be risky to let loose an unlimited Scan on a website you’re not familiar with. To forego Content Extraction and limit the crawler’s actions to finding out about the structure and word count of a given web site, a more tentative approach is needed: a Discovery.
 
@@ -24,7 +24,7 @@ Of course, if you have a clear idea of the size of the site, you can always set 
 
 Once the discovery is ready, you will receive an e-mail notification and the statistics will show up on the _Crawl list_ page. Based on this you can give a rough estimation for the website translation cost - both in time and money.
 
-## What is a Content extraction (Scan)?
+## Content extraction (Scan)
 
 The main difference between Wordcount (Discovery) and Content extraction (Scan) is that Wordcount does not extract or store content. They are used for statistical purposes, such as providing a word count or mapping a site’s URL structure.
 
@@ -34,11 +34,11 @@ Settings you used to experiment with Discoveries can also be used to initiate Sc
 
 There is a card called _Database word & repetition analysis_ on the _Project overview_ menu, which shows the number of words written into the database and will only change when you Scan the page.
 
-## What is New content detection?
+## New content detection
 
 New Content Detection is basically a hybrid between the Wordcount (Discovery) and Content extraction (Scan). It runs through the set of pages selected for translation, but it does not store content at all, it's just providing a wordcount statistics based on pre-existing source entries.
 
-## What is TLS Content extraction (Scan)?
+## TLS Content extraction (Scan)
 
 If you select an option called _Target language specific content_ in Dashboard 1.0 --> Advanced settings, then you will be able to run a _Target Language Specific Content extraction (Scan)_ in Crawl wizard.
 

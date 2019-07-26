@@ -8,17 +8,13 @@ With the _Crawl wizard_ tool, you can configure and run a crawl. In this article
 
 There are four types of crawls, but most of the cases, you probably will see three of them as a selectable option in your crawl wizard.
 
-- *Wordcount (Discovery)*
-  The process maps the structure of the site by scanning each page for link elements and trying to follow these links. The content of the website is not stored, only the URL address of the visited pages, together with their status info.
+**Wordcount (Discovery):** The process maps the structure of the site by scanning each page for link elements and trying to follow these links. The content of the website is not stored, only the URL address of the visited pages, together with their status info.
 
-- *Content extraction (Scan)*
-  It extracts and stores the source content to be translated. New source words added to the database are billed, therefore care must be taken when starting Scans.
+**Content extraction (Scan):** It extracts and stores the source content to be translated. New source words added to the database are billed, therefore care must be taken when starting Scans.
 
-- *New content detection*
-  It runs through the set of pages selected for translation, but it does not store content at all, it's just providing a wordcount statistics based on pre-existing source entries.
+**New content detection:** It runs through the set of pages selected for translation, but it does not store content at all, it's just providing a wordcount statistics based on pre-existing source entries.
 
-- *TLS Content extraction (Scan)*
-  When the translatable site has various content by target languages, and the remote server would serve the requests based on the given locale codes, you can ingest the content with this type of crawl.
+**TLS Content extraction (Scan):** When the translatable site has various content by target languages, and the remote server would serve the requests based on the given locale codes, you can ingest the content with this type of crawl.
 
 You can read more about the selectable crawl options [here](/crawl.html).
 
@@ -27,29 +23,26 @@ You can read more about the selectable crawl options [here](/crawl.html).
 
 ![Crawl scope](/img/dashboard2/crawl_step_2.png)
 
-- *Re-visit current pagelist & Find new pages*
-  The crawler visits the existing pages first, and during this process, it also collects new pages, which will be visited after the current pagelist. In the next step you can set a page limit, but please note, that if this number is smaller than your pagelist, the crawler won't visit new pages.  
+**Re-visit current pagelist & Find new pages:** The crawler visits the existing pages first, and during this process, it also collects new pages, which will be visited after the current pagelist. In the next step you can set a page limit, but please note, that if this number is smaller than your pagelist, the crawler won't visit new pages.  
 
-- *Current page list only*
-  New pages won't be added or processed, just the pages that already exist in your project. In the next step, you can check this list.
+**Current page list only:** New pages won't be added or processed, just the pages that already exist in your project. In the next step, you can check this list.
 
-- *Specific pages only*
-  By selecting this option, you can specify a specific URL list or sitemap (in .xml format), and in this case the crawler will visit and process only these pages, unless you selected _JS, CSS resources_ and/or _images, binary resources_ as collectable resources, because in this case these will be visited as well, and added to _Resources_.
-  If you select the option _Also add new URLs not in the list above, if referred, but as "Unvisited" (takes precedence over Page Freeze setting!)_, and the specified pages contain links, then those will be added to the pagelist as _Unvisited_.
+**Specific pages only:** By selecting this option, you can specify a specific URL list or sitemap (in .xml format), and in this case the crawler will visit and process only these pages, unless you selected _JS, CSS resources_ and/or _images, binary resources_ as collectable resources, because in this case these will be visited as well, and added to _Resources_.
+If you select the option _Also add new URLs not in the list above, if referred, but as "Unvisited" (takes precedence over Page Freeze setting!)_, and the specified pages contain links, then those will be added to the pagelist as _Unvisited_.
 
 ## STEP 3 - Pages
 
 The content of this step will change based on the previously selected _Scope_ option.
 
-- If you select the _Re-visit current pagelist & Find new pages_ in STEP 2, then you can limit the number of pages:
+If you select the _Re-visit current pagelist & Find new pages_ in STEP 2, then you can limit the number of pages:
 
 ![Crawl scope](/img/dashboard2/crawl_step_3_pages.png)
 
-- If the selected option is _Current page list only_ in STEP 2, you will see this list:
+If the selected option is _Current page list only_ in STEP 2, you will see this list:
 
 ![Crawl scope](/img/dashboard2/crawl_step_3_pageslist.png)
 
-- Selecting option _Specific pages only_ in STEP 2 enables you to add the pages you would like to scan, or you can also provide a sitemap:
+Selecting option _Specific pages only_ in STEP 2 enables you to add the pages you would like to scan, or you can also provide a sitemap:
 
 ![Crawl scope](/img/dashboard2/crawl_step_3_pages.png)
 
@@ -62,9 +55,11 @@ The content of this step will change based on the previously selected _Scope_ op
 
 You can create and enable a new Origin Snapshot in the Snapshot menu in Dashboard 2.0. Note that you need to run a _Content extraction (Scan)_ or _TLS Content extraction (Scan)_ for content to build the Origin Snapshot before it becomes functional. In this step, you can configure the origin snapshot.
 
-- *Reuse existing pages and store new pages:* In this case, you instruct the Crawler to skip the pages that are already in the Snapshot you choose and thus reduce the building cost. The choice of whether or not add new pages gives you the possibility to simply ignore the new pages that were added to the source site.
-- *Reuse existing pages and don't store new pages:* Selecting not to add new pages allows you to build a snapshot that has the pages updated but no new ones added. This option is useful if you made changes to the JSON Paths and as a consequence need to rebuild the Snapshot. As a result of building the Snapshot, all content that was set to be picked up by the _Scan_ is added to the current Snapshot.
-- *Don't reuse existing pages, update/store all encountered pages:* Choose this option when it is the first time you build an origin (source) snapshot.
+**Reuse existing pages and store new pages:** In this case, you instruct the Crawler to skip the pages that are already in the Snapshot you choose and thus reduce the building cost. The choice of whether or not add new pages gives you the possibility to simply ignore the new pages that were added to the source site.
+
+**Reuse existing pages and don't store new pages:** Selecting not to add new pages allows you to build a snapshot that has the pages updated but no new ones added. This option is useful if you made changes to the JSON Paths and as a consequence need to rebuild the Snapshot. As a result of building the Snapshot, all content that was set to be picked up by the _Scan_ is added to the current Snapshot.
+
+**Don't reuse existing pages, update/store all encountered pages:** Choose this option when it is the first time you build an origin (source) snapshot.
 
 ### Collect resources
 
