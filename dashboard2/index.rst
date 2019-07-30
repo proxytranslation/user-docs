@@ -20,6 +20,7 @@ Crawl
    crawler/crawlwizard
    crawler/crawllist
    crawler/recurringcrawl
+   crawler/statistics
 
 
 Snapshots
