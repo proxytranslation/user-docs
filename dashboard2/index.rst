@@ -3,13 +3,25 @@ The Dashboard 2.0
 =================
 
 .. toctree::
+   crawlanalyzer
+
+.. toctree::
    complexitymatrix
 
 .. toctree::
    publishwebsite
 
+
+Crawl
+::::::
+
 .. toctree::
-   crawlanalyzer
+   crawler/crawl
+   crawler/crawlwizard
+   crawler/crawllist
+   crawler/recurringcrawl
+   crawler/statistics
+
 
 Snapshots
 :::::::::::
