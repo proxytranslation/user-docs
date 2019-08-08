@@ -1,6 +1,3 @@
-.. image:: img/misc/logo.png
-   :align: center
-
 ===================
 User Documentation
 ===================

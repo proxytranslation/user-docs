@@ -12,7 +12,7 @@ There are a couple of situations, when the X-proxy comes in handy:
 
 * Just browsing through a site, for evaluation purposes.
 
-An example X-proxy URL: `https://de-de-{project_code}-x.app.easyling.com`
+An example X-proxy URL: `https://de-de-{project_code}-x.app.proxytranslation.com`
 
 The X-proxy can be accessed from the pages list under Content (or Discovery) by clicking on the Preview button in the hover toolbar, while holding down the Ctrl/Cmd button, or you can just replace the -p for a -x in the normal preview's URL for the same effect.
 
@@ -24,7 +24,7 @@ The standard proxy mode to view the translated website before publishing. Howeve
 
 * Visiting pages manually, to ingest content
 
-An example Preview-proxy URL: `https://de-de-{project_code}-p.app.easyling.com`
+An example Preview-proxy URL: `https://de-de-{project_code}-p.app.proxytranslation.com`
 
 ## C - Channel
 
