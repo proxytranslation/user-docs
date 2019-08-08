@@ -4,7 +4,7 @@ Website translation can be a complex task, even with the help of a piece of soft
 
 This first thing we need is the **project code**. This eight-character unique string uniquely identifies the project. As you can see in the screenshot below, the project code is located in the Dashboard 2.0 --> Project overview.
 
-![The project code can be found easiest from the browser Address Bar](../img/ProjectCode.png )
+![Project code](../img/ProjectCode.png )
 
 We also need a **thorough description of the problem**.  Screenshots are tremendously helpful, especially if you have layout issues on the translated site. If you're running into translation issues, please give an example segment along with the page link it can be found on.
 
