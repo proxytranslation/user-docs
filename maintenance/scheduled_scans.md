@@ -6,6 +6,6 @@ Crawls can be set to be carried out automatically at daily, weekly or monthly in
 
 You can enable this option in **Dashboard 2.0 > Crawl > Crawl wizard**.
 
-![Scheduled Scan](/img/dashboard2/crawl_step_4_recurrance.png)
+![Scheduled Scan](/img/dashboard2/crawl_step_4_recurrence.png)
 
 The process can automatically extract new content, apply the associated translation memories and machine translation services, prepare a work package and the XLIFF export. This is particularly useful for fast-moving sites where content arrives quickly and time spent untranslated needs to be minimized (possibly at the expense of real-time human oversight). Read more about [automatic pre-translation here](../maintenance/auto_pre_translation.html).
