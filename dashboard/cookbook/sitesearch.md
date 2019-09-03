@@ -1,34 +1,33 @@
 # Site Search
 
-Transparent multilingual search is a frequently required (though often belatedly acknowledged) part of website translation. We recommend a client-side approach to search (the approach to which the proxy translation model lends itself best), a comparatively involved use case of code injection. Given its pervasiveness and importance, it warrants detailed treatment in our documentation.
+If a site includes a search function of any kind (ex.: product search in a webshop), visitors expect to be able to search for things in the language of the website -- to input any term into the search fields and receive appropriate results immediately.
 
-**Part I** of this recipe provides a general description of the site search issue and an introduction to the recommended solution. **Part II** contains a simple example implementation.
-
-This latter section also serves as an in-depth **page modifier tutorial** as well, and as such, it assumes basic familiarity with core web technologies such as HTML, Javascript and CSS.
-
-## Part I - General
-
-### Issue
-
-Visitors expect to be able to search for things in the language of the website -- to input any term into the search fields and receive appropriate results immediately.
+**A pretty standart example**
 
 Let's say that a visitor uses the search field of `www.example.com` to search for the word "**product**". Upon pressing enter, they are navigated to `https://www.example.com/search?q=product`. The server will detect and use the value of the `q` parameter and runs whatever server-side search mechanism it uses to search for this term, assemble a list of results and construct a result page to send to the browser.
+
+Because the server is the one, who does the actual searching, we call this approach _server-side search_. 
+
+**This introduces a potential issue**
 
 On a proxied site, however, we run up against a problem: the original does not know about the translations. Requests are automatically relayed to the original server. If a visitor were to type "**produkt**" on the German domain (resulting in an URL navigation to `https://de.example.com/search?q=produkt`), that is the same as relaying a search query with German language content to the original site.
 
 Not possessing a _German language index_, the response is certain to contain 0 results. The fact that the proxy is CMS-agnostic and that it generally doesn't require that translated content be shared with the original server also means that this same content will not be available to the indexing/search software that is running on the original.
 
-### Recommended Solution
+Luckily, the server-side approach isn't the only option, when it comes to having some search functionality on a website!
 
-The way out of this conundrum is that proxied pages themselves are  _publicly available for indexing by search engine bots_. A search engine that supports site-specific queries can provide localized search via client-side AJAX requests.
+**Recommended solution**
+
+
+The fact, that proxied pages themselves are  _publicly available for indexing by search engine bots_ comes in handy. A search engine that supports site-specific queries can provide localized search via __client-side__ AJAX requests.
 
 There are two aspects to this kind of solution that you should consider:
 
 On the one hand, such a site search has to be coded in JavaScript in the form of an override (an example with a detailed explanation follows below), and depending on how ornate/feature-laden the original's search functionality is, complexity of the override implementation can vary from the relatively simple to the astonishingly complex.
 
-On the other hand, familiarity with the various indexing-related conditions of your chosen vendor is also important (we provide pointers to documentation for Bing, since it is the vendor used in the example). In our experience, it is not at all unusual for search engines to be leisurely in their pace. Remember that a site can only be indexed after it is published over the proxy.
+On the other hand, familiarity with the various indexing-related conditions of your chosen vendor is also important (we provide pointers to some documentation for Bing, since it is the vendor used in the example). In our experience, it is not at all unusual for search engines to act leisurely in their pace. (Remember that a site can only be indexed after it is published over the proxy.)
 
-On the same note, the [publishing method](../../dashboard/index.html#publish-website) you use can also have a bearing on the way search & indexing will work, so a case-by-case analysis is a must. Note that the Client-Side Translation publishing method is *not compatible* with a site search integration of the type described here.
+On the same note, the [publishing method](../../dashboard/index.html#publish-website) you use can also have a bearing on the way search & indexing will work, so a case-by-case analysis is a must. (Note that the Client-Side Translation publishing method is *not compatible* with a site search integration of the type described here.)
 
 ### Third-party Integrations
 
@@ -104,9 +103,9 @@ Site search functionality is frequently displayed to the visitor in the form of 
 
 We use jQuery's `$(document).ready()` to wait until the DOM is ready to be manipulated. The IIFE wrapper isolates our modifier from the global namespace, and we never leave the house without `use strict`.
 
-We could define a callback on `document.onreadystatechange`, but this approach suffers from potential problems: we'd be setting our modifier on a publicly accessible property of `document`, exposing us to the possibility that some other script might inadvertently redefine it (or we could be the ones doing the redefining).
+(We could define a callback on `document.onreadystatechange`, but this approach suffers from potential problems: we'd be setting our modifier on a publicly accessible property of `document`, exposing us to the possibility that some other script might inadvertently redefine it (or we could be the ones doing the redefining).
 
-We would also end up having to pool different page modifiers in one function definition, which goes against the principle of separation of concerns. For these and similar reasons, vanilla JavaScript's `document.addEventListener`s or jQuery are a better fit.
+We would also end up having to pool different page modifiers in one function definition, which goes against the principle of separation of concerns. For these and similar reasons, vanilla JavaScript's `document.addEventListener`s or jQuery are a better fit.)
 
 With basic scaffolding in place, we move on to the nitty-gritty of search. The integration needs to do three things:
 
