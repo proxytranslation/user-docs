@@ -7,7 +7,7 @@
 >There is also "global" variable to keep in mind: `${APP_DOMAIN}`
 >refers to the domain chosen in point #3 to serve the translation proxy on.
 
-1. A €200 EUR topup / month (recurring): the translation proxy under your own brand
+1. A €200 monthly fee: the translation proxy under your own brand
    name is special service, offered to customers who cater not only to
    one or two clients, but put their weight behind the punch and open
    up whole new markets with our proxy solution.
