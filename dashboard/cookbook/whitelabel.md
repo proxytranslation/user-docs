@@ -11,6 +11,8 @@
    name is special service, offered to customers who cater not only to
    one or two clients, but put their weight behind the punch and open
    up whole new markets with our proxy solution.
+   
+2. At least a yearly commitment to the whitelabeled brand.
 
 2. A one-time setup fee of €200.
 
