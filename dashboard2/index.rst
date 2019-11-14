@@ -17,6 +17,11 @@ Path Settings
 
 .. toctree::
    path_settings/extractor
+   path_settings/cache_overrides
+   path_settings/content_type_mapping
+   path_settings/default_charset
+   path_settings/search_replace
+   path_settings/special_formats
 
 Crawl
 ::::::
