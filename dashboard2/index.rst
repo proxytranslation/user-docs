@@ -12,6 +12,12 @@ The Dashboard 2.0
    publishwebsite
 
 
+Path Settings
+:::::::::::::
+
+.. toctree::
+   path_settings/extractor
+
 Crawl
 ::::::
 
