@@ -9,8 +9,8 @@ In some cases, the remote server response deviates severly from the industry sta
 + _Content Type Pattern_: a regular expression that designates `content-type`s susceptible to extractor operation.
 + _Validation Pattern_: a regular expression that is applied to the _incoming content_ to see if it should be extracted.
 + _Extractor Pattern_: a regular expression that locates and extracts content from the incoming string. _Must_ contain at least one capture group!
-+ _Content Prefix_: an _optional_ prefix that is prepended to the extracted string before handling.
-+ _Content Suffix_: an _optional_ suffix that is appended to the extracted string before handling.
++ _Processing Prefix_: an _optional_ prefix that is prepended to the extracted string before handling. Will be stripped before content is re-inserted into the original!
++ _Processing Suffix_: an _optional_ suffix that is appended to the extracted string before handling. Will be stripped before content is re-inserted into the original!
 
 ## Example
 For example, consider the following snippet being sent:
