@@ -2,11 +2,8 @@
 The Dashboard 2.0
 =================
 
-.. toctree::
-   crawlanalyzer
-
-.. toctree::
-   complexitymatrix
+Publishing
+::::::::::
 
 .. toctree::
    publishwebsite
@@ -16,12 +13,14 @@ Path Settings
 :::::::::::::
 
 .. toctree::
+   pathsettings
    path_settings/extractor
    path_settings/cache_overrides
    path_settings/content_type_mapping
    path_settings/default_charset
    path_settings/search_replace
    path_settings/special_formats
+
 
 Crawl
 ::::::
@@ -42,3 +41,17 @@ Snapshots
    pagecache/targetcache
    pagecache/snapshotsettings
    pagecache/casestudies
+
+
+Complexity Matrix
+:::::::::::::::::
+
+.. toctree::
+   complexitymatrix
+
+
+Crawl Analyzer
+::::::::::::::
+
+.. toctree::
+   crawlanalyzer
