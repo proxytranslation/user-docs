@@ -4,7 +4,7 @@
 
 This override allows you to declare the `Cache-Control` and `max-age` headers for a prefix or URL and optionally clear the cookies. 
 
-![An example of a typical cache override (/wp-content)](../../../img/dashboard/path_settings_cache_override.png)
+![An example of a typical cache override (/wp-content)](../../img/dashboard2/path_settings_unsaved_changes.jpg)
 
 The path seen in the screenshot above is a typical use case: it ensures that resources on the `/wp-content` prefix, associated with WordPress sites, can be cached for 24 hours.
 
@@ -12,7 +12,7 @@ Setting ` cache-control: public, max-age=86400` on a URL/prefix in this way broa
 
 This is beneficial for both speed and cost reasons. What is otherwise tolerable server load on the original site might be unnecessary page view cost overhead over the proxy (with speed overhead not being much of a concern). We provide this capability as a useful cost optimization strategy. 
 
-**Important!** Do NOT add overly general paths or too large `max-age` values without considering the effects! Please read through [our description of the issue](../../cookbook/pageviewsandcaching.html) before using the feature.
+**Important!** Do NOT add overly general paths or too large `max-age` values without considering the effects! Please read through [our description of the issue](../../dashboard/cookbook/pageviewsandcaching.html) before using the feature.
 
 **Only one** cache & cookie override may be present on each path or prefix.
 

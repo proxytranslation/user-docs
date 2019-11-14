@@ -4,11 +4,11 @@
 
 Run a search & replace on the page or pages on the prefix. This lets you apply simple changes to the page source. You can choose between string or regexp replacement.
 
-![A sequence of search & replace rules on a prefix](../../../img/dashboard/path_settings_search_and_replace.png)
+![A sequence of search & replace rules on a prefix](../../img/dashboard2/path_settings_search_and_replace.jpg)
 
 In the example above, search & replace is used to extend the list of classes for any element that possesses only the *hello-world* class.
 
-![Using regexp backreferences](../../../img/dashboard/path_settings_search_and_replace_backreferences.png)
+![Using regexp backreferences](../../img/dashboard2/path_settings_search_and_replace_backreferences.jpg)
 
 The replacement field supports regexp backreferences via the `$n` format, as in the screenshot above. The example looks for "**aaa bbb ccc**" in the page source, stores backreferences to each letter group and reverses their order, resulting in the output "**ccc bbb aaa**".
 
