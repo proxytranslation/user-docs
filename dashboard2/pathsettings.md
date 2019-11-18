@@ -1,6 +1,6 @@
 ## Path settings
 
-The proxy supports the declaration and use of rules called path overrides (alternatively called subtree overrides). They can be used to apply a variety of changes to an exact (e.g. `/about-us.html`) or prefix paths (e.g. all pages under `/products`). 
+The proxy supports the declaration and use of rules called path overrides (alternatively called _Subtree Overrides_). They can be used to apply a variety of changes to an exact (e.g. `/about-us.html`) or prefix paths (e.g. all pages under `/products`). 
 
 ![Path settings dialog default view](../img/dashboard2/path_settings_default.jpg)
 
@@ -18,10 +18,8 @@ Keep in mind:
 
 - query parameters (`?q=value` etc.) are **not** supported. Do not add them to path overrides.
 
-- When declaring a content type, mak sure you use an *exact* description: `text/html` does not equal `text/html; charset=utf-8` or vice-versa. Be specific.
+- When declaring a content type, make sure you use an *exact* description: `text/html` does not equal `text/html; charset=utf-8` or vice-versa. Be specific.
 
-- Some of the overrides (particularly search & replace overrides) become non-editable after they are saved. You'll need to delete and re-add these rules to change them.
-
-**Important!** *Add/edit multiple paths and overrides at once, but remember that all changes are **UNSAVED** until you click on "Apply settings"!* Keep an eye out for the ⚠ icons on the right, as shown in the screenshot below.
+**Important!** *Add/edit multiple paths and overrides at once, but remember that all changes are **UNSAVED** until you click on "Save All"!*
 
 ![A set of edits before saving changes](../img/dashboard2/path_settings_unsaved_changes.jpg)
