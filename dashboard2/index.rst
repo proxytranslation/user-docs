@@ -12,9 +12,6 @@ The Dashboard 2.0
    publishwebsite
 
 .. toctree::
-   sitesearch
-
-.. toctree::
    pretranslate
 
 Crawl
