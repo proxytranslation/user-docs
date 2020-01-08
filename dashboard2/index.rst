@@ -21,6 +21,8 @@ Path Settings
    path_settings/search_replace
    path_settings/special_formats
 
+.. toctree::
+   pretranslate
 
 Crawl
 ::::::
