@@ -93,7 +93,6 @@ Cookbook
    cookbook/requestevaluation
    cookbook/stagingdomain
    cookbook/rtlconversion
-   cookbook/sitesearch
    cookbook/ssl_certificates
    cookbook/proxymodes
    cookbook/headers

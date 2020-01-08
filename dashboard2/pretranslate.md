@@ -2,7 +2,7 @@
 
 By using the Pre-translate menu, you can initiate a process which supplies untranslated segments with a preliminary translation in order to mitigate bleedthrough on the proxied pages. You can use pre-translate with a Translation Memory as well as any of the supported Machine Translation APIs.
 
-In order to use Machine Translation, you need at least one API configured for your project. You can access configuration for available Machine Translators by clicking (configure) next to the desired Trasnlator, or by selecting them on in the menu bar.
+In order to use Machine Translation, you need at least one API configured for your project. You can access configuration for available Machine Translators by clicking _configure_ next to the desired Trasnlator, or by selecting them on in the menu bar.
 
 ## Auto pre-translate
 

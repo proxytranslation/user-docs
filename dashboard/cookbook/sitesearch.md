@@ -2,7 +2,7 @@
 
 If a site includes a search function of any kind (ex.: product search in a webshop), visitors expect to be able to search for things in the language of the website -- to input any term into the search fields and receive appropriate results immediately.
 
-**A pretty standart example**
+**A pretty standard example**
 
 Let's say that a visitor uses the search field of `www.example.com` to search for the word "**product**". Upon pressing enter, they are navigated to `https://www.example.com/search?q=product`. The server will detect and use the value of the `q` parameter and runs whatever server-side search mechanism it uses to search for this term, assemble a list of results and construct a result page to send to the browser.
 
@@ -25,9 +25,9 @@ There are two aspects to this kind of solution that you should consider:
 
 On the one hand, such a site search has to be coded in JavaScript in the form of an override (an example with a detailed explanation follows below), and depending on how ornate/feature-laden the original's search functionality is, complexity of the override implementation can vary from the relatively simple to the astonishingly complex.
 
-On the other hand, familiarity with the various indexing-related conditions of your chosen vendor is also important (we provide pointers to some documentation for Bing, since it is the vendor used in the example). In our experience, it is not at all unusual for search engines to act leisurely in their pace. (Remember that a site can only be indexed after it is published over the proxy.)
+On the other hand, familiarity with the various indexing-related conditions of your chosen vendor is also important (we provide pointers to some documentation for Bing, since it is the vendor used in the example). In our experience, it is not at all unusual for search engines to act leisurely in their pace. Remember that a site can only be indexed after it is published over the proxy.
 
-On the same note, the [publishing method](../../dashboard/index.html#publish-website) you use can also have a bearing on the way search & indexing will work, so a case-by-case analysis is a must. (Note that the Client-Side Translation publishing method is *not compatible* with a site search integration of the type described here.)
+On the same note, the [publishing method](../../dashboard/index.html#publish-website) you use can also have a bearing on the way search & indexing will work, so a case-by-case analysis is a must. Note that the Client-Side Translation publishing method is *not compatible* with a site search integration of the type described here.
 
 ### Third-party Integrations
 
@@ -103,9 +103,9 @@ Site search functionality is frequently displayed to the visitor in the form of 
 
 We use jQuery's `$(document).ready()` to wait until the DOM is ready to be manipulated. The IIFE wrapper isolates our modifier from the global namespace, and we never leave the house without `use strict`.
 
-(We could define a callback on `document.onreadystatechange`, but this approach suffers from potential problems: we'd be setting our modifier on a publicly accessible property of `document`, exposing us to the possibility that some other script might inadvertently redefine it (or we could be the ones doing the redefining).
+We could define a callback on `document.onreadystatechange`, but this approach suffers from potential problems: we'd be setting our modifier on a publicly accessible property of `document`, exposing us to the possibility that some other script might inadvertently redefine it (or we could be the ones doing the redefining).
 
-We would also end up having to pool different page modifiers in one function definition, which goes against the principle of separation of concerns. For these and similar reasons, vanilla JavaScript's `document.addEventListener`s or jQuery are a better fit.)
+We would also end up having to pool different page modifiers in one function definition, which goes against the principle of separation of concerns. For these and similar reasons, vanilla JavaScript's `document.addEventListener`s or jQuery are a better fit.
 
 With basic scaffolding in place, we move on to the nitty-gritty of search. The integration needs to do three things:
 

@@ -11,6 +11,9 @@ The Dashboard 2.0
 .. toctree::
    publishwebsite
 
+.. toctree::
+   sitesearch
+
 
 Crawl
 ::::::
