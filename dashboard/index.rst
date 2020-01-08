@@ -97,3 +97,4 @@ Cookbook
    cookbook/proxymodes
    cookbook/headers
    cookbook/securelogin
+   cookbook/sitesearch
