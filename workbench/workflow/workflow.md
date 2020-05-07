@@ -4,7 +4,7 @@ Collaboration are a must with website localization. If you have used the Dashboa
 
 ## Workflow Roles
 
-As mentioned previously, oles are predominantly a project management feature associated with work on the Workbench. To reiterate, there are four different roles:
+As mentioned previously, roles are predominantly a project management feature associated with work on the Workbench. To reiterate, there are four different roles:
 
 ![Workflow Roles](/img/workbench/workflow_tags.png)
 
@@ -41,7 +41,7 @@ Take TPQC, the workflow with the most participants, for example.
 2. When finished with a segment (either through manual edits, automatic translation or via XLIFF importing), the translator clicks on the Confirm tick to declare that segment cleared for that phase and send it to the next role, the _proofreader_.
 
 3. The _proofreader_ (and much everyone else) may use Filters to display only those segments that are assigned to that role. He takes the segments sent by the Translator, edits them, changes their wording as required. When finished with an entry, the _proofreader_ clicks on the Confirm tick, sending the segment along to _Quality Check_.
-   
+
 And so on. This cycle is then repeated until a segment (more to the point, _all_ segments) reach the final workflow role, that of the Customer, who approves translated entries.
 
 A few things to keep in mind:
@@ -50,10 +50,14 @@ A few things to keep in mind:
 
 - Only Owners, Backup Owners and Project Managers have access to **all** roles.
 
-- Entries/segments belonging to another role are **greyed out**.
+- By default option _Lenient workflow role checking for editing_ is enabled, which means you don't need to switch between workflow roles in order to be able to edit segments that belong to different roles. If you are a _Proofreader2_ for example, you will be able to edit and/or confirm segments that belong to the **upstream roles** (_Proofreader, Translator_ in this case).
+
+- If you select option _Strict workflow role checking for editing_, then the entries/segments belonging to another role will be **greyed out**, and you could only edit those segments if you have access to that role, so that you can select it.
+
+![Workflow role checking options](/img/workbench/workflow_filter_settings.png)
 
 - A segment remains available for editing after Confirming it just as long as it is not touched by the next Workflow role. If you ever mistakenly Confirm an entry, you may, so to speak, **reclaim** it for some more work before the next role can get to it.
-  
+
 And that's about it!
 
 ## Work Packages
