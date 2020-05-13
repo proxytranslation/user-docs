@@ -48,7 +48,7 @@ There is a comprehensive assortment of filters available. Click on the Filters i
 
 Use the checkboxes to define your filtering settings in the dialog and click on "Set Filters".
 
-You can filter for the roles that edited segments, their status, their place on the website and the date range they were last modified.
+You can filter for the roles that edited segments, their status and the date range they were last modified.
 Both the before and after dates are optional. If "after" date is omitted, it means the filter should display segments that were modified until the "before" date. If "before" omitted, it means the filter should display segments that were modified after the "after" date. Providing both will set a filter that displays segments in a given date range where both after and before dates are inclusive. 
 In general, everything that modifies the translation of an entry (translation, pre-translation etc.) is considered to be a modification. There are a couple of exceptions that aren't currently tracked:
 * a segment is confirmed or its workflow status changes
