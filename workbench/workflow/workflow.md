@@ -24,7 +24,7 @@ There are four different workflows on the proxy you may employ. You may set thes
 
 - Translation + Proofreading + Client Approval (**TPC**)
 
-- Translation +Proofreading + Quality Check + Client Approval (**TPQC**)
+- Translation + Proofreading + Quality Check + Client Approval (**TPQC**)
 
 Each setting will activate the necessary roles, which the Owner or Backup Owner may assign to any project participant. By default, only the Translator role is required. Owners have access to all workflow roles.
 
@@ -52,7 +52,7 @@ A few things to keep in mind:
 
 - By default option _Lenient workflow role checking for editing_ is enabled, which means you don't need to switch between workflow roles in order to be able to edit segments that belong to different roles. If you are a _Proofreader2_ for example, you will be able to edit and/or confirm segments that belong to the **upstream roles** (_Proofreader, Translator_ in this case).
 
-- In lenient mode, when confirming a segment, the confirmation will consider the user's selected workflow role and assign a workflow tag to the segment appropriate to the user's role.
+- In lenient mode, when confirming a segment, the confirmation will consider the user's selected workflow role and assign a workflow tag to the segment appropriate to the user's role. For example, if you are in lenient mode, and your selected workflow role is _Proofreader2_, you can edit and/or confirm segments that belong to the **upstream roles** - as we mentioned in the previous point. If you confirm a segment, that belongs to a _Translator_ role, then this segment will be cleared for that selected workflow role (_Proofreader2_) and will be assigned to the next role, in this case to the _Client_.
 
 - If you select option _Strict workflow role checking for editing_, then the entries/segments belonging to another role will be **greyed out**, and you could only edit those segments if you have access to that role, so that you can select it.
 
