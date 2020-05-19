@@ -52,6 +52,8 @@ A few things to keep in mind:
 
 - By default option _Lenient workflow role checking for editing_ is enabled, which means you don't need to switch between workflow roles in order to be able to edit segments that belong to different roles. If you are a _Proofreader2_ for example, you will be able to edit and/or confirm segments that belong to the **upstream roles** (_Proofreader, Translator_ in this case).
 
+- In lenient mode, when confirming a segment, the confirmation will consider the user's selected workflow role and assign a workflow tag to the segment appropriate to the user's role.
+
 - If you select option _Strict workflow role checking for editing_, then the entries/segments belonging to another role will be **greyed out**, and you could only edit those segments if you have access to that role, so that you can select it.
 
 ![Workflow role checking options](/img/workbench/workflow_filter_settings.png)
