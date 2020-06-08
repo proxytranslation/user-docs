@@ -35,7 +35,22 @@ The alternative to subdomain-based publishing is to retain your own domain and p
 
 Due to the way the proxy works, this requires a reverse proxy configuration to be placed in front of the web server. A variety of load balancer/reverse proxy solutions are available on the market, with **nginx**, **CloudFlare** and **AWS CloudFront** being three of the most well-known solutions available. See the vendor documentation for the details of setting up a reverse proxy (do note that nowadays, reverse proxies are monumentally powerful network solutions, and discussion of all their features is beyond the scope of this introductory description).
 
+##### Client-Side Translation
 
+Client-Side translation bypasses the proxy entirely, and conducts the translation process in the user's browser without passing data through third parties. This can be desirable for clients bound by legal or security restrictions.  
+To use Client-Side Translation, you need to create a new export _via the old Dashboard_, with the following settings:
++ **File Format**: JS
++ **Export**: All Entries
++ **Unique segments only**: checked
+
+Once the export completes, it has to be published from the _Actions_ column of the _Previous Export_ screen, and the client must add the _loader script_ to their website by inserting the following one-liner:
+```
+<script type="application/javascript" src="https://app.easyling.com/client/{{projectCode}}/0/stub.js"></script>
+```
+And constructing a language selector of their own, that adds the query parameter `__ptLanguage={{locale}}`.  
+Together, the two will enable in-browser translation of the site.
+
+Should the need arise, the client can also download both the loader stub and the packaged dictionaries, and serve them from their own webserver, so that contact with third parties is minimized.
 
 #### STEP 3 [Selected publishing mode: Serving domain] - Verification
 
