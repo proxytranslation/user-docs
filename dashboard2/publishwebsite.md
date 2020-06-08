@@ -43,10 +43,15 @@ To use Client-Side Translation, you need to create a new export _via the old Das
 + **Export**: All Entries
 + **Unique segments only**: checked
 
+![Settings for CST export - this needs to be launched from Dashboard 1.0!](/img/dashboard2/js-export.jpg)
+
 Once the export completes, it has to be published from the _Actions_ column of the _Previous Export_ screen, and the client must add the _loader script_ to their website by inserting the following one-liner:
 ```
 <script type="application/javascript" src="https://app.easyling.com/client/{{projectCode}}/0/stub.js"></script>
 ```
+
+![Publishing a CST export](/img/dashboard2/js-publish.jpg)
+
 And constructing a language selector of their own, that adds the query parameter `__ptLanguage={{locale}}`.  
 Together, the two will enable in-browser translation of the site.
 
