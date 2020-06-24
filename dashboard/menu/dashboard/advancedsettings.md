@@ -99,36 +99,36 @@ Both the attribute name and the match value are strings. If they contain any cha
 
 <table>
     <tr>
-        <td><strong>literal</strong></td>
-        <td><strong>value</strong></td>
+        <td><strong>Literal</strong></td>
+        <td><strong>Value</strong></td>
     </tr>
     <tr>
-        <td>some-value</td>
-        <td>some-value</td>
+        <td><code class='docutils literal notranslate'><span class='pre'>some-value</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>some-value</span></code></td>
     </tr>
     <tr>
-        <td>Jyväskyla</td>
+        <td><code class='docutils literal notranslate'><span class='pre'>Jyväskyla</span></code></td>
         <td>error, only characters of the English alphabet, dash and underscore can be unqoted</td>
     </tr>
     <tr>
-        <td>"Jyväskyla"</td>
-        <td>Jyväskyla</td>
+        <td><code class='docutils literal notranslate'><span class='pre'>"Jyväskyla"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>Jyväskyla</span></code></td>
     </tr>
     <tr>
-        <td>"quoted\nvalue"</td>
-        <td>quoted⏎value</td>
+        <td><code class='docutils literal notranslate'><span class='pre'>"quoted\nvalue"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted⏎value</span></code></td>
     </tr>
     <tr>
-        <td>r"quoted\nvalue"</td>
-        <td>quoted\nvalue</td>
+        <td><code class='docutils literal notranslate'><span class='pre'>r"quoted\nvalue"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted\nvalue</span></code></td>
     </tr>
     <tr>
-        <td>"quoted\u0020value"</td>
-        <td>quoted value</td>
+        <td><code class='docutils literal notranslate'><span class='pre'>"quoted\u0020value"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted value</span></code></td>
     </tr>
     <tr>
-        <td>r"quoted\u0020value"</td>
-        <td>quoted\u0020value</td>
+        <td><code class='docutils literal notranslate'><span class='pre'>r"quoted\u0020value"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted\u0020value</span></code></td>
     </tr>
 </table>
 
