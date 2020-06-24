@@ -97,15 +97,40 @@ In some cases, you can’t specify the exact value of an attribute that you wish
 
 Both the attribute name and the match value are strings. If they contain any character other than letters, you must wrap them in quotes. You can also use raw strings with `r""` where the backslash character won’t escape the ones after it. See the table below for reference:
 
-| literal | value |
-| ---      |  ------  |
-| `some-value`   | `some-value` |
-| `Jyväskyla`   | error, only characters of the English alphabet, dash and underscore can be unqoted |
-| `"Jyväskyla"`   | `Jyväskyla` |
-| `"quoted\nvalue"`   | `quoted⏎value` |
-| `r"quoted\nvalue"`   | `quoted\nvalue` |
-| `"quoted\u0020value"`   | `quoted value` |
-| `r"quoted\u0020value"`   | `quoted\u0020value` |
+<table>
+    <tr>
+        <td><strong>literal</strong></td>
+        <td><strong>value</strong></td>
+    </tr>
+    <tr>
+        <td>some-value</td>
+        <td>some-value</td>
+    </tr>
+    <tr>
+        <td>Jyväskyla</td>
+        <td>error, only characters of the English alphabet, dash and underscore can be unqoted</td>
+    </tr>
+    <tr>
+        <td>"Jyväskyla"</td>
+        <td>Jyväskyla</td>
+    </tr>
+    <tr>
+        <td>"quoted\nvalue"</td>
+        <td>quoted⏎value</td>
+    </tr>
+    <tr>
+        <td>r"quoted\nvalue"</td>
+        <td>quoted\nvalue</td>
+    </tr>
+    <tr>
+        <td>"quoted\u0020value"</td>
+        <td>quoted value</td>
+    </tr>
+    <tr>
+        <td>r"quoted\u0020value"</td>
+        <td>quoted\u0020value</td>
+    </tr>
+</table>
 
 ## Tweaks
 
