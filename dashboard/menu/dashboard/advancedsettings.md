@@ -97,7 +97,7 @@ In some cases, you can’t specify the exact value of an attribute that you wish
 
 Both the attribute name and the match value are strings. If they contain any character other than letters, you must wrap them in quotes. You can also use raw strings with `r""` where the backslash character won’t escape the ones after it. See the table below for reference:
 
-<table>
+<table style="margin-bottom: 24px">
     <tr>
         <td><strong>Literal</strong></td>
         <td><strong>Value</strong></td>
