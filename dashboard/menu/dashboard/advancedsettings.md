@@ -82,7 +82,55 @@ Similar to the “Ignored classes” option, this allows the treating of specifi
 
 Some Content Management Systems may employ non-standard HTML attributes on various elements to style the page or otherwise affect aspects of their operation. If some of these attributes contain translatable text, you can enter them into the “As text” field to instruct the proxy to extract them. If they contain URLs that need to be mapped to the translated domain, you can use the “As link” field to instruct the proxy to map those non-standard link elements as well.
 
-On request, it is also possible to activate an HTML parser for certain attributes, should they contain HTML formatting in their values.
+In case they contain HTML or JavaScript/JSON that contains translatable text, you can enter them into the "As HTML" or "As JavaScript" fields respectively. These will go through the regular HTML or JS parser to pick up content. Note that in case of JSON in an attribute, you still need to mark the JSON paths in the JSON/JS processing menu of the Dashboard 2.0.
+
+You may want to further filter where a given attribute should be translated. You can do so with CSS-like advanced selectors. These are written after the name of the attribute (before the semicolon denoting the next one). Let’s see a few examples: 
+- If you want to translate the `content` attribute but only on `meta` tags, you can write `content meta`. 
+- If you need to further narrow down the scope, you can specify that `content` should only be translated on `meta` tags where a `name` attribute is present like so: `content meta[name]`.
+- You can also specify the value of the `name` attribute. When you write `content meta[name=foo]`, the `content` attribute will only be translated on `meta` tags if the attribute `name` with the value `foo` is also present.
+- It’s also possible to chain these values. You can specify that you need an `id` to be present on top of the previous example’s rules by adding it to the end: `content meta[name=foo][id]`
+
+In some cases, you can’t specify the exact value of an attribute that you wish to filter for. In this case, you can use the following operators:
+- `^=`: looks for a string prefix
+- `$=`: looks for a string suffix
+- `#=`: searches for a regexp match
+
+Both the attribute name and the match value are strings. If they contain any character other than letters, you must wrap them in quotes. You can also use raw strings with `r""` where the backslash character won’t escape the ones after it. See the table below for reference:
+
+<table style="margin-bottom: 24px">
+    <tr>
+        <td><strong>Literal</strong></td>
+        <td><strong>Value</strong></td>
+    </tr>
+    <tr>
+        <td><code class='docutils literal notranslate'><span class='pre'>some-value</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>some-value</span></code></td>
+    </tr>
+    <tr>
+        <td><code class='docutils literal notranslate'><span class='pre'>Jyväskyla</span></code></td>
+        <td>error, only characters of the English alphabet, dash and underscore can be unqoted</td>
+    </tr>
+    <tr>
+        <td><code class='docutils literal notranslate'><span class='pre'>"Jyväskyla"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>Jyväskyla</span></code></td>
+    </tr>
+    <tr>
+        <td><code class='docutils literal notranslate'><span class='pre'>"quoted\nvalue"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted⏎value</span></code></td>
+    </tr>
+    <tr>
+        <td><code class='docutils literal notranslate'><span class='pre'>r"quoted\nvalue"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted\nvalue</span></code></td>
+    </tr>
+    <tr>
+        <td><code class='docutils literal notranslate'><span class='pre'>"quoted\u0020value"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted value</span></code></td>
+    </tr>
+    <tr>
+        <td><code class='docutils literal notranslate'><span class='pre'>r"quoted\u0020value"</span></code></td>
+        <td><code class='docutils literal notranslate'><span class='pre'>quoted\u0020value</span></code></td>
+    </tr>
+</table>
 
 ## Tweaks
 
