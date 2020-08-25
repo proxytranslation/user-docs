@@ -1,42 +1,42 @@
 # Getting started
 
-Let us give you a quick overview of how the proxy is used. In this section, we give you a quick introduction to the Dashboard and we'll also set up a simple project.
+Let us give you a quick overview of how the proxy is used. In this section, we give you a quick introduction to the Dashboard 2.0 and we'll also set up a simple project.
 
 ## Registration & Login
 
 To use Easyling, you need to register and set up an account for the service at [https://app.easyling.com](https://app.easyling.com). You can start using the service right away after registration.
 
-Logging in, you will be taken to the Dashboard, which is the project management center, every detail of which we'll get to in later sections of this manual. There will be no existing projects at the outset, so let's try setting one up.
+Logging in, you will be taken to the Dashboard 2.0, which is the new and improved project management center, every detail of which we'll get to in later sections of this manual. There will be no existing projects at the outset, so let's try setting one up.
 
 ## Setting up Your First Project
 
 To do this, click on **Create new project** dropdown at the top and choose **Add project**.
 
-This opens the **Add project** dialog box, where you can enter the URL of the website you would like to translate, and also select the website language; this sets the source language of the translation project. Click on Advanced Settings to access extended functionality, such as custom SRX files.
+This opens the **Create new project** dialog box, where you can enter the URL of the website you would like to translate and select the website language. You can also add an alias to your project. This is an easy to remember name that you can recognise your project from. You can also decide to start a Discovery immediately after creating your project to skip the next section. <br /> Click on Advanced Settings to access extended functionality, such as custom SRX files.
 
-![Add Project](/img/dashboard/add_project_dialog.png)
-
-### Add a Target Lanuage
-
-You will also need to add your target language(s), so use the option on the Dashboard to add then to the project. It's not just that there is not much to do in terms of translation without a target: many crucial features (including the Preview proxy and the entire Workbench) are entirely unavailable as long as no target languages are set.
-
-![Add target language](/img/dashboard/add_target_language.png)
-
-You can add any number of target languages. You can use the search function to lookup languages based on locale code or country name.
+![Add Project](/img/dashboard2/add_project_dialog.png)
 
 ## Running a Discovery
 
-![Run discovery](/img/dashboard/discovery_dialog.png)
+![Crawl wizard](/img/dashboard2/crawl_step_5.png)
 
-The next step is to figure out what (and how much of it) to translate and do it from a single target URL. For this, a Discovery has to be run on the site.
+The next step is to figure out what (and how much of it) to translate. You can do so using a Discovery. This effectively means running a crawler on the site and allowing the proxy to 'explore' it in its entirety. It can then provide statistics for you such as a list of pages visited and the word count.
 
-Discovering a website means running a ``crawler`` on it and allowing the proxy to 'explore' it in its entirety in order to provide Statistics for you. As you can see in the 'Add project' dialog window, the Dashboard is set up to automatically start a Discovery on a webpage after creating a project - but don't worry! After clicking on the **Add project** button, a new dialog will open where you get to set up additional details of the Discovery before really starting the process.
+If you decided not to immediately run a Discovery on project creation, once you click 'Create', you’ll be directed to the Crawl wizard. This 5 step wizard is designed to guide you through setting up crawls. When running your first crawl, it’s recommended to select Discovery on step 1 and 'Re-visit current pagelist & Find new pages' on step 2. On step 3, you can specify a page limit. This is the maximum number of pages that the crawler is allowed to visit. This feature lets you to start a crawl without worrying about costs getting out of control. Make sure that this field has a reasonable number and that it’s never left empty. Step 4 has some advanced settings. These can allow you to fine-tune the crawl’s settings. The defaults are safe. So click next for now. Finally, in step 5, you can review your settings and add a memo. Then you can click Start crawl.
 
-There are many details that potentially have to be taken into account when setting up a truly effective Discovery, but let's set those aside for the moment. For now, simply Click on the 'Add project' button and after the Discovery dialog opens, click on Discover to start a crawl on the website. **The default settings are safe.**
+Depending on the size and speed of the site, a Discovery can take quite some time to finish. A spinner on the Crawl list will indicate that the system is currently working.
 
-Depending on the size of the site, a Discovery can take quite some time to finish. A spinner on the Discovery page will indicate that the system is currently working, but there is a default page limit of 100, which means that if the Discovery finds more than one hundred pages, it will automatically exit, allowing you to fine-tune your settings.
+After the process is over, you’ll receive an e-mail about the results. You can also view them in the Crawl list.
 
-After the process is over, you'll receive an e-mail about the results. You also have your first Statistics from the Discovery - a word count total from all Discovered pages.
+![Crawl list](/img/dashboard2/crawl_list.png)
+
+### Add a Target Language
+
+You will also need to add your target language(s), so use the option on the Target languages card in the Project overview to add then to the project. It's not just that there is not much to do in terms of translation without a target: many crucial features (including the Preview proxy and the entire Workbench) are entirely unavailable as long as no target languages are set.
+
+![Add target language](/img/dashboard2/add_target_language.png)
+
+You can add any number of target languages. You can use the search function to lookup languages based on locale code or country name.
 
 ## Giving a Quote
 
@@ -58,23 +58,23 @@ Investigate the source site and consider the following:
 
 - Which pages are targeted for translation? Which pages need to be excluded? Ask the client if they have a specific page list.
 
-- does the site have mixed-language content? If yes, ask the client to specify the source language(s) they need translated.
+- Does the site have mixed-language content? If yes, ask the client to specify the source language(s) they need translated.
 
-- is there an extant Translation Memory that could be used?
+- Is there an extant Translation Memory that could be used?
 
-- is there any region-specific content? Does the site use geolocation?
+- Is there any region-specific content? Does the site use geolocation?
 
-- is there any content behind a secure login?
+- Is there any content behind a secure login?
   
-- are there any subdomains? example.com and blog.example.com require two separate projects that need to be linked.
+- Are there any subdomains? Example.com and blog.example.com require two separate projects that need to be linked.
 
-- are there any other special requirements?
+- Are there any other special requirements?
 
-- is there any Javascript-generated content?
+- Is there any Javascript-generated content?
 
 If you answered yes to any of those questions, that will require some deliberation, often beyond the primary focus of translators: UI fixes and a measure of fiddling with what's under the hood - take those expenses into account when you make your quote.
 
-**NOTE!**: If you are unsure as to how to go about translating a part of a website, feel free to contact our **Support Centre** and we'll help you get an accurate picture of the required effort and costs.
+If you are unsure as to how to go about translating a part of a website, feel free to contact our **Support Centre** and we'll help you get an accurate picture of the required effort and costs.
 
 It is also advised to negotiate the expected workflow with the client at the quoting phase. The translation of a website is, in most cases, a never-ending process, as new content is added to the original site at certain intervals.
 
@@ -92,13 +92,13 @@ If you have a well-defined group of potential customers you'd like to offer your
 
 For more information see our [blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/) or this short [video](https://www.easyling.com/features/mass-sales-tool/)
 
-## On the Workbench
+## The Workbench
 
 You can export all source segments, translate them in your CAT tool of choice and then reimport your results. But going through that cycle for every small change would get rapidly tedious - wouldn't it be great if you could edit & control your translations in the cloud, where it would all update in real time? You're looking for the Workbench.
 
-In Pages View, you can hover over any page - a menu will show up right next to it - choose 'Translation in List View' and you'll be taken to the Workbench in a different tab.
+In Pages list, you can right click any page and choose 'Translation workbench (list view)' and you'll be taken to the Workbench in a different tab.
 
-If the Dashboard is the Project Management Center in Easyling, then the Workbench is the cloud CAT tool, where translation itself takes place. There are many features you can use in the Workbench to make working with websites easier - see the 'Workbench' section of this manual for the details.
+If the Dashboard 2.0 is the Project Management Center in Easyling, then the Workbench is the cloud CAT tool, where translation itself takes place. There are many features you can use in the Workbench to make working with websites easier - see the 'Workbench' section of this manual for the details.
 
 ## The 3-Phase Workflow
 
@@ -122,6 +122,6 @@ After the translation is greenlit by the proofreaders, you can verify the servin
 
 But don't forget that a website is a living thing, with new content arriving every day - the final stage of website localization is always maintenance - making sure that new content gets translated according to schedule, all the while ensuring that visitors to the site will not be inconvenienced by bleedthrough of untranslated content.
 
-Maintenance is the "long tail" of website translation - there are a variety of features in the proxy that make it a lot easier than it would be anyway else.
+Maintenance is the "long tail" of website translation - there are a variety of features in the proxy that make it a lot easier than it would be otherwise.
 
 In the following pages, You will find everything there is to know about using the proxy. Keep reading!
