@@ -50,22 +50,6 @@ Specify path rules to group pages into one entry, preventing new pages from bein
 
 This feature is not meant to and does not decrease the amount of pages a Discovery has to crawl, but it makes project maintenance easier, as it prevents your page lists from being overcrowded with repetitive URLs.
 
-## JavaScript translation
-
-This field contains the capture group definitions used to extract attribute-value pairs from JavaScript files selected for translation/localization. After entering the capture parameters and re-crawling the site, the proxy will display the selected JavaScript files as translatable pages in the pagelist, from where they can be selected for translation in the List View like regular pages, and any values for the selected attributes will be made available as translatable entries, which are treated identical to regular entries.
-
-Entering “` html`” (note that the switch is separated by a space!)  after the path specification will result in the proxy applying its HTML parser to the match instead of a plaintext parser, stripping out HTML markup and only offering the actual content for translation (otherwise, should the match contain markup, the translator must take care not to alter it, or risk breaking the translated site).
-
-If a field of the JSON being parsed contains further JSON data in a stringified form `("key": "{\\"key\\":{\\"key\\":\\"value value value\\"}}")`, the path can be passed to a recursive JSON translator by appending “` json`” to the path, then extending the path on the next line by adding “`.json.`”.
-
-## XPath Translation
-
-The proxy can translate XML (eXtensible Markup Language) files sent by the remote server, according to the XPath standard of specifying elements of the XML structure. Similar to JavaScript translation, entering the “` html`” switch will result in the HTML parser being applied, while no switch will parse the match as plaintext.
-
-## Mark multiple Resources as Translatable
-
-Using URL prefixes (N.B. fully qualified URL prefixes, including protocol, host, and possibly path structures!), the Proxy can enforce dictionaries over multiple resources in a single rule. This is especially useful if the site under translation contains an API (especially CREST APIs) whose responses also require translation, and each endpoint is served on a different path; in this case, entering the root of the API here will automatically capture all responses from that path without having to individually mark them as translatable from the Resources menu.
-
 ## Additional Remote Request Headers
 
 If the remote server requires certain headers to be present to serve legal responses, it will not be crawlable by default, as the crawler will not supply these. Entering the required headers here will result in them being appended to every request sent by the proxy, including the crawler requests, letting you crawl the site as required.

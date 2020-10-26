@@ -6,11 +6,13 @@ In some cases, the remote server response deviates severly from the industry sta
 > All regular expressions are _Java Patterns_. See the [official documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) for the finer points.
 
 ## Parameters
-+ _Content Type Pattern_: a regular expression that designates `content-type`s susceptible to extractor operation.
-+ _Validation Pattern_: a regular expression that is applied to the _incoming content_ to see if it should be extracted.
-+ _Extractor Pattern_: a regular expression that locates and extracts content from the incoming string. _Must_ contain at least one capture group!
-+ _Processing Prefix_: an _optional_ prefix that is prepended to the extracted string before handling. Will be stripped before content is re-inserted into the original!
-+ _Processing Suffix_: an _optional_ suffix that is appended to the extracted string before handling. Will be stripped before content is re-inserted into the original!
++ _Content-type pattern_: a regular expression that designates `content-type`s susceptible to the extractor operation.
++ _Check first regexp_: a regular expression that is applied to the _incoming content_ to see if it should be extracted.
++ _Extractor pattern_: a regular expression that locates and extracts content from the incoming string. _Must_ contain at least one capture group!
++ _Content prefix_: an _optional_ prefix that is prepended to the extracted string before handling. Will be stripped before content is re-inserted into the original!
++ _Content suffix_: an _optional_ suffix that is appended to the extracted string before handling. Will be stripped before content is re-inserted into the original!
+
+Note that at least one of the last 3 input fields must be filled in. 
 
 ## Example
 For example, consider the following snippet being sent:

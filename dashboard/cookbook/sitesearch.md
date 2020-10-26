@@ -85,7 +85,7 @@ Site search functionality is frequently displayed to the visitor in the form of 
 
 ### First steps
 
-`showResults()` simulates the original search functionality of a site. The goal of our search integration is to prevent the original from running and replace it with a client-side dynamic request. A site search integration is no different from any other client-side code, and the skeleton that we described previously on the [Page Modifiers documentation page](../../dashboard/menu/pagemodifiers/javascripteditor.html) is a safe starting point:
+`showResults()` simulates the original search functionality of a site. The goal of our search integration is to prevent the original from running and replace it with a client-side dynamic request. A site search integration is no different from any other client-side code, and the skeleton that we described previously on the [Page Modifiers documentation page](../../dashboard2/pagemodifiers/javascripteditor.html) is a safe starting point:
 
 ``` javascript
 (function (){

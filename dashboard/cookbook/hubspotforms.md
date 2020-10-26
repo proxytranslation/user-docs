@@ -34,7 +34,7 @@ Open each project in a separate tab and link each project according to the [sect
 
 ### Alternative: Search & Replace
 
-The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purpose is merely to expose a slightly modified version of the `/forms/v2.js` script. If its URL is referred to in a way that makes it possible, you can *sidestep* the domain using a combination of [Search & Replace](../menu/dashboard/pathsettings.html#search-replace-override) and a [page content override](../menu/pagemodifiers/contentoverride.html). The setup steps for this are as follows (done on the main project):
+The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purpose is merely to expose a slightly modified version of the `/forms/v2.js` script. If its URL is referred to in a way that makes it possible, you can *sidestep* the domain using a combination of [Search & Replace](../menu/dashboard/pathsettings.html#search-replace-override) and a [page content override](../../dashboard2/pagemodifiers/contentoverride.html). The setup steps for this are as follows (done on the main project):
 
 1. **create a path override** for the exact URL where the form is present (the diagram above shows `/contact` as an illustration).
 
