@@ -53,10 +53,7 @@ Selecting option _Specific pages only_ in STEP 2 enables you to add the pages yo
 
 ![Snapshot](/img/dashboard2/crawl_step_4_origin_snapshot.png)
 
-You can create and enable a new [Origin Snapshot](../pagecache/sourcecache.html) in the Snapshot menu in Dashboard 2.0. Note that you need to run a _Content extraction (Scan)_ or _TLS Content extraction (Scan)_ for content to build the
- Origin Snapshot
- before it
- becomes functional. In this step, you can configure the origin snapshot.
+You can create and enable a new [Origin Snapshot](../pagecache/sourcecache.html) in the Snapshot menu in Dashboard 2.0. Note that you need to run a _Content extraction (Scan)_ or _TLS Content extraction (Scan)_ for content to build the Origin Snapshot before it becomes functional. In this step, you can configure the origin snapshot.
 
 **Reuse existing pages and store new pages:** In this case, you instruct the Crawler to skip the pages that are already in the Snapshot you choose and thus reduce the building cost. The choice of whether or not add new pages gives you the possibility to simply ignore the new pages that were added to the source site.
 
@@ -80,7 +77,7 @@ There is often a great deal of image content on websites, so indexing all of the
 
 **Collect short links:** WordPress sites tend to give a shorter link to every page in the form of `https://www.example.com/?p=123456`. In most cases these are safe to ignore as they merely duplicate content available on other links but due to misconfigurations, they can contain content that you want to ingest.
 
-We recommend that you only select Collect new HTML pages as that's where the majority of the content is likely to be. Resources that you need to localise can be added later using the pages list.
+We recommend that you only select Collect new HTML pages as that's where the majority of the content is likely to be. Resources that you need to localise can be added later using the pages list. This allows you to keep the Pages list as short as possible and thus improve manageability and reduce the time crawls need.
 
 **Skip content-type check if already determined:** Enabled by default since it only applies to already crawled pages.
 
@@ -103,7 +100,7 @@ We recommend that you only select Collect new HTML pages as that's where the maj
 
 ### Recurrence
 
-![Scheduled crawl](/img/dashboard2/crawl_step_4_recurrance.png)
+![Scheduled crawl](/img/dashboard2/crawl_step_4_recurrence.png)
 
 Here you can set scheduled crawls, which will automatically extract new content at daily, weekly, or monthly intervals. You can read more about recurring crawls [here](recurringcrawl.html).
 

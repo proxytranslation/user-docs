@@ -26,7 +26,7 @@ Above the list itself, there are multiple actions you can do and filters. These 
 
 - **Switch to flat/folder view**: Switch between the flat view (default for resources), which is just a list of URLs similar to the old Dashboard and the folder view (default for pages) that allows you to see the pages as if they were files on your computer. External links are only available in flat view so this option is hidden for them.
  
-- **Show/hide preview** (only for resources): Whether to load the images or just display their filename. If you have a slow connection or a data cap, we recomment hiding these.
+- **Show/hide preview** (only for resources): Whether to load the images or just display their filename. If you have a slow connection or a data cap, we recommend hiding these.
 
 - **Export URL list**: Create a CSV or Excel export of the current list. You can filter the links by translation state or free text search. Due to Excel's limitation on the number of lines per sheet, a CSV export is recommended for large-scale projects.  
 
@@ -36,7 +36,7 @@ Above the list itself, there are multiple actions you can do and filters. These 
 
 - **Update translation progress**: Updates the bars showing the progess. This can take from a few seconds to a few minutes of time to finish, depending on the amount of content to be aggregated.
 
-- **Reload**
+- **Reload**: Reloads the list of pages. 
 
 - **Show/hide filters**: Controls the filters discussed below.
 
@@ -48,7 +48,7 @@ Below these actions, you can search by file name or filter pages, resources and 
 
 - Their extension (especially useful for resources)
 
-- Their [mime type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types "MDN web docs"). Note that the extension of a file isn't necessarily the same as its mime type. 
+- Their [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types "MDN web docs"). Note that the extension of a file isn't necessarily the same as its mime type. 
 
 ### Page details and options
 
@@ -58,7 +58,7 @@ Clicking on a page in the list reveals further information about it on the right
  
 There are a number of states that a page can be in throughout the lifetime of a project:
 
-- **Unvisited**: Indicates pages that were already seen in the source of another page, added to the list, but for one reason or another, not visited by a crawler. For example, if you run a Discovery with a page limit of 8 and allow it to collect new URLs at the same time, it will likely visit the landing page, "/". The landing page is likely contain many references to various pages on the same domain. THe Discovery will exit after 8 pages, but also add the rest as "Unvisited".
+- **Unvisited**: Indicates pages that were already seen in the source of another page, added to the list, but for one reason or another, not visited by a crawler. For example, if you run a Discovery with a page limit of 8 and allow it to collect new URLs at the same time, it will likely visit the landing page, "/". The landing page is likely contain many references to various pages on the same domain. The Discovery will exit after 8 pages, but also add the rest as "Unvisited".
 
 - **Discovered**: Pages that were included in a word count previously are said to be Discovered. The content on them is accounted for in at least one of the word count statistics, but the translatable content **has not been extracted for translation** yet.
 
@@ -140,6 +140,8 @@ A few points of note concerning inclusion/exclusion rules:
 - If a path falls outside of the scope of your inclusion rules or an exclusion rule applies to it, it will be greyed out in the page list and the text "Excluded by rule" will be visible next to it.
 
 - Paths that are excluded by rule can't be included using the context menu. You need to edit your rules if they gobble a path that you want to include.
+
+- Manual page exclusions overwrite all other inclusion rules.
 
 **NOTE:** If all pages are excluded on a project, crawls *cannot be started*, even if the currently active rules would allow for the inclusion of *some, as-of-yet undiscovered page*. In this case, crawls will exit after 0 pages visited. You have to ensure an entry point: that at least one of the known pages is in an included state. Otherwise, the crawler can't set its foot in the door.
 

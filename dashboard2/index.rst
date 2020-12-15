@@ -67,3 +67,8 @@ Publish
    publishwebsite/languageselector
    publishwebsite/linktransformation
    publishwebsite/clientsidetranslation
+
+Third party integrations
+:::::::::::::
+
+   thirdparty

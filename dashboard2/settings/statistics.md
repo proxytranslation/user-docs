@@ -6,7 +6,7 @@ This screen shows you the most important statistics of the project as well as al
 
 ## Google Analytics
 
-In this section, you can enter a Google Analytics Universal Tracking ID. When you do, the proxy will start reporting the requests it receives to Google Analytics. These are the requests that the proxy processes and thus are billed to you. 
+In this section, you can enter a Google Analytics ID. When you do, the proxy will start reporting the requests it receives to Google Analytics. These are the requests that the proxy processes and thus are billed to you. 
 
 ## Statistics
 

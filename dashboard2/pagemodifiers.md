@@ -2,7 +2,7 @@
 
 The proxy makes translation of websites relatively easy, but the web is an admittedly complex environment that can surprise in countless ways: changes to the page language can cause various layout issues to surface, especially if the developers of the site did not anticipate that the site might get translated.
 
-Word length differences between the source and target languages might cause the menu to crowd. 
+Word length differences between the source and target languages might cause the menu to crowd.
 
 Differences between the lengths of different text blocks can cause otherwise well-designed CSS rules to behave in unexpected ways. 
 

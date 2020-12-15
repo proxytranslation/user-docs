@@ -27,13 +27,6 @@ Content
    menu/content/proxymigration
    menu/content/exporttranslation
 
-Integrations
-============
-
-.. toctree::
-   menu/integrations
-   menu/Integrations/dropbox
-
 --------
 Cookbook
 --------

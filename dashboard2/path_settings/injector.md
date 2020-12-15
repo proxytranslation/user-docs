@@ -12,3 +12,4 @@ There are 4 options:
 
 - CSS link injection: enter a link pointing to yhe stylesheet
  
+ Note that the links you inject must be present on the project domain. In layman's terms, this means that if your project is created on `example.com`, you can't inject `notexample.com/cool-styles.css`. You can circumvent this restriction by creating a Content override and inject it as a link.

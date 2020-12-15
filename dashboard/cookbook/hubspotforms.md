@@ -24,7 +24,7 @@ Assuming that `example.com` is already set up, at most two additional projects a
 
 2. `forms.hubspot.com`: this URL redirects you to `https://developers.hubspot.com/`. To create a project for it, **disable Redirect checking** in the Add Project dialog. Click on **Advanced settings** to reveal the option and uncheck the checkbox:
 
-![Disabling Redirect checks](/img/dashboard/create_project_disable_redirect_check.png)
+![Disabling Redirect checks](/img/dashboard2/create_project_disable_redirect_check.png)
 
 Don't forget to add every target language of the main project to each project you create.
 

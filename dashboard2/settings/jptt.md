@@ -150,4 +150,4 @@ HTML:
 "%"."exampleObject"."exampleNestedHTMLinJS" javascript
 "%"."exampleObject"."exampleNestedHTMLinJS"."nestedHTML" html
 ```
-Note that the JSON Path tester tool is not equipped to display the nested use case.
+**Note:** The JSON Path tester tool is **not equipped** to display the nested use case.
