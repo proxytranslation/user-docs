@@ -1,6 +1,6 @@
 # Export translation
 
-By clicking on this link, the general Export dialog will open. Most of the options will be familiar from the Work package generation dialog.  Choose a file format of your preference (with XLIFF being the _de facto_ industry standard, it is recommended that you go with this option, as it is more structured than CSV).
+By clicking on this link, the general Export dialog will open on the old Dashboard. Most of the options will be familiar from the Work package generation dialog.  Choose a file format of your preference (with XLIFF being the _de facto_ industry standard, it is recommended that you go with this option, as it is more structured than CSV).
 
 **Languages to export** You can choose to export more than one target languages in one go, or choose to export them all.
 

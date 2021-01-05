@@ -23,6 +23,7 @@ Content
 .. toctree::
    content/workpackages
    content/importtranslation
+   content/exporttranslation
    content/pretranslate
    content/previousexports
    content/deleteentries
@@ -31,10 +32,12 @@ Settings
 :::::::::::::
 
 .. toctree::
+   settings/advancedsettings
    settings/translationmemory
    settings/apt
    settings/alarm
    settings/auditlog
+   settings/sharingsettings
    pagecache/pagecache.rst
    settings/jptt
    pathsettings
@@ -71,4 +74,30 @@ Publish
 Third party integrations
 :::::::::::::
 
+.. toctree:: 
    thirdparty
+
+Workbench
+:::::::::::::
+
+.. toctree:: 
+   workbenchlink
+
+--------
+Cookbook
+--------
+
+.. toctree::
+   cookbook/whitelabel
+   cookbook/jstranslation
+   cookbook/resourcetranslation
+   cookbook/hubspotforms
+   cookbook/pageviewsandcaching
+   cookbook/requestevaluation
+   cookbook/stagingdomain
+   cookbook/rtlconversion
+   cookbook/ssl_certificates
+   cookbook/proxymodes
+   cookbook/headers
+   cookbook/securelogin
+   cookbook/sitesearch

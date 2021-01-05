@@ -57,6 +57,6 @@ Similarly to Dropbox and XTM, the proxy can export content to XTRF. The workflow
 
 ## MemoQWeb
 
-The proxy can also export content to a MemoQWeb instance and retrive the translations. Additionally, when you open an XLIFF file from the proxy in MemoQ, you can see a live preview.
+The proxy can also export content to a MemoQWeb instance and retrive the translations. Additionally, when you open an XLIFF file from the proxy in MemoQ, you can see a live preview using the MemoQ plugin.
 
 **Nota Bene**: the live-updating preview does **not** mean that translations are streamed to the proxy for inclusion! You will still need to save the XLIFF file and import it (either manually or through MemoQWeb) to return the translations to the project!

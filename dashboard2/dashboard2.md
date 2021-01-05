@@ -14,7 +14,7 @@ This card displays the key properties of your project. They are the following:
 
 - **Project code**: An 8 character long identifier that's unique to your project. It can be used to track projects and is necessary when you ask help at our support email address.
 
-- **Source language**: While it's possible to change it on the old Dashboard, we don't recommend doing so. The segmentation rules used depend on the source language. Changing them can cause weird issues with source segments. In most cases, it's better to keep it safe and leave the source language as is, even if it changes during the lifetime of the project.
+- **Source language**: The language you translate from. It can't be changed here but if you need to, you can email support and we'll be happy to change it for you after the necessary precautions.
 
 - **Project created**: The creation date of your project.
 
@@ -92,7 +92,17 @@ Some information on the latest crawl ran on the project. It is the same info you
 
 ![Linked projects](/img/dashboard2/project_overview/linked_projects.png)
 
-If content is coming from multiple domains, you'll need to create multiple projects to translate them. To make sure that links between the projects are accurate, you must link them. Note that **links must be bidirectional** meaning that you must link project 1 to project 2 and then go to the Dashboard of project 2 and link it to project 1. Both projects must be published separately.
+If content is coming from multiple domains, like `example.com` and `blog.example.com`, you'll need to create multiple projects to translate them. Linking them **enables the cross-mapping of URLs**. 
+
+A few restrictions apply to project linking:
+
+- project linking is **two-way**: project `A` has to be linked on project `B` and then project `B` has to be linked on project `A` to complete the process.
+
+- linked projects have to be **published together** and with the **same target languages**.
+
+**Form** solutions tend to use content from external domains. The localization of **HubSpot forms**, for example, is a frequent and somewhat challenging use case of project linking.
+
+The topic of translating such content using proxy features only is covered in detail [on this cookbook page](../dashboard/cookbook/hubspotforms.html).
  
 ## Target languages
 

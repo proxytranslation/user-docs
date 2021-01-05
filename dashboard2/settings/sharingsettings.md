@@ -2,11 +2,11 @@
 
 In the world of website localization, it is rare for a project to be realized by a single person. As project owner or backup owner, use the Sharing settings dialog to invite people into the project and assign roles/editing roles to any one of them.
 
-At the bottom of the Dialog, you will see the line, "Invite People:" if you click on the field, the invitation settings part of the dialog will slide up, allowing you to enter further details of the project participant to be added. You can assign languages, enable admin/access features and workflow roles for each user you invite. You can do this by clicking on the blue plus icon next to each of those options. Make your choices in the small pop-up lists. **These settings are not final, you can change them later.**
+At the bottom of the section, you will see the button, "Invite people". Clicking on it, or the blue + button opens a dialog that allows you to enter the details of the project participant to be added. Using the dropdowns, you can assign languages, enable admin/access features and workflow roles for each user you invite. **These settings are not final, you can change them later.**
 
 ## Features
 
-![Sharing Settings Screen](/img/dashboard/sharing_settings_dialog.png)
+![Sharing Settings Screen](/img/dashboard2/sharing_settings.png)
 
 The various **features**, (administrative rights) deserve to be detailed, Here they are:
 
@@ -22,15 +22,15 @@ The various **features**, (administrative rights) deserve to be detailed, Here t
 
 **Manage segments**: make the user a Customer, with the ability to manage (approve or exclude) pending source segments. The user will also require a workflow role and an assigned target language to access the Workbench to manage segments. **WARNING! This right restricts the user to this role, other features will be disabled!**
 
-**NOTE** __Features__ are predominantly important from a project management viewpoint. __Workflow roles__, on the other hand, are used to manage user interaction __on the Workbench__, based on expertise (whether a user is a translator, proofreader or client will decide what sets of segments are available to them for editing - see the documentation of the Workbench for details).
+**NOTE** __Features__ are predominantly important from a project management viewpoint. __Workflow roles__, on the other hand, are used to manage user interaction __on the Workbench__, based on expertise (whether a user is a translator, proofreader or client will decide what sets of segments are available to them for editing - see the [documentation of the Workbench](/workbench/workbench_index.html) for details).
 
-After a user redeems their invitation using the link they receive in an e-mail, their address and username will appear under the owner. Their features and workflow roles can be edited in the list.
+After a user redeems their invitation using the link they receive in an e-mail, their address and username will appear under the owner. Their features,and workflow roles and whether they should receive e-mail notifications can be edited by clicking on their line in the table.
 
-You can invite as many participants to the translation project as you'd like. You can also enable e-mail notifications for any of them by checking the notification icon in the last column.
+You can invite as many participants to the translation project as you'd like. 
 
 ## Project Roles
 
-Based on the project features that are available for a user, the following project ropes are available:
+Based on the project features that are available for a user, the following project roles are available:
 
 * **Owner**: Every project has an owner with unlimited powers over the project: the owner may add or remove anyone on the project, edit any entry in any language, including adding new languages, any change any setting, including the advanced ones. There can only be one owner on a project, but owners may renounce ownership, designating another user and setting their own privileges.
 

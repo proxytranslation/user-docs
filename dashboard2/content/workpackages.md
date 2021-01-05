@@ -25,8 +25,7 @@ This is where the most important settings are. In most cases, you won't need to 
 
 - Split your package at preset words to create easily manageable chunks to assign to translators. Disable it to put everything in one big file (Note, however, that Work packages will be automatically split at 30.000 words)
 
-- You can choose to create separate work packages for hidden elements, and set the Work package generation to automatically take care of exporting for you. As with the general import function, you may elect to export only those entries
- that have no translation yet.
+- You can choose to create separate work packages for hidden elements, and set the Work package generation to automatically take care of exporting for you. As with the general import function, you may elect to export only those entries that have no translation yet.
 
 - If you configured XTM, XTRF or Dropbox to integrate with the proxy, you may instruct the software to automatically send the exported XLIFF files to either one of those services. Use the dropdown menu to make your choice (only available if the checkbox is checked).
 

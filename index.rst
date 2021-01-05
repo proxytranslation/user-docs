@@ -5,7 +5,6 @@ User Documentation
 .. toctree::
    introduction/introduction
    introduction/getting-started
-   dashboard/index.rst
    dashboard2/index.rst
    workbench/workbench_index.rst
    maintenance/maintenance_index.rst
