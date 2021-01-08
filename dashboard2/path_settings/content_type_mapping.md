@@ -1,4 +1,4 @@
-# Content-Type Mapping
+# Content Type
 
 ## Overview
 

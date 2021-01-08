@@ -1,4 +1,4 @@
-Publish website
+Per-language settings
 ===============
 
 In this menu, you are provided with the means of publishing your website on a pretty domain after translation tasks have finished.
@@ -8,11 +8,27 @@ The publish wizard has two options to make the site available to the web at larg
 
 ## Domain settings
 
-This screen opens by default after clicking on a _Target locale_ in your list. The following settings and fields are available:
+This screen opens by default after clicking on a _Target locale_ in your list. Details of the locale and some settings are here:
+
+- *Target language*
+
+- *Temporary domain*: Similar to the Preview but works like the live site (useful if you have different snapshots). Used for Subdirectory publishing.
+
+- *Status*: Lets you know when the locale isn't published yet. 
+
+- *Live domain*: If the locale is published it lets you know the domain.
+
+- *Translation path prefixes*: When you publish in Subdirectory mode, the content is on the same domain as the source. As such the crawler may visit it and ingest the translated content as source. You can prevent this by entering the path prefixes that contain the translations here. They will be excluded from the project. 
+
+- *Serving mode*: Subdomain or subdirectory.
+
+- *Override HTML lang attribute*: Every HTML page has an attribute that specifies the language of the document. By default, this is set to the locale code (like `en-GB`). It's advised by the [W3](https://www.w3.org/International/articles/language-tags/) to "keep the tag as short as possible. Avoid region, script or other subtags except where they add useful distinguishing information". To follow this advice, you can override the default using this field.
+ 
+There are 3 tabs full of additional settings available as well:
 
 ### Access control
 
-You can add basic HTTP authentication to the proxied site in order to restrict access to it. Select the proxy modes that you'd like to limit access to, add a user by entering a username and password. You can add multiple users to the list.
+You can add basic HTTP authentication to the proxied site in order to restrict access to it. Select the proxy modes that you'd like to limit access to and add a user by entering a username and password. You can add multiple users to the list.
 
 ### Publish website wizard
 
@@ -27,7 +43,7 @@ The proxy will only publish a project on one domain name at a time, the question
 
 ##### Serving domain mode (`fr.example.com`)
 
-In the serving domain mode, the translation proxy will publish the translated site either on a subdomain of the original (the default behavior, such as `fr.example.com`), or on a completely separate naked domain (such as `example.com`). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the three to five records (three for subdomains, five for new naked domains) that need to be inserted in your DNS settings are found under the _Verification_ menu. These records will change as you enter or change the desired serving domain in the first step called _Serving domain_.
+In the serving domain mode, the translation proxy will publish the translated site either on a subdomain of the original (the default behavior, such as `fr.example.com`), or on a completely separate naked domain (such as `example-fr.com`). In order to use this mode, you (or the client) will have to modify the DNS settings corresponding to the original domain - the four to ten records (four for subdomains, up to ten for new naked domains) that need to be inserted in your DNS settings are found under the _Verification_ menu. These records will change as you enter or change the desired serving domain in the first step called _Serving domain_. They also change depending on the user who is currently logged in. On projects with multiple users, only the user who first got the record can finish publishing.  
 
 ##### Subdirectory publishing (`example.com/fr`)
 
@@ -38,6 +54,7 @@ Due to the way the proxy works, this requires a reverse proxy configuration to b
 ##### Client-Side Translation
 
 Client-Side translation bypasses the proxy entirely, and conducts the translation process in the user's browser without passing data through third parties. This can be desirable for clients bound by legal or security restrictions.  
+
 To use Client-Side Translation, you need to create a new export _via the old Dashboard_, with the following settings:
 + **File Format**: JS
 + **Export**: All Entries
@@ -59,15 +76,19 @@ Should the need arise, the client can also download both the loader stub and the
 
 #### STEP 3 [Selected publishing mode: Serving domain] - Verification
 
-There are three CNAME settings that are required on your domain to enable publishing of your website. Each of the lines in the table that is displayed has a specific function:
+There are four CNAME settings that are required on your domain to enable publishing of your website. Each of the lines in the table that is displayed has a specific function:
 
 ![Serving domain verification](/img/dashboard2/serving_domain.png)
 
 **CNAME 1** Allows mapping of the subdomain in Google AppEngine, enabling us to alter the datastream and translate the site. This row is computed from the serving domain entered in the first step called _Serving domain_, and needs to be added once per serving domain.
 
-**CNAME 2** The second line determines where the currently selected target language will be published. This defaults to the language code, but you are not obligated to keep it that way. This has to be entered separately for every target language you publish.
+**CNAME 2** Allows mapping of the naked domain in Google AppEngine enabling us to alter the datastream and translate the site. Either this or the previous record is required. We recommend adding both.
 
-**CNAME 3** The third line verifies ownership of the original domain. This is computed from the user’s ID who is currently looking at the publishing page (i.e. different users will see different values, so one person should communicate this to the client and hit the **Verify** button), and needs to be added only once per serving domain as well. You can set the subdomain and domain where the translated site will appear.
+**CNAME 3** The third line determines where the currently selected target language will be published. This defaults to the language code, but you are not obligated to keep it that way. This has to be entered separately for every target language you publish.
+
+**CNAME 4** The fourth line verifies ownership of the original domain. This is computed from the user’s ID who is currently looking at the publishing page (i.e. different users will see different values, so one person should communicate this to the client and hit the **Verify** button), and needs to be added only once per serving domain as well. You can set the subdomain and domain where the translated site will appear.
+
+These may appear in a different order. 
 
 After all the settings have been entered into the DNS records, there is short time while the changes propagate and are replicated across the world. This can vary wildly with the DNS and hosting providers, taking anywhere between one and twenty-four hours. It is recommended to wait out the twenty-four hours, as you will not be able to click on the Next button until all checks are passed.
 
@@ -148,7 +169,6 @@ Alternatively, if you or your client removes the DNS records relating to the pro
 
 #### Roots (path prefix manipulation)
 
-Please be aware that the path mapping tester would be available only on published locales.
 We gathered below a few examples for you, in order to show you the behavior of these configurations.
 
 _Publish translated content on www.example.com at directory depth_ `1`

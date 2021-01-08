@@ -4,7 +4,7 @@
 
 This override allows you to declare the `Cache-Control` and `max-age` headers for a prefix or URL and optionally clear the cookies. 
 
-![An example of a typical cache override (/wp-content)](../../img/dashboard2/path_settings_unsaved_changes.jpg)
+![An example of a typical cache override (/wp-content)](../../img/dashboard2/path_settings_unsaved_changes.png)
 
 The path seen in the screenshot above is a typical use case: it ensures that resources on the `/wp-content` prefix, associated with WordPress sites, can be cached for 24 hours.
 

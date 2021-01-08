@@ -28,7 +28,7 @@ Consider a **navigation bar** of a website. During a Discovery, the proxy will c
 
 Of course, navigation bars are such that they are shown on all pages of a website, so when the proxy sees the same navigation bar for the *second time* somewhere else, it doesn't count it as unique: instead, it adds the associated word count as a **102% repetition**.
 
-So, the navigation bar is liable to be counted as many times as there are pages: so don't be alarmed if you see large numbers in the 102% repetition row -- any sort of repeated content is mercillesly added there. Just keep in mind that this is work that the proxy is saving you.
+So, the navigation bar is liable to be counted as many times as there are pages: so don't be alarmed if you see large numbers in the 102% repetition row -- any sort of repeated content is mercilessly added there. Just keep in mind that this is work that the proxy is saving you.
 
 ### Cost
 

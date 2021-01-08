@@ -13,23 +13,23 @@ There are several proxy solutions available on the market, yet the translation p
 
 - it is a solution targeted primarily at LSPs - which also means that this is the **only** LSP-independent solution on the market
 
-- also available as a whitelabel solution
+- also available as a white-label solution
 
 - standard-compliant XLIFF export option ensures CAT-independence
 
-- automated XLIFF export/import option between CAT / Translation management systems and Easyling
+- an automated XLIFF export/import option is available between CAT / Translation management systems and Easyling
 
-- in-context live preview available in certain CAT-tools at translation-time
+- in-context live preview available in certain CAT-tools and the online Workbench at translation-time
 
 **What does that mean?**
 
-If you are a **business owner**, it can help you reach a wider customer-base through providing information to your potential customers in their native language. What's more, you can do more than just translating the text on your website, you can ***localize*** it: you can also adapt your message, the images displayed, or even your product range offered to the targeted culture. And all this without the need of heavy upfront investment in IT infrastructure and personnel, and the hassle with regular maintenance and upgrade. the translation proxy takes care of the IT part, so that you could concentrate on the content - and growing your business.
+If you are a **business owner**, it can help you reach a wider customer base by providing information to your potential customers in their native language. What's more, you can do more than just translating the text on your website, you can ***localize*** it: you can also adapt your message, the images displayed, or even your product range offered to the targeted culture. All of this is possible without the need for heavy upfront investment in IT infrastructure and personnel or the hassle with regular maintenance and upgrade. The translation proxy takes care of the IT part so that you could concentrate on the content - and growing your business.
 
-If you are a **language service provider** (LSP), you can offer cutting-edge website localization services to your customers - even under your own brand name! the translation proxy provides the technology, takes care of the IT infrastructure, leaving you to concentrate on your core business: cross-cultural communication. What's more, your translators don't need to learn using just another tool, they can keep using their own preferred CAT-tools.<br>
+If you are a **language service provider** (LSP), you can offer cutting-edge website localization services to your customers - even under your own brand name! The translation proxy provides the technology, takes care of the IT infrastructure, leaving you to concentrate on your core business: cross-cultural communication. What's more, your translators don't need to learn to use just another tool, they can keep using their preferred CAT-tools.<br>
 
 **Sounds good?**
 
-There are several challenges both business owners and language service providers face during website translation. The "ideal" workflow would be to create the content in the original language, get it translated into the desired languages, and then publish all language variants at the same time, from the website owner's own content management system (CMS) - right from the very first page on the website. But reality is different. Apart from the fact that not many CMSs are capable of handling several languages, usually website localization comes into the picture at a later stage, when there is already a huge amount of data published on the website. And, in most cases, the website owner can't extract the content for translation. If they can't extract the original, there's no easy way to load the translated content back either. Furthermore, if the website owner can't extract the content into translatable format, it is impossible to get a proper estimate for the translation costs in time and money...
+There are several challenges both business owners and language service providers face during website translation. The "ideal" workflow would be to create the content in the original language, get it translated into the desired languages, and then publish all language variants at the same time, from the website owner's own content management system (CMS) - right from the very first page on the website. However, the reality is often different. Apart from the fact that not many CMSs are capable of handling several languages, usually, website localization comes into the picture at a later stage, when there is already a huge amount of data published on the website. In most cases, the website owner can't extract the content for translation. If they can't extract the original, there's no easy way to load the translated content back either. Furthermore, if the website owner can't extract the content into a translatable format, it is impossible to get a proper estimate for the translation costs in time and money...
 
 Easyling can, however, discover the website by following links and grabbing translatable and localizable content - and convert it into a translatable format. This gives a realistic view of the magnitude of the translation task, and, thanks to the translation proxy, even a partially translated site can give full user experience on the website visitor's side.
 
@@ -51,7 +51,9 @@ In either case, technology will no longer be the bottleneck.
 
 - process HTML, JavaScript/AJAX/JSON, XML (note: translation of Flash is not supported)
   
-- Use the X-Proxy and other Preview mode domains to see everything in context. use Advanced Settings to translate text coming from JSON/XML sources.
+- Use the Preview mode to see everything in context. 
+
+- Use Advanced Settings to translate text coming from JSON/XML sources.
   
 - Automatically crawl static pages / HTML content only. Add extra AJAX URLs with the proper parameters.
 
@@ -63,19 +65,19 @@ In either case, technology will no longer be the bottleneck.
 
 - Link any external domain via multiple projects.
 
-- Modify page behavior using customized CSS and JavaScript injection.
+- Modify page behaviour using customized CSS and JavaScript injection.
 
 - Use regular expressions to filter for content.
 
 and many more!
 
-## Whitelabel
+## White-label
 
-Easyling offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell the translation proxy as your own product. In order to create the branded version, seven criteria must be met. See the "Whitelabel setup" section for details.
+Easyling offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell the translation proxy as your own product. To create the branded version, seven criteria must be met. See the "White-label setup" section for details.
 
 ## Pricing
 
-Our pricing follows the ‘pay-as-you-go’ model, so you only get charged for what you use. The total cost is made up 2 types of fees: one-time fees and a monthly charge.
+Our pricing follows the ‘pay-as-you-go’ model, so you only get charged for what you use. The total cost is made up of 2 types of fees: one-time fees and a monthly charge.
 
 ### One-Time Fees
 
@@ -89,9 +91,9 @@ Content extraction and translation memory fees apply only the first time around,
 
 ### Monthly Fees
 
-A 1 EUR or 1.2 USD / 1000 page views monthly fee applies to serving your tranlated content over the proxy.
+A 1 EUR or 1.2 USD / 1000 page requests monthly fee is applied for serving your translated content over the proxy.
 
-In exchange, you get a guaranteed 99.99% website availability, and a capacity to handle practically unlimited traffic. You also have the option to serve the translated site from your server (in which case no proxy fee will apply), but in this case availability and traffic handling depends on your infrastructure.
+In exchange, you get a guaranteed 99.99% website availability, and a capacity to handle practically unlimited traffic. You also have the option to serve the translated site from your server (in which case no proxy fee will apply), but in this case, availability and traffic handling depend on your infrastructure.
 
 ## Further Information
 
