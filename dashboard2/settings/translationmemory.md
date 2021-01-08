@@ -2,7 +2,7 @@
 
 ![Translation memory settings](/img/dashboard2/translation_memory.png) 
 
-Easyling's translation memories (TM) are used to store existing translations for segments. You can import translations from *.tmx files or populate the translation memory with translations you have added in the Workbench.
+Translation memories (TM) are used to store existing translations for segments. You can import translations from *.tmx files or populate the translation memory with translations you have added in the Workbench.
 
 Translation memories are linked to your account and *not* your project. This way, if you want to, you can have one gigantic translation memory for all of your projects. This is useful if you have multiple projects of the same topic. 
 
