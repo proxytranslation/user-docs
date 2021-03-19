@@ -1,7 +1,7 @@
 # JSON/JS/XML processing
 
 These features used to be under Advanced settings but as they are the most important, they were moved to their own section.
- 
+
 The interface is split into 2 main sections: Live JSON/JS/XML Path Config and JSON path tester.
 
 ## Live JSON/JS/XML Path Config
@@ -62,12 +62,12 @@ Click on any of the blue + icons to generate a **JS path** for the string in que
 
 ```
 "%"."exampleVar"
-"%"."exampleUrl"
-"%"."exampleHtmlString"
+"%"."exampleUrl" url
+"%"."exampleHtmlString" html
 "%"."exampleObject"."sentence01"
 "%"."exampleObject"."sentence02"
-"%"."exampleObject"."nestedObject"."sentence03"
-"%"."exampleObject"."nestedObject"."sentence04"
+"%"."exampleObject"."nestedObject".*
+"%"."exampleObject"."nestedObject"."sentence04".! skip
 "%"."exampleObject"."exampleArray".0."value"
 "%"."exampleObject"."exampleArray".1."value"
 "%"."exampleObject"."exampleArray".2."value"
@@ -151,3 +151,12 @@ HTML:
 "%"."exampleObject"."exampleNestedHTMLinJS"."nestedHTML" html
 ```
 **Note:** The JSON Path tester tool is **not equipped** to display the nested use case.
+
+#### Skip
+
+Use this processing mode to mark child node not to be translated. Order is important, skip rules must come after the generic * rule.
+
+```
+"%"."exampleObject"."nestedObject".*
+"%"."exampleObject"."nestedObject"."sentence04".! skip
+```
