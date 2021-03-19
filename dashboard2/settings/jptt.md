@@ -154,7 +154,7 @@ HTML:
 
 #### Skip
 
-Use this processing mode to mark child node not to be translated. Order is important, skip rules must come after the generic * rule.
+Use this processing mode to mark child node not to be translated. Order is important, skip rules must come after the generic * rule. The exclamation mark in the end of the rule is mandatory, so please use the following syntax: `! skip`
 
 ```
 "%"."exampleObject"."nestedObject".*
