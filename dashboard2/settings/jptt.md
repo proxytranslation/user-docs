@@ -62,16 +62,16 @@ Click on any of the blue + icons to generate a **JS path** for the string in que
 
 ```
 "%"."exampleVar"
-"%"."exampleUrl" url
+#"%"."exampleUrl" url
 "%"."exampleHtmlString" html
 "%"."exampleObject"."sentence01"
 "%"."exampleObject"."sentence02"
 "%"."exampleObject"."nestedObject".*
 "%"."exampleObject"."nestedObject"."sentence04".! skip
 "%"."exampleObject"."exampleArray".0."value"
-"%"."exampleObject"."exampleArray".1."value"
+"%"."exampleObject"."exampleArray".1."value" skip
 "%"."exampleObject"."exampleArray".2."value"
-"%"."exampleObject"."exampleNestedJS"
+"%"."exampleObject"."exampleNestedJS" javascript
 "%"."exampleObject"."exampleNestedHTMLinJS"
 ```
 
@@ -154,9 +154,13 @@ HTML:
 
 #### Skip
 
-Use this processing mode to mark child node not to be translated. Order is important, skip rules must come after the generic * rule. The exclamation mark in the end of the rule is mandatory, so please use the following syntax: `! skip`
+Use this processing mode to mark child node not to be translated. **Order is important!**
+If you use `*` or `**` to select child nodes to be translated, you can use the `! skip` processing mode to select a child element as non-translatable, but please note, that skip rules must come after the generic `*` rule. Skip is the lowest level mode, but you can increase the priority by adding `!` or `!{number}`
+You can also comment out elements by adding `#` at the start of a line. In this case the parser won' process the given rule at all.
 
 ```
+#"%"."exampleUrl" url
 "%"."exampleObject"."nestedObject".*
 "%"."exampleObject"."nestedObject"."sentence04".! skip
+"%"."exampleObject"."exampleArray".1."value" skip
 ```
