@@ -58,11 +58,11 @@ We'll use the following JavaScript snippet in the remainder of this section. It 
 
 You can copy & paste code into the source code field or if you have the URL you can fetch the entire file via the + button on the bottom right. If the file is minified, you can use the Format code button for better readability. When you click on Analyze code, the file/text will be requested/sent for analysis in the cloud. Once it's finished, you get a highlighted representation of the same code in the Analyzed code tab.
 
-Click on any of the blue + icons to generate a **JS path** for the string in question. They will be added to the Temporary paths field. If you generate paths for all available strings in the example , the list of paths in the upper text field should look like this:
+Click on any of the blue + icons to generate a **JS path** for the string in question. They will be added to the Temporary paths field. If you generate paths for all available strings in the example , and add a few processing modes, the list of paths in the upper text field should look like this:
 
 ```
 "%"."exampleVar"
-#"%"."exampleUrl" url
+"%"."exampleUrl" url
 "%"."exampleHtmlString" html
 "%"."exampleObject"."sentence01"
 "%"."exampleObject"."sentence02"
@@ -155,8 +155,8 @@ HTML:
 #### Skip
 
 Use this processing mode to mark child node not to be translated. **Order is important!**
-If you use `*` or `**` to select child nodes to be translated, you can use the `! skip` processing mode to select a child element as non-translatable, but please note, that skip rules must come after the generic `*` rule. Skip is the lowest level mode, but you can increase the priority by adding `!` or `!{number}`
-You can also comment out elements by adding `#` at the start of a line. In this case the parser won' process the given rule at all.
+If you use `*` or `**` to select child nodes to be translated, you can use the `! skip` processing mode to select a child element as non-translatable, but please note, that skip rules must come after the generic `*` rule. Skip is the lowest level mode, but you can increase the priority by adding `!` or `!{number}`. The `!` switch is not only for skip rules, any rule can be appended to increase its priority above other matching rules.
+You can also comment out elements by adding `#` at the start of a line. In this case the parser won't process the given rule at all.
 
 ```
 #"%"."exampleUrl" url
