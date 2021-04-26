@@ -1,7 +1,7 @@
 # JSON/JS/XML processing
 
 These features used to be under Advanced settings but as they are the most important, they were moved to their own section.
- 
+
 The interface is split into 2 main sections: Live JSON/JS/XML Path Config and JSON path tester.
 
 ## Live JSON/JS/XML Path Config
@@ -58,20 +58,20 @@ We'll use the following JavaScript snippet in the remainder of this section. It 
 
 You can copy & paste code into the source code field or if you have the URL you can fetch the entire file via the + button on the bottom right. If the file is minified, you can use the Format code button for better readability. When you click on Analyze code, the file/text will be requested/sent for analysis in the cloud. Once it's finished, you get a highlighted representation of the same code in the Analyzed code tab.
 
-Click on any of the blue + icons to generate a **JS path** for the string in question. They will be added to the Temporary paths field. If you generate paths for all available strings in the example , the list of paths in the upper text field should look like this:
+Click on any of the blue + icons to generate a **JS path** for the string in question. They will be added to the Temporary paths field. If you generate paths for all available strings in the example , and add a few processing modes, the list of paths in the upper text field should look like this:
 
 ```
 "%"."exampleVar"
-"%"."exampleUrl"
-"%"."exampleHtmlString"
+"%"."exampleUrl" url
+"%"."exampleHtmlString" html
 "%"."exampleObject"."sentence01"
 "%"."exampleObject"."sentence02"
-"%"."exampleObject"."nestedObject"."sentence03"
-"%"."exampleObject"."nestedObject"."sentence04"
+"%"."exampleObject"."nestedObject".*
+"%"."exampleObject"."nestedObject"."sentence04".! skip
 "%"."exampleObject"."exampleArray".0."value"
-"%"."exampleObject"."exampleArray".1."value"
+"%"."exampleObject"."exampleArray".1."value" skip
 "%"."exampleObject"."exampleArray".2."value"
-"%"."exampleObject"."exampleNestedJS"
+"%"."exampleObject"."exampleNestedJS" javascript
 "%"."exampleObject"."exampleNestedHTMLinJS"
 ```
 
@@ -151,3 +151,16 @@ HTML:
 "%"."exampleObject"."exampleNestedHTMLinJS"."nestedHTML" html
 ```
 **Note:** The JSON Path tester tool is **not equipped** to display the nested use case.
+
+#### Skip
+
+Use this processing mode to mark child node not to be translated. **Order is important!**
+If you use `*` or `**` to select child nodes to be translated, you can use the `! skip` processing mode to select a child element as non-translatable, but please note, that skip rules must come after the generic `*` rule. Skip is the lowest level mode, but you can increase the priority by adding `!` or `!{number}`. The `!` switch is not only for skip rules, any rule can be appended to increase its priority above other matching rules.
+You can also comment out elements by adding `#` at the start of a line. In this case the parser won't process the given rule at all.
+
+```
+#"%"."exampleUrl" url
+"%"."exampleObject"."nestedObject".*
+"%"."exampleObject"."nestedObject"."sentence04".! skip
+"%"."exampleObject"."exampleArray".1."value" skip
+```
