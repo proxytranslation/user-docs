@@ -164,3 +164,21 @@ You can also comment out elements by adding `#` at the start of a line. In this 
 "%"."exampleObject"."nestedObject"."sentence04".! skip
 "%"."exampleObject"."exampleArray".1."value" skip
 ```
+
+### JavaScript template literals
+
+Template literals are similar to strings but they support inline variables. They are surrounded by backtick (`) characters. They are different from regular strings in that they support inline variables and expressions. For example, 
+
+```
+let publishedText = “Published on “ + date;
+```
+
+could be expressed as
+
+```
+let publishedText = `Published on ${date}`;
+```
+
+Simple cases like the above (or literals without variables) are supported. The expression will become a tag in the Workbench and in XLIFF exports. JavaScript allows any expression to be added to literals but we recommend you to stick to simple expressions if possible.
+
+Note that content in template literals can only be processed *as text*. The above-mentioned processing rules can’t be applied.
