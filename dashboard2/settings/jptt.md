@@ -179,6 +179,28 @@ could be expressed as
 let publishedText = `Published on ${date}`;
 ```
 
-Simple cases like the above (or literals without variables) are supported. The expression will become a tag in the Workbench and in XLIFF exports. JavaScript allows any expression to be added to literals but we recommend you to stick to simple expressions if possible.
+Cases like the above (or literals without variables) are now supported. The expression will become a tag in the Workbench and in XLIFF exports. 
 
-Note that content in template literals can only be processed *as text*. The above-mentioned processing rules can’t be applied.
+As an example, consider the snippet below:
+
+```js
+let getUserName = () => {
+    // maybe some asynchronous stuff here that we omit for brevity
+    // let's just assume that the result is "user-docs-author"
+    let result = "user-docs-author";
+    return result
+}
+
+let output = `This part of the documentation was written by ${getUserName()}`;
+
+console.log(output);
+```
+
+You can translate both `user-docs-author` and `This part of the documentation was written by <tag>` by adding the following JSON paths:
+
+```
+"getUserName"."result"
+"output"
+```
+
+Note that content in template literals can only be processed *as text*. The above-mentioned processing rules, such as URL and HTML, can’t be applied.
