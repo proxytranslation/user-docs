@@ -179,7 +179,7 @@ could be expressed as
 let publishedText = `Published on ${date}`;
 ```
 
-Cases like the above (or literals without variables) are now supported. The expression will become a tag in the Workbench and in XLIFF exports. 
+Cases like the above (or literals without variables) are now supported. The expression will become a single tag in the Workbench and as an `x` tag (that doesn't have a separate closing tag) in XLIFF exports. 
 
 As an example, consider the snippet below:
 
@@ -188,8 +188,8 @@ let getUserName = () => {
     // maybe some asynchronous stuff here that we omit for brevity
     // let's just assume that the result is "user-docs-author"
     let result = "user-docs-author";
-    return result
-}
+    return result;
+};
 
 let output = `This part of the documentation was written by ${getUserName()}`;
 
