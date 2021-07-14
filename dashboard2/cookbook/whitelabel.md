@@ -22,7 +22,7 @@
    comes to your mind - the only limitation is that we are unable to
    serve the proxy on a naked domain (for instance,
    `yourproxy.com`). Just keep in mind that once you settle on
-   something, and we set up your branded Easyling, it becomes fixed,
+   something, and we set up your branded version of the proxy, it becomes fixed,
    so your decision is final.
 
 4. Two logos: one goes on the Dashboard, the other goes on the

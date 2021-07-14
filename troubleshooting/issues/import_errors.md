@@ -1,6 +1,6 @@
 # XLIFF import error
   
-When you import your translated XLIFF file back to easyling, you will receive an e-mail notification when the process is ready. This mail contains the URL of the import log, and an overview of the log entries:
+When you import your translated XLIFF file back to the proxy, you will receive an e-mail notification when the process is ready. This mail contains the URL of the import log, and an overview of the log entries:
 
 - Error:
 - Warning:

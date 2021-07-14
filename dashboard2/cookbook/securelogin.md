@@ -2,21 +2,17 @@
 
 To scan content behind secure login, please follow this procedure:
 
-1. Open your project and navigate to the **Content** menu.<br>
-2. Open the **Pages** list.
+1. Open the Dashboard 2.0 and navigate to the Pages list
 
-3. Visit the page with the login, if it is listed, and click **Preview** (you'll need at least one target language on the project for **Preview** to be selectable!).
+2. Find the page with the login, right-click on it and select **Preview** (you'll need at least one target language on the project for **Preview** to be selectable!).
 
 **OR**
 
-- Go to the **Preview** of the front page (the "/", the first one on
-  the Pages list). It will give you the front page through the
-  proxy.<br>
+1. Go to the **Preview** of the front page (the "/", the first one on the Pages list). It will give you the front page through the proxy.<br>
 
-- Go to the address bar and type in the URL of the login-protected
-  page.<br>
+![Open the Preview](/img/dashboard2/preview_login.png)
 
-![Login page through the proxy](/img/preview_login.png)
+2. Go to the address bar and type in the URL of the login-protected page.<br>
 
 4. Enter your login details.<br>
 

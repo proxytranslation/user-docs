@@ -4,7 +4,7 @@ Let us give you a quick overview of how the proxy is used. In this section, we g
 
 ## Registration & Login
 
-To use Easyling, you need to register and set up an account for the service at [https://app.easyling.com](https://app.easyling.com). You can start using the service right away after registration.
+To use the proxy, you need to register and set up an account for the service. You can start using the service right away after registration.
 
 Logging in, you will be taken to the Dashboard 2.0, which is the new and improved project management center, every detail of which we'll get to in later sections of this manual. There will be no existing projects at the outset, so let's try setting one up.
 
@@ -88,11 +88,9 @@ As a translation proxy is practically a translation layer on top of the original
 
 ### Sales tool for mass production
 
-Easyling also offers a Sales Tool to help LSPs and freelancers in growing their business.
+We also offer a Sales Tool to help LSPs and freelancers in growing their business.
 
 If you have a well-defined group of potential customers you'd like to offer your translation services to, like hotels or restaurants with only monolingual websites in your area, the translation proxy makes it easy for you to impress the business owners. Just collect the URL addresses, add them to the Sales Tool, and the translation proxy will automatically create a project for all webpages according to the settings you specify. Once the translation and post-editing of the translated main pages are ready, you can send a link to the business owners. If your potential clients are impressed with the translated page and the fact that no IT involvement is required on their end, you have a better chance to win the deal.
-
-For more information see our [blog](https://www.easyling.com/blog/try-sales-tool-lsps-freelancers/) or this short [video](https://www.easyling.com/features/mass-sales-tool/)
 
 ## The Workbench
 
@@ -100,7 +98,7 @@ You can export all source segments, translate them in your CAT tool of choice an
 
 In Pages list, you can right click any page and choose 'Translation workbench (list view)' and you'll be taken to the Workbench in a different tab.
 
-If the Dashboard 2.0 is the Project Management Center in Easyling, then the Workbench is the cloud CAT tool, where translation itself takes place. There are many features you can use in the Workbench to make working with websites easier - see the 'Workbench' section of this manual for the details.
+If the Dashboard 2.0 is the Project Management Center of the proxy, then the Workbench is the cloud CAT tool, where translation itself takes place. There are many features you can use in the Workbench to make working with websites easier - see the 'Workbench' section of this manual for the details.
 
 ## The 3-Phase Workflow
 
