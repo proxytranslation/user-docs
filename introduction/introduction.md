@@ -1,6 +1,6 @@
 # Introduction
 
-Easyling is a cloud-based translation proxy solution designed to make websites available in several languages. Easily.
+Translation Proxy is a cloud-based translation proxy solution designed to make websites available in several languages. Easily (due to legal reasons, we can't say Smarly).
 
 A translation proxy is a layer placed between the browser and the original website, through which the visitor sees the original website in a different language.
 
@@ -17,7 +17,7 @@ There are several proxy solutions available on the market, yet the translation p
 
 - standard-compliant XLIFF export option ensures CAT-independence
 
-- an automated XLIFF export/import option is available between CAT / Translation management systems and Easyling
+- an automated XLIFF export/import option is available between CAT / Translation management systems and the proxy
 
 - in-context live preview available in certain CAT-tools and the online Workbench at translation-time
 
@@ -31,15 +31,15 @@ If you are a **language service provider** (LSP), you can offer cutting-edge web
 
 There are several challenges both business owners and language service providers face during website translation. The "ideal" workflow would be to create the content in the original language, get it translated into the desired languages, and then publish all language variants at the same time, from the website owner's own content management system (CMS) - right from the very first page on the website. However, the reality is often different. Apart from the fact that not many CMSs are capable of handling several languages, usually, website localization comes into the picture at a later stage, when there is already a huge amount of data published on the website. In most cases, the website owner can't extract the content for translation. If they can't extract the original, there's no easy way to load the translated content back either. Furthermore, if the website owner can't extract the content into a translatable format, it is impossible to get a proper estimate for the translation costs in time and money...
 
-Easyling can, however, discover the website by following links and grabbing translatable and localizable content - and convert it into a translatable format. This gives a realistic view of the magnitude of the translation task, and, thanks to the translation proxy, even a partially translated site can give full user experience on the website visitor's side.
+The proxy can, however, discover the website by following links and grabbing translatable and localizable content - and convert it into a translatable format. This gives a realistic view of the magnitude of the translation task, and, thanks to the translation proxy, even a partially translated site can give full user experience on the website visitor's side.
 
 Data can be extracted with a couple of clicks - and the publication of the translated site is similarly easy.
 
 **Where do we fit in the localization workflow**
 
-Easyling bridges the gap between the CMS and the translation workflow; it enables you to extract content from the website in a translation-ready format that can be used in ***any*** translation environment.
+The proxy bridges the gap between the CMS and the translation workflow; it enables you to extract content from the website in a translation-ready format that can be used in ***any*** translation environment.
 
-![Workflow](/img/misc/easyling_workflow.png)
+![Workflow](/img/misc/proxy_workflow.png)
 
 - If you are a content owner, it means that you have a technology solution that enables you to choose any LSP that suits your language requirements the best.
 
@@ -73,7 +73,7 @@ and many more!
 
 ## White-label
 
-Easyling offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell the translation proxy as your own product. To create the branded version, seven criteria must be met. See the "White-label setup" section for details.
+The proxy offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell the translation proxy as your own product. To create the branded version, seven criteria must be met. See the "White-label setup" section for details.
 
 ## Pricing
 
@@ -94,29 +94,3 @@ Content extraction and translation memory fees apply only the first time around,
 A 1 EUR or 1.2 USD / 1000 page requests monthly fee is applied for serving your translated content over the proxy.
 
 In exchange, you get a guaranteed 99.99% website availability, and a capacity to handle practically unlimited traffic. You also have the option to serve the translated site from your server (in which case no proxy fee will apply), but in this case, availability and traffic handling depend on your infrastructure.
-
-## Further Information
-
-Visit us at <https://easyling.com> and sign up for a dedicated demo if you are new to translation over the proxy!
-
-See <https://easyling.com/pricing> for pricing details. Try our Price Calculator, too!
-
-Contact Support: <support@easyling.com>
-
-Be sure to check out all the other tutorials we've compiled:
-
-**Tutorials**
-
-  - [https://www.youtube.com/watch?v=S47kArNiJ1o](https://www.youtube.com/watch?v=S47kArNiJ1o)
-  - [https://www.youtube.com/watch?v=8VsBy2bGo64](https://www.youtube.com/watch?v=8VsBy2bGo64)
-  - [https://gitlab.com/easyling/wikis/home](https://gitlab.com/easyling/wikis/home)
-  - [https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA](https://drive.google.com/open?id=0Bw53oZELMrf8V1FIUnhmNEtubTA)
-  - [http://lesson101.tutorial.easyling.com/](http://lesson101.tutorial.easyling.com/)
-  - [http://lesson102.tutorial.easyling.com/](http://lesson102.tutorial.easyling.com/)
-  - [http://lesson103.tutorial.easyling.com/](http://lesson103.tutorial.easyling.com/)
-  - [http://lesson105.tutorial.easyling.com/](http://lesson105.tutorial.easyling.com/)
-
-**Release notes**
-
-  - [https://www.easyling.com/category/blogpost/release-notes/](https://www.easyling.com/category/blogpost/release-notes/)
-  - [https://www.easyling.com/change-logs/](https://www.easyling.com/change-logs/)

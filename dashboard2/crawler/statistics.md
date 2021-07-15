@@ -2,7 +2,7 @@
 
 ![Crawl statistics](/img/dashboard2/crawl_statistics.png)
 
-To understand the way statistics work in Easyling, we have to start with the most important fact: in our application, the largest unit of measurement is a block, which is usually represented by a `<p>` or a `<div>`. Blocks break down to segments, segments to words, words to letters. Since the translation proxy deals exclusively with content in webpages, HTML tags also play an important part in weighing the repetitions.
+To understand the way statistics work in the proxy, we have to start with the most important fact: in our application, the largest unit of measurement is a block, which is usually represented by a `<p>` or a `<div>`. Blocks break down to segments, segments to words, words to letters. Since the translation proxy deals exclusively with content in webpages, HTML tags also play an important part in weighing the repetitions.
 
 It is also important to note that the statistics in the translation proxy are different degrees of repetitions. During a crawl, the website's content is "repetitioned" against itself, simulating a translation process not unlike the Homogeneity feature in MemoQ.
 

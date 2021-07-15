@@ -1,18 +1,17 @@
 # SSL Certificates
 
-Easyling has the ability to proxy HTTPS pages, but to do so, it must
+The proxy has the ability to proxy HTTPS pages, but to do so, it must
 be provided a certificate and private key matching the URL. Otherwise,
-the proxy will be unable to identify itself as a valid server, and the
+it will be unable to identify itself as a valid server, and the
 browser will abort the connection for security reasons.
 
-Easyling support can assist in deploying an HTTPS site by providing a
+Our support team can assist in deploying an HTTPS site by providing a
 CSR (Certificate Signing Request) to generate the appropriate
 certificate if the required information is provided, or the client can
 prepare the certificate themselves.
 
-Additionally, a certificate is required to provide a branded Easyling
-instance. For more information, you can check the
-[Whitelabel](/faq/whitelabel.html) article of the FAQ.
+Additionally, a certificate is required to provide a branded proxy
+instance. 
 
 ## The protocol
 
@@ -86,8 +85,8 @@ combined with the public half of the key, and signed with the private
 half. The resulting encrypted file is then handed to the issuer, who
 verifies the information contained within, and if successful, encodes
 the information into a public certificate, signing it with its own
-private key. This is the file that needs to be provided to Easyling
-support.
+private key. This is the file that needs to be provided to our
+support team.
 
 ## Providing us with a certificate
 

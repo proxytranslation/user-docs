@@ -2,7 +2,7 @@
 
 The proxy can be used to insert locale-specific CSS rules into the site being served. The rules are inserted as the last element of the `head` on every page served through the proxy. A very common use case for this feature is RTL conversion of a website: almost always necessary when one of the target languages is Arabic.
 
-It is good practice to make each CSS rule language specific (Easyling will always insert the appropriate locale code into the HTML):
+It is good practice to make each CSS rule language specific (the proxy will always insert the appropriate locale code into the HTML):
 
 ```css
 html[lang="de-DE"] ul.one-selector li a {

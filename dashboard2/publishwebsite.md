@@ -64,7 +64,7 @@ To use Client-Side Translation, you need to create a new export _via the old Das
 
 Once the export completes, it has to be published from the _Actions_ column of the _Previous Export_ screen, and the client must add the _loader script_ to their website by inserting the following one-liner:
 ```
-<script type="application/javascript" src="https://app.easyling.com/client/{{projectCode}}/0/stub.js"></script>
+<script type="application/javascript" src="https://{{whitelabel-domain}}/client/{{projectCode}}/0/stub.js"></script>
 ```
 
 ![Publishing a CST export](/img/dashboard2/js-publish.jpg)
