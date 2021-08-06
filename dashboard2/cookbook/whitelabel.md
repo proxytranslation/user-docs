@@ -76,10 +76,11 @@ the appropriate data.
     
 7. In order for the translation proxy to be able to send emails from under your
    domain, you will need to provide authorization to the email
-   service. This is done by adding a specialized DNS record:
+   service. This is done by adding a couple of specialized DNS records:
     
-	`${SELECTOR}._domainkey.${APP_DOMAIN}` TXT `${DKIM_KEY}` - these values will be provided to you as they are domain-dependent.
+	1. `${SELECTOR}._domainkey.${APP_DOMAIN}` TXT `${DKIM_KEY}` - these values will be provided to you as they are domain-dependent.
 
+	3. `v=spf1 include:sparkpostmail.com ?all`; or if you're already using an SPF record, add `include:sparkpostmail.com` just before the last operator.
     
 8. Finally, if you want, you can specify the following information to
    customize the white label experience (this is completely voluntary
