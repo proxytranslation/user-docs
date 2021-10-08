@@ -152,6 +152,10 @@ HTML:
 ```
 **Note:** The JSON Path tester tool is **not equipped** to display the nested use case.
 
+##### JSON
+
+For JSON elements, the specific `json` selector is also available.
+
 #### Skip
 
 Use this processing mode to mark child node not to be translated. **Order is important!**
