@@ -3,7 +3,7 @@
 ## Overview
 Nearly all browsers today implement local caches to accelerate page loading and prevent unnecessary requests from being sent out to the network. However, the operation of these caches is tied to the presence of certain headers on the page, such as `Pragma` and `Cache-Control` - based on their presence and the values communicated in these headers, the browser (and various systems, such as CDNs) may make a decision to intercept the request and serve up certain content without requesting it anew from the server.
 
-Normally, the Proxy simply forwards these headers, much the same way it does with any other. The option to override their presence and values exists (see the [Path Settings](/en/latest/dashboard/menu/dashboard/pathsettings.html) option on the Dashboard), but by default, they are left unmodified, in the spirit of minimum invasion. </br>
+Normally, the Proxy simply forwards these headers, much the same way it does with any other. The option to override their presence and values exists (see the [Path Settings](../dashboard2/pathsettings.html) option on the Dashboard), but by default, they are left unmodified, in the spirit of minimum invasion. </br>
 This is not always desirable, however, as a site without such cache headers will remain uncached in the visitors' devices, and each visit to the page will result in another request that is billed.
 
 ## Inspecting Cache Headers

@@ -18,15 +18,15 @@ Syntax highlighting is automatically activated for a subset of content types aft
 
 ### Cache Control & Pragma
 
-Loading overrides over the proxy also [count as page requests](../../cookbook/pageviewsandcaching.html), so it is recommended that you add an optimized `max-age` value to each PCO and make them publicly cacheable. Placeholders in each field indicate reasonable defaults. At the same time, you'll want to set `max-age` to a smaller value *during testing*, in order to avoid having incomplete or work-in-progress PCOs cached for a long time over the network.
+Loading overrides over the proxy also [count as page requests](../cookbook/pageviewsandcaching.html), so it is recommended that you add an optimized `max-age` value to each PCO and make them publicly cacheable. Placeholders in each field indicate reasonable defaults. At the same time, you'll want to set `max-age` to a smaller value *during testing*, in order to avoid having incomplete or work-in-progress PCOs cached for a long time over the network.
 
 ### Response Codes & Location
 
-The 300-family of status codes requires the Location header to be defined as well, to specify the target of redirection. Note also that only those HTTP status codes can be used that are permitted by the Java Servlet class. Detailed documentation can be found [here](http://hc.apache.org/httpcomponents-core-ga/httpcore/apidocs/org/apache/http/HttpStatus.html). 
+The 300-family of status codes requires the Location header to be defined as well, to specify the target of redirection. Note also that only those HTTP status codes can be used that are permitted by the Java Servlet class.
 
 ## Search result pages
 
-The fact that URLs associated with a PCO are never requested from the origin server can be beneficial when [implementing site search](../../cookbook/sitesearch.html). If a distinct result page is used to display results, an empty version of that original can be copied verbatim into a PCO. This is particularly useful in cases where site search load is considerable over the proxy and the origin server would benefit from not having to handle search requests that it is not equipped to answer.
+The fact that URLs associated with a PCO are never requested from the origin server can be beneficial when [implementing site search](../cookbook/sitesearch.html). If a distinct result page is used to display results, an empty version of that original can be copied verbatim into a PCO. This is particularly useful in cases where site search load is considerable over the proxy and the origin server would benefit from not having to handle search requests that it is not equipped to answer.
 
 ## Scripts/Libraries
 

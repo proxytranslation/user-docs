@@ -154,7 +154,7 @@ HTML:
 
 ##### JSON
 
-For JSON elements, the specific `json` selector is also available.
+For nested JSON elements, the specific `json` selector is also available. Use this mode to mark nested code parts that only contain JSON, as opposed to complete JavaScript code.
 
 #### Skip
 

@@ -44,7 +44,7 @@ Here you can see the number of served requests and words added to your project r
  
 On this card, you have a couple of options that are the set once and forget kind. You may need to reference these settings later so it's handy that they are present here.
  
-- **Project workflow**: Change the number of project participants and project workflow type using this dropdown. See [Collaboration](/workbench/workflow/workflow.html) for more information.
+- **Project workflow**: Change the number of project participants and project workflow type using this dropdown. See [Collaboration](../workbench/workflow/workflow.html) for more information.
  
 - **Gateway domain**: If the site you wish to translate has a strict firewall that blocks the proxy, the admins can set up a gateway for you. In this case, all of the requests go through that gateway and will arrive to the origin server
   from a fixed IP address that can be whitelisted. Here you can see whether the gateway is enabled.
@@ -74,7 +74,7 @@ Settings that affect the way crawls work:
 
 Although it is true that the project address cannot be changed after the project is created, the Staging domain feature can still be used to change the origin server to which requests are sent.
 
-For details, please see the Cookbook recipe [on Staging domains](../dashboard/cookbook/stagingdomain.html)
+For details, please see the Cookbook recipe [on Staging domains](../dashboard2/cookbook/stagingdomain.html)
 
 ## Documentation
 
@@ -102,7 +102,7 @@ A few restrictions apply to project linking:
 
 **Form** solutions tend to use content from external domains. The localization of **HubSpot forms**, for example, is a frequent and somewhat challenging use case of project linking.
 
-The topic of translating such content using proxy features only is covered in detail [on this cookbook page](../dashboard/cookbook/hubspotforms.html).
+The topic of translating such content using proxy features only is covered in detail [on this cookbook page](../dashboard2/cookbook/hubspotforms.html).
  
 ## Target languages
 

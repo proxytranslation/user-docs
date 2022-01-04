@@ -16,7 +16,7 @@ To scan content behind secure login, please follow this procedure:
    
    Go to the address bar and type in the URL of the login-protected page.
 
-![Login page through the proxy](./../../img/misc/preview_login.jpg)
+![Login page through the proxy](./../../img/misc/preview_login.png)
 
 4. Enter your login details.
 
@@ -32,8 +32,6 @@ To scan content behind secure login, please follow this procedure:
 
 ![Cookie header](./../../img/misc/cookie_header.jpg)
 
-9. Pass it to the Proxy: go back to your project and click on **Content**. Paste the entire content in the **Scanning cookies** field.
+9. Pass it to the Proxy during your next crawl: when you get to step 4 of the Crawl wizard, go to the *Miscellaneous* tab. Paste the cookie value into the Session Cookie field and run your crawl as usual.
 
-![Passing the cookie to the proxy](./../../img/misc/pass_cookie.jpg)
-
-10. Click on **Scan manually** and specify the required scanning settings. You will receive an e-mail notification once scanning is ready and new content is available for translation.
+![Passing the cookie to the proxy](./../../img/misc/pass_cookie.png)

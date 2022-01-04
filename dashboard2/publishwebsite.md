@@ -55,12 +55,12 @@ Due to the way the proxy works, this requires a reverse proxy configuration to b
 
 Client-Side translation bypasses the proxy entirely, and conducts the translation process in the user's browser without passing data through third parties. This can be desirable for clients bound by legal or security restrictions.  
 
-To use Client-Side Translation, you need to create a new export _via the old Dashboard_, with the following settings:
+To use Client-Side Translation, you need to create a new export (not a Work package), with the following settings:
 + **File Format**: JS
 + **Export**: All Entries
 + **Unique segments only**: checked
 
-![Settings for CST export - this needs to be launched from Dashboard 1.0!](/img/dashboard2/js-export.jpg)
+![Settings for CST export](/img/dashboard2/js-export.png)
 
 Once the export completes, it has to be published from the _Actions_ column of the _Previous Export_ screen, and the client must add the _loader script_ to their website by inserting the following one-liner:
 ```
@@ -100,7 +100,7 @@ Our support team can also provide you with the *Certificate Signing Requests* ne
 
 Additionally, we have a *Managed Certificate* program, where the proxy handles SSL certification automatically for published websites. The *Managed Certificate* program has a cost of 50EUR (60USD)/proxied domain/**year** or 100EUR (120USD)/proxied domain/**three** years.
 
-See the pertaining section of the documentation [here](../dashboard/cookbook/ssl_certificates.html).
+See the pertaining section of the documentation [here](../dashboard2/cookbook/ssl_certificates.html).
 
 #### STEP 3 [Selected publishing mode: Subdirectory publishing] - CDN / Reverse proxy
 

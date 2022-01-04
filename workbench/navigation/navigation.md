@@ -24,7 +24,7 @@ The All Entries list doesn't flood your browser with every last segment all at o
 
 ### Show Pending Entries
 
-By default, Scans will pick up new entries in "Approved" state, which in this case means "Approved for Translation", immediately available for translation. You can change this default behavior, by going into the Dashboard and changing it in <a href="/en/latest/dashboard/menu/dashboard.html#advanced-settings">Advanced settings</a> to either Pending or Excluded.
+By default, Scans will pick up new entries in "Approved" state, which in this case means "Approved for Translation", immediately available for translation. You can change this default behavior, by going into the Dashboard and changing it in [Advanced settings](../dashboard2/settings/advancedsettings.md) to either Pending or Excluded.
 
 By clicking on "Show pending entries" in the page list, the list of all entries that are currently waiting for Approval is displayed. In their current state, They will not be included into exports unless the relevant option is selected at export-time, and will not appear for translation unless filtered for specifically.
 
