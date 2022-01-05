@@ -1,6 +1,6 @@
 # HubSpot Forms
 
-The proxy supports translation of HubSpot (or similar) forms via a combination of [project linking](../menu/dashboard/linkprojects.html) and [JS translation](../cookbook/jstranslation.html).
+The proxy supports translation of HubSpot (or similar) forms via a combination of [project linking](../dashboard2.html#linked-projects) and [JS translation](../cookbook/jstranslation.html).
 
 **Method #1** marshals a combination of advanced proxy features. It is entirely **hands-off** from the site maintainer's perspective, no change on the original server is necessary (which is a rather frequent constraint).
 
@@ -30,11 +30,11 @@ Don't forget to add every target language of the main project to each project yo
 
 ### Link Projects
 
-Open each project in a separate tab and link each project according to the [section on Project Linking](../menu/dashboard/linkprojects.html). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
+Open each project in a separate tab and link each project according to the [section on Project Linking](../dashboard2.html#linked-projects). The result should be a chain of projects leading from `example.com` to `forms.hubspot.com` with `js.hsforms.net` as an intermediary.
 
 ### Alternative: Search & Replace
 
-The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purpose is merely to expose a slightly modified version of the `/forms/v2.js` script. If its URL is referred to in a way that makes it possible, you can *sidestep* the domain using a combination of [Search & Replace](../menu/dashboard/pathsettings.html#search-replace-override) and a [page content override](../../dashboard2/pagemodifiers/contentoverride.html). The setup steps for this are as follows (done on the main project):
+The `js.hsforms.net` project is not, strictly speaking, necessary. Its true purpose is merely to expose a slightly modified version of the `/forms/v2.js` script. If its URL is referred to in a way that makes it possible, you can *sidestep* the domain using a combination of [Search & Replace](../pathsettings.html#search-replace-override) and a [page content override](../../dashboard2/pagemodifiers/contentoverride.html). The setup steps for this are as follows (done on the main project):
 
 1. **create a path override** for the exact URL where the form is present (the diagram above shows `/contact` as an illustration).
 

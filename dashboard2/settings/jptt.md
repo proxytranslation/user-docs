@@ -152,6 +152,10 @@ HTML:
 ```
 **Note:** The JSON Path tester tool is **not equipped** to display the nested use case.
 
+##### JSON
+
+For nested JSON elements, the specific `json` selector is also available. Use this mode to mark nested code parts that only contain JSON, as opposed to complete JavaScript code.
+
 #### Skip
 
 Use this processing mode to mark child node not to be translated. **Order is important!**

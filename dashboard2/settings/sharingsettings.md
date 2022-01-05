@@ -22,7 +22,7 @@ The various **features**, (administrative rights) deserve to be detailed, Here t
 
 **Manage segments**: make the user a Customer, with the ability to manage (approve or exclude) pending source segments. The user will also require a workflow role and an assigned target language to access the Workbench to manage segments. **WARNING! This right restricts the user to this role, other features will be disabled!**
 
-**NOTE** __Features__ are predominantly important from a project management viewpoint. __Workflow roles__, on the other hand, are used to manage user interaction __on the Workbench__, based on expertise (whether a user is a translator, proofreader or client will decide what sets of segments are available to them for editing - see the [documentation of the Workbench](/workbench/workbench_index.html) for details).
+**NOTE** __Features__ are predominantly important from a project management viewpoint. __Workflow roles__, on the other hand, are used to manage user interaction __on the Workbench__, based on expertise (whether a user is a translator, proofreader or client will decide what sets of segments are available to them for editing - see the [documentation of the Workbench](../../workbench/workbench_index.html) for details).
 
 After a user redeems their invitation using the link they receive in an e-mail, their address and username will appear under the owner. Their features,and workflow roles and whether they should receive e-mail notifications can be edited by clicking on their line in the table.
 

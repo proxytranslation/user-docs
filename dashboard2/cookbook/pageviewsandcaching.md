@@ -114,7 +114,7 @@ A measure of carefulness is advised!
 
 If you find that very sensible defaults are coming in from the original server, that is very good news, but it is also a fact that such is not always the case.
 
-To adjust `Cache-Control` on the proxy-side, go to Dashboard > Path settings to override headers on a URL or prefix-basis. See the [Path settings](../../dashboard/menu/dashboard/pathsettings.html) documentation to learn more about overriding/fine-tuning Cache-Control headers.
+To adjust `Cache-Control` on the proxy-side, go to Dashboard > Path settings to override headers on a URL or prefix-basis. See the [Path settings](../../dashboard2/pathsettings.html) documentation to learn more about overriding/fine-tuning Cache-Control headers.
 
 ### References
 

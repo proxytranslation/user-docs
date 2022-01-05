@@ -10,7 +10,7 @@ Because the server is the one, who does the actual searching, we call this appro
 
 **This introduces a potential issue**
 
-On a proxied site, however, we run up against a problem: the original does not know about the translations. Requests are automatically relayed to the original server. If a visitor were to type "**produkt**" on the German domain (resulting in an URL navigation to `https://de.example.com/search?q=produkt`), that is the same as relaying a search query with German language content to the original site.
+On a proxied site, however, we run up against a problem: the original server does not know about the translations. Requests are automatically relayed to the original server. If a visitor were to type "**produkt**" on the German domain (resulting in an URL navigation to `https://de.example.com/search?q=produkt`), that is the same as relaying a search query with German language content to the original site.
 
 Not possessing a _German language index_, the response is certain to contain 0 results. The fact that the proxy is CMS-agnostic and that it generally doesn't require that translated content be shared with the original server also means that this same content will not be available to the indexing/search software that is running on the original.
 
@@ -27,7 +27,7 @@ On the one hand, such a site search has to be coded in JavaScript in the form of
 
 On the other hand, familiarity with the various indexing-related conditions of your chosen vendor is also important (we provide pointers to some documentation for Bing, since it is the vendor used in the example). In our experience, it is not at all unusual for search engines to act leisurely in their pace. Remember that a site can only be indexed after it is published over the proxy.
 
-On the same note, the [publishing method](../../dashboard/index.html#publish-website) you use can also have a bearing on the way search & indexing will work, so a case-by-case analysis is a must. Note that the Client-Side Translation publishing method is *not compatible* with a site search integration of the type described here.
+On the same note, the [publishing method](../../dashboard2/index.html#publish) you use can also have a bearing on the way search & indexing will work, so a case-by-case analysis is a must. Note that the Client-Side Translation publishing method is *not compatible* with a site search integration of the type described here.
 
 ### Third-party Integrations
 
@@ -41,7 +41,7 @@ Consult the [Webmaster Tools Documentation](https://www.bing.com/webmaster/help/
 
 If you want to track the indexing of your subdomains in Webmaster Tools and do SEO tracking, you'll need to verify ownership of the target language subdomains. The available methods are [described here](https://www.bing.com/webmaster/help/how-to-verify-ownership-of-your-site-afcfefc6).
 
-The XML-based approach is the simplest to implement over the proxy (it can be done without having to apply any changes on the origin): create a temporary [Page Content Override](../../menu/pagemodifiers/contentoverride.html) with the contents of `BingSiteAuth.xml` (content type should be `text/xml`). This exposes the authorization XML over the proxy domains. From then on, you are free to add the target language subdomains in Webmaster Tools and verify them one-by-one.
+The XML-based approach is the simplest to implement over the proxy (it can be done without having to apply any changes on the origin): create a temporary [Page Content Override](../../dashboard2/pagemodifiers/contentoverride.html) with the contents of `BingSiteAuth.xml` (content type should be `text/xml`). This exposes the authorization XML over the proxy domains. From then on, you are free to add the target language subdomains in Webmaster Tools and verify them one-by-one.
 
 ## Part II: Example
 

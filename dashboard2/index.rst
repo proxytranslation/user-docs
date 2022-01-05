@@ -38,7 +38,10 @@ Settings
    settings/alarm
    settings/auditlog
    settings/sharingsettings
-   pagecache/pagecache.rst
+   pagecache/sourcecache
+   pagecache/targetcache
+   pagecache/snapshotsettings
+   pagecache/casestudies
    settings/jptt
    pathsettings
    path_settings/default_charset
@@ -50,7 +53,6 @@ Settings
    path_settings/extractor
    path_settings/injector
    settings/statistics
-   settings/complexitymatrix
 
 Page modifiers
 :::::::::::::

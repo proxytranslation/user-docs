@@ -82,7 +82,7 @@ Picking up JSON/JS/XML content *wholesale* would be both costly and unwieldy. Wh
 
 ### JS/JSON paths
 
-Go to JSON/JS/XML processing on the Dashboard 2.0, and select the JSON path tester tab. This tool can be used to mark specific string in JavaScript or in JSON as translatable. You can more about it [here](../../dashboard2/jptt.html)
+Go to JSON/JS/XML processing on the Dashboard 2.0, and select the JSON path tester tab. This tool can be used to mark specific string in JavaScript or in JSON as translatable. You can more about it [here](../../dashboard2/settings/jptt.html)
 
 ### Xpaths
 
@@ -105,4 +105,4 @@ Note the influence of **TM Freeze** on this approach: you need to disable it tem
 
 JS translation cannot be used with values such as `var string = "You have " + getCartItems().length + " items in your basked"`). In these cases, you either have to forego translation or change the content so that no *computed expression* is present among the concatenated elements.
 
-This implies that those instances of string concatenation where *no* token of the expression is computable are supported. This is indeed so, and provided that the appropriate tweak is enabled in [Advanced settings](../../menu/dashboard/advancedsettings.html#tweaks), the proxy can perform string concatenation *upfront* and handle the resulting string as a whole.
+This implies that those instances of string concatenation where *no* token of the expression is computable are supported. This is indeed so, and provided that the appropriate tweak is enabled in [Advanced settings](../settings/advancedsettings.html#tweaks), the proxy can perform string concatenation *upfront* and handle the resulting string as a whole.
