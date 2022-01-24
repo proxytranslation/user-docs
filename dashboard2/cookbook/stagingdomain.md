@@ -12,9 +12,9 @@ All requests going through the proxy (regardless of initiator, such as a user se
 
 ## Default and Live Default Staging domains
 
-Hover over the staging domain name to reveal three options. *Live default*, *Default* and *Delete*.
+Click the three-dot action button to reveal four options. *Edit*, *Set/Unset default staging*, *Set/Unset as live*, and *Delete*.
 
-![Staging Domain Example](/img/staging-domain.png)
+![Staging Domain Example](/img/staging_domain.png)
 
 Click on "Make Live default" to enable the staging domain for the live published site. A tick icon will be displayed next to the staging domain when this option is enabled.
 
