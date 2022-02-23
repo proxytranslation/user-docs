@@ -104,11 +104,17 @@ See the pertaining section of the documentation [here](../dashboard2/cookbook/ss
 
 #### STEP 3 [Selected publishing mode: Subdirectory publishing] - CDN / Reverse proxy
 
-We tried to provide you the absolute minimum example configurations required to achieve a workable reverse proxy using the three most popular webserver systems (Nginx, Apache httpd, and Microsoft Internet Information Systems), and also an example configuration for AWS Cloudfront CDN.
+We tried to provide you the absolute minimum example configurations required to achieve a workable reverse proxy using five popular web server/CDN systems. See the integration guide for them below:
+
+- [nginx](/dashboard2/publishwebsite/integration-guide/nginx.md)
+- Microsoft IIS
+- Apache HTTPD
+- [AWS CouldFront](/dashboard2/publishwebsite/integration-guide/cloudfront.md)
+- CloudFlare Workers
 
 ![CDN / Reverse proxy options](/img/dashboard2/subdirectory.png)
 
-If you select an option, for example _Multiple locales as a subdirectory at depth 1_, it will only show you a different configuration as an example, but as we wrote previously, you need to set up your own reverse proxy or CDN, configured appropriately. You can also setup path prefix rules under the menu _Path Specific Settings_, and we will discuss about these configuration options later.
+If you select an option, for example _Multiple locales as a subdirectory at depth 1_, it will only show you a different configuration as an example, but as we wrote previously, you need to set up your own reverse proxy or CDN, configured appropriately. You can also set up path prefix rules under the menu _Path Specific Settings_, and we will discuss these configuration options later. 
 
 The goal of any reverse proxy configuration interoperating with a translation proxy domain requires that its configuration reflect the intent of the configuration examples.
 
