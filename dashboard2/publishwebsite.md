@@ -110,7 +110,7 @@ We tried to provide you the absolute minimum example configurations required to 
 - Microsoft IIS
 - Apache HTTPD
 - [AWS CouldFront](/dashboard2/publishwebsite/integration-guide/cloudfront.md)
-- CloudFlare Workers
+- [CloudFlare Workers](/dashboard2/publishwebsite/integration-guide/cloudflare.md)
 
 ![CDN / Reverse proxy options](/img/dashboard2/subdirectory.png)
 
