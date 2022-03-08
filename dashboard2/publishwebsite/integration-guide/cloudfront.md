@@ -8,13 +8,13 @@ To get started, it's recommended to copy the settings provided in the Publishing
 - Project code: `redacted`
 - Translations exist for German
 - We wish to publish them to example.com/de/
-- Your white label is app.translationproxy.com
+- Your white label is app.proxytranslation.com
 
 With these options set in the Publish wizard, we get the following configuration:
 
 ```
 Alternate Domain Names (CNAMEs): example.com
-Origin Domain Name: de-de-redacted.app.translationproxy.com
+Origin Domain Name: de-de-redacted.app.proxytranslation.com
 Behavior | path pattern: /de/*
 
 Origin custom headers:
@@ -38,7 +38,7 @@ With these details on hand, you can follow the following steps:
 
 1. Log in to your CloudFront dashboard and head to *Distributions*. Or just use [this link](https://console.aws.amazon.com/cloudfront/v3/home?#/distributions).
 2. Click *Create distribution*. You'll be navigated to the distribution creation form that you must fill in.
-    - Origin domain: Use the one provided by the Publish wizard. In our case it's `de-de-redacted.app.translationproxy.com`. 
+    - Origin domain: Use the one provided by the Publish wizard. In our case it's `de-de-redacted.app.proxytranslation.com`. 
     - Protocol: HTTPS only is recommended, but Match viewer can work too.
     - Origin path: leave empty.
     - Name: enter a memorable name. We recommend `translationproxy-language`.
@@ -47,7 +47,7 @@ With these details on hand, you can follow the following steps:
     - Under *Headers* select *Include the following headers*
     - Select the headers provided by the Publish wizard under *Cache Based on Selected Request Headers*
     - Ensure *Object caching* is set to *Use origin cache headers*.
-4. In the *Settings* section, just a bit further down, add the *Alternative domain name (CNAME)* as specified by the Publish wizard. In our case, it's `example.com`
+4. In the *Settings* section, just a bit further down, add the *Alternative domain name (CNAME)* as specified by the Publish wizard. In our case, it's `example.com`. Note that an SSL certificate will also be necessary for serving via HTTPS.
 5. Click *Create distribution*
 6. Navigate back to the *Distributions* section and select the newly created Distribution from the list. You'll be navigated to the details page of the Distribution that has multiple tabs.
 7. On the *General* tab, ensure that an SSL certificate is available. If not, create and upload one.
@@ -60,18 +60,23 @@ With these details on hand, you can follow the following steps:
         - Name: enter a memorable name. We recommend the domain of the original site `example.com`.
         - Click *Create origin* to save.
     - **NOTE:** If you later wish to add additional languages, you don't need to create a completely different distribution, just add them here and follow the note under the following step too.
-9. On *Behaviors*, (which should really be spelled Behavio**u**rs, my spellchecker is complaining)
+9. On *Behaviors*,
     - Click *Create behavior* and use the following details
         - Path pattern: as specified by the Publish wizard - `/de/*`
         - Origin and origin groups: select the `translationproxy-language` origin added previously
         - Click *Create behavior* to save
     - **NOTE:** To add further languages, do this again with the appropriate Path patterns and Origins
-    - At this point, you should have behaviors set for every target language, but we'll also need one for the case when the visitor wants to see the source language site. Click *Create behavior* again and use the following details:
-        - Path pattern: this depends on the structure of the site
-            - If the original content is under the root, meaning that it is `example.com/path/to/page`, then enter the path you wish to move it to, like `/en/*`. 
-            - If the original content is already under a language folder, enter `*`.
-        - Origin and origin groups: select the `example.com` origin added previously
-        - Click *Create behavior* to save
+    - At this point, you should have behaviors set for every target language, but we'll also need one for the case when the visitor wants to see the source language site. The process to follow depends on the structure of the site.
+        - If the original content is under the root, meaning that it is `example.com/path/to/page`, do the following steps:
+            - Click *Create behavior* again and use the following details:
+                - Path pattern: enter the path you wish to move it to, like `/en/*`.
+                - Origin and origin groups: select the `example.com` origin added previously
+            - Click *Create behavior* to save
+        - If the original content is already under a language folder the steps are slightly different:
+            - In the list of behaviors, there is one called the *Default (\*)*. Find it and select it.
+            - The *Edit* button becomes available. Click it.
+            - At *Origin and origin groups*, select the `example.com` origin added previously
+            - Scroll down to the bottom and click *Save changes*
 10. With that, the CloudFront configuration is complete.
 
 These instructions are up-to-date as of 24/02/2022.

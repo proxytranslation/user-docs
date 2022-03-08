@@ -12,7 +12,7 @@ To get started, it's recommended to copy the settings provided in the Publishing
 - Project code: `redacted`
 - Translations exist for German
 - We wish to publish them to example.com/de/
-- Your white label is app.translationproxy.com
+- Your white label is app.proxytranslation.com
 
 With these options set in the Publish wizard, we get the following configuration:
 
@@ -20,7 +20,7 @@ With these options set in the Publish wizard, we get the following configuration
 location ~* ^/(de) {
         resolver 8.8.8.8;
 
-        set $xhost de-de-redacted.app.translationproxy.com;
+        set $xhost de-de-redacted.app.proxytranslation.com;
 
         proxy_set_header X-TranslationProxy-Cache-Info   disable;
         proxy_set_header Server $xhost;
@@ -46,12 +46,6 @@ $ sudo su
 ```
 
 **WARNING:** At this point, you have complete, *unrestricted* access to the server. It's very easy to break it. Don't run commands that you aren't certain will do what you need to.
-
-If you have no reason not to do so, it's probably a good idea to update your server.
-
-```
-# apt update && apt upgrade -y
-```
 
 By default, the configuration file can be found at `/etc/nginx/nginx.conf`. We'll need to edit this file with our text editor of choice:
 
@@ -159,7 +153,15 @@ The configuration is in place, but nginx doesn't automatically switch them over.
 # nginx -t
 ```
 
-If no errors are printed, you can reload without dropping connections via 
+If no errors are printed, you should verify that your server can access the translation proxy. You can do so, for example, via `curl` and `head`. Don't forget to replace `de-de-redacted.app.proxytranslation.com` with your temporary domain.
+
+```
+# curl -Is https://de-de-redacted.app.proxytranslation.com/ | head -1
+```
+
+This should print that the status code is `200`. If it doesn't, a likely explanation is that your server is missing Certificate Authority certificates and as a result can't connect to our service via HTTPS. Installing such certificates is beyond the scope of this article, but Tech Republic has a comprehensible tutorial on the topic [here](https://www.techrepublic.com/article/how-to-install-ca-certificates-in-ubuntu-server/).
+
+Finally, you can reload the configuration without dropping connections via 
 
 ```
 # systemctl reload nginx

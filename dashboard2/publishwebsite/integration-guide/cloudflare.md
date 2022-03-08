@@ -8,7 +8,7 @@ To get started, it's recommended to copy the settings provided in the Publishing
 - Project code: `redacted`
 - Translations exist for German
 - We wish to publish them to example.com/de/
-- Your white label is app.translationproxy.com
+- Your white label is app.proxytranslation.com
 
 With these options set in the Publish wizard, we get the following configuration:
 
@@ -23,7 +23,7 @@ addEventListener('fetch', event => {
 async function handleRequest(request) {
     const redirectPaths = ['de']
     const proxyUrls = {
-        'de': 'de-de-redacted.app.translationproxy.com'
+        'de': 'de-de-redacted.app.proxytranslation.com'
     };
 
     const url = new URL(request.url);

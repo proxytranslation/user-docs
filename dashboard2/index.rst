@@ -68,6 +68,9 @@ Publish
 
 .. toctree::
    publishwebsite
+   publishwebsite/integration-guide/nginx
+   publishwebsite/integration-guide/cloudfront
+   publishwebsite/integration-guide/cloudflare
    publishwebsite/globalsettings
    publishwebsite/languageselector
    publishwebsite/linktransformation
