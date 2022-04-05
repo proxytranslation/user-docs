@@ -67,4 +67,6 @@ With these details on hand, you can follow the following steps:
 12. Your environment will now respond to requests to `*.example.com/*`. You can verify that the translated site loads at, in our case, https://example.com/de/
 13. With that, the CloudFlare Worker configuration is complete.
 
+Make sure that [Rocket Loader](https://support.cloudflare.com/hc/en-us/articles/200168056-What-does-Rocket-Loader-do-) is disabled when using CloudFlare!
+
 These instructions are up-to-date as of 04/03/2022.
