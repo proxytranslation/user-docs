@@ -1,6 +1,6 @@
-# Client-Side Translation
+# Basic publishing: Client-Side Translation
 
-**CST is currently in a live-tested beta phase.**
+**Basic publishing is currently the recommended publishing method.**
 
 ## What is CST?
 
