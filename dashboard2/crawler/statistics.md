@@ -18,13 +18,13 @@ Below is a breakdown of the various repetition percentages in the Statistics.
 
 **99% - Strong fuzzy repetitions**: In this case, a repetition is found after few transformations on the segment before comparing: tags from the ends are stripped out, words lowercased, numbers ignored.
 
-**98% - Weak fuzzy repetitions**:Here, all tags are stripped out, not just the ones in the end; words lowercased, numbers ignored.
+**98% - Weak fuzzy repetitions**: Here, all tags are stripped out, not just the ones in the end; words lowercased, numbers ignored.
 
 ## 102% repetitions
 
 102% repetitions warrant special mention. The proxy deals with *HTML block entries*, and has a very "overarching" view of them, since it strives to ensure that the same entry is never translated twice, regardless of which page it shows up on.
 
-Consider a **navigation bar** of a website. During a Discovery, the proxy will come across the navbar *for the first time* on the landing page. It will aggregate the word count of the block elements in the navigaion bar as **unique** and moves on to analyze the next page.
+Consider a **navigation bar** of a website. During a Discovery, the proxy will come across the navbar *for the first time* on the landing page. It will aggregate the word count of the block elements in the navigation bar as **unique** and moves on to analyze the next page.
 
 Of course, navigation bars are such that they are shown on all pages of a website, so when the proxy sees the same navigation bar for the *second time* somewhere else, it doesn't count it as unique: instead, it adds the associated word count as a **102% repetition**.
 
