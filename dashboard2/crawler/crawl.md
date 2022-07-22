@@ -1,5 +1,5 @@
-Crawl
-=====
+Crawl types
+===========
 
 Presumably, one of the most important tools for your working process is the crawler, since it allows you to map out sites by running a _Wordcount (Discovery)_ for proposals for instance or start _Content extraction (Scan)_ for
  translation. There are two more crawling options, and we will discuss these as well in this article. You can set up crawls using the [Crawl wizard](crawlwizard.html).

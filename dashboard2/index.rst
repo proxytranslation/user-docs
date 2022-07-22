@@ -28,6 +28,15 @@ Content
    content/previousexports
    content/deleteentries
 
+Snapshot
+::::::::
+
+.. toctree::
+   pagecache/sourcecache
+   pagecache/targetcache
+   pagecache/snapshotsettings
+   pagecache/casestudies
+
 Settings
 :::::::::::::
 
@@ -38,10 +47,6 @@ Settings
    settings/alarm
    settings/auditlog
    settings/sharingsettings
-   pagecache/sourcecache
-   pagecache/targetcache
-   pagecache/snapshotsettings
-   pagecache/casestudies
    settings/jptt
    pathsettings
    path_settings/default_charset
@@ -87,22 +92,3 @@ Workbench
 
 .. toctree:: 
    workbenchlink
-
---------
-Cookbook
---------
-
-.. toctree::
-   cookbook/whitelabel
-   cookbook/jstranslation
-   cookbook/resourcetranslation
-   cookbook/hubspotforms
-   cookbook/pageviewsandcaching
-   cookbook/requestevaluation
-   cookbook/stagingdomain
-   cookbook/rtlconversion
-   cookbook/ssl_certificates
-   cookbook/proxymodes
-   cookbook/headers
-   cookbook/securelogin
-   cookbook/sitesearch

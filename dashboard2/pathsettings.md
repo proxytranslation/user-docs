@@ -1,8 +1,8 @@
-## Path settings
+## Path prefix overrides
 
 The proxy supports the declaration and use of rules called path overrides (alternatively called _Subtree Overrides_). They can be used to apply a variety of changes to an exact (e.g. `/about-us.html`) or prefix paths (e.g. all pages under `/products`). 
 
-![Path settings dialog default view](../img/dashboard2/path_settings_default.png)
+![Path prefix overrides dialog default view](../img/dashboard2/path_settings_default.png)
 
 A project has no overrides by default. Besides the search field at the top, the "Add new path" button is available. Click on it to type or copy & paste your path/prefix. Click on the "Add new path" button to add it to the list. The option to choose the type  of the path (exact URL or prefix) is available as a dropdown.
 

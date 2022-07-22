@@ -20,7 +20,7 @@ The memories added (created or assigned) to the project will show up in the list
 
 The screen is furnished with a search field you can use to look up segments in a TM.
 
-### **IMPORTANT NOTE!**
+**IMPORTANT NOTE!**
 
 The TMs you manage on this screen and the Workbench are different from the Translation Memory that is billed: they are used for concordance lookups and automatic translation, and they are completely free to create and use.
 
