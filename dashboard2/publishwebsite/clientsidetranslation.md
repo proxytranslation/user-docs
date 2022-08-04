@@ -1,12 +1,12 @@
-# Basic publishing: Client-Side Translation
+# Basic publishing: Client-side translation
 
 **Basic publishing is currently the recommended publishing method.**
 
 ## What is CST?
 
-To summarize briefly, Client-side Translation is a **publishing method** that lets you use your translations on the original domain. 
+To summarize briefly, Client-side translation is a **publishing method** that lets you use your translations on the original domain. 
 
-As opposed to the proxy method, which involves standing between the user request and the original site, translating responses on-the-fly, Client-Side translation does not require the proxy pipeline to serve content.
+As opposed to the proxy method, which involves standing between the user request and the original site, translating responses on-the-fly, Client-side translation does not require the proxy pipeline to serve content.
 
 That is, instead of being processed in the Cloud, translation of the page will happen in the user's browser, using a JavaScript based dictionary file that can be exported from your project and embedded right in the original site's HTML source.
 
@@ -22,7 +22,7 @@ Client-side publishing consists of two steps:
 
 ### Dashboard - Publish Your Translations
 
-There are three things you must do on the Dashboard. First, head to the _Export_ section. Under _File format_, select _Client side translation (JS, export only). The rest of the options change to the correct values by default. You'll be notified via email when the process is finished. Once it arrives, go to _Previous exports_. Find the latest JavaScript export and in the action menu, select _Publish_. Finally, go to _Language selector_, select the target language(s) and click save.
+There are three things you must do on the Dashboard. First, head to the _Export_ section. Under _File format_, select _Client-side translation (JS, export only). The rest of the options change to the correct values by default. You'll be notified via email when the process is finished. Once it arrives, go to _Previous exports_. Find the latest JavaScript export and in the action menu, select _Publish_. Finally, go to _Language selector_, select the target language(s) and click save.
 
 ### Add stub.js reference to original site
 
@@ -33,7 +33,7 @@ Like embedding a video, including your published translations involves adding a 
 
 ```
 
-We have a dedicated integrators' guide that you can find [here](../../cookbook/jstranslation).
+We have a dedicated integrators' guide that you can find [here](../../tech-manual/crest).
 
 Once the script is placed on the original site, a dictionary file of published translations will be downloaded by the site automatically and a language selector will be displayed. You can just select a new target language.
 
