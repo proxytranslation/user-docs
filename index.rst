@@ -9,6 +9,7 @@ User Documentation
    accountsettings/index.rst
    workbench/workbench_index.rst
    maintenance/maintenance_index.rst
+   cookbook/index.rst
    tech-manual/index.rst
    troubleshooting/troubleshooting_index.rst
    faq/faq
