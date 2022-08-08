@@ -2,16 +2,17 @@
 Cookbook
 ========
 
-whitelabel
-jstranslation
-resourcetranslation
-hubspotforms
-pageviewsandcaching
-requestevaluation
-stagingdomain
-rtlconversion
-ssl_certificates
-proxymodes
-headers
-securelogin
-sitesearch
+.. toctree::
+   whitelabel
+   jstranslation
+   resourcetranslation
+   hubspotforms
+   pageviewsandcaching
+   requestevaluation
+   stagingdomain
+   rtlconversion
+   ssl_certificates
+   proxymodes
+   headers
+   securelogin
+   sitesearch
