@@ -22,7 +22,7 @@ Client-side publishing consists of two steps:
 
 ### Dashboard - Publish Your Translations
 
-There are three things you must do on the Dashboard. First, head to the _Export_ section. Under _File format_, select _Client-side translation (JS, export only). The rest of the options change to the correct values by default. You'll be notified via email when the process is finished. Once it arrives, go to _Previous exports_. Find the latest JavaScript export and in the action menu, select _Publish_. Finally, go to _Language selector_, select the target language(s) and click save.
+There are three things you must do on the Dashboard. First, head to the _Export_ section. Under _File format_, select _Client-side translation (JS, export only)_. The rest of the options change to the correct values by default. You'll be notified via email when the process is finished. Once it arrives, go to _Previous exports_. Find the latest JavaScript export and in the action menu, select _Publish_. Finally, go to _Language selector_, select the target language(s) and click save.
 
 ### Add stub.js reference to original site
 
