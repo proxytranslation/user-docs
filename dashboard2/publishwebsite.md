@@ -55,7 +55,7 @@ Due to the way the proxy works, this requires a reverse proxy configuration to b
 
 Client-Side translation bypasses the proxy entirely, and conducts the translation process in the user's browser without passing data through third parties. This can be desirable for clients bound by legal or security restrictions.  
 
-To use Client-Side Translation, you need to create a new export (not a Work package), with the following settings:
+To use Client-Side translation, you need to create a new export (not a Work package), with the following settings:
 + **File Format**: JS
 + **Export**: All Entries
 + **Unique segments only**: checked
