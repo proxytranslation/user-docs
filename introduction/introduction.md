@@ -75,19 +75,19 @@ and many more!
 
 The proxy offers a white label version that can be customized with your corporate logos and domains to create a branded version, allowing you to use & sell the translation proxy as your own product. To create the branded version, seven criteria must be met. See the "White-label setup" section for details.
 
-## Pricing -- plans
+## Pricing - plans
 
-Based on the feedbacks from our client, we built an all-inclusive pricing model, with a predictable, flat rate monthly fee and a few add-ons. The only variable being the number of translatable source words, it's easy to multiply by the number of target languages to get the final TCO.
+Based on the feedbacks from our client, we've built an all-inclusive pricing model, with a predictable, flat-rate monthly fee and a few add-ons. With the only variable being the number of translatable source words, it's easy to multiply by the number of target languages to get the final TCO.
 
-### add-ons
+### Add-ons
 
-- **Translation proxy**: with the new pricing scheme, JavaScript publishing is the as a fefault, while the proxy is available as an optional add-on
+- **Translation proxy**: with the new pricing scheme, JavaScript publishing is the default, while the proxy is available as an optional add-on
 - **Site search**: recommended if native site search is required
-- **SEO setup**: CDN / reverse proxy integration is required for subdirectory publishing, highly recommended to enhnace SEO effectiveness.
-- **Layout adjustment**: depending on the structure of the original site and the language pair, the translation might yield to text expansion, braking the look & feel of the site. Fixing issues could involve need for professional attention, changing the layout of the translated pages.
+- **SEO setup**: CDN / reverse proxy integration is required for subdirectory publishing, highly recommended to enhance SEO effectiveness
+- **Layout adjustment**: depending on the structure of the original site and the language pair, the translation might yield to text expansion, breaking the look and feel of the site. Fixing issues could involve a need for professional attention, changing the layout of the translated pages.
 
 
-## Pricing -- grandfathered pay-as-you-go
+## Pricing - grandfathered pay-as-you-go
 
 Our old pricing follows the ‘pay-as-you-go’ model, so you only get charged for what you use. The total cost is made up of 2 types of fees: one-time fees and a monthly charge. It's still available for the time being upon demand.
 
