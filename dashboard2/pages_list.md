@@ -125,6 +125,7 @@ Once you made sure you want to delete all the pages in the preview, just uncheck
 
 You will get notifications through the process. Once the page deletion is ready, you can refresh the pages list, and the desired pages should be removed. 
 
+Deleting pages from the project does not prevent them from being re-added, at least not in itself (for that, additional configuration is needed that actually addresses the root cause of the page being added, for example ignoring query parameters or excluding pages from the Crawls).
 
 
 ## Include & exclude rules
