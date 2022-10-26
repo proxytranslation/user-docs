@@ -112,6 +112,7 @@ You can right-click on a page to display page-specific actions. Again, depending
 A project, especially one with few inclusion/exclusion rules or one that uses URLs with many query parameters can over time accrue many pages in the page list. Page deletion is now available as a user feature.
 
 By clicking on the **Trashcan** icon on the _Pages list_ page, a pop-up window shows up. 
+
 ![Delete pages pop-up](/img/dashboard2/page-deletion1.png)
 
 There is an option to select what kind of content you want to delete, _pages_, _resources_, and _unknown_. The default option is _pages_, which will only look for pages matching the regex. 
