@@ -119,7 +119,7 @@ There is an option to select what kind of content you want to delete, _pages_, _
 
 The most important part of the process is defining the right **regular expression (regex)** for your needs. (You can find an online regex tester [_here_](https://regex101.com/).)
 
-Once you have your regular expression ready, you can run a preview of the pages that are about to be deleted to avoid incidents like deleting pages by mistake, and you can also check if the pattern matching found each and every page you intend to get rid of. 
+Once you have your regular expression ready, by checking the checkbox _Dry run: preview the URLs to be deleted_ and clickick the **Preview** button, you can run a preview of the pages that are about to be deleted to avoid incidents like deleting pages by mistake, and you can also check if the pattern matching found each and every page you intend to get rid of. 
 
 Once you made sure you want to delete all the pages in the preview, just uncheck the checkbox _Dry run: preview the URLs to be deleted_ and hit the **Delete** button. 
 
