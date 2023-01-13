@@ -72,6 +72,7 @@ Publish
 ::::::::::
 
 .. toctree::
+   publishwebsite/javascript-publishing
    publishwebsite
    publishwebsite/integration-guide/nginx
    publishwebsite/integration-guide/cloudfront
