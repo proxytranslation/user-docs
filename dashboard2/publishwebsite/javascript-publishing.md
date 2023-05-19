@@ -20,10 +20,10 @@ There are seven options:
 
 - *Include all the default parameters*: By default, the embed code is kept as short as possible. To achieve this, tweaks that aren't enabled aren't included in the URL. This tweak allows you to include them all.
 - *Language parameter*: By default, you can change the target language by appending `?__ptLanuguage=${target_language}` to the URL of the site. With this option, you can change it from `__ptLanguage`.
-- *Storage parameter*: By default, the user's language choice is stored in LocalStorage under `__ptStorage`. Change it with this option.
+- *Storage parameter*: By default, the user's language choice is stored in LocalStorage under `ptStorage`. Change it with this option.
 - `noXDefault`: By default, the translator adds an `x-default` link element to the translated website. With this option, you can prevent this.
 - *Rewrite URL*: By default, the target language is hidden in the URL. Use this tweak to ensure that `?__ptLanuguage=${target_language}` is always present in the URL.
-- *Script URL is base*: The injected script loads further translator scripts, one for each target language. Use this tweak to try loading them from the original site's domain. Use this feature if the JavaScript exports are uploaded to the original server.
+- *Script URL is base*: The injected script loads further translator scripts, one for each target language. Use this tweak to try loading them from the original site's domain. Use this feature if the JavaScript exports are uploaded to the original server. Note that this isn't supported under Internet Explorer.
 - *Disable selector*: The translator script adds the sidebar language selector by default. Use this tweak when a custom language selector is in place.
 
 ## Selectors
@@ -51,3 +51,11 @@ Here, you can specify JavaScript files that are injected to the website, even wh
 **TIP**: Write your JavaScript code to a Page content override making sure that the content type is set to `application/javascript`. Then, you can inject the temporary domain of this override.
 
 ![Injection screen](/img/dashboard2/crest-settings/injection.png)
+
+## Beta features
+
+We recently added new features that aren't yet available on the Dashboard, but can be tried. Just drop us a line, and we can enable them for you.
+
+- Custom flags for the language selector: By default, the same flags used on the Dashboard are used for the language selector. Now imagine you translate from `en-US` to `es-US`. In such a scenario, both flags would be that of the United States. Now, the flag can be replaced with any other flag. The English could become the flag of the United Kingdom or the Spanish flag could be used for `es-US`.
+- Passive mode: With this mode enabled, the translator script won't show the language selector, and it won't persist the user's selection either. This allows the use of custom management solutions.
+- Language selection based on path: If you have a page, like `example.com/fr/index.html`, the translator script can automatically select the French translations.
