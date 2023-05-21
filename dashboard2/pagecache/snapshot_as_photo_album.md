@@ -1,0 +1,7 @@
+# Snapshots are photo albums
+
+Snapshots store the content of pages similarly how you can store pictures you take in a photo album. When you take a photo and store it in your photo album, that photo will never change, and you can show it to anyone you like. Take a picture of a flower in your garden, for example. When it grows new leaves, those won't be visible on your photo.
+
+Now let's consider taking a Snapshot of your website. When you add a new paragraph, which would be the new leaf on your flower, that won't be added to the Snapshot. This allows you to show visitors a version of the translated website without the added paragraph while the translations are in progress. This way, you can prevent bleedthrough, when a segment or a paragraph is left in the source language on an otherwise translated page.
+
+One key advantage of Snapshots compared to photos of flowers is that snapshots are indistinguishable from the original. From the website visitors' point of view, they simply see a fully translated website, they are very unlikely to notice the minor difference between the source and the target sties. This means that if your snapshot is set up appropriately (e.g. every page and resource is included, as if you took a photo of every flower in your garden), the translated website becomes completely independent or decoupled of the original website. The source site can change or go down completely without affecting the translated site.
