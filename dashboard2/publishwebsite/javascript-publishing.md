@@ -20,7 +20,7 @@ There are seven options:
 
 - *Include all the default parameters*: By default, the embed code is kept as short as possible. To achieve this, tweaks that aren't enabled aren't included in the URL. This tweak allows you to include them all.
 - *Language parameter*: By default, you can change the target language by appending `?__ptLanuguage=${target_language}` to the URL of the site. With this option, you can change it from `__ptLanguage`.
-- *Storage parameter*: By default, the user's language choice is stored in LocalStorage under `ptStorage`. Change it with this option.
+- *Storage parameter*: By default, the user's language choice is stored in LocalStorage under `ptLanguage`. Change it with this option.
 - `noXDefault`: By default, the translator adds an `x-default` link element to the translated website. With this option, you can prevent this.
 - *Rewrite URL*: By default, the target language is hidden in the URL. Use this tweak to ensure that `?__ptLanuguage=${target_language}` is always present in the URL.
 - *Script URL is base*: The injected script loads further translator scripts, one for each target language. Use this tweak to try loading them from the original site's domain. Use this feature if the JavaScript exports are uploaded to the original server. Note that this isn't supported under Internet Explorer.
