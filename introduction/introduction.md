@@ -11,15 +11,15 @@ A translation proxy is a layer placed between the browser and the original websi
 
 There are several proxy solutions available on the market, yet the translation proxy is unique in that:
 
-- it is a solution targeted primarily at LSPs - which also means that this is the **only** LSP-independent solution on the market
+- it is a solution targeted primarily at language service providers (LSPs) - which also means that this is the **only** LSP-independent solution on the market;
 
-- also available as a white-label solution
+- it is also available as a white-label solution;
 
-- standard-compliant XLIFF export option ensures CAT-independence
+- a standard-compliant XLIFF export option ensures CAT-independence;
 
-- an automated XLIFF export/import option is available between CAT / Translation management systems and the proxy
+- an automated XLIFF export/import option is available between CAT / Translation management systems and the proxy;
 
-- in-context live preview available in certain CAT-tools and the online Workbench at translation-time
+- in-context live preview is available in certain CAT-tools and the online Workbench for translation.
 
 **What does that mean?**
 
@@ -29,7 +29,7 @@ If you are a **language service provider** (LSP), you can offer cutting-edge web
 
 **Sounds good?**
 
-There are several challenges both business owners and language service providers face during website translation. The "ideal" workflow would be to create the content in the original language, get it translated into the desired languages, and then publish all language variants at the same time, from the website owner's own content management system (CMS) - right from the very first page on the website. However, the reality is often different. Apart from the fact that not many CMSs are capable of handling several languages, usually, website localization comes into the picture at a later stage, when there is already a huge amount of data published on the website. In most cases, the website owner can't extract the content for translation. If they can't extract the original, there's no easy way to load the translated content back either. Furthermore, if the website owner can't extract the content into a translatable format, it is impossible to get a proper estimate for the translation costs in time and money...
+There are several challenges both business owners and language service providers face during website translation. The "ideal" workflow would be to create the content in the original language, get it translated into the desired languages, and then publish all language variants at the same time, from the website owner's own content management system (CMS) - right from the very first page on the website. However, reality is often different. Apart from the fact that not many CMSs are capable of handling several languages, website localization usually comes into the picture at a later stage, when there is already a huge amount of data published on the website. In most cases, the website owner can't extract the content for translation. If they can't extract the original, there's no easy way to load the translated content back either. Furthermore, if the website owner can't extract the content into a translatable format, it is impossible to get a proper estimate for the translation costs in time and money.
 
 The proxy can, however, discover the website by following links and grabbing translatable and localizable content - and convert it into a translatable format. This gives a realistic view of the magnitude of the translation task, and, thanks to the translation proxy, even a partially translated site can give full user experience on the website visitor's side.
 
