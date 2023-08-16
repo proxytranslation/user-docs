@@ -1,6 +1,16 @@
 # Localising Wistia video embeds
 
-## To localize videos embedded from Wistia, please follow this step-by-step guide:
+## What is Wistia
+Wistia is a leading business video hosting platform. It specializes in creating and hosting marketing-oriented videos, with a particular focus on embedded videos playing on the website directly.
+
+## Why you should localise videos
+Basically for the same reason you're localising your website: increased reach by speaking to people in their native tongues.
+
+Just like how you already use the Translation Proxy to translate your website, if your marketing team creates a localised version of your marketing videos, it would be prudent to replace the existing video on your translated website, so any foreign visitors are greeted with tailored materials speaking their language.
+
+## How to localise embedded Wistia videos
+
+Note that this guide assumes you have access to the proxy project so that you can configure the platform to make the necessary changes.
 
 1.	Open the website and go to the page where the original video is found.
 2.	Press **Ctrl-U** to open the source code (use **Line wrap** in Chrome).
