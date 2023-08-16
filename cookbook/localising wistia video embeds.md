@@ -1,0 +1,18 @@
+# Localising Wistia video embeds
+
+## To localize videos embedded from Wistia, please follow this step-by-step guide:
+
+1.	Open the website and go to the page where the original video is found.
+2.	Press **Ctrl-U** to open the source code (use **Line wrap** in Chrome).
+3.	Press **Ctrl-F** and find `wisita_async`. Here you’ll find an ID for the given video. It’ll look like `wistia_async_s0urcec1de0`. You’ll need this later.
+4.	Go to **SETTINGS -> Path prefix overrides** on the Dashboard. Click on the relevant path. This video is in the root in our case so you need to click on `/`.
+5.	If the video is on a page where nothing has been replaced yet, it is not added to the paths yet either. In such case click on the **ADD NEW** button, enter the URL and click on the **ADD NEW PATH** button. and then click on the now listed path.
+6.	Select **CONTENT SEARCH & REPLACE** and click on the **ADD NEW** button.
+7.	Enter `text/html.*` in the Content-types field. It is worth adding the `.*` to the end as the server might send other info as well.
+8.	Paste the code selected from the source code (`wistia_async_S0urceC0de`) to the **Search** field.
+9.	Paste the code of the new video (`wistia_async_C0deT0Repl4ce`) to the **Replace** field.
+10.	Leave the **Regexp** checkbox disabled.
+11.	The **Target languages** field is optional so you can leave it empty.
+12.	Click on the **ADD** button.
+13.	Click on the **SAVE ALL** button.
+14.	Go back to the website and enter `/?test=0` to the end of the URL. The URL is now changed by the query with something that probably does not change content served and if the translated page had been cached somewhere, it cannot be used to serve the content for us so the translated video should be displayed on the site (otherwise you would have to wait until all caches are cleared). You should see the replaced video now on the website.
