@@ -24,7 +24,7 @@ This screen opens by default after clicking on a _Target locale_ in your list. D
 
 - *Override HTML lang attribute*: Every HTML page has an attribute that specifies the language of the document. By default, this is set to the locale code (like `en-GB`). It's advised by the [W3](https://www.w3.org/International/articles/language-tags/) to "keep the tag as short as possible. Avoid region, script or other subtags except where they add useful distinguishing information". To follow this advice, you can override the default using this field.
  
-There are 3 tabs – ACCESS CONTROL, PUBLISH WIZARD and SETTINGS – full of additional settings available as well:
+There are 3 tabs – ACCESS CONTROL, PUBLISH WIZARD, and SETTINGS – full of additional settings available as well:
 
 ### Access control
 
@@ -129,7 +129,7 @@ From our perspective, the most interesting case is when a user from Germany requ
 
 You can see that `de-de-gereblye.app.proxytranslation.com` will -- same as with subdomain publishing -- relay the request and all necessary request headers to the origin server, which will respond accordingly with source language content that the Proxy then processes on the way back and sends long to the client in a translated form.
 
-Setting aside the exact details of that cloud translation pipeline, that's about it.*******
+Setting aside the exact details of that cloud translation pipeline, that's about it.
 
 ###### Source language request
 
