@@ -3,6 +3,7 @@ Cookbook
 ========
 
 .. toctree::
+   localising-wistia-video-embeds
    whitelabel
    jstranslation
    resourcetranslation
