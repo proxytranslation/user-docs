@@ -1,2 +1,3 @@
 # interim workaround for sphinx unindexed term search
 sphinx==1.8.5
+recommonmark==0.7.1
