@@ -112,7 +112,7 @@ You may extract the cookies from a user session and pass them to a crawl. This f
 
 Note that we cannot guarantee that the cookie extraction method works with all proprietary logins, as there are several solutions which can use additional security measures such as IP checking, or checking the User-Agent header. As all the requests from the proxy and the crawler come from the Google Cloud, it is necessary for the target site to not block them. The success of a crawl via the use of session cookies is highly dependent on the implementation details of a site.
 
-You can read more about extracting cookies that you can pass to crawls [here](../../dashboard2/cookbook/securelogin.html)
+You can read more about extracting cookies that you can pass to crawls [here](../../cookbook/securelogin.html)
 
 ## STEP 4 - Summary
 
