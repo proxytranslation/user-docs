@@ -44,7 +44,7 @@ If the selected option is _Current page list only_ in STEP 2, you will see this 
 
 Selecting option _Specific pages only_ in STEP 2 enables you to add the pages you would like to scan, or you can also provide a sitemap:
 
-![Crawl scope](/img/dashboard2/crawl_step_3_pages.png)
+![Crawl scope](/img/dashboard2/crawl_step_3_specific_pages.png)
 
 
 ## STEP 4 - Fine-tune

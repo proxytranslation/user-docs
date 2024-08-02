@@ -4,7 +4,7 @@ The page list lets you keep track of the various URLs that are (or were) seen by
 
 ![Pages list](/img/dashboard2/pages_list.png)
 
-This menu has two main parts visible when you first open it: the "Pages, resources, external links & unknown" pane and the include/exclude rules. 
+This menu has two main parts visible when you first open it: the "Pages, resources, external links & unknown" panes and the include/exclude rules. 
 
 Also notice the language selector on the right of the project selector. Information in the translation progress bars will refer to the selected language, and both the List and Highlight Views will open for the selected target language. The same is true for the various types of Preview links.
 
@@ -24,7 +24,7 @@ There should be no entries under Unknown but if you can't find something you may
 
 Above the list itself, there are multiple actions you can do and filters. These are:
 
-- **Switch to flat/folder view**: Switch between the flat view (default for resources), which is just a list of URLs similar to the old Dashboard and the folder view (default for pages) that allows you to see the pages as if they were files on your computer. External links are only available in flat view so this option is hidden for them.
+- **Switch to flat/folder view**: Switch between the flat view (default for resources), which is just a list of URLs similar to the old Dashboard, and the folder view (default for pages), which allows you to see the pages as if they were files on your computer. External links are only available in flat view so this option is hidden for them.
  
 - **Show/hide preview** (only for resources): Whether to load the images or just display their filename. If you have a slow connection or a data cap, we recommend hiding these.
 
@@ -34,13 +34,13 @@ Above the list itself, there are multiple actions you can do and filters. These 
 
 - **Mass page exclusion**: Enter a list of URLs that you wish to exclude. Use this when you can't add an exclusion rule. You also have the option to "un-exclude" aka include some pages again.
 
-- **Update translation progress**: Updates the bars showing the progess. This can take from a few seconds to a few minutes of time to finish, depending on the amount of content to be aggregated.
+- **Update translation progress**: Updates the progess bars. This can take from a few seconds to a few minutes to finish, depending on the amount of content to be aggregated.
 
 - **Reload**: Reloads the list of pages. 
 
 - **Show/hide filters**: Controls the filters discussed below.
 
-Note that some of them are only available for either of the types.
+Note that some of them are only available for some of the types.
 
 Below these actions, you can search by file name or filter pages, resources and external links 
 
@@ -97,7 +97,7 @@ You can right-click on a page to display page-specific actions. Again, depending
 - **Pre-translate**: Brings up the pre-translate dialog for this specific page.
 
   
-- **Translation workbench (list or highlight view)**: Brings up the Workbench which is an online computer assisted translation tool. List view is similar to what you'd find when using MemoQ. A list of segments and their translations side by side wiht suggestions from the TM on the right and an editor near the bottom. Highlight view is similar but instead of the segment list, the page is loaded and you can hover on the text that you need to translate. This allows in-context translation.
+- **Translation workbench (list or highlight view)**: Brings up the Workbench which is an online computer assisted translation tool. List view is similar to what you'd find when using MemoQ. A list of segments and their translations side by side with suggestions from the TM on the right and an editor near the bottom. Highlight view is similar but instead of the segment list, the page is loaded and you can hover on the text that you need to translate. This allows in-context translation.
  
 - **Exclude/select**: Allows you to mark the specific page as translatable or excluded.
 
@@ -119,11 +119,11 @@ There is an option to select what kind of content you want to delete, _pages_, _
 
 The most important part of the process is defining the right **regular expression (regex)** for your needs. (You can find an online regex tester [_here_](https://regex101.com/).)
 
-Once you have your regular expression ready, by checking the checkbox _Dry run: preview the URLs to be deleted_ and clickick the **Preview** button, you can run a preview of the pages that are about to be deleted to avoid incidents like deleting pages by mistake, and you can also check if the pattern matching found each and every page you intend to get rid of. 
+Once you have your regular expression ready, by checking the checkbox _Dry run: preview the URLs to be deleted_ and clicking the **Preview** button, you can run a preview of the pages that are about to be deleted to avoid incidents like deleting pages by mistake, also allowing you to check if the pattern matching found every page you intend to delete. 
 
 Once you made sure you want to delete all the pages in the preview, just uncheck the checkbox _Dry run: preview the URLs to be deleted_ and hit the **Delete** button. 
 
-You will get notifications through the process. Once the page deletion is ready, you can refresh the pages list, and the desired pages should be removed. 
+You will get notifications in the process. Once the page deletion is ready, you can refresh the pages list, and the desired pages should be removed. 
 
 Deleting pages from the project does not prevent them from being re-added, at least not in itself (for that, additional configuration is needed that actually addresses the root cause of the page being added, for example ignoring query parameters or excluding pages from the Crawls).
 

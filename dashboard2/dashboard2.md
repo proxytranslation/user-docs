@@ -1,58 +1,55 @@
 # Introduction - Project overview
 
-The Dashboard 2.0 is your new and improved command center. It contains a variety of features you can use to manage your projects. In this manual, we'll take these options in the order that they appear in the menu on the left side of the screen.
+The Dashboard 2.0 is your new and improved command center. It contains a variety of features you can use to manage your projects. In this manual, we'll go through these options in the order that they appear in the menu on the left side of the screen.
 
-When you open the Project overview, the screen will display a few general settings described below. Depending on your rights on the project, some of these may be hidden from you.
+When you open the Project overview, the screen will display a few general settings described below. Depending on your access level on the project, some of these may be hidden from you.
 
 ## Project info
 
 ![Project info](/img/dashboard2/project_overview/project_info.png)
 
-This card displays the key properties of your project. They are the following:
+This card displays the following key information about your project:
 
 - **Domain**: Exactly what it says on the tin, the website address is a property of your project that cannot be altered once declared during project creation. 
 
-- **Project code**: An 8 character long identifier that's unique to your project. It can be used to track projects and is necessary when you ask help at our support email address.
+- **Project code**: An 8 character long identifier that's unique to your project. It can be used to track projects and is necessary when contacting our support email address.
 
-- **Source language**: The language you translate from. It can't be changed here but if you need to, you can email support and we'll be happy to change it for you after the necessary precautions.
+- **Source language**: The original language of you site. It can't be changed here but if you need to, you can email support and we'll be happy to change it for you after taking the necessary precautions.
 
 - **Project created**: The creation date of your project.
 
-- **Project alias**: This alternative name will be displayed in the Project dropdown below the URL, for easy identification of your projects. Project aliases are project-internal, they will not be displayed anywhere on the translated site.
+- **Project alias**: This alternative name can be used for easy identification of your projects. Project aliases are for internal use only; they will not be displayed anywhere on the translated site.
 
-- **Alternative domains**: Sometimes a website serves content both on the `www` subdomain and the naked domain, such as `example.com`. In these cases, it is useful to set things up over the proxy so that the different URLs are handled similarly.  
-After creating a project, this field is automatically filled with the complement of the Domain. Add any further subdomains that contain identical content to this list. Separate them with commas.
+- **Alternative domains**: Sometimes a website serves content both on the `www` subdomain and the naked domain, such as `example.com`. In these cases, it is useful to set things up over the proxy so that the different URLs are handled similarly. 
+After creating a project, this field is automatically filled with the complement of the Domain. Add any further subdomains that contain identical content to this list, comma-seperated.
   
-You can also use this card to delete or remove the project. Only the owner can delete a project completely. If you were simply invited but aren't the owner and you 'remove' a project, you will simply be removed from it.
+If you are the owner, you can delete your project on this card. Otherwise, you can choose to remove yourself from the project with the 'Remove' button.
 
 ## Project wallet
 
 ![Project wallet](/img/dashboard2/project_overview/project_wallet.png)
 
-This card shows you information on the wallet of the project you are viewing. In most cases, this is the wallet of the user who created the project. You can see if it is expired and the remaining balance and let the user know if they
- need to top up.
+On this card, you can moitor the expiration date, balance and plan of the current project's wallet. In most cases, this is the wallet of the user who created the project.
  
 ## Statistics
  
 ![Statistics](/img/dashboard2/project_overview/statistics.png)
  
-Here you can see the number of served requests and words added to your project recently. For more information, click the 'Go to statistics' button.
+This is an overview of the project's metrics, including requests served and words added. For more details, click the 'Go to statistics' button.
  
 ## Miscellaneous options
  
 ![Misc options](/img/dashboard2/project_overview/misc_options.png)
  
-On this card, you have a couple of options that are the set once and forget kind. You may need to reference these settings later so it's handy that they are present here.
+These settings will rarely need changing, but are handy for referncing in the future:
  
 - **Project workflow**: Change the number of project participants and project workflow type using this dropdown. See [Collaboration](../workbench/workflow/workflow.html) for more information.
  
-- **Gateway domain**: If the site you wish to translate has a strict firewall that blocks the proxy, the admins can set up a gateway for you. In this case, all of the requests go through that gateway and will arrive to the origin server
-  from a fixed IP address that can be whitelisted. Here you can see whether the gateway is enabled.
+- **Gateway domain**: If the site you wish to translate has a strict firewall that blocks the proxy, the admins can set up a gateway for you. In this case, all of the requests go through that gateway and will arrive to the origin server from a fixed IP address that can be whitelisted. Here you can see whether the gateway is enabled.
   
-- **Segmentation**: Whether the segmentation rules are applied to new segments that are added to the project. As this has the potential to break the project, not even the owner can change it. If you wish to have it disabled, please
-   contact the support team about it.
+- **Segmentation**: Whether the segmentation rules are applied to new segments that are added to the project. As this has the potential to break the project, not even the owner can change it. If you wish to have it disabled, pleasecontact the support team about it.
    
-- **Manual publishing**: It is an advanced project control feature that gives project owners the ability to hold back the translations from being published on the live page (but not the preview, as it will always display the latest translation available!) until further notice.  
+- **Manual publishing**: This is an advanced project control feature that gives project owners the ability to hold back the translations from being published on the live page (but not the preview, as it will always display the latest translation available!) until further notice.  
 Once activated, a new item will appear in the Bulk Actions menu of the Workbench, “Publish”. Selecting this action will cause all selected segments to be synchronized with their displayed translations, and once the action finishes, the markers in the status bar on the right of the entries will change to reflect this.
  
 ## Crawl settings
@@ -61,8 +58,7 @@ Once activated, a new item will appear in the Bulk Actions menu of the Workbench
 
 Settings that affect the way crawls work:
 
-- **Process pages in source language only**: For every segment it encounters, the crawler uses Google's language selector API to determine whether it is in the selected source language. As this is a paid API, you must supply a key to use
- it.
+- **Process pages in source language only**: For every segment it encounters, the crawler uses Google's language selector API to determine whether it is in the selected source language. As this is a paid API, you must supply a key to use it.
  
 - **Ignore queries**: By default, the crawler treats `example.com/?query=example1` and `example.com/?query=example2` as different pages. Adding `query` here will prevent this behaviour. It will treat the 2 pages if they were exactly the same.
 
@@ -72,7 +68,7 @@ Settings that affect the way crawls work:
 
 ![Staging domains](/img/dashboard2/project_overview/staging_domains.png)
 
-Although it is true that the project address cannot be changed after the project is created, the Staging domain feature can still be used to change the origin server to which requests are sent.
+Although the project address cannot be changed after the project is created, the Staging domain feature can still be used to change the origin server to which requests are sent.
 
 For details, please see the Cookbook recipe [on Staging domains](../dashboard2/cookbook/stagingdomain.html)
 
@@ -96,7 +92,7 @@ If content is coming from multiple domains, like `example.com` and `blog.example
 
 A few restrictions apply to project linking:
 
-- project linking is **two-way**: project `A` has to be linked on project `B` and then project `B` has to be linked on project `A` to complete the process.
+- project linking is **two-way**: project `A` must be linked to project `B` **AND** project `B` mut be linked to project `A` to complete the process.
 
 - linked projects have to be **published together** and with the **same target languages**.
 
@@ -108,7 +104,7 @@ The topic of translating such content using proxy features only is covered in de
 
 ![Target languages](/img/dashboard2/project_overview/target_language.png)
 
-Here you can see the current target languages and add more if you wish to.
+Here you can view and edit the current target languages.
 
 ## Referred domains
 
@@ -126,4 +122,4 @@ This list contains the main events where content was manipulated on the project.
 
 ![Database word & repetition analysis](/img/dashboard2/project_overview/analysis.png)
 
-Here you can see the number of words and repetitions on the site as found by the crawl specified on the bottom. Note that the data may be outdated if the crawl is outdated. You can use the 'Update' button to fill the chart with fresh data (or old, if you wish). 
+Here you can see the number of words and repetitions on the site as found by the crawl specified on the bottom. Note that the data is from the last crawl, so may be outdated. You can use the 'Update' button to fill the chart with fresh data.
