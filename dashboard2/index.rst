@@ -3,6 +3,8 @@ The Dashboard 2.0
 =================
 
 .. toctree::
+   :maxdepth: 3
+   
    dashboard2
    pages_list
 
@@ -10,6 +12,8 @@ Crawl
 ::::::
 
 .. toctree::
+   :maxdepth: 3
+   
    crawler/crawl
    crawler/crawlwizard
    crawler/crawllist
@@ -21,6 +25,8 @@ Content
 :::::::
 
 .. toctree::
+   :maxdepth: 3
+   
    content/workpackages
    content/importtranslation
    content/exporttranslation
@@ -32,6 +38,8 @@ Snapshot
 ::::::::
 
 .. toctree::
+   :maxdepth: 3
+   
    pagecache/sourcecache
    pagecache/targetcache
    pagecache/snapshotsettings
@@ -41,6 +49,8 @@ Settings
 :::::::::::::
 
 .. toctree::
+   :maxdepth: 3
+   
    settings/advancedsettings
    settings/translationmemory
    settings/apt
@@ -63,6 +73,8 @@ Page modifiers
 :::::::::::::
 
 .. toctree::
+   :maxdepth: 3
+   
    pagemodifiers
    pagemodifiers/csseditor
    pagemodifiers/javascripteditor
@@ -72,6 +84,8 @@ Publish
 ::::::::::
 
 .. toctree::
+   :maxdepth: 3
+   
    publishwebsite/javascript-publishing
    publishwebsite
    publishwebsite/integration-guide/nginx
@@ -86,10 +100,14 @@ Third party integrations
 :::::::::::::
 
 .. toctree:: 
+   :maxdepth: 3
+   
    thirdparty
 
 Workbench
 :::::::::::::
 
 .. toctree:: 
+   :maxdepth: 3
+   
    workbenchlink
