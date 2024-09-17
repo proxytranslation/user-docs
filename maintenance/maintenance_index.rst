@@ -3,7 +3,7 @@ Maintenance
 ===========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    maintenance
    scheduled_scans

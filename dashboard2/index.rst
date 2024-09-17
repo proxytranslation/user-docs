@@ -3,7 +3,7 @@ The Dashboard 2.0
 =================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    dashboard2
    pages_list
@@ -12,7 +12,7 @@ Crawl
 ::::::
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    crawler/crawl
    crawler/crawlwizard
@@ -25,7 +25,7 @@ Content
 :::::::
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    content/workpackages
    content/importtranslation
@@ -38,7 +38,7 @@ Snapshot
 ::::::::
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    pagecache/sourcecache
    pagecache/targetcache
@@ -49,7 +49,7 @@ Settings
 :::::::::::::
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    settings/advancedsettings
    settings/translationmemory
@@ -73,7 +73,7 @@ Page modifiers
 :::::::::::::
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    pagemodifiers
    pagemodifiers/csseditor
@@ -84,7 +84,7 @@ Publish
 ::::::::::
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    publishwebsite/javascript-publishing
    publishwebsite
@@ -100,7 +100,7 @@ Third party integrations
 :::::::::::::
 
 .. toctree:: 
-   :maxdepth: 3
+   :maxdepth: 2
    
    thirdparty
 
@@ -108,6 +108,6 @@ Workbench
 :::::::::::::
 
 .. toctree:: 
-   :maxdepth: 3
+   :maxdepth: 2
    
    workbenchlink

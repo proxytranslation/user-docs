@@ -3,7 +3,7 @@ The Workbench
 =============
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    introduction
    navigation/navigation
@@ -15,6 +15,6 @@ The Workbench
 Cookbook
 --------
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    cookbook/searchandreplace
