@@ -3,6 +3,8 @@ User Documentation
 ===================
 
 .. toctree::
+   :maxdepth: 2
+
    introduction/introduction
    introduction/getting-started
    dashboard2/index.rst
