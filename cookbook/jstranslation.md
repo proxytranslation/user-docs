@@ -44,11 +44,13 @@ There are many ingenious ways in which webpages encode content, and the proxy ha
 
 ## Marking Resources
 
-You can mark a resource as translatable manually on the Resources screen (second tab in the Pages list) or using Mass link replacement under Pages.
+You can mark a resource as translatable manually on the Resources screen (second tab in the Pages list) or using the Send to Pages feature under the JSON/JS/XML processing menu item.
 
 ### Manual
 
 All collected resources are listed in Pages list > Resources. All "pages" and files that are not of the `text/html` content type will be collected under these tabs.
+
+It's important to note that collected images will also land here, you can read about how to replace them with localized versions [here](./../cookbook/resourcetranslation.html).
 
 What sets resources apart from pages is that by default, they have no associated *source entries* or translations. Marking a resource as translatable means declaring that it does have translatable text that can be stored as source entries (and accessed via the Workbench).
 
@@ -62,17 +64,27 @@ Then click Manage translations in the same panel. Here, you can provide the link
 
 ![Translate Resource](/img/dashboard2/manage_translations.png)
 
+You can also move the Resource to the Pages list, if it's under the same domain as your project (or a [linked project](./../dashboard2/dashboard2.html#linked-projects)).
+
+![Click on Send to Pages for content processing](/img/dashboard2//move_resource_to_pages.jpg)
+
 ### Mass link replacement
 
-You can mark multiple links at once to be translated. Go to Mass link replacement under Pages. Go through the steps one-by-one, but the second step is where you need to copy & paste the URLs of your choice.
+You can mark multiple links at once to be replaced when serving the translated version of your site. Go to Mass link replacement under Pages. Go through the steps one-by-one, but the second step is where you need to copy & paste the URLs of your choice.
 
 ![Mark Multiple Resources](/img/dashboard2/mass_link_replacement.png)
 
 You are free to add as many of them as you like.
 
+### Prefixes
+
+You can also mark resources to be moved under the Pages list en masse by specifying path prefixes for them. This feature is available under the JSON/JS/XML processing menu item. You have to scroll down in the first tab (Live JSON/JS/XML path config tab) until you see this ![content box](/img/dashboard2/send_to_pages_by_prefix.png)
+
 This feature is made available because cherry-picking resources for translation is not always feasible. For instance, versioned URLs are liable to create new resources on a project whenever a file is updated on the original site (the proxy keeps these URLs separate by default), but the new resources are not marked automatically.
 
 You will recognize those cases where you want to apply the exact same translation rules and process to a set of URLs that differ in minimal ways. A resource prefix will let you do this without having to mark things one-by-one as they come.
+
+You can add as many prefix rules here as you like.
 
 ## Annotating JS/JSON
 
