@@ -16,9 +16,9 @@ An early investigation will reveal content that is unavailable to the crawler by
 
 ### X-proxy
 
-To check how a website is doing over the proxy, open it in the **X-proxy** mode, a specialized Preview mode available through the Dashboard Pages list. Right-click on any of the pages and select X Proxy to view the page in the Preview mode.
+To check how a website is doing over the proxy, open it in the **X-proxy** mode, a specialized Preview mode available through the Dashboard *Pages list*. `Right-click` on any of the pages and select *X Proxy* to view the page in this Preview mode.
 
-Note that you need to *add at least one target language *and* select it in the left side menu* to access the preview.
+Note that you need to *add at least one target language **and** select it in the left side menu* to access the preview.
 
 The X-proxy replaces text it recognizes with x-es. Though not too impressive visually, it is an excellent research tool. It lets you *home in on undetected content*. To utilize it most effectively, combine it with your browser's DevTool.
 
@@ -38,39 +38,41 @@ Having removed all known text from the equation, you are free to concentrate on 
 
 4. **content is on an external domain**: this scenario requires some work. External domains require separate, but linked projects (add to this that you also have to ensure that URL references are mapped well, which can be difficult in a JS file), and the resources have to be marked and annotated on those projects to be translated.
 
-5. **content is in an image**: though not strictly connected with the topic of JS translation, an "honorable" mention goes to natural language content *as image data*, also frequently revealed by the x-proxy.
+5. **content is in an image**: though not strictly connected with the topic of JS translation, an "honorable" mention goes to natural language content *as image data*, also frequently revealed by the X-proxy.
 
 There are many ingenious ways in which webpages encode content, and the proxy has various levels of support for all these schemes (usually involving a combination of features). When in doubt, feel free to contact support for advice!
 
 ## Marking Resources
 
-You can mark a resource as translatable manually on the Resources screen (second tab in the Pages list) or using the Send to Pages feature under the JSON/JS/XML processing menu item.
+You can mark a resource as translatable manually on the *Resources* screen (second tab in the *Pages list*) or using the *Send to Pages* feature under the *JSON/JS/XML processing* menu item.
 
 ### Manual
 
-All collected resources are listed in Pages list > Resources. All "pages" and files that are not of the `text/html` content type will be collected under these tabs.
+All collected resources are listed in *Pages list > Resources*. All "pages" and files that are not of the `text/html` content type will be collected under these tabs.
 
 It's important to note that collected images will also land here, you can read about how to replace them with localized versions [here](./../cookbook/resourcetranslation.html).
 
 What sets resources apart from pages is that by default, they have no associated *source entries* or translations. Marking a resource as translatable means declaring that it does have translatable text that can be stored as source entries (and accessed via the Workbench).
 
-So, to mark a resource as translatable:
+So, to mark a resource as translatable, click on it in the *Resources* tab,
 
-![Click on it in the Resources tab](/img/dashboard2/mark_as_translatable.png)
+![](/img/dashboard2/mark_as_translatable.png)
 
-and click Mark as translatable in the panel on the right side.
+and click *Mark as translatable* in the panel on the right side.
 
-Then click Manage translations in the same panel. Here, you can provide the link the proxy should serve.
+Then click *Manage translations* in the same panel. Here, you can provide the link the proxy should serve.
 
 ![Translate Resource](/img/dashboard2/manage_translations.png)
 
-You can also move the Resource to the Pages list, if it's under the same domain as your project (or a [linked project](./../dashboard2/dashboard2.html#linked-projects)).
+You can also move the Resource to the *Pages list*, if it's under the same domain as your project (or a [linked project](./../dashboard2/dashboard2.html#linked-projects)).
 
-![Click on Send to Pages for content processing](/img/dashboard2//move_resource_to_pages.jpg)
+Click on *Send to Pages for content processing*.
+
+![](/img/dashboard2//move_resource_to_pages.jpg)
 
 ### Mass link replacement
 
-You can mark multiple links at once to be replaced when serving the translated version of your site. Go to Mass link replacement under Pages. Go through the steps one-by-one, but the second step is where you need to copy & paste the URLs of your choice.
+You can mark multiple links at once to be replaced when serving the translated version of your site. Go to *Mass link replacement* under *Pages*. Go through the steps one-by-one, but the second step is where you need to copy & paste the URLs of your choice.
 
 ![Mark Multiple Resources](/img/dashboard2/mass_link_replacement.png)
 
@@ -78,7 +80,9 @@ You are free to add as many of them as you like.
 
 ### Prefixes
 
-You can also mark resources to be moved under the Pages list en masse by specifying path prefixes for them. This feature is available under the JSON/JS/XML processing menu item. You have to scroll down in the first tab (Live JSON/JS/XML path config tab) until you see this ![content box](/img/dashboard2/send_to_pages_by_prefix.png)
+You can also mark resources to be moved under the *Pages list* en masse by specifying path prefixes for them. This feature is available under the *JSON/JS/XML processing* menu item. You have to scroll down in the first tab (*Live JSON/JS/XML path config* tab) until you see this content box.
+
+![](/img/dashboard2/send_to_pages_by_prefix.png)
 
 This feature is made available because cherry-picking resources for translation is not always feasible. For instance, versioned URLs are liable to create new resources on a project whenever a file is updated on the original site (the proxy keeps these URLs separate by default), but the new resources are not marked automatically.
 

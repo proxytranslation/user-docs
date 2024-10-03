@@ -36,7 +36,7 @@ The prices themselves can be made translation-invariable, but real-time price ha
 
 ### **How do I enable automated scan on my project?**
 
-You can set up a recurring crawl under Crawl in the Recurring tab. However, unless otherwise configured content is continuously picked up when visitors visit the original, untranslated version of your website.
+You can set up a recurring crawl under *Crawl* in the *Recurring* tab. However, unless otherwise configured content is continuously picked up when visitors visit the proxied, translated version of your website.
 
 ### **Is it possible to set up automated scanning behind secure login?**
 
