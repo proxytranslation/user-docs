@@ -34,7 +34,7 @@ You can create and enable a new Origin Snapshot by checking **Enabled** in the S
 
 After enabling the Origin Snapshot, you need to Scan for content to build it. In step 4 (Fine-tune) of the Crawl Wizard some options become available:
 
-![Build Snapshot Screen](/img/dashboard/scan_dialog_cache_settings.png)
+![Build Snapshot Screen](/img/dashboard2/scan_dialog_cache_settings.png)
 
 Select the Snapshot you want to build and choose one of the 3 options. By choosing to reuse existing pages, you instruct the Crawler to skip the ones that are already in the Snapshot you chose and thus reduce the building cost. The choice whether to add new pages gives you the possibility to simply ignore the new pages that were added to the source site. Selecting not to add them (the second option) allows you to build a snapshot that has the pages updated but no new ones added. This option is useful if you made changes to the JSON Paths and as a consequence need to rebuild the Snapshot. As a result of building the Snapshot, all content that was set to be picked up by the Content Scan is added to the current Snapshot.
 
@@ -42,7 +42,7 @@ Select the Snapshot you want to build and choose one of the 3 options. By choosi
 
 If you have multiple Origin Snapshots that you’ve built throughout multiple Content Scans, you can visit the Snapshot menu again and configure which Origin Snapshot should be used for which proxy mode, as shown in the screenshot below:
 
-![Custom Origin Snapshot Settings](/img/dashboard/custom_source_caches.png)
+![Custom Origin Snapshot Settings](/img/dashboard2/custom_source_caches.png)
 
 Choose a highly translated Origin Snapshot for publishing, so that you can be sure that visitors to the proxied site will not experience bleedthrough.
 

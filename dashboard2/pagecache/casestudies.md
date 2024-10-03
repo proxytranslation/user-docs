@@ -16,7 +16,7 @@ For this example, the client has declined to use a staging server to allow you t
 
 Once the initial translations are completed, the snapshots are set up according to the image below:
 
-![Sample Snapshot configuration](/img/dashboard/example_settings.png)
+![Sample Snapshot configuration](/img/dashboard2/example_settings.png)
 
 By driving the published site from a separate snapshot entity, you gain the ability to decouple the content ingestion cycle from the translation and update cycles.
 
