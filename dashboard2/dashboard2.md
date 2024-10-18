@@ -74,7 +74,7 @@ Settings that affect the way crawls work:
 
 Although it is true that the project address cannot be changed after the project is created, the Staging domain feature can still be used to change the origin server to which requests are sent.
 
-For details, please see the Cookbook recipe [on Staging domains](../dashboard2/cookbook/stagingdomain.html)
+For details, please see the Cookbook recipe [on Staging domains](../cookbook/stagingdomain.html)
 
 ## Documentation
 
@@ -102,7 +102,7 @@ A few restrictions apply to project linking:
 
 **Form** solutions tend to use content from external domains. The localization of **HubSpot forms**, for example, is a frequent and somewhat challenging use case of project linking.
 
-The topic of translating such content using proxy features only is covered in detail [on this cookbook page](../dashboard2/cookbook/hubspotforms.html).
+The topic of translating such content using proxy features only is covered in detail [on this cookbook page](../cookbook/hubspotforms.html).
  
 ## Target languages
 
