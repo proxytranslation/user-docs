@@ -4,7 +4,7 @@ In this section, we describe the process of translating content in JavaScript fi
 
 ## General
 
-Translation of HTML is mostly automatized over the proxy. But websites rely on many additional resources besides the document itself, such as JS libraries, CSS stylesheets, webfonts, dynamic requests and images. Not all of these resource types require translation, but JSON and XML responses frequently do. Such responses can also be very inhospitable to the translator and proxy specialist.
+Translation of HTML is mostly automated over the proxy. But websites rely on many additional resources besides the document itself, such as JS libraries, CSS stylesheets, webfonts, dynamic requests and images. Not all of these resource types require translation, but JSON and XML responses frequently do. Such responses can also present significant challenges for both translators and proxy specialists.
 
 One of the problems is detection: proxy crawls/analyses do not operate in a browser-like environment. There is no headless browser or VM running in which a page load could be initiated or JavaScript evaluated for content detection purposes. Inherent complexity is another issue: the enormous diversity (to put it charitably) of web technologies in use nowadays prevents reliable automation of such a process.
 
@@ -16,9 +16,9 @@ An early investigation will reveal content that is unavailable to the crawler by
 
 ### X-proxy
 
-To check how a website is doing over the proxy, open it in the **X-proxy** mode, a specialized Preview mode available through the Dashboard page list. Click on Preview in the hover menu while holding `Ctrl` to open it.
+To check how a website is doing over the proxy, open it in the **X-proxy** mode, a specialized Preview mode available through the Dashboard *Pages list*. `Right-click` on any of the pages and select *X Proxy* to view the page in this Preview mode.
 
-Note that you need to *add at least one target language *and* select it in the left side menu* to access the preview.
+Note that you need to *add at least one target language **and** select it in the left side menu* to access the preview.
 
 The X-proxy replaces text it recognizes with x-es. Though not too impressive visually, it is an excellent research tool. It lets you *home in on undetected content*. To utilize it most effectively, combine it with your browser's DevTool.
 
@@ -38,43 +38,57 @@ Having removed all known text from the equation, you are free to concentrate on 
 
 4. **content is on an external domain**: this scenario requires some work. External domains require separate, but linked projects (add to this that you also have to ensure that URL references are mapped well, which can be difficult in a JS file), and the resources have to be marked and annotated on those projects to be translated.
 
-5. **content is in an image**: though not strictly connected with the topic of JS translation, an "honorable" mention goes to natural language content *as image data*, also frequently revealed by the x-proxy.
+5. **content is in an image**: though not strictly connected with the topic of JS translation, an "honorable" mention goes to natural language content *as image data*, also frequently revealed by the X-proxy.
 
 There are many ingenious ways in which webpages encode content, and the proxy has various levels of support for all these schemes (usually involving a combination of features). When in doubt, feel free to contact support for advice!
 
 ## Marking Resources
 
-You can mark a resource as translatable manually on the Resource screen or using a prefix in Advanced Settings.
+You can mark a resource as translatable manually on the *Resources* screen (second tab in the *Pages list*) or using the *Send to Pages* feature under the *JSON/JS/XML processing* menu item.
 
 ### Manual
 
-All collected resources are listed in Discovery > Resources and Content > Resources. All "pages" and files that are not of the `text/html` content type will go here.
+All collected resources are listed in *Pages list > Resources*. All "pages" and files that are not of the `text/html` content type will be collected under these tabs.
+
+It's important to note that collected images will also land here, you can read about how to replace them with localized versions [here](./../cookbook/resourcetranslation.html).
 
 What sets resources apart from pages is that by default, they have no associated *source entries* or translations. Marking a resource as translatable means declaring that it does have translatable text that can be stored as source entries (and accessed via the Workbench).
 
-So, to mark a resource as translatable:
+So, to mark a resource as translatable, click on it in the *Resources* tab,
 
-![Switch to List View](/img/dashboard/resources_list_view_filter.png)
+![](/img/dashboard2/mark_as_translatable.png)
 
-1. switch from thumbnail view to list view
+and click *Mark as translatable* in the panel on the right side.
 
-2. click on the "Translate" button in the hover menu of a resource
+Then click *Manage translations* in the same panel. Here, you can provide the link the proxy should serve.
 
-![Translate Resource](/img/dashboard/resources_list_view_translate.png)
+![Translate Resource](/img/dashboard2/manage_translations.png)
 
-The resource is moved to the page list and from that point onward, it can be opened on the Workbench. Note, however, that we have not yet told the proxy what and how to translate in it.
+You can also move the Resource to the *Pages list*, if it's under the same domain as your project (or a [linked project](./../dashboard2/dashboard2.html#linked-projects)).
 
-### Prefix
+Click on *Send to Pages for content processing*.
 
-You can do the marking via prefixes. Go to Advanced settings to find the "Mark Multiple Resources as Translatable" text field. Copy & paste the prefixes of your choice and click on Save to apply your changes.
+![](/img/dashboard2//move_resource_to_pages.jpg)
 
-![Mark Multiple Resources](/img/dashboard/advanced_multiple_resources.png)
+### Mass link replacement
 
-Note that in the screenshot above, HTTP and HTTPS prefixes are handled separately, a recommended practice for sites that support both kinds of traffic. Prefixes are treated as simple strings by the proxy when matching them against a pathname. You are free to add as many of them as you like.
+You can mark multiple links at once to be replaced when serving the translated version of your site. Go to *Mass link replacement* under *Pages*. Go through the steps one-by-one, but the second step is where you need to copy & paste the URLs of your choice.
+
+![Mark Multiple Resources](/img/dashboard2/mass_link_replacement.png)
+
+You are free to add as many of them as you like.
+
+### Prefixes
+
+You can also mark resources to be moved under the *Pages list* en masse by specifying path prefixes for them. This feature is available under the *JSON/JS/XML processing* menu item. You have to scroll down in the first tab (*Live JSON/JS/XML path config* tab) until you see this content box.
+
+![](/img/dashboard2/send_to_pages_by_prefix.png)
 
 This feature is made available because cherry-picking resources for translation is not always feasible. For instance, versioned URLs are liable to create new resources on a project whenever a file is updated on the original site (the proxy keeps these URLs separate by default), but the new resources are not marked automatically.
 
 You will recognize those cases where you want to apply the exact same translation rules and process to a set of URLs that differ in minimal ways. A resource prefix will let you do this without having to mark things one-by-one as they come.
+
+You can add as many prefix rules here as you like.
 
 ## Annotating JS/JSON
 
