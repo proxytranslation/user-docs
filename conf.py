@@ -1,5 +1,7 @@
 project = u'Translation Proxy Documentation'
 extensions = ["myst_parser"]
+myst_all_links_external = True
+
 copyright = u'2024'
 source_suffix = ['.rst', '.md']		
 master_doc = 'index'
@@ -9,7 +11,6 @@ release = 'latest'
 # Compare the two
 # html_theme = 'proxytheme'
 html_theme = 'sphinx_rtd_theme'
-
 
 htmlhelp_basename = 'easyling-wiki-docs'
 html_theme_path = ["."]
