@@ -8,6 +8,7 @@ User Documentation
    introduction/introduction
    introduction/getting-started
    dashboard2/index.rst
+   dashboard3/index.rst
    accountsettings/index.rst
    workbench/workbench_index.rst
    maintenance/maintenance_index.rst
