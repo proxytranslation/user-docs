@@ -2,7 +2,7 @@
 
 ## Overview
 
-**ContentGuard is our** **advanced content classification and filtering system**, designed to keep your translation project efficient, accurate, and safe. By smartly screening incoming content, ContentGuard prevents irrelevant material, errors, or even potential data leaks from entering your translation flow—**ensuring only legitimate, high-quality content is processed.**
+**ContentGuard is our advanced content classification and filtering system**, designed to keep your translation project efficient, accurate, and safe. By smartly screening incoming content, ContentGuard prevents irrelevant material, errors, or even potential data leaks from entering your translation flow—**ensuring only legitimate, high-quality content is processed.**
 
 ContentGuard is both powerful and flexible, giving you dynamic control over what gets ingested and reviewed. It operates behind the scenes, but you're always in control of its key settings right from your Dashboard.
 
@@ -10,7 +10,7 @@ ContentGuard is both powerful and flexible, giving you dynamic control over what
 
 ContentGuard helps you:
 
-- **Prevent unwanted or misleading content** from being translated
+- **Prevent unwanted content** from being translated
 - **Reduce the risk of data leaks** or accidental ingestion of private or irrelevant material
 - **Save time** by ensuring only authentic, worthwhile content is processed
 - **Maintain high translation quality** through content review and filtering
@@ -81,7 +81,7 @@ A: Possibly. If enabled, machine translation or detection services may generate 
 
 When ContentGuard flags content for review:
 
-1. **Navigate to the review queue** in your Dashboard
+1. **Navigate to the review queue** in Workbench
 2. **Review flagged content** to determine if it should be:
    - Approved for translation
    - Excluded permanently

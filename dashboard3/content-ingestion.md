@@ -1,4 +1,4 @@
-# Content Ingestion Setup
+# Content Ingestion
 
 ## Overview
 
@@ -81,6 +81,9 @@ New content is captured automatically whenever **any visitor** browses your webs
   - Content from browser extensions (e.g., Grammarly, Google Translate)
   - 3rd-party translation overlays
   - Personalized user data shown to individuals
+
+> ⚠️ **Warning:**  
+> Automatic ingestion can capture unintended content from any visitor, including personalized data, browser extensions, or third-party overlays. This may result in irrelevant or sensitive information being sent for translation. Monitor your content carefully and consider using manual ingestion for sites with sensitive or highly personalized content.
 
 ## Automatic Content Ingestion Source Options
 

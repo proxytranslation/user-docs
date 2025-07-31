@@ -1,7 +1,5 @@
 # Introduction - Dashboard 3.0 Overview
 
-
-
 ## Key Features
 
 ### Content Ingestion System
@@ -16,8 +14,6 @@ ContentGuard is our advanced content classification and filtering system that in
 ## Getting Started
 
 To begin using Dashboard 3.0:
-
-
 
 ## Content Ingestion Modes
 
