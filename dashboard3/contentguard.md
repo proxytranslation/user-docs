@@ -81,13 +81,15 @@ A: Possibly. If enabled, machine translation or detection services may generate 
 
 When ContentGuard flags content for review:
 
-1. **Navigate to the review queue** in Workbench
-2. **Review flagged content** to determine if it should be:
+1. **Navigate to Workbench**
+2. **Choose a specific page** you wish to review, **or select the All entries** option to view all items
+3. **Open the Workflow filter menu,** and enable the **Show excluded entries** option to include excluded items in your view
+4. **Review flagged content** to determine if it should be:
    - Approved for translation
+   - Marked as Pending
    - Excluded permanently
-   - Modified before approval
-3. **Take action** to approve or exclude content
-4. **Monitor patterns** to adjust ContentGuard settings if needed
+5. **Take action** to approve or exclude content
+6. **Monitor patterns** to adjust ContentGuard settings if needed
 
 ## Integration with Content Ingestion
 
