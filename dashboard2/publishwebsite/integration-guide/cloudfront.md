@@ -79,4 +79,29 @@ With these details on hand, you can follow the following steps:
             - Scroll down to the bottom and click *Save changes*
 10. With that, the CloudFront configuration is complete.
 
-These instructions are up-to-date as of 24/02/2022.
+## AWS WAF
+
+If your distribution uses AWS WAF for its security purposes, you will need to create a specific carevout for the proxy, as the default security rules (specifically `AWSManagedRulesBotControlRuleSet:CategoryMiscellaneous`) identify the proxy as an untrusted bot due to using Google App Engine as its infrastructure.
+
+To create a carveout, first head to the WAF Rule Management under _Security_ -> _Manage Rules_ and create a new rule with the following parameters:
+
+- Action: "Allow"
+- If: "matches all the statement (AND)"
+  1. Inspect: "Single header"  
+     Header field name: `user-agent`  
+     Match type: "Ends with string"  
+     String to match: `AppEngine-Google; (+http://code.google.com/appengine; appid: s~skawa-easyling)`  
+     Text transformation: "None"
+  2. Inspect: "All headers"  
+     Headers match scope: "All"  
+     Filter the header keys to get a subset of headers to inspect: "All headers"  
+     Oversize handling: "Continue"  
+     Match type: "Starts with string"  
+     String to match: `x-translationproxy-`  
+     Text transformation: "Lowercase"
+
+If desired, labels may be set up to track rule activity. The rule as configured should consume 15 WCU (Web ACL Capacity Unit), for reference.
+
+Once the rule is saved, _Edit rule order_, and move the newly-created rule to the top of the stack, so that it short-circuits processing. With this rule in place, the proxy will be able to connect to your server uninterrupted to retrieve content for translation.
+
+These instructions are up-to-date as of 2026-07-07.
