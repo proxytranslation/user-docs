@@ -10,6 +10,7 @@ Cookbook
    jstranslation
    resourcetranslation
    hubspotforms
+   wp_plugin
    pageviewsandcaching
    requestevaluation
    stagingdomain
